@@ -16,32 +16,32 @@ We study how genetic variation arises, how it is maintained in populations, and 
 The material is organized around five central themes:
 
 1. **Genetic Variation**
-   - Mendelian inheritance
-   - Allele and genotype frequencies
-   - Hardy–Weinberg equilibrium
-   - Linkage disequilibrium
+   - Mendelian inheritance  
+   - Allele and genotype frequencies  
+   - Hardy–Weinberg equilibrium  
+   - Linkage disequilibrium  
 
 2. **Quantitative Genetic Models**
-   - Linear models in genetics
-   - Variance decomposition
-   - Heritability
-   - Genetic covariance
+   - Linear models in genetics  
+   - Variance decomposition  
+   - Heritability  
+   - Genetic covariance  
 
 3. **Mixed Models and Prediction**
-   - BLUP
-   - Genomic relationship matrices
-   - Prediction of breeding values
+   - BLUP  
+   - Genomic relationship matrices  
+   - Prediction of breeding values  
 
 4. **Bayesian Methods**
-   - Bayesian linear regression
-   - Shrinkage priors
-   - Marker effect modeling
-   - MCMC principles
+   - Bayesian linear regression  
+   - Shrinkage priors  
+   - Marker effect modeling  
+   - MCMC principles  
 
 5. **Evolutionary Dynamics**
-   - Selection response
-   - Drift and mutation
-   - Long-term genetic change
+   - Selection response  
+   - Drift and mutation  
+   - Long-term genetic change  
 
 ---
 
@@ -58,18 +58,34 @@ After completing the course, students should be able to:
 
 ---
 
-## Structure of the Book
+## Course Structure
 
-The course is organized sequentially. Each chapter builds on previous material.
+This book contains the **core notes** of the course.
 
-Chapters include:
+Each chapter includes:
 
 - Mathematical derivations  
 - Conceptual explanations  
 - Computational demonstrations in R  
 - Figures and simulation examples  
 
-Students are encouraged to work through code examples to develop practical understanding.
+---
+
+## Slides
+
+Lecture slides are provided separately as Reveal.js presentations:
+
+- [Complex Traits](slides/complex_traits.html)
+
+Slides are intended to support live lectures and provide a structured overview of each topic.  
+The notes remain the authoritative and complete reference for study.
+
+---
+
+## Tutorials
+
+Hands-on tutorials are provided to develop computational and practical understanding.  
+Students are encouraged to actively run and modify the provided R code.
 
 ---
 

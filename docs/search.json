@@ -438,7 +438,7 @@
     "href": "quant-genetics/index.html#core-themes",
     "title": "Quantitative & Population Genetics",
     "section": "Core Themes",
-    "text": "Core Themes\nThe material is organized around five central themes:\n\nGenetic Variation\n\nMendelian inheritance\nAllele and genotype frequencies\nHardy–Weinberg equilibrium\nLinkage disequilibrium\n\nQuantitative Genetic Models\n\nLinear models in genetics\nVariance decomposition\nHeritability\nGenetic covariance\n\nMixed Models and Prediction\n\nBLUP\nGenomic relationship matrices\nPrediction of breeding values\n\nBayesian Methods\n\nBayesian linear regression\nShrinkage priors\nMarker effect modeling\nMCMC principles\n\nEvolutionary Dynamics\n\nSelection response\nDrift and mutation\nLong-term genetic change"
+    "text": "Core Themes\nThe material is organized around five central themes:\n\nGenetic Variation\n\nMendelian inheritance\n\nAllele and genotype frequencies\n\nHardy–Weinberg equilibrium\n\nLinkage disequilibrium\n\nQuantitative Genetic Models\n\nLinear models in genetics\n\nVariance decomposition\n\nHeritability\n\nGenetic covariance\n\nMixed Models and Prediction\n\nBLUP\n\nGenomic relationship matrices\n\nPrediction of breeding values\n\nBayesian Methods\n\nBayesian linear regression\n\nShrinkage priors\n\nMarker effect modeling\n\nMCMC principles\n\nEvolutionary Dynamics\n\nSelection response\n\nDrift and mutation\n\nLong-term genetic change"
   },
   {
     "objectID": "quant-genetics/index.html#learning-objectives",
@@ -448,11 +448,25 @@
     "text": "Learning Objectives\nAfter completing the course, students should be able to:\n\nFormulate linear and mixed models for genetic data\n\nDerive expressions for genetic variance components\n\nInterpret heritability in different contexts\n\nImplement genomic prediction models in R\n\nExplain the interaction between selection, drift, and mutation\n\nConnect statistical models with biological interpretation"
   },
   {
-    "objectID": "quant-genetics/index.html#structure-of-the-book",
-    "href": "quant-genetics/index.html#structure-of-the-book",
+    "objectID": "quant-genetics/index.html#course-structure",
+    "href": "quant-genetics/index.html#course-structure",
     "title": "Quantitative & Population Genetics",
-    "section": "Structure of the Book",
-    "text": "Structure of the Book\nThe course is organized sequentially. Each chapter builds on previous material.\nChapters include:\n\nMathematical derivations\n\nConceptual explanations\n\nComputational demonstrations in R\n\nFigures and simulation examples\n\nStudents are encouraged to work through code examples to develop practical understanding."
+    "section": "Course Structure",
+    "text": "Course Structure\nThis book contains the core notes of the course.\nEach chapter includes:\n\nMathematical derivations\n\nConceptual explanations\n\nComputational demonstrations in R\n\nFigures and simulation examples"
+  },
+  {
+    "objectID": "quant-genetics/index.html#slides",
+    "href": "quant-genetics/index.html#slides",
+    "title": "Quantitative & Population Genetics",
+    "section": "Slides",
+    "text": "Slides\nLecture slides are provided separately as Reveal.js presentations:\n\nComplex Traits\n\nSlides are intended to support live lectures and provide a structured overview of each topic.\nThe notes remain the authoritative and complete reference for study."
+  },
+  {
+    "objectID": "quant-genetics/index.html#tutorials",
+    "href": "quant-genetics/index.html#tutorials",
+    "title": "Quantitative & Population Genetics",
+    "section": "Tutorials",
+    "text": "Tutorials\nHands-on tutorials are provided to develop computational and practical understanding.\nStudents are encouraged to actively run and modify the provided R code."
   },
   {
     "objectID": "quant-genetics/index.html#prerequisites",
