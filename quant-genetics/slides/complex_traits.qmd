@@ -4152,7 +4152,7 @@ naturally leads into modern genomics.
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   const backBtn = document.createElement("a");
-  backBtn.href = "https://psoerensen.github.io/bayesian-linear-regression/";  // ✅ full URL
+  backBtn.href = "https://psoerensen.github.io/qgteach/quant-genetics//";  // ✅ full URL
   backBtn.target = "_self";  // opens in same tab
   backBtn.textContent = "← Back to Main Page";
   backBtn.style.cssText = `
