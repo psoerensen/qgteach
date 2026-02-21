@@ -75,6 +75,7 @@ Each chapter includes:
 
 Lecture slides are provided separately as Reveal.js presentations:
 
+- [Population Genetics](slides/population_genetics.html)
 - [Complex Traits](slides/complex_traits.html)
 
 Slides are intended to support live lectures and provide a structured overview of each topic.  
