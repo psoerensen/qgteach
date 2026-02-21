@@ -3,26 +3,27 @@ project:
   resources:
     - images/**
     - narration/**
+    - slides/**
 
 book:
   title: "Quantitative & Population Genetics"
-  author:
-    - name: "Peter Sørensen"
-      affiliation:
-        - "Center for Quantitative Genetics and Genomics, Aarhus University, Denmark"
   chapters:
     - index.qmd
-    - 01-introduction.qmd
-    - 02-linear-model.qmd
-    - 03-heritability.qmd
-    - 04-blup.qmd
-    - 05-bayesian-methods.qmd
-    - 06-population-genetics.qmd
 
-format:
-  html:
-    theme: flatly
-    toc: true
-    number-sections: true
-    code-fold: true
-    highlight-style: github
+    - part: "Lectures"
+      chapters:
+        - lectures/01-introduction.qmd
+        - lectures/02-variance-components.qmd
+        - lectures/03-blup.qmd
+        - lectures/04-bayesian-models.qmd
+
+    - part: "Tutorials"
+      chapters:
+        - tutorials/tutorial1-linear-models.qmd
+        - tutorials/tutorial2-heritability.qmd
+
+    - part: "Mathematical Notes"
+      chapters:
+        - notes/matrix-derivations.qmd
+        - notes/bayesian-priors.qmd
+        

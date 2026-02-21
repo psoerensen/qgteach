@@ -1,0 +1,101 @@
+---
+title: "Genomics, Systems Biology & Bioinformatics"
+subtitle: "Molecular Data Integration and Computational Modeling"
+---
+
+## Course Overview
+
+This course provides a conceptual and computational framework for analyzing molecular data across biological scales, from genome to transcriptome to systems-level organization.
+
+The focus is on understanding how genetic and environmental variation influence molecular phenotypes and complex traits through modern high-throughput technologies and statistical modeling.
+
+The course integrates biological interpretation, statistical methodology, and practical implementation in R.
+
+---
+
+## Core Themes
+
+The material is organized around five interconnected themes:
+
+1. **Molecular Technologies**
+   - DNA sequencing technologies  
+   - Genotyping platforms  
+   - RNA-seq and transcriptomics  
+   - Epigenomic and multi-omics profiling  
+
+2. **Genomic Association and Mapping**
+   - GWAS principles  
+   - Population structure and confounding  
+   - Fine-mapping  
+   - Functional annotation  
+
+3. **Multi-Omics Integration**
+   - Transcriptome-wide association  
+   - eQTL and regulatory variation  
+   - Integrative modeling across data layers  
+
+4. **Systems-Level Modeling**
+   - Gene regulatory networks  
+   - Pathway analysis  
+   - Network-based interpretation  
+   - Causal modeling concepts  
+
+5. **Computational and Statistical Methods**
+   - High-dimensional regression  
+   - Regularization and shrinkage  
+   - Machine learning approaches  
+   - Reproducible workflows in R  
+
+---
+
+## Learning Objectives
+
+After completing the course, students should be able to:
+
+- Explain how sequencing technologies generate molecular data  
+- Evaluate appropriate statistical models for genomic data  
+- Analyze high-dimensional datasets using R  
+- Interpret GWAS and fine-mapping results  
+- Integrate multi-omics datasets conceptually and computationally  
+- Connect molecular variation to complex phenotypes  
+
+---
+
+## Structure of the Book
+
+The course progresses from molecular data generation to systems-level interpretation.
+
+Each chapter includes:
+
+- Conceptual background  
+- Statistical framework  
+- Applied examples  
+- Executable R code  
+- Visualizations and case studies  
+
+Students are encouraged to actively reproduce analyses and explore parameter choices to deepen understanding.
+
+---
+
+## Prerequisites
+
+Students are expected to have:
+
+- Basic molecular biology knowledge  
+- Introductory statistics  
+- Familiarity with R  
+
+Prior exposure to linear models and quantitative genetics is beneficial but not required.
+
+---
+
+## Recommended Use
+
+This material is designed to support:
+
+- Lecture-based instruction  
+- Computational lab sessions  
+- Project-based learning  
+- Independent exploration of genomic datasets  
+
+Emphasis is placed on connecting biological mechanisms with statistical modeling in a reproducible framework.
