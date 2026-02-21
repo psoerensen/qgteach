@@ -1,0 +1,136 @@
+/* =========================
+   GLOBAL TYPOGRAPHY
+   ========================= */
+
+.reveal {
+  font-size: 30px;               /* Slightly smaller base */
+  line-height: 1.2;
+}
+
+/* Slide titles */
+.reveal h2 {
+  font-size: 1.45em;
+  font-weight: 600;
+  margin-bottom: 1.0em;
+}
+
+/* Optional smaller subtitles */
+.reveal h3 {
+  font-size: 1.15em;
+  margin-bottom: 0.3em;
+}
+
+
+/* =========================
+   PARAGRAPHS
+   ========================= */
+
+.reveal .slide p {
+  margin-top: 0;
+  margin-bottom: 0.1em;
+}
+
+
+/* =========================
+   LIST CONTROL
+   ========================= */
+
+/* Main lists */
+.reveal .slide ul,
+.reveal .slide ol {
+  margin-top: 0.05em;
+  margin-bottom: 0.15em;
+  padding-left: 1.2em;
+}
+
+/* Main bullets */
+.reveal .slide ul > li,
+.reveal .slide ol > li {
+  font-size: 1em;
+  margin-top: 0.05em;
+  margin-bottom: 0.05em;
+  line-height: 1.15;
+}
+
+/* Sub-bullets */
+.reveal .slide ul ul > li,
+.reveal .slide ol ul > li,
+.reveal .slide ol ol > li {
+  font-size: 0.85em;
+  margin-top: 0.03em;
+  margin-bottom: 0.03em;
+  line-height: 1.1;
+}
+
+/* Remove gap between bold heading and list */
+.reveal .slide p + ul,
+.reveal .slide p + ol {
+  margin-top: 0;
+}
+
+
+/* =========================
+   MATH VISIBILITY
+   ========================= */
+
+.reveal .math.display {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+.reveal .math.inline {
+  font-size: 1em;
+}
+
+
+/* =========================
+   TABLES
+   ========================= */
+
+.reveal table {
+  font-size: 0.8em;
+  border-collapse: collapse;
+}
+
+.reveal table th,
+.reveal table td {
+  padding: 0.3em 0.6em;
+}
+
+
+/* =========================
+   FIGURE CAPTIONS
+   ========================= */
+
+.reveal figcaption {
+  font-size: 0.75em;
+  margin-top: 0.2em;
+  color: #555;
+}
+
+
+/* =========================
+   UTILITY CLASSES
+   ========================= */
+
+.small-text {
+  font-size: 0.85em;
+}
+
+.tiny-text {
+  font-size: 0.75em;
+}
+
+.tight {
+  line-height: 1.05;
+}
+
+
+/* =========================
+   MATH SIZE CONTROL (MathJax v3)
+   ========================= */
+
+/* Nuclear option */
+.MathJax {
+  font-size: 75% !important;
+}
