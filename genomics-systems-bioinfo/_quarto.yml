@@ -1,0 +1,28 @@
+project:
+  type: book
+  resources:
+    - images/**
+    - narration/**
+
+book:
+  title: "Genomics, Systems Biology & Bioinformatics"
+  author:
+    - name: "Peter Sørensen"
+      affiliation:
+        - "Center for Quantitative Genetics and Genomics, Aarhus University, Denmark"
+  chapters:
+    - index.qmd
+    - 01-sequencing-technologies.qmd
+    - 02-omics-data.qmd
+    - 03-network-models.qmd
+    - 04-gwas.qmd
+    - 05-machine-learning.qmd
+
+format:
+  html:
+    theme: flatly
+    toc: true
+    number-sections: true
+    code-fold: true
+    highlight-style: github
+    

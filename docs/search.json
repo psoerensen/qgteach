@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "quant-genetics/index.html",
+    "href": "quant-genetics/index.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "Welcome to the teaching portal of Peter Sørensen.\nThis site hosts structured course material, lecture notes, slides, and computational demonstrations in quantitative genetics and genomics. All material is reproducible and built using R and Quarto."
+  },
+  {
+    "objectID": "quant-genetics/index.html#courses",
+    "href": "quant-genetics/index.html#courses",
+    "title": "Teaching",
+    "section": "🎓 Courses",
+    "text": "🎓 Courses\n\n\n\n📘 Quantitative & Population Genetics\nFoundations of genetic theory and statistical modeling:\n\nLinear models in genetics\n\nVariance components and heritability\n\nBLUP and mixed models\n\nBayesian linear regression\n\nSelection response and prediction\n\nPopulation genetic principles\n\nGo to Course →\n\n\n\n🧬 Genomics, Systems Biology & Bioinformatics\nModern molecular data analysis and systems-level modeling:\n\nSequencing technologies\n\nMulti-omics integration\n\nGWAS and fine-mapping\n\nNetwork models\n\nMachine learning in genomics\n\nComputational reproducibility\n\nGo to Course →"
+  },
+  {
+    "objectID": "quant-genetics/index.html#teaching-philosophy",
+    "href": "quant-genetics/index.html#teaching-philosophy",
+    "title": "Teaching",
+    "section": "💻 Teaching Philosophy",
+    "text": "💻 Teaching Philosophy\nThe material emphasizes:\n\nMathematical foundations\n\nStatistical modeling\n\nReproducible research\n\nComputational implementation in R\n\nConceptual clarity over memorization\n\nAll lecture material integrates theory, simulation, and applied examples."
+  },
+  {
+    "objectID": "quant-genetics/index.html#repository-structure",
+    "href": "quant-genetics/index.html#repository-structure",
+    "title": "Teaching",
+    "section": "📂 Repository Structure",
+    "text": "📂 Repository Structure\nEach course is structured as a navigable book with:\n\nSequential chapters\n\nMathematical notation\n\nExecutable R code\n\nFigures and simulations\n\nNarrated slide material where relevant"
+  },
+  {
+    "objectID": "quant-genetics/index.html#contact",
+    "href": "quant-genetics/index.html#contact",
+    "title": "Teaching",
+    "section": "📫 Contact",
+    "text": "📫 Contact\nCenter for Quantitative Genetics and Genomics\nAarhus University, Denmark"
+  }
+]

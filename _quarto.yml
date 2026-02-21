@@ -1,0 +1,23 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Teaching – Peter Sørensen"
+  navbar:
+    left:
+      - text: "Quantitative & Population Genetics"
+        href: quant-genetics/
+      - text: "Genomics, Systems Biology & Bioinformatics"
+        href: genomics-systems-bioinfo/
+
+format:
+  html:
+    theme: flatly
+    toc: false
+    
+author:
+  - name: "Peter Sørensen"
+    affiliation:
+      - "Center for Quantitative Genetics and Genomics, Aarhus University, Denmark"
+      
