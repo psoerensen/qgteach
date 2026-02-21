@@ -1,5 +1,85 @@
 ---
-title: "index"
-format: html
+title: "Teaching"
+subtitle: "Quantitative Genetics, Population Genetics, and Genomics"
+toc: false
 ---
+
+Welcome to the teaching portal of **Peter Sørensen**.
+
+This site hosts structured course material, lecture notes, slides, and computational demonstrations in quantitative genetics and genomics. All material is reproducible and built using R and Quarto.
+
+---
+
+## 🎓 Courses
+
+::: {.columns}
+
+::: {.column width="50%"}
+
+### 📘 Quantitative & Population Genetics
+
+Foundations of genetic theory and statistical modeling:
+
+- Linear models in genetics  
+- Variance components and heritability  
+- BLUP and mixed models  
+- Bayesian linear regression  
+- Selection response and prediction  
+- Population genetic principles  
+
+[Go to Course →](quant-genetics/)
+
+:::
+
+::: {.column width="50%"}
+
+### 🧬 Genomics, Systems Biology & Bioinformatics
+
+Modern molecular data analysis and systems-level modeling:
+
+- Sequencing technologies  
+- Multi-omics integration  
+- GWAS and fine-mapping  
+- Network models  
+- Machine learning in genomics  
+- Computational reproducibility  
+
+[Go to Course →](genomics-systems-bioinfo/)
+
+:::
+
+:::
+
+---
+
+## 💻 Teaching Philosophy
+
+The material emphasizes:
+
+- Mathematical foundations  
+- Statistical modeling  
+- Reproducible research  
+- Computational implementation in R  
+- Conceptual clarity over memorization  
+
+All lecture material integrates theory, simulation, and applied examples.
+
+---
+
+## 📂 Repository Structure
+
+Each course is structured as a navigable book with:
+
+- Sequential chapters  
+- Mathematical notation  
+- Executable R code  
+- Figures and simulations  
+- Narrated slide material where relevant  
+
+---
+
+## 📫 Contact
+
+Center for Quantitative Genetics and Genomics  
+Aarhus University, Denmark  
 

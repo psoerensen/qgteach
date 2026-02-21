@@ -1,86 +1,95 @@
 ---
-title: "Teaching"
-subtitle: "Quantitative Genetics, Population Genetics, and Genomics"
-format:
-  html:
-    toc: false
+title: "Quantitative & Population Genetics"
+subtitle: "Foundations of Genetic Variation and Statistical Modeling"
 ---
 
-Welcome to the teaching portal of **Peter Sørensen**.
+## Course Overview
 
-This site hosts structured course material, lecture notes, slides, and computational demonstrations in quantitative genetics and genomics. All material is reproducible and built using R and Quarto.
+This course develops the theoretical and statistical foundations of quantitative and population genetics, with emphasis on mathematical formulation and computational implementation.
 
----
-
-## 🎓 Courses
-
-::: {.columns}
-
-::: {.column width="50%"}
-
-### 📘 Quantitative & Population Genetics
-
-Foundations of genetic theory and statistical modeling:
-
-- Linear models in genetics  
-- Variance components and heritability  
-- BLUP and mixed models  
-- Bayesian linear regression  
-- Selection response and prediction  
-- Population genetic principles  
-
-[Go to Course →](quant-genetics/)
-
-:::
-
-::: {.column width="50%"}
-
-### 🧬 Genomics, Systems Biology & Bioinformatics
-
-Modern molecular data analysis and systems-level modeling:
-
-- Sequencing technologies  
-- Multi-omics integration  
-- GWAS and fine-mapping  
-- Network models  
-- Machine learning in genomics  
-- Computational reproducibility  
-
-[Go to Course →](genomics-systems-bioinfo/)
-
-:::
-
-:::
+We study how genetic variation arises, how it is maintained in populations, and how it influences complex traits. The course integrates classical genetic theory with modern statistical modeling approaches used in genomics and prediction.
 
 ---
 
-## 💻 Teaching Philosophy
+## Core Themes
 
-The material emphasizes:
+The material is organized around five central themes:
 
-- Mathematical foundations  
-- Statistical modeling  
-- Reproducible research  
-- Computational implementation in R  
-- Conceptual clarity over memorization  
+1. **Genetic Variation**
+   - Mendelian inheritance
+   - Allele and genotype frequencies
+   - Hardy–Weinberg equilibrium
+   - Linkage disequilibrium
 
-All lecture material integrates theory, simulation, and applied examples.
+2. **Quantitative Genetic Models**
+   - Linear models in genetics
+   - Variance decomposition
+   - Heritability
+   - Genetic covariance
+
+3. **Mixed Models and Prediction**
+   - BLUP
+   - Genomic relationship matrices
+   - Prediction of breeding values
+
+4. **Bayesian Methods**
+   - Bayesian linear regression
+   - Shrinkage priors
+   - Marker effect modeling
+   - MCMC principles
+
+5. **Evolutionary Dynamics**
+   - Selection response
+   - Drift and mutation
+   - Long-term genetic change
 
 ---
 
-## 📂 Repository Structure
+## Learning Objectives
 
-Each course is structured as a navigable book with:
+After completing the course, students should be able to:
 
-- Sequential chapters  
-- Mathematical notation  
-- Executable R code  
-- Figures and simulations  
-- Narrated slide material where relevant  
+- Formulate linear and mixed models for genetic data  
+- Derive expressions for genetic variance components  
+- Interpret heritability in different contexts  
+- Implement genomic prediction models in R  
+- Explain the interaction between selection, drift, and mutation  
+- Connect statistical models with biological interpretation  
 
 ---
 
-## 📫 Contact
+## Structure of the Book
 
-Center for Quantitative Genetics and Genomics  
-Aarhus University, Denmark  
+The course is organized sequentially. Each chapter builds on previous material.
+
+Chapters include:
+
+- Mathematical derivations  
+- Conceptual explanations  
+- Computational demonstrations in R  
+- Figures and simulation examples  
+
+Students are encouraged to work through code examples to develop practical understanding.
+
+---
+
+## Prerequisites
+
+Students are expected to have:
+
+- Basic knowledge of genetics  
+- Introductory statistics  
+- Familiarity with R  
+
+---
+
+## Recommended Use
+
+The material is designed to be:
+
+- Used during lectures  
+- Reviewed after class  
+- Consulted during project work  
+- Revisited during exam preparation  
+
+Mathematical notation and modeling steps are emphasized to support conceptual clarity and reproducibility.

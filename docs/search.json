@@ -2,34 +2,83 @@
   {
     "objectID": "quant-genetics/index.html",
     "href": "quant-genetics/index.html",
+    "title": "Quantitative & Population Genetics",
+    "section": "",
+    "text": "This course develops the theoretical and statistical foundations of quantitative and population genetics, with emphasis on mathematical formulation and computational implementation.\nWe study how genetic variation arises, how it is maintained in populations, and how it influences complex traits. The course integrates classical genetic theory with modern statistical modeling approaches used in genomics and prediction."
+  },
+  {
+    "objectID": "quant-genetics/index.html#course-overview",
+    "href": "quant-genetics/index.html#course-overview",
+    "title": "Quantitative & Population Genetics",
+    "section": "",
+    "text": "This course develops the theoretical and statistical foundations of quantitative and population genetics, with emphasis on mathematical formulation and computational implementation.\nWe study how genetic variation arises, how it is maintained in populations, and how it influences complex traits. The course integrates classical genetic theory with modern statistical modeling approaches used in genomics and prediction."
+  },
+  {
+    "objectID": "quant-genetics/index.html#core-themes",
+    "href": "quant-genetics/index.html#core-themes",
+    "title": "Quantitative & Population Genetics",
+    "section": "Core Themes",
+    "text": "Core Themes\nThe material is organized around five central themes:\n\nGenetic Variation\n\nMendelian inheritance\nAllele and genotype frequencies\nHardy–Weinberg equilibrium\nLinkage disequilibrium\n\nQuantitative Genetic Models\n\nLinear models in genetics\nVariance decomposition\nHeritability\nGenetic covariance\n\nMixed Models and Prediction\n\nBLUP\nGenomic relationship matrices\nPrediction of breeding values\n\nBayesian Methods\n\nBayesian linear regression\nShrinkage priors\nMarker effect modeling\nMCMC principles\n\nEvolutionary Dynamics\n\nSelection response\nDrift and mutation\nLong-term genetic change"
+  },
+  {
+    "objectID": "quant-genetics/index.html#learning-objectives",
+    "href": "quant-genetics/index.html#learning-objectives",
+    "title": "Quantitative & Population Genetics",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing the course, students should be able to:\n\nFormulate linear and mixed models for genetic data\n\nDerive expressions for genetic variance components\n\nInterpret heritability in different contexts\n\nImplement genomic prediction models in R\n\nExplain the interaction between selection, drift, and mutation\n\nConnect statistical models with biological interpretation"
+  },
+  {
+    "objectID": "quant-genetics/index.html#structure-of-the-book",
+    "href": "quant-genetics/index.html#structure-of-the-book",
+    "title": "Quantitative & Population Genetics",
+    "section": "Structure of the Book",
+    "text": "Structure of the Book\nThe course is organized sequentially. Each chapter builds on previous material.\nChapters include:\n\nMathematical derivations\n\nConceptual explanations\n\nComputational demonstrations in R\n\nFigures and simulation examples\n\nStudents are encouraged to work through code examples to develop practical understanding."
+  },
+  {
+    "objectID": "quant-genetics/index.html#prerequisites",
+    "href": "quant-genetics/index.html#prerequisites",
+    "title": "Quantitative & Population Genetics",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nStudents are expected to have:\n\nBasic knowledge of genetics\n\nIntroductory statistics\n\nFamiliarity with R"
+  },
+  {
+    "objectID": "quant-genetics/index.html#recommended-use",
+    "href": "quant-genetics/index.html#recommended-use",
+    "title": "Quantitative & Population Genetics",
+    "section": "Recommended Use",
+    "text": "Recommended Use\nThe material is designed to be:\n\nUsed during lectures\n\nReviewed after class\n\nConsulted during project work\n\nRevisited during exam preparation\n\nMathematical notation and modeling steps are emphasized to support conceptual clarity and reproducibility."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "Teaching",
     "section": "",
     "text": "Welcome to the teaching portal of Peter Sørensen.\nThis site hosts structured course material, lecture notes, slides, and computational demonstrations in quantitative genetics and genomics. All material is reproducible and built using R and Quarto."
   },
   {
-    "objectID": "quant-genetics/index.html#courses",
-    "href": "quant-genetics/index.html#courses",
+    "objectID": "index.html#courses",
+    "href": "index.html#courses",
     "title": "Teaching",
     "section": "🎓 Courses",
     "text": "🎓 Courses\n\n\n\n📘 Quantitative & Population Genetics\nFoundations of genetic theory and statistical modeling:\n\nLinear models in genetics\n\nVariance components and heritability\n\nBLUP and mixed models\n\nBayesian linear regression\n\nSelection response and prediction\n\nPopulation genetic principles\n\nGo to Course →\n\n\n\n🧬 Genomics, Systems Biology & Bioinformatics\nModern molecular data analysis and systems-level modeling:\n\nSequencing technologies\n\nMulti-omics integration\n\nGWAS and fine-mapping\n\nNetwork models\n\nMachine learning in genomics\n\nComputational reproducibility\n\nGo to Course →"
   },
   {
-    "objectID": "quant-genetics/index.html#teaching-philosophy",
-    "href": "quant-genetics/index.html#teaching-philosophy",
+    "objectID": "index.html#teaching-philosophy",
+    "href": "index.html#teaching-philosophy",
     "title": "Teaching",
     "section": "💻 Teaching Philosophy",
     "text": "💻 Teaching Philosophy\nThe material emphasizes:\n\nMathematical foundations\n\nStatistical modeling\n\nReproducible research\n\nComputational implementation in R\n\nConceptual clarity over memorization\n\nAll lecture material integrates theory, simulation, and applied examples."
   },
   {
-    "objectID": "quant-genetics/index.html#repository-structure",
-    "href": "quant-genetics/index.html#repository-structure",
+    "objectID": "index.html#repository-structure",
+    "href": "index.html#repository-structure",
     "title": "Teaching",
     "section": "📂 Repository Structure",
     "text": "📂 Repository Structure\nEach course is structured as a navigable book with:\n\nSequential chapters\n\nMathematical notation\n\nExecutable R code\n\nFigures and simulations\n\nNarrated slide material where relevant"
   },
   {
-    "objectID": "quant-genetics/index.html#contact",
-    "href": "quant-genetics/index.html#contact",
+    "objectID": "index.html#contact",
+    "href": "index.html#contact",
     "title": "Teaching",
     "section": "📫 Contact",
     "text": "📫 Contact\nCenter for Quantitative Genetics and Genomics\nAarhus University, Denmark"
