@@ -115,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Quantitative &amp; Population Genetics</h1>
-<p class="subtitle lead">Foundations of Genetic Variation and Statistical Modeling</p>
+<p class="subtitle lead">Foundations of Genetic Variation and Quantitative Trait Analysis</p>
 </div>
 
 
@@ -147,78 +147,63 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="course-overview" class="level2">
 <h2 class="anchored" data-anchor-id="course-overview">Course Overview</h2>
-<p>This course develops the theoretical and statistical foundations of quantitative and population genetics, with emphasis on mathematical formulation and computational implementation.</p>
-<p>We study how genetic variation arises, how it is maintained in populations, and how it influences complex traits. The course integrates classical genetic theory with modern statistical modeling approaches used in genomics and prediction.</p>
+<p>This course develops the theoretical foundations of population and quantitative genetics, with emphasis on the mathematical and statistical principles used to study genetic variation and complex traits.</p>
+<p>We examine how genetic variation arises and is maintained in populations, how evolutionary forces shape allele frequencies, and how genetic and environmental factors contribute to phenotypic variation. The course integrates classical population genetics with quantitative trait analysis and modern approaches to trait mapping.</p>
 <hr>
 </section>
 <section id="core-themes" class="level2">
 <h2 class="anchored" data-anchor-id="core-themes">Core Themes</h2>
-<p>The material is organized around five central themes:</p>
-<ol type="1">
-<li><strong>Genetic Variation</strong>
+<section id="population-genetics" class="level3">
+<h3 class="anchored" data-anchor-id="population-genetics">Population Genetics</h3>
 <ul>
-<li>Mendelian inheritance<br>
+<li>Measuring genetic variation (heterozygosity, nucleotide diversity, allele vs.&nbsp;genotype frequencies)<br>
 </li>
-<li>Allele and genotype frequencies<br>
+<li>Gene pools and Hardy–Weinberg equilibrium<br>
 </li>
-<li>Hardy–Weinberg equilibrium<br>
+<li>Mating systems and inbreeding<br>
 </li>
-<li>Linkage disequilibrium</li>
-</ul></li>
-<li><strong>Quantitative Genetic Models</strong>
+<li>Mutation, migration, recombination, and linkage disequilibrium<br>
+</li>
+<li>Genetic drift and natural selection (directional, balancing, purifying)<br>
+</li>
+<li>Applications in conservation biology, medical genetics, and forensics</li>
+</ul>
+</section>
+<section id="quantitative-genetics" class="level3">
+<h3 class="anchored" data-anchor-id="quantitative-genetics">Quantitative Genetics</h3>
 <ul>
-<li>Linear models in genetics<br>
+<li>Statistical modeling of complex traits<br>
 </li>
-<li>Variance decomposition<br>
+<li>Partitioning genetic and environmental sources of variation<br>
 </li>
-<li>Heritability<br>
+<li>Broad- and narrow-sense heritability<br>
 </li>
-<li>Genetic covariance</li>
-</ul></li>
-<li><strong>Mixed Models and Prediction</strong>
-<ul>
-<li>BLUP<br>
+<li>Prediction of offspring phenotypes<br>
 </li>
-<li>Genomic relationship matrices<br>
-</li>
-<li>Prediction of breeding values</li>
-</ul></li>
-<li><strong>Bayesian Methods</strong>
-<ul>
-<li>Bayesian linear regression<br>
-</li>
-<li>Shrinkage priors<br>
-</li>
-<li>Marker effect modeling<br>
-</li>
-<li>MCMC principles</li>
-</ul></li>
-<li><strong>Evolutionary Dynamics</strong>
-<ul>
-<li>Selection response<br>
-</li>
-<li>Drift and mutation<br>
-</li>
-<li>Long-term genetic change</li>
-</ul></li>
-</ol>
+<li>QTL mapping and association mapping</li>
+</ul>
 <hr>
+</section>
 </section>
 <section id="learning-objectives" class="level2">
 <h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
 <p>After completing the course, students should be able to:</p>
 <ul>
-<li>Formulate linear and mixed models for genetic data<br>
+<li>Explain how genetic variation is generated and maintained in populations<br>
 </li>
-<li>Derive expressions for genetic variance components<br>
+<li>Interpret Hardy–Weinberg equilibrium and deviations from it<br>
 </li>
-<li>Interpret heritability in different contexts<br>
+<li>Describe the effects of drift, selection, mutation, and migration on allele frequencies<br>
 </li>
-<li>Implement genomic prediction models in R<br>
+<li>Partition phenotypic variance into genetic and environmental components<br>
 </li>
-<li>Explain the interaction between selection, drift, and mutation<br>
+<li>Calculate and interpret broad- and narrow-sense heritability<br>
 </li>
-<li>Connect statistical models with biological interpretation</li>
+<li>Predict phenotypes from parental values<br>
+</li>
+<li>Design and interpret QTL and association mapping studies<br>
+</li>
+<li>Connect mathematical models with biological interpretation</li>
 </ul>
 <hr>
 </section>
@@ -227,9 +212,11 @@ ul.task-list li input[type="checkbox"] {
 <p>This book contains the <strong>core notes</strong> of the course.</p>
 <p>Each chapter includes:</p>
 <ul>
-<li>Mathematical derivations<br>
-</li>
 <li>Conceptual explanations<br>
+</li>
+<li>Mathematical formulations<br>
+</li>
+<li>Worked examples<br>
 </li>
 <li>Computational demonstrations in R<br>
 </li>
@@ -278,7 +265,7 @@ Students are encouraged to actively run and modify the provided R code.</p>
 </li>
 <li>Revisited during exam preparation</li>
 </ul>
-<p>Mathematical notation and modeling steps are emphasized to support conceptual clarity and reproducibility.</p>
+<p>Mathematical reasoning and quantitative interpretation are emphasized to support conceptual clarity and reproducibility.</p>
 
 
 </section>

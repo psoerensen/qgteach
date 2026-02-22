@@ -18,69 +18,8 @@ This site hosts structured course material, lecture notes, slides, and computati
 
 ### 📘 Quantitative & Population Genetics
 
-Foundations of population and quantitative genetics:
+This course covers the foundations of population and quantitative genetics, including the measurement and interpretation of genetic variation, Hardy–Weinberg equilibrium, inbreeding, mutation, recombination, linkage disequilibrium, genetic drift, and natural selection. It introduces statistical approaches for analyzing complex traits, including partitioning genetic and environmental sources of variation, estimating broad- and narrow-sense heritability, predicting phenotypes from parental values, and mapping quantitative trait loci (QTL) and association signals.
 
-Foundations of population and quantitative genetics:
-
-- Measuring genetic variation (heterozygosity, nucleotide diversity, allele vs. genotype frequencies)  
-- Hardy–Weinberg equilibrium and gene pools  
-- Mating systems, inbreeding, and their consequences  
-- Mutation, migration, recombination, and linkage disequilibrium  
-- Genetic drift and natural selection (directional, balancing, purifying)  
-- Applications in conservation, medical genetics, and forensics  
-
-Quantitative trait analysis:
-
-- Statistical modeling of complex traits  
-- Genetic vs. environmental contributions  
-- Broad- and narrow-sense heritability  
-- Prediction of offspring phenotypes  
-- QTL and association mapping
-
-#### Genetic Variation in Populations
-- Measuring genetic variation within populations  
-- Heterozygosity, segregating sites, and nucleotide diversity  
-- Allele frequencies vs. genotype frequencies  
-
-#### Hardy–Weinberg Equilibrium and Gene Pools
-- The gene pool concept  
-- Assumptions and biological meaning of Hardy–Weinberg equilibrium  
-- Interpreting deviations from equilibrium  
-
-#### Mating Systems and Inbreeding
-- Effects of nonrandom mating on genotype frequencies  
-- Inbreeding and increased homozygosity  
-- Biological consequences of inbreeding  
-
-#### Sources and Structure of Genetic Variation
-- Mutation, migration, and recombination  
-- Linkage disequilibrium and its decay  
-
-#### Evolutionary Forces
-- Genetic drift in finite populations  
-- Effects of population size on drift  
-- Natural selection and allele frequency change  
-- Directional, balancing, and purifying selection  
-
-#### Applications of Population Genetics
-- Conservation biology  
-- Medical genetics  
-- DNA forensics  
-
-#### Quantitative Trait Variation
-
-- Statistical modeling of complex traits  
-- Partitioning genetic and environmental contributions  
-
-#### Heritability
-- Broad-sense heritability  
-- Narrow-sense heritability  
-- Predicting offspring phenotypes from parental values  
-
-#### Mapping Quantitative Traits
-- Inferring the number of genes affecting a trait  
-- QTL mapping  
-- Association mapping
 
 
 [Go to Course →](quant-genetics/)

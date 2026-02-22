@@ -1,47 +1,34 @@
 ---
 title: "Quantitative & Population Genetics"
-subtitle: "Foundations of Genetic Variation and Statistical Modeling"
+subtitle: "Foundations of Genetic Variation and Quantitative Trait Analysis"
 ---
 
 ## Course Overview
 
-This course develops the theoretical and statistical foundations of quantitative and population genetics, with emphasis on mathematical formulation and computational implementation.
+This course develops the theoretical foundations of population and quantitative genetics, with emphasis on the mathematical and statistical principles used to study genetic variation and complex traits.
 
-We study how genetic variation arises, how it is maintained in populations, and how it influences complex traits. The course integrates classical genetic theory with modern statistical modeling approaches used in genomics and prediction.
+We examine how genetic variation arises and is maintained in populations, how evolutionary forces shape allele frequencies, and how genetic and environmental factors contribute to phenotypic variation. The course integrates classical population genetics with quantitative trait analysis and modern approaches to trait mapping.
 
 ---
 
 ## Core Themes
 
-The material is organized around five central themes:
+### Population Genetics
 
-1. **Genetic Variation**
-   - Mendelian inheritance  
-   - Allele and genotype frequencies  
-   - Hardy–Weinberg equilibrium  
-   - Linkage disequilibrium  
+- Measuring genetic variation (heterozygosity, nucleotide diversity, allele vs. genotype frequencies)  
+- Gene pools and Hardy–Weinberg equilibrium  
+- Mating systems and inbreeding  
+- Mutation, migration, recombination, and linkage disequilibrium  
+- Genetic drift and natural selection (directional, balancing, purifying)  
+- Applications in conservation biology, medical genetics, and forensics  
 
-2. **Quantitative Genetic Models**
-   - Linear models in genetics  
-   - Variance decomposition  
-   - Heritability  
-   - Genetic covariance  
+### Quantitative Genetics
 
-3. **Mixed Models and Prediction**
-   - BLUP  
-   - Genomic relationship matrices  
-   - Prediction of breeding values  
-
-4. **Bayesian Methods**
-   - Bayesian linear regression  
-   - Shrinkage priors  
-   - Marker effect modeling  
-   - MCMC principles  
-
-5. **Evolutionary Dynamics**
-   - Selection response  
-   - Drift and mutation  
-   - Long-term genetic change  
+- Statistical modeling of complex traits  
+- Partitioning genetic and environmental sources of variation  
+- Broad- and narrow-sense heritability  
+- Prediction of offspring phenotypes  
+- QTL mapping and association mapping  
 
 ---
 
@@ -49,12 +36,14 @@ The material is organized around five central themes:
 
 After completing the course, students should be able to:
 
-- Formulate linear and mixed models for genetic data  
-- Derive expressions for genetic variance components  
-- Interpret heritability in different contexts  
-- Implement genomic prediction models in R  
-- Explain the interaction between selection, drift, and mutation  
-- Connect statistical models with biological interpretation  
+- Explain how genetic variation is generated and maintained in populations  
+- Interpret Hardy–Weinberg equilibrium and deviations from it  
+- Describe the effects of drift, selection, mutation, and migration on allele frequencies  
+- Partition phenotypic variance into genetic and environmental components  
+- Calculate and interpret broad- and narrow-sense heritability  
+- Predict phenotypes from parental values  
+- Design and interpret QTL and association mapping studies  
+- Connect mathematical models with biological interpretation  
 
 ---
 
@@ -64,8 +53,9 @@ This book contains the **core notes** of the course.
 
 Each chapter includes:
 
-- Mathematical derivations  
 - Conceptual explanations  
+- Mathematical formulations  
+- Worked examples  
 - Computational demonstrations in R  
 - Figures and simulation examples  
 
@@ -109,4 +99,4 @@ The material is designed to be:
 - Consulted during project work  
 - Revisited during exam preparation  
 
-Mathematical notation and modeling steps are emphasized to support conceptual clarity and reproducibility.
+Mathematical reasoning and quantitative interpretation are emphasized to support conceptual clarity and reproducibility.

@@ -424,35 +424,35 @@
     "href": "quant-genetics/index.html",
     "title": "Quantitative & Population Genetics",
     "section": "",
-    "text": "This course develops the theoretical and statistical foundations of quantitative and population genetics, with emphasis on mathematical formulation and computational implementation.\nWe study how genetic variation arises, how it is maintained in populations, and how it influences complex traits. The course integrates classical genetic theory with modern statistical modeling approaches used in genomics and prediction."
+    "text": "This course develops the theoretical foundations of population and quantitative genetics, with emphasis on the mathematical and statistical principles used to study genetic variation and complex traits.\nWe examine how genetic variation arises and is maintained in populations, how evolutionary forces shape allele frequencies, and how genetic and environmental factors contribute to phenotypic variation. The course integrates classical population genetics with quantitative trait analysis and modern approaches to trait mapping."
   },
   {
     "objectID": "quant-genetics/index.html#course-overview",
     "href": "quant-genetics/index.html#course-overview",
     "title": "Quantitative & Population Genetics",
     "section": "",
-    "text": "This course develops the theoretical and statistical foundations of quantitative and population genetics, with emphasis on mathematical formulation and computational implementation.\nWe study how genetic variation arises, how it is maintained in populations, and how it influences complex traits. The course integrates classical genetic theory with modern statistical modeling approaches used in genomics and prediction."
+    "text": "This course develops the theoretical foundations of population and quantitative genetics, with emphasis on the mathematical and statistical principles used to study genetic variation and complex traits.\nWe examine how genetic variation arises and is maintained in populations, how evolutionary forces shape allele frequencies, and how genetic and environmental factors contribute to phenotypic variation. The course integrates classical population genetics with quantitative trait analysis and modern approaches to trait mapping."
   },
   {
     "objectID": "quant-genetics/index.html#core-themes",
     "href": "quant-genetics/index.html#core-themes",
     "title": "Quantitative & Population Genetics",
     "section": "Core Themes",
-    "text": "Core Themes\nThe material is organized around five central themes:\n\nGenetic Variation\n\nMendelian inheritance\n\nAllele and genotype frequencies\n\nHardy–Weinberg equilibrium\n\nLinkage disequilibrium\n\nQuantitative Genetic Models\n\nLinear models in genetics\n\nVariance decomposition\n\nHeritability\n\nGenetic covariance\n\nMixed Models and Prediction\n\nBLUP\n\nGenomic relationship matrices\n\nPrediction of breeding values\n\nBayesian Methods\n\nBayesian linear regression\n\nShrinkage priors\n\nMarker effect modeling\n\nMCMC principles\n\nEvolutionary Dynamics\n\nSelection response\n\nDrift and mutation\n\nLong-term genetic change"
+    "text": "Core Themes\n\nPopulation Genetics\n\nMeasuring genetic variation (heterozygosity, nucleotide diversity, allele vs. genotype frequencies)\n\nGene pools and Hardy–Weinberg equilibrium\n\nMating systems and inbreeding\n\nMutation, migration, recombination, and linkage disequilibrium\n\nGenetic drift and natural selection (directional, balancing, purifying)\n\nApplications in conservation biology, medical genetics, and forensics\n\n\n\nQuantitative Genetics\n\nStatistical modeling of complex traits\n\nPartitioning genetic and environmental sources of variation\n\nBroad- and narrow-sense heritability\n\nPrediction of offspring phenotypes\n\nQTL mapping and association mapping"
   },
   {
     "objectID": "quant-genetics/index.html#learning-objectives",
     "href": "quant-genetics/index.html#learning-objectives",
     "title": "Quantitative & Population Genetics",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing the course, students should be able to:\n\nFormulate linear and mixed models for genetic data\n\nDerive expressions for genetic variance components\n\nInterpret heritability in different contexts\n\nImplement genomic prediction models in R\n\nExplain the interaction between selection, drift, and mutation\n\nConnect statistical models with biological interpretation"
+    "text": "Learning Objectives\nAfter completing the course, students should be able to:\n\nExplain how genetic variation is generated and maintained in populations\n\nInterpret Hardy–Weinberg equilibrium and deviations from it\n\nDescribe the effects of drift, selection, mutation, and migration on allele frequencies\n\nPartition phenotypic variance into genetic and environmental components\n\nCalculate and interpret broad- and narrow-sense heritability\n\nPredict phenotypes from parental values\n\nDesign and interpret QTL and association mapping studies\n\nConnect mathematical models with biological interpretation"
   },
   {
     "objectID": "quant-genetics/index.html#course-structure",
     "href": "quant-genetics/index.html#course-structure",
     "title": "Quantitative & Population Genetics",
     "section": "Course Structure",
-    "text": "Course Structure\nThis book contains the core notes of the course.\nEach chapter includes:\n\nMathematical derivations\n\nConceptual explanations\n\nComputational demonstrations in R\n\nFigures and simulation examples"
+    "text": "Course Structure\nThis book contains the core notes of the course.\nEach chapter includes:\n\nConceptual explanations\n\nMathematical formulations\n\nWorked examples\n\nComputational demonstrations in R\n\nFigures and simulation examples"
   },
   {
     "objectID": "quant-genetics/index.html#slides",
@@ -480,7 +480,7 @@
     "href": "quant-genetics/index.html#recommended-use",
     "title": "Quantitative & Population Genetics",
     "section": "Recommended Use",
-    "text": "Recommended Use\nThe material is designed to be:\n\nUsed during lectures\n\nReviewed after class\n\nConsulted during project work\n\nRevisited during exam preparation\n\nMathematical notation and modeling steps are emphasized to support conceptual clarity and reproducibility."
+    "text": "Recommended Use\nThe material is designed to be:\n\nUsed during lectures\n\nReviewed after class\n\nConsulted during project work\n\nRevisited during exam preparation\n\nMathematical reasoning and quantitative interpretation are emphasized to support conceptual clarity and reproducibility."
   },
   {
     "objectID": "genomics-systems-bioinfo/index.html",
@@ -543,7 +543,7 @@
     "href": "index.html#courses",
     "title": "Teaching",
     "section": "🎓 Courses",
-    "text": "🎓 Courses\n\n\n\n📘 Quantitative & Population Genetics\nFoundations of population and quantitative genetics:\nFoundations of population and quantitative genetics:\n\nMeasuring genetic variation (heterozygosity, nucleotide diversity, allele vs. genotype frequencies)\n\nHardy–Weinberg equilibrium and gene pools\n\nMating systems, inbreeding, and their consequences\n\nMutation, migration, recombination, and linkage disequilibrium\n\nGenetic drift and natural selection (directional, balancing, purifying)\n\nApplications in conservation, medical genetics, and forensics\n\nQuantitative trait analysis:\n\nStatistical modeling of complex traits\n\nGenetic vs. environmental contributions\n\nBroad- and narrow-sense heritability\n\nPrediction of offspring phenotypes\n\nQTL and association mapping\n\n\nGenetic Variation in Populations\n\nMeasuring genetic variation within populations\n\nHeterozygosity, segregating sites, and nucleotide diversity\n\nAllele frequencies vs. genotype frequencies\n\n\n\nHardy–Weinberg Equilibrium and Gene Pools\n\nThe gene pool concept\n\nAssumptions and biological meaning of Hardy–Weinberg equilibrium\n\nInterpreting deviations from equilibrium\n\n\n\nMating Systems and Inbreeding\n\nEffects of nonrandom mating on genotype frequencies\n\nInbreeding and increased homozygosity\n\nBiological consequences of inbreeding\n\n\n\nSources and Structure of Genetic Variation\n\nMutation, migration, and recombination\n\nLinkage disequilibrium and its decay\n\n\n\nEvolutionary Forces\n\nGenetic drift in finite populations\n\nEffects of population size on drift\n\nNatural selection and allele frequency change\n\nDirectional, balancing, and purifying selection\n\n\n\nApplications of Population Genetics\n\nConservation biology\n\nMedical genetics\n\nDNA forensics\n\n\n\nQuantitative Trait Variation\n\nStatistical modeling of complex traits\n\nPartitioning genetic and environmental contributions\n\n\n\nHeritability\n\nBroad-sense heritability\n\nNarrow-sense heritability\n\nPredicting offspring phenotypes from parental values\n\n\n\nMapping Quantitative Traits\n\nInferring the number of genes affecting a trait\n\nQTL mapping\n\nAssociation mapping\n\nGo to Course →\n\n\n\n\n🧬 Genomics, Systems Biology & Bioinformatics\nModern molecular data analysis and systems-level modeling:\n\nSequencing technologies\n\nMulti-omics integration\n\nGWAS and fine-mapping\n\nNetwork models\n\nMachine learning in genomics\n\nComputational reproducibility\n\nGo to Course →"
+    "text": "🎓 Courses\n\n\n\n📘 Quantitative & Population Genetics\nThis course covers the foundations of population and quantitative genetics, including the measurement and interpretation of genetic variation, Hardy–Weinberg equilibrium, inbreeding, mutation, recombination, linkage disequilibrium, genetic drift, and natural selection. It introduces statistical approaches for analyzing complex traits, including partitioning genetic and environmental sources of variation, estimating broad- and narrow-sense heritability, predicting phenotypes from parental values, and mapping quantitative trait loci (QTL) and association signals.\nGo to Course →\n\n\n\n🧬 Genomics, Systems Biology & Bioinformatics\nModern molecular data analysis and systems-level modeling:\n\nSequencing technologies\n\nMulti-omics integration\n\nGWAS and fine-mapping\n\nNetwork models\n\nMachine learning in genomics\n\nComputational reproducibility\n\nGo to Course →"
   },
   {
     "objectID": "index.html#teaching-philosophy",
