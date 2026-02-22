@@ -90,12 +90,12 @@ This book provides a rigorous and accessible introduction to Bayesian modeling, 
 
 For foundational principles of classical and molecular genetics:
 
-**[Griffiths, A. J. F., Doebley, J. F., Peichel, C. L., & Wassarman, D. A. (2023). *An Introduction to Genetic Analysis* (13th ed.). W. H. Freeman.](https://www.macmillanlearning.com/college/us/product/An-Introduction-to-Genetic-Analysis/p/1319446297)**  
+**[Griffiths, A. J. F., Doebley, J. F., Peichel, C. L., & Wassarman, D. A. (2023). *An Introduction to Genetic Analysis* (13th ed.). W. H. Freeman.](https://store.macmillanlearning.com/us/product/Introduction-to-Genetic-Analysis-Digital-Update/p/1319525199)**  
 
 
 For a unified and modern treatment of quantitative genetics theory and genomics:
 
-**[Walsh, B., Visscher, P. M., & Lynch, M. (2025). *Genetics and Analysis of Quantitative Traits: Foundations* (2nd ed.). Cambridge University Press.](https://www.cambridge.org/core/books/genetics-and-analysis-of-quantitative-traits-foundations)**  
+**[Walsh, B., Visscher, P. M., & Lynch, M. (2025). *Genetics and Analysis of Quantitative Traits: Foundations* (2nd ed.). Cambridge University Press.](https://global.oup.com/academic/product/genetics-and-analysis-of-quantitative-traits-9780192898180?cc=dk&lang=en&)**  
 
 For Bayesian modeling, hierarchical inference, and statistical learning in quantitative genetics and genomics:
 
