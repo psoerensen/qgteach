@@ -4,10 +4,8 @@ project:
 
 website:
   title: "Teaching – Peter Sørensen"
-  sidebar:
-    style: "docked"
-    search: false
-    contents:
+  navbar:
+    left:
       - text: "Quantitative & Population Genetics"
         href: quant-genetics/
       - text: "Genomics, Systems Biology & Bioinformatics"
@@ -17,7 +15,7 @@ format:
   html:
     theme: flatly
     toc: false
-
+    
 author:
   - name: "Peter Sørensen"
     affiliation:
