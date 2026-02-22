@@ -90,36 +90,30 @@ This book provides a rigorous and accessible introduction to Bayesian modeling, 
 
 For foundational principles of classical and molecular genetics:
 
-**Griffiths, A. J. F., Doebley, J. F., Peichel, C. L., & Wassarman, D. A. (2023). *An Introduction to Genetic Analysis* (13th ed.). W. H. Freeman.**  
-https://www.macmillanlearning.com/college/us/product/An-Introduction-to-Genetic-Analysis/p/1319446297  
+**[Griffiths, A. J. F., Doebley, J. F., Peichel, C. L., & Wassarman, D. A. (2023). *An Introduction to Genetic Analysis* (13th ed.). W. H. Freeman.]**(https://www.macmillanlearning.com/college/us/product/An-Introduction-to-Genetic-Analysis/p/1319446297)  
 
 
 For a unified and modern treatment of quantitative genetics theory and genomics:
 
-**Walsh, B., Visscher, P. M., & Lynch, M. (2025). *Genetics and Analysis of Quantitative Traits: Foundations* (2nd ed.). Cambridge University Press.**  
-https://www.cambridge.org/core/books/genetics-and-analysis-of-quantitative-traits-foundations  
+**[Walsh, B., Visscher, P. M., & Lynch, M. (2025). *Genetics and Analysis of Quantitative Traits: Foundations* (2nd ed.). Cambridge University Press.]**(https://www.cambridge.org/core/books/genetics-and-analysis-of-quantitative-traits-foundations)  
 
 For Bayesian modeling, hierarchical inference, and statistical learning in quantitative genetics and genomics:
 
-**Sorensen, D. (2025). *Statistical Learning in Genetics: An Introduction Using R*. Springer.**  
-https://link.springer.com/book/10.1007/978-3-031-86274-8  
+**[Sorensen, D. (2025). *Statistical Learning in Genetics: An Introduction Using R*. Springer.]**(https://link.springer.com/book/10.1007/978-3-031-86274-8)  
 
 
 For likelihood-based and Bayesian inference, including detailed treatment of MCMC methods:
 
-**Sorensen, D., & Gianola, D. (2002/2010). *Likelihood, Bayesian, and MCMC Methods in Quantitative Genetics*. Springer.**  
-https://link.springer.com/book/10.1007/b98952  
+**[Sorensen, D., & Gianola, D. (2002/2010). *Likelihood, Bayesian, and MCMC Methods in Quantitative Genetics*. Springer.]**(https://link.springer.com/book/10.1007/b98952)  
 
 
 For a comprehensive and mathematically rigorous treatment of modern statistical learning:
 
-**Hastie, T., Tibshirani, R., & Friedman, J. (2009). *The Elements of Statistical Learning: Data Mining, Inference, and Prediction* (2nd ed.). Springer.**  
-https://link.springer.com/book/10.1007/978-0-387-84858-7  
+**[Hastie, T., Tibshirani, R., & Friedman, J. (2009). *The Elements of Statistical Learning: Data Mining, Inference, and Prediction* (2nd ed.). Springer.]**(https://link.springer.com/book/10.1007/978-0-387-84858-7)  
 
 For an accessible and application-oriented introduction to statistical learning with R:
 
-**James, G., Witten, D., Hastie, T., & Tibshirani, R. (2021). *An Introduction to Statistical Learning: With Applications in R* (2nd ed.). Springer.**  
-https://link.springer.com/book/10.1007/978-1-0716-1418-1  
+**[James, G., Witten, D., Hastie, T., & Tibshirani, R. (2021). *An Introduction to Statistical Learning: With Applications in R* (2nd ed.). Springer.]**(https://link.springer.com/book/10.1007/978-1-0716-1418-1)  
 
 
  
