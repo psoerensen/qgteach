@@ -3,15 +3,15 @@ title: "Quantitative & Population Genetics"
 subtitle: "Foundations of Genetic Variation and Quantitative Trait Analysis"
 ---
 
-## Course Overview
+## Course Material
 
-This course develops the theoretical foundations of population and quantitative genetics, with emphasis on the mathematical and statistical principles used to study genetic variation and complex traits.
+This course provides the theoretical foundations of population and quantitative genetics, with emphasis on the mathematical and statistical principles used to study genetic variation and complex traits.
 
-We examine how genetic variation arises and is maintained in populations, how evolutionary forces shape allele frequencies, and how genetic and environmental factors contribute to phenotypic variation. The course integrates classical population genetics with quantitative trait analysis and modern approaches to trait mapping.
+The material examines how genetic variation arises and is maintained in populations, how evolutionary forces shape allele frequencies, and how genetic and environmental factors contribute to phenotypic variation. Classical population genetics is integrated with quantitative trait analysis and modern approaches to trait mapping.
 
 ---
 
-## Core Themes
+## Core Topics
 
 ### Population Genetics
 
@@ -34,7 +34,7 @@ We examine how genetic variation arises and is maintained in populations, how ev
 
 ## Learning Objectives
 
-After completing the course, students should be able to:
+Upon completion of the course, it should be possible to:
 
 - Explain how genetic variation is generated and maintained in populations  
 - Interpret Hardy–Weinberg equilibrium and deviations from it  
@@ -65,24 +65,24 @@ Each chapter includes:
 
 Lecture slides are provided separately as Reveal.js presentations:
 
-- [Population Genetics](slides/population_genetics.html)
-- [Complex Traits](slides/complex_traits.html)
+- [Population Genetics](slides/introduction_population_genetics.html)
+- [Quantitative Genetics](slides/introduction_quantitative_genetics.html)
 
-Slides are intended to support live lectures and provide a structured overview of each topic.  
-The notes remain the authoritative and complete reference for study.
+Slides provide a structured overview of each topic.  
+The notes serve as the complete reference for study.
 
 ---
 
 ## Tutorials
 
-Hands-on tutorials are provided to develop computational and practical understanding.  
-Students are encouraged to actively run and modify the provided R code.
+Hands-on tutorials support the development of computational and practical understanding.  
+Active execution and modification of the provided R code is recommended.
 
 ---
 
 ## Prerequisites
 
-Students are expected to have:
+The course assumes:
 
 - Basic knowledge of genetics  
 - Introductory statistics  

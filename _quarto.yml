@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Teaching – Peter Sørensen"
+  title: "Course Materials"
   navbar:
     left:
       - text: "Quantitative & Population Genetics"
