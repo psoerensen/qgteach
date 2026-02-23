@@ -75,14 +75,6 @@ Each course is structured as a navigable book with:
 
 ### Further Reading
 
-Further details on the theory and computation behind Bayesian linear regression, Gibbs sampling, and hierarchical modeling can be found in  
-**[Sorensen, D. (2025). *Statistical Learning in Genetics: An Introduction Using R*. Springer.](https://link.springer.com/book/10.1007/978-3-031-86274-8)**  
-
-This book provides a rigorous and accessible introduction to Bayesian modeling, hierarchical inference, and statistical learning methods in **quantitative genetics and genomics**.
-
-
-### Further Reading
-
 For foundational principles of classical and molecular genetics:
 
 **[Griffiths, A. J. F., Doebley, J. F., Peichel, C. L., & Wassarman, D. A. (2023). *An Introduction to Genetic Analysis* (13th ed.). W. H. Freeman.](https://store.macmillanlearning.com/us/product/Introduction-to-Genetic-Analysis-Digital-Update/p/1319525199)**  
