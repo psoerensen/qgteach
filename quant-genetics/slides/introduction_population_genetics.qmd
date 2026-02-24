@@ -1,5 +1,5 @@
 ---
-title: "Population Genetics"
+title: "Introduction to Population Genetics"
 subtitle: "Chapter 18 - Introduction to Genetic Analysis (12th ed.)"
 author: 
   - name: "Peter Sørensen"
@@ -27,87 +27,100 @@ execute:
 ---
 
 
-## Learning Goals — Chapter 18 (Population Genetics)
+## Learning Goals — Population Genetics  
 
-### 18.1 Detecting Genetic Variation
-- Explain how genetic variation is measured within populations  
-- Interpret measures such as heterozygosity, segregating sites, and nucleotide diversity  
-- Distinguish between allele frequency and genotype frequency  
+::: {.columns}
 
-### 18.2 Gene Pool & Hardy–Weinberg Law
-- Describe the gene pool concept  
-- Explain the assumptions and biological meaning of Hardy–Weinberg equilibrium  
-- Interpret deviations from Hardy–Weinberg in terms of evolutionary forces  
+::: {.column width="60%"}
 
-### 18.3 Mating Systems and Inbreeding
-- Explain how nonrandom mating affects genotype frequencies  
-- Describe how inbreeding increases homozygosity  
-- Interpret the biological consequences of inbreeding  
+**1. Detecting Genetic Variation**
 
-### 18.4 Sources and Structure of Genetic Variation
-- Explain how mutation, migration, and recombination generate genetic variation  
-- Describe how linkage disequilibrium arises and why it decays over time  
+- Identify major types of DNA variation  
+- Explain locus, allele, haplotype, and phase  
 
-### 18.5 Evolutionary Forces
-- Explain how genetic drift changes allele frequencies in finite populations  
-- Predict how population size influences the strength of drift  
-- Explain how natural selection alters allele frequencies  
-- Distinguish among directional, balancing, and purifying selection  
+**2. Gene Pool & Hardy–Weinberg**
 
-### 18.6 Applications of Population Genetics
-- Explain how population genetic principles apply to:
-  - Conservation biology  
-  - Medical genetics  
-  - DNA forensics  
+- Define the gene pool and calculate allele and genotype frequencies  
+- State the Hardy–Weinberg law and its assumptions  
+- Test for equilibrium and explain causes of deviation  
+
+**3. Mating Systems & Inbreeding**
+
+- Distinguish mating systems  
+- Explain effects of nonrandom mating on genotype frequencies  
+- Define inbreeding and describe its genetic consequences  
+
+:::
+
+::: {.column width="40%"}
+
+**4. Evolutionary Forces**
+
+- Describe how mutation, migration, recombination, drift, and selection change allele frequencies  
+- Explain population size effects and genetic drift  
+- Distinguish major forms of selection  
+- Explain linkage disequilibrium and its decay  
+- Recognize genomic signatures of selection, drift, and population structure  
+
+:::
+
+:::
 
 ::: notes
 
-These learning goals emphasize conceptual understanding.
+In this chapter, we examine genetic variation at the population level.
 
-Students should understand how genetic variation is measured,
-what the Hardy–Weinberg model represents,
-and why deviations from it are biologically meaningful.
+We begin by asking how variation is measured —
+what heterozygosity and nucleotide diversity reveal about a population.
 
-They should be able to explain how mutation, migration, recombination,
-drift, and selection interact to shape allele frequencies.
+Hardy–Weinberg equilibrium provides a baseline.
+It describes genotype frequencies when no evolutionary forces are acting.
+Deviations from this expectation indicate that some biological process is at work.
 
-Rather than focusing only on calculations,
-students should interpret what formulas mean biologically.
+We then examine how nonrandom mating and inbreeding
+alter genotype structure,
+and how mutation, migration, and recombination
+generate and organize genetic variation.
 
-They should also understand how these principles apply
-to real-world problems such as conservation,
-disease risk prediction, and forensic DNA analysis.
+Finally, we consider genetic drift and natural selection —
+the evolutionary forces that change allele frequencies over time.
 
-The central theme of the chapter is:
+The central idea is simple:
+population genetics explains how molecular variation
+is structured within populations
+and how it is transformed into evolutionary change.
 
-Population genetics explains how molecular variation
-translates into evolutionary change over time.
+Our focus is not only on calculation,
+but on biological interpretation.
 
 :::
 
 
+
 ## Why Study Population Genetics?
 
-- Assess genetic disease risk in families  
-- Understand consequences of plant and animal breeding on genetic diversity  
-- Evaluate risks of inbreeding in wildlife populations  
-- Explore relationships among human populations worldwide  
-- Study how genomes adapt to environments and lifestyles  
-- Explain how populations and species evolve over time  
+- Assess genetic disease risk  
+- Evaluate effects of breeding on genetic diversity  
+- Understand risks of inbreeding in small populations  
+- Explore relationships among human populations  
+- Study genomic adaptation to environments  
+- Explain how populations and species evolve  
 
 ::: notes
-The principles of population genetics are central to many important societal questions. 
 
-For example:
-- What is the risk that a couple will have a child with a genetic disease?  
-- Have plant and animal breeding practices reduced genetic diversity, and could this threaten food security?  
-- As human populations expand and wildlife habitats shrink, can wild species avoid inbreeding and persist?
+Population genetics addresses questions with real societal impact.
 
-Population genetics is also fundamental to understanding historical and evolutionary questions:
+It helps us assess genetic disease risk,
+understand how breeding practices influence genetic diversity,
+and evaluate whether small or fragmented populations face inbreeding risks.
 
-- How are human populations from different regions related?  
-- How has the human genome responded as humans spread across the globe and adapted to diverse environments and lifestyles?  
-- How do populations and species evolve over time?
+It also helps us answer broader evolutionary questions:
+How are human populations related?
+How have genomes adapted to different environments?
+And how do populations change over time?
+
+In short, population genetics connects molecular variation
+to practical applications and long-term evolutionary processes.
 :::
 
 
@@ -117,23 +130,23 @@ Population genetics is also fundamental to understanding historical and evolutio
 
 ::: {.column width="50%"}
 
-**What is a Population?**
+**What Is a Population?**
 
-- A group of individuals of the same species  
-- An interbreeding group contributing genes to the next generation  
-- A defined set of individuals from which genetic samples are drawn  
+- Individuals of the same species  
+- An interbreeding group  
+- A defined sampling unit  
 
-A population is defined by **gene exchange**  
+A population is defined by **gene exchange**
 and shared contribution to future generations.
 
 :::
 
 ::: {.column width="50%"}
 
-**What is Population Genetics?**
+**What Is Population Genetics?**
 
 - Study of genetic variation within populations  
-- Study of changes in allele frequencies over time  
+- Study of allele frequency change over time  
 
 Driven by evolutionary forces:
 
@@ -144,7 +157,7 @@ Driven by evolutionary forces:
 - Natural selection  
 - Mating systems  
 
-Focus: how evolutionary forces change allele frequencies across generations.
+Focus: how evolutionary forces shape allele frequencies across generations.
 
 :::
 
@@ -152,33 +165,33 @@ Focus: how evolutionary forces change allele frequencies across generations.
 
 ::: notes
 
-First, what is a population?
+First, what do we mean by a population?
 
-A population is a group of individuals of the same species
-that interbreed and contribute genes to the next generation.
+In biology, it is a group of individuals of the same species
+that interbreed and exchange genes.
 
-In genetics, we also define a population as the group of individuals
-from which we collect samples and estimate allele frequencies.
+In genetics, it is also the group from which we sample individuals
+to estimate allele frequencies.
 
 Now, what is population genetics?
 
 It is the study of genetic variation within populations
 and how allele frequencies change over time.
 
-Instead of following individual families,
-we study the whole population.
+Rather than focusing on individual families,
+we analyze the entire population.
 
-Allele frequencies change because of evolutionary forces:
-mutation, migration, recombination, genetic drift,
-natural selection, and mating patterns.
+Allele frequencies shift because of evolutionary forces:
+mutation, migration, recombination,
+genetic drift, natural selection, and mating patterns.
 
-Population genetics tries to understand
-how these forces shape genetic variation across generations.
+Population genetics asks how these forces
+interact to shape genetic variation across generations.
 
 :::
 
 
-# 18.1 Detecting Genetic Variation
+# 1. Detecting Genetic Variation
 
 ## DNA Variation in Populations
 
@@ -188,9 +201,12 @@ how these forces shape genetic variation across generations.
 
 **DNA variation occurs at specific genomic locations**
 
-- A **locus** = a specific position in the genome  
+- A **locus** = a position in the genome  
   - Single nucleotide  
   - Or longer DNA region  
+
+Humans are **diploid**  
+→ two alleles at each autosomal locus  
 
 At a locus, individuals may carry different **alleles**.
 
@@ -200,22 +216,19 @@ At a locus, individuals may carry different **alleles**.
 
 - Single nucleotide polymorphisms (**SNPs**)  
 - Small insertions/deletions (indels)  
-- Repeat-length variants (microsatellites / STRs)  
+- Repeat-length variants (**microsatellites** / STRs)  
 - Structural variants (CNVs, inversions)
 
 :::
 
 ::: {.column width="50%"}
 
-**Two important marker types**
-
 **SNPs**
 
 - Single base change (A, C, G, T)  
 - Most abundant variant type  
-- Usually **biallelic**  
+- Usually biallelic  
 - Low mutation rate  
-
 
 **Microsatellites (STRs)**
 
@@ -224,8 +237,8 @@ At a locus, individuals may carry different **alleles**.
 - Highly polymorphic  
 - Higher mutation rate  
 
-SNPs $\Rightarrow$ abundant and stable  
-Microsatellites $\Rightarrow$ highly variable
+SNPs → abundant and stable  
+Microsatellites → highly variable
 
 :::
 
@@ -233,32 +246,33 @@ Microsatellites $\Rightarrow$ highly variable
 
 ::: notes
 
-Population genetics studies variation at specific genomic positions called loci.
+Population genetics examines variation at specific genomic locations,
+called loci.
 
-A locus is simply a location in the genome.
-It may refer to a single nucleotide or a longer DNA region.
+A locus is simply a position in the genome.
+It may refer to a single nucleotide or a longer region.
 
-At a given locus, individuals may carry different versions, called alleles.
+Humans are diploid,
+meaning we carry two copies of each autosomal chromosome.
+Therefore, at each locus,
+an individual has two alleles — one from each parent.
 
 Genetic variation occurs at several scales:
-single-base changes (SNPs),
-small insertions or deletions,
-repeat-length variants,
-and larger structural changes.
+single-base substitutions, small insertions or deletions,
+repeat-length variants, and larger structural changes.
 
 In this course, we focus mainly on SNPs and microsatellites.
 
 SNPs are single nucleotide differences.
-They are extremely abundant and usually biallelic.
-Because they mutate slowly, they are stable and very useful for studying population structure and linkage disequilibrium.
+They are abundant, usually biallelic,
+and mutate relatively slowly.
 
-Microsatellites consist of short repeated DNA motifs.
-Individuals differ in the number of repeats.
+Microsatellites consist of short repeated motifs.
 They mutate more rapidly and are often highly polymorphic.
 
-So in simple terms:
+In simple terms:
 SNPs are abundant and stable,
-microsatellites are highly variable.
+whereas microsatellites are highly variable.
 
 :::
 
@@ -312,37 +326,36 @@ All of these contribute to genetic diversity in populations.
 
 ::: {.column width="60%"}
 
-Genomic technologies allow us to measure variation at thousands to millions of loci.
+Genomic technologies allow measurement of variation
+at thousands to millions of loci.
 
 <br>
 
 **Marker-based genotyping**
 
-- Assay selected known variants  
+- Assay predefined variants  
   (SNP arrays, STR panels)  
 - Efficient for large sample sizes  
 
 **Sequencing-based approaches**
 
 - Discover and genotype variants simultaneously  
-- Provide richer genomic information  
+- Provide more comprehensive genomic information  
 
-Thousands to millions of SNPs can be genotyped simultaneously.
-
-Large genotype datasets across many loci form the foundation of population genetic analysis.
+Large genotype datasets across many loci
+form the foundation of population genetic analysis.
 
 :::
 
 ::: {.column width="40%"}
 
-![](../images/fig18_02.png){width=60%}
+![](../images/fig18_02.png){width=70%}
 
 **Figure 18-2. Microarray for SNP genotyping**
 
-- Each dot represents one SNP  
-- Red and green = homozygous genotypes  
-- Yellow = heterozygous genotype  
-
+- Each dot = one SNP  
+- Red/green = homozygous  
+- Yellow = heterozygous  
 
 :::
 
@@ -350,40 +363,109 @@ Large genotype datasets across many loci form the foundation of population genet
 
 ::: notes
 
-Modern genomic technologies allow us to measure genetic variation
+Modern genomic technologies allow us to measure variation
 at thousands to millions of loci across the genome.
 
 There are two main strategies.
 
-Marker-based genotyping tests predefined variants,
+Marker-based genotyping assays predefined variants,
 such as SNP arrays or STR panels.
-These methods are efficient and cost-effective for large sample sizes,
-but they only assay known variants.
+These methods are efficient for large sample sizes,
+but they only capture known variants.
 
 Sequencing-based approaches directly read DNA sequence.
-They allow us to discover new variants
-and determine genotypes at the same time.
-Sequencing provides richer information
+They allow both discovery and genotyping of variants.
+Sequencing provides richer information,
 but requires more computational processing.
 
-Regardless of the method,
-the end result is a large genotype matrix:
-many individuals × many loci.
-That dataset is the foundation for population genetic analysis.
+In both cases, the result is a large genotype matrix:
+many individuals by many loci.
+That dataset forms the foundation of population genetic analysis.
 
-The figure shows a DNA microarray used for SNP genotyping.
-
-Each dot corresponds to a specific SNP.
-Color indicates genotype:
-red and green are homozygotes,
+The figure shows a SNP microarray.
+Each dot represents a single SNP.
+Color indicates genotype —
+red and green are homozygous,
 yellow is heterozygous.
 
-Fluorescent labeling allows thousands to millions of SNPs
-to be genotyped simultaneously.
-
-This technological development made modern population genetics possible.
+Technological advances like this
+made modern population genetics possible.
 
 :::
+
+
+## The Genotype Matrix
+
+
+::: {.columns}
+
+::: {.column width="50%"}
+
+After genotyping, data are organized into a n × m matrix.
+
+- n = number of individuals (rows) 
+- m = number of loci (columns)  
+- Each cell = one genotype  
+
+<br>
+
+**Common SNP Coding**
+
+| Code | Genotype |
+|------|----------|
+| 0 | Homozygous reference |
+| 1 | Heterozygous |
+| 2 | Homozygous alternative |
+
+:::
+
+::: {.column width="50%"}
+
+|        | SNP₁ | SNP₂ | SNP₃ | … |
+|--------|------|------|------|---|
+| Ind₁   | 0    | 1    | 2    |   |
+| Ind₂   | 1    | 1    | 0    |   |
+| Ind₃   | 2    | 0    | 1    |   |
+| …      |      |      |      |   |
+
+<br>
+
+
+<br>
+
+Biological data → Numerical matrix → Statistical analysis
+
+:::
+
+:::
+
+
+::: notes
+
+After genotyping, the data are organized into a matrix.
+
+Each row represents an individual.
+Each column represents a locus, typically a SNP.
+
+The entries in the matrix encode genotypes.
+For biallelic SNPs, we often use numeric coding:
+0, 1, or 2 — representing the number of alternative alleles.
+
+This produces an n by m matrix:
+n individuals and m loci.
+
+This simple structure is the foundation
+for nearly all population genetic and genomic analyses.
+
+From this matrix, we can compute allele frequencies,
+heterozygosity, linkage disequilibrium,
+and ultimately build statistical models.
+
+The transition from biology to matrix representation
+is what makes modern quantitative analysis possible.
+
+:::
+
 
 
 ## Linked Loci, Haplotypes, and Phase
@@ -392,21 +474,19 @@ This technological development made modern population genetics possible.
 
 ::: {.column width="55%"}
 
-Although we analyzed loci individually, they are physically organized along chromosomes.
-
-<br>
+Loci are arranged along chromosomes.
 
 - Physically close loci recombine less often  
 - Nearby alleles are often inherited together  
 
-These combinations of alleles on the same chromosome are called **haplotypes**.
+These allele combinations on one chromosome
+are called **haplotypes**.
 
-<br>
+<br> 
 
-**Definition**
-
-A haplotype = combination of alleles  
-at multiple loci on the same chromosome.
+**Definition:**  
+A haplotype = alleles at multiple loci  
+on the same chromosome.
 
 :::
 
@@ -421,14 +501,12 @@ Possible haplotypes: **AB, Ab, aB, ab**
 
 <br>
 
+**Phase**
 
-**Genotype vs. Haplotype (Phase)**
+- Genotype: alleles present (unphased)  
+- Haplotype: alleles on one chromosome (phased)  
 
-- Genotype (unphased):  Alleles present, ignoring chromosome origin  
-
-- Haplotype (phased):  Alleles located on the same chromosome  
-
-Same genotype can have different phases.
+Same genotype may have different phases.
 
 :::
 
@@ -436,42 +514,110 @@ Same genotype can have different phases.
 
 ::: notes
 
-Until now, we treated loci independently.
+So far, we treated loci as independent.
 
-However, loci are arranged along chromosomes and may be physically close.
-
-If two loci are close together,
+However, loci are arranged along chromosomes.
+If two loci are physically close,
 recombination between them is less likely.
 
-Therefore, nearby alleles are often inherited together.
+As a result, nearby alleles tend to be inherited together.
+
 This motivates the concept of a haplotype.
 
-A haplotype is the combination of alleles
+A haplotype is the set of alleles
 located on a single chromosome copy.
 
-Remember that individuals are diploid —
-they carry two homologous chromosomes,
-each with its own haplotype.
+Because individuals are diploid,
+each person carries two haplotypes
+for any chromosomal region.
 
 For two linked loci A and B,
-four possible haplotypes exist:
+four haplotypes are possible:
 AB, Ab, aB, and ab.
 
-Now consider phase.
+A genotype tells us which alleles are present.
+Phase tells us which alleles lie on the same chromosome.
 
-A genotype tells us which alleles are present,
-but not which alleles are on the same chromosome.
+Two individuals can share the same genotype
+but differ in phase.
 
-Two individuals can have the same genotype
-but different haplotype arrangements.
-
-This matters because recombination acts on chromosomes —
-on haplotypes — not on genotypes.
-
-Understanding haplotypes is essential for studying linkage disequilibrium and genetic mapping.
+This distinction becomes important
+once we consider recombination and linkage disequilibrium.
 
 :::
 
+
+
+## Inheritance of Haplotypes (No Recombination)
+
+::: {.columns}
+
+::: {.column width="55%"}
+
+**Mother**
+
+Haplotype 1:  A ─── B  
+Haplotype 2:  a ─── b  
+
+<br>
+
+**Father**
+
+Haplotype 1:  A ─── b  
+Haplotype 2:  a ─── B  
+
+<br>
+
+**Possible Offspring**
+
+Haplotype from mother:  A ─── B  
+Haplotype from father:  a ─── B  
+
+=> 
+
+Offspring haplotypes: **AB / aB**  
+Offspring genotype: **AaBB**
+
+:::
+
+::: {.column width="45%"}
+
+### Key Points
+
+- Individuals are diploid  
+- One haplotype is transmitted from each parent  
+- Haplotypes are inherited intact (no recombination assumed)  
+
+Recombination can create new haplotypes.
+
+:::
+
+:::
+
+::: notes
+
+This slide illustrates how haplotypes are transmitted.
+
+Each parent carries two homologous chromosome copies,
+each representing a haplotype.
+
+During reproduction,
+one entire haplotype is transmitted from each parent.
+
+Here we assume no recombination,
+so haplotypes are passed on intact.
+
+The offspring therefore inherits
+one maternal haplotype
+and one paternal haplotype.
+
+The genotype reflects the alleles present,
+but inheritance operates at the level of haplotypes.
+
+Recombination, which we introduce next,
+can break and reshuffle these haplotypes.
+
+:::
 
 
 
@@ -576,16 +722,9 @@ it preserves clear lineage relationships over time.
 
 
 
+# 2. Gene Pool Concept and Hardy–Weinberg
 
-
-
-
-
-
-# 18.2 Gene pool concept and Hardy–Weinberg
-
-
-## The gene pool concept
+## The Gene Pool Concept
 
 ::: {.columns}
 
@@ -595,18 +734,26 @@ it preserves clear lineage relationships over time.
 
 :::
 
-::: {.column width="50%" }
+::: {.column width="50%"}
 
+**Figure 18-7. A Frog Gene Pool**
 
-**Figure 18-7. A frog gene pool**
+Gene pool = total collection of alleles  
+in a population at a given time.
 
-Gene pool refers to the total collection of alleles in the population.
+- Population size: **N = 16** (diploid)
 
-- a population of **N=16** frogs
-- diploid and carries two alleles (**A** and **a**) at a single locus
-- total number of alleles in the population is **2N=32**.
-- count genotypes (**5 AA**, **8 Aa** and **3 aa**)
-- count alleles (**18 A** and **14 a**)
+- Total alleles at one locus: **2N = 32**
+
+Genotype counts:  
+
+- 5 **AA**  
+- 8 **Aa**  
+- 3 **aa**
+
+Allele counts:  
+- **18 A**  
+- **14 a**
 
 :::
 
@@ -614,32 +761,36 @@ Gene pool refers to the total collection of alleles in the population.
 
 
 ::: notes
-The gene pool refers to the total collection of alleles in the breeding members of a population at a given time.
 
-In this example, we have a population of 16 frogs.
+The gene pool refers to the total collection of alleles
+in the breeding population at a given time.
 
-Each frog is diploid and carries two alleles, A and a, at a single locus.
-So the total number of alleles in the population is 2N, or 32.
+In this example, we have 16 frogs.
+Because they are diploid,
+each frog carries two alleles at this locus.
 
-From the figure, we count:
-5 AA homozygotes,
-8 Aa heterozygotes,
-and 3 aa homozygotes.
+So the total number of alleles is 2N,
+which equals 32.
 
-To describe the gene pool, we count alleles rather than genotypes.
+From the figure, we count genotypes:
+5 AA,
+8 Aa,
+and 3 aa.
 
-Each AA frog contributes two A alleles.
-Each Aa frog contributes one A and one a allele.
-Each aa frog contributes two a alleles.
+To describe the gene pool,
+we count alleles rather than genotypes.
 
-This gives:
-18 copies of allele A,
-and 14 copies of allele a.
+Each AA individual contributes two A alleles.
+Each Aa contributes one A and one a.
+Each aa contributes two a alleles.
 
-So the gene pool at locus A consists of 18 A alleles and 14 a alleles.
+This results in 18 copies of A
+and 14 copies of a.
 
-This simple counting process is the foundation for calculating allele frequencies,
+This simple counting procedure
+is the foundation for calculating allele frequencies,
 which we will use throughout population genetics.
+
 :::
 
 
@@ -652,7 +803,8 @@ which we will use throughout population genetics.
 
 **Definition**
 
-Genotype frequency = proportion of individuals with a given genotype.
+Genotype frequency = proportion of individuals  
+with a given genotype.
 
 <br>
 
@@ -670,7 +822,7 @@ $$
 f(aa) = \frac{\#aa}{N}
 $$
 
-Genotype frequencies must sum to 1:
+Genotype frequencies sum to 1:
 
 $$
 f(AA) + f(Aa) + f(aa) = 1
@@ -680,10 +832,9 @@ $$
 
 ::: {.column width="50%"}
 
-**Numerical example (N = 16 frogs)**
+**Example (N = 16 frogs)**
 
 Counts:
-
 - 5 AA  
 - 8 Aa  
 - 3 aa  
@@ -702,7 +853,10 @@ $$
 f(aa) = \frac{3}{16} = 0.19
 $$
 
-Check: $0.31 + 0.50 + 0.19 = 1$
+Check:
+$$
+0.31 + 0.50 + 0.19 = 1
+$$
 
 :::
 
@@ -713,22 +867,27 @@ Check: $0.31 + 0.50 + 0.19 = 1$
 Genotype frequency is the proportion of individuals
 with a particular genotype in the population.
 
-We calculate it by dividing the number of individuals
-with that genotype by the total number of individuals, N.
+We compute it by dividing the number of individuals
+with that genotype by the total population size, N.
 
-Because these are proportions, they must sum to 1.
+Because these are proportions,
+the genotype frequencies must sum to one.
+They form a probability distribution
+over the possible genotypes at the locus.
 
-In the frog example, we have 16 individuals:
-5 AA, 8 Aa, and 3 aa.
+In the frog example,
+we divide each genotype count by 16.
 
-Dividing each count by 16 gives genotype frequencies of
-0.31, 0.50, and 0.19.
+This gives frequencies of
+0.31 for AA,
+0.50 for Aa,
+and 0.19 for aa.
 
-If we add them together,
-they sum to 1, as expected.
+Adding them together gives one,
+as expected.
 
-This confirms that the genotype frequencies
-form a proper probability distribution.
+These frequencies describe
+the genetic composition of the population at this locus.
 
 :::
 
@@ -741,12 +900,12 @@ form a proper probability distribution.
 
 **Definition**
 
-Instead of counting genotypes, we can count **alleles**.
+Instead of counting genotypes, we count **alleles**.
 
 For a diploid population:
 
 $$
-\text{Total number of alleles} = 2N
+\text{Total alleles} = 2N
 $$
 
 Let:
@@ -762,7 +921,7 @@ p = \frac{\#A}{2N}
 q = \frac{\#a}{2N}
 $$
 
-Allele frequencies must sum to 1:
+Allele frequencies sum to 1:
 
 $$
 p + q = 1
@@ -772,7 +931,7 @@ $$
 
 ::: {.column width="50%"}
 
-**Numerical example (N=16 frogs)**
+**Example (N = 16 frogs)**
 
 Total alleles:
 
@@ -781,9 +940,8 @@ $$
 $$
 
 Allele counts:
-
-- Number of A alleles = 18  
-- Number of a alleles = 14  
+- 18 A  
+- 14 a  
 
 Frequencies:
 
@@ -795,7 +953,10 @@ $$
 q = \frac{14}{32} = 0.44
 $$
 
-Check: $0.56 + 0.44 = 1$
+Check:
+$$
+0.56 + 0.44 = 1
+$$
 
 :::
 
@@ -803,34 +964,42 @@ Check: $0.56 + 0.44 = 1$
 
 ::: notes
 
-We can describe the gene pool more simply by counting alleles rather than genotypes.
+We can describe the gene pool more compactly
+by counting alleles rather than genotypes.
 
-Because individuals are diploid, each carries two alleles at a locus.
-So in a population of size N, the total number of alleles is 2N.
+Because individuals are diploid,
+each carries two alleles at a locus.
+So in a population of size N,
+the total number of alleles is 2N.
 
-In the frog example, N = 16.
-Therefore, there are 32 alleles in total.
+In the frog example, N equals 16,
+so there are 32 alleles in total.
 
-From our genotype counts:
+From the genotype counts:
 
-AA individuals contribute two A alleles each.
-Aa individuals contribute one A and one a.
-aa individuals contribute two a alleles each.
+Each AA individual contributes two A alleles.
+Each Aa contributes one A and one a.
+Each aa contributes two a alleles.
 
-This gives 18 copies of A and 14 copies of a.
+This gives 18 copies of A
+and 14 copies of a.
 
-We define:
+We define p as the frequency of allele A
+and q as the frequency of allele a.
 
-p as the frequency of allele A,
-q as the frequency of allele a.
+Dividing by 32 gives
+p equals 0.56
+and q equals 0.44.
 
-Dividing by 32 gives p = 0.56 and q = 0.44.
+Because these are proportions,
+they must sum to one.
 
-Because these are frequencies, they must sum to 1.
+Notice that we have now summarized
+the entire gene pool using just two numbers:
+p and q.
 
-Notice that we have now summarized the entire gene pool using just two numbers: p and q.
-
-This simplification becomes powerful when we introduce Hardy–Weinberg equilibrium.
+This simplification is what allows us
+to derive Hardy–Weinberg equilibrium next.
 
 :::
 
@@ -842,8 +1011,6 @@ This simplification becomes powerful when we introduce Hardy–Weinberg equilibr
 ::: {.column width="50%"}
 
 **Hardy–Weinberg Law**
-
-<br>
 
 If mating is random:
 
@@ -863,8 +1030,7 @@ $$
 p^2 + 2pq + q^2 = 1
 $$
 
-
-If the Hardy–Weinberg assumptions hold, **allele frequencies remain constant from generation to generation**, and the population is in equilibrium.
+If Hardy–Weinberg assumptions hold, **allele frequencies remain constant across generations** and the population is in equilibrium.
 
 :::
 
@@ -874,14 +1040,12 @@ If the Hardy–Weinberg assumptions hold, **allele frequencies remain constant f
 
 Allele frequency = probability of drawing that allele from the gene pool.
 
-<br>
-
 Let:
 
 - $p$ = frequency of allele A  
 - $q$ = frequency of allele a  
 
-When gametes combine at random:
+Under random union of gametes:
 
 $$
 f(AA) = p \times p = p^2
@@ -892,7 +1056,7 @@ f(aa) = q \times q = q^2
 $$
 
 $$
-f(Aa) = p \times q + q \times p = 2pq
+f(Aa) = p q + q p = 2pq
 $$
 
 :::
@@ -903,32 +1067,34 @@ $$
 
 Let us first state the result.
 
-Under random mating, genotype frequencies are
-p², 2pq, and q².
+Under random mating,
+genotype frequencies are
+p squared, 2pq, and q squared.
 
-These must sum to 1,
-giving p² + 2pq + q² = 1.
+These sum to one,
+so p squared plus 2pq plus q squared equals one.
 
 This is the Hardy–Weinberg law.
 
-If all Hardy–Weinberg assumptions hold,
+If the Hardy–Weinberg assumptions hold,
 allele frequencies remain constant across generations.
-That is what we mean by equilibrium.
+That state is called equilibrium.
 
 Now, why does this work?
 
 Because allele frequencies can be interpreted as probabilities.
 
 If p is the frequency of allele A,
-then p is also the probability that a randomly chosen gamete carries A.
+then p is also the probability
+that a randomly chosen gamete carries A.
 
 Similarly, q is the probability of drawing allele a.
 
-When two gametes combine at random,
+Under random union of gametes,
 we multiply probabilities.
 
-AA occurs with probability p × p = p².
-aa occurs with probability q × q = q².
+The probability of AA is p times p, which is p squared.
+The probability of aa is q times q, which is q squared.
 
 For heterozygotes,
 there are two possible combinations:
@@ -941,7 +1107,7 @@ Hardy–Weinberg therefore follows directly
 from simple probability under random mating.
 
 If observed genotype frequencies deviate from these expectations,
-some evolutionary force must be acting.
+an evolutionary force must be acting.
 
 :::
 
@@ -949,29 +1115,35 @@ some evolutionary force must be acting.
 
 ## Why Hardy–Weinberg Matters
 
-- Provides a **null model** for evolution
-- Predicts genotype frequencies from allele frequencies
-- Allows detection of evolutionary forces
-- Establishes when a population is in **equilibrium**
+- Provides a **null model** for evolution  
+- Predicts genotype frequencies from allele frequencies  
+- Allows detection of evolutionary forces  
+- Defines when a population is in **equilibrium**
+
 
 ::: notes
+
 Hardy–Weinberg is foundational in population genetics.
 
-It provides a baseline expectation.
+It provides a baseline expectation —
+a null model.
 
-If observed genotype frequencies match p², 2pq, and q²,
-the population is consistent with random mating and no evolutionary forces.
+If observed genotype frequencies match
+p squared, 2pq, and q squared,
+the population is consistent with random mating
+and the absence of evolutionary forces.
 
 If they deviate,
-something is happening —
+something is acting —
 selection, non-random mating, drift, or structure.
 
-Hardy–Weinberg does not describe how evolution occurs.
-It tells us what happens when evolution is absent.
+Hardy–Weinberg does not explain how evolution occurs.
+It tells us what happens when evolutionary forces are absent.
 
-It is the starting point for all population genetic theory.
+For that reason,
+it is the starting point of population genetic theory.
+
 :::
-
 
 
 ## Hardy–Weinberg: Assumptions and Violations
@@ -983,9 +1155,10 @@ It is the starting point for all population genetic theory.
 **Hardy–Weinberg applies only if:**
 
 1. Random mating  
-2. No differential survival (no selection)  
-3. No population subdivision  
-4. Infinitely large population size  
+2. No selection  
+3. No mutation  
+4. No migration  
+5. Infinitely large population  
 
 These conditions define the **null model**.
 
@@ -996,19 +1169,13 @@ These conditions define the **null model**.
 **Violations occur when:**
 
 - **Non-random mating**  
-  Individuals mate preferentially  
-
 - **Natural selection**  
-  Some genotypes have reduced survival or reproduction  
-
 - **Population structure**  
-  Subpopulations differ in allele frequencies  
-
-- **Finite population size**  
-  Random sampling effects (genetic drift)  
+- **Mutation or migration**  
+- **Finite population size (genetic drift)**  
 
 Deviations from Hardy–Weinberg  
-suggest evolutionary forces are acting.
+indicate evolutionary forces are acting.
 
 :::
 
@@ -1017,36 +1184,31 @@ suggest evolutionary forces are acting.
 ::: notes
 
 Hardy–Weinberg is a null model.
-It describes what genotype frequencies look like
-if no evolutionary forces are operating.
+It describes genotype frequencies
+when no evolutionary forces operate.
 
-For it to hold, several assumptions must be met.
+For it to hold, several assumptions must be satisfied.
 
-Mating must be random with respect to the locus.
-All genotypes must have equal survival and reproduction.
-The population must not be subdivided.
+Mating must be random.
+There must be no selection.
+There must be no mutation and no migration.
 And the population must be infinitely large,
-so there are no random sampling effects.
+so that there are no random sampling effects.
 
 If these assumptions are violated,
-genotype frequencies may deviate from Hardy–Weinberg expectations.
+genotype frequencies may deviate
+from Hardy–Weinberg expectations.
 
-Non-random mating can increase homozygosity.
-
-Natural selection changes genotype frequencies
-if some genotypes have reduced fitness.
-
-Population subdivision can create deviations,
+Non-random mating alters genotype proportions.
+Selection changes genotype frequencies through differential fitness.
+Population structure can create deviations,
 a phenomenon known as the Wahlund effect.
-
-Finite population size leads to genetic drift —
-random fluctuations in allele frequencies.
+Finite population size introduces genetic drift.
 
 When we observe deviations from Hardy–Weinberg,
-it suggests that one or more evolutionary forces are acting.
+we infer that one or more evolutionary forces are acting.
 
 :::
-
 
 
 ## From Genotype to Allele Frequencies
@@ -1057,23 +1219,15 @@ it suggests that one or more evolutionary forces are acting.
 
 **Mathematical relationship**
 
-At a locus with two alleles (A and a):
+At a locus with alleles A and a:
 
 Let genotype frequencies be:
 
 $$
-f(AA)
-$$  
-
+f(AA), \quad f(Aa), \quad f(aa)
 $$
-f(Aa)
-$$  
 
-$$
-f(aa)
-$$  
-
-Allele frequencies:
+Then allele frequencies are:
 
 $$
 p = f(AA) + \tfrac{1}{2} f(Aa)
@@ -1095,17 +1249,14 @@ $$
 
 Each individual carries two alleles.
 
-- AA contributes **two A alleles**
-- Aa contributes **one A and one a**
-- aa contributes **two a alleles**
+- AA contributes two A alleles  
+- Aa contributes one A and one a  
+- aa contributes two a alleles  
 
-Therefore:
+Heterozygotes contribute half to each allele.
 
-- Heterozygotes contribute half to each allele
-- Allele frequencies are weighted averages of genotype frequencies
-
-This allows us to move back and forth  
-between genotype and allele frequencies.
+Allele frequencies are weighted averages  
+of genotype frequencies.
 
 :::
 
@@ -1115,39 +1266,35 @@ between genotype and allele frequencies.
 
 Now we move in the opposite direction.
 
-Previously, we calculated genotype frequencies from allele frequencies using Hardy–Weinberg.
-Here, we start with genotype frequencies and recover allele frequencies.
+Earlier, Hardy–Weinberg gave us genotype frequencies
+from allele frequencies.
 
-Suppose we know the frequencies of the three genotypes:
-f(AA), f(Aa), and f(aa).
+Here, we start with genotype frequencies
+and recover allele frequencies.
 
 Each individual carries two alleles.
-So allele frequencies are determined by how genotypes contribute alleles to the gene pool.
+So allele frequencies depend on how genotypes
+contribute alleles to the gene pool.
 
 AA individuals contribute only A alleles.
-So their entire frequency contributes to allele A.
-
 aa individuals contribute only a alleles.
-So their entire frequency contributes to allele a.
 
-Heterozygotes Aa carry one A and one a.
-Therefore, half of the heterozygote frequency contributes to A,
-and half contributes to a.
+Heterozygotes contribute one of each,
+so half of their frequency contributes to A
+and half to a.
 
-That is why:
+That gives:
 
-p equals f(AA) plus one half of f(Aa).
-
+p equals f(AA) plus one half of f(Aa),
+and
 q equals f(aa) plus one half of f(Aa).
 
-Notice that allele frequencies are weighted averages of genotype frequencies.
+So allele frequencies are weighted averages
+of genotype frequencies.
 
-Finally, because every allele is either A or a,
-p plus q must equal 1.
-
-This relationship allows us to move back and forth
-between genotype frequencies and allele frequencies —
-which is essential when testing Hardy–Weinberg equilibrium.
+This relationship lets us move back and forth
+between genotypes and alleles,
+which is essential for testing Hardy–Weinberg equilibrium.
 
 :::
 
@@ -1156,7 +1303,7 @@ which is essential when testing Hardy–Weinberg equilibrium.
 
 ::: {.columns}
 
-::: {.column width="50%"}
+::: {.column width="55%"}
 
 **Hardy–Weinberg Test (Theory Template)**
 
@@ -1176,19 +1323,22 @@ which is essential when testing Hardy–Weinberg equilibrium.
 
 <br>
 
-$p$ = frequency of allele A  
-$q$ = frequency of allele G  
-$p + q = 1$
+p = estimated frequency of allele A  
+q = estimated frequency of allele G  
+
+q = 1 − p  
+p + q = 1
+
 
 :::
 
-::: {.column width="50%"}
+::: {.column width="45%"}
 
 **Example: SNP rs9272426 (HLA-DQA1)**
 
 <br>
 
-<div style="font-size:0.8em; line-height:1.1;">
+<div style="font-size:0.9em; line-height:1.1;">
 
 |                      | A/A   | A/G   | G/G   | Sum |
 |----------------------|-------|-------|-------|-----|
@@ -1204,9 +1354,10 @@ $p + q = 1$
 
 Total $\chi^2 = 8.29$
 
+<br>
+
 Compare to $\chi^2_{(1 \text{ df})}$ to test equilibrium.
 
-*Data source: International HapMap Project*
 
 :::
 
@@ -1215,45 +1366,48 @@ Compare to $\chi^2_{(1 \text{ df})}$ to test equilibrium.
 
 ::: notes
 
-The left panel shows the general structure of a Hardy–Weinberg test.
+The left panel shows the general structure
+of a Hardy–Weinberg test.
 
-We begin with observed genotype counts.
+We begin with observed genotype counts
+and calculate observed frequencies.
 
-From those counts, we calculate observed frequencies.
+From these counts, we estimate allele frequencies p and q.
 
-Next, we estimate allele frequencies p and q.
-
-Using Hardy–Weinberg expectations, we compute expected genotype frequencies:
-p², 2pq, and q².
+Using Hardy–Weinberg expectations,
+we compute expected genotype frequencies:
+p squared, 2pq, and q squared.
 
 Multiplying by N gives expected genotype counts.
 
-We then calculate a chi-square contribution for each genotype:
-(observed − expected)² divided by expected.
+For each genotype class,
+we calculate a chi-square contribution:
+(observed minus expected) squared,
+divided by expected.
 
-Summing these gives the total chi-square statistic.
+Summing these contributions
+gives the total chi-square statistic.
 
 The right panel shows a real example.
 
-We apply exactly the same structure to a SNP in HLA-DQA1.
-
-After calculating expected counts,
+Applying the same steps to this SNP,
 we obtain a total chi-square value of 8.29.
 
-Because allele frequency is estimated from the data,
+Because allele frequency p is estimated from the data,
 the test has 1 degree of freedom.
 
-We compare 8.29 to the chi-square distribution with 1 degree of freedom
-to determine whether the deviation is statistically significant.
+We compare 8.29 to the chi-square distribution
+with 1 degree of freedom
+to assess statistical significance.
 
-This illustrates how the theoretical template becomes a practical statistical test.
+This illustrates how the theoretical template
+becomes a practical statistical test.
 
 :::
 
 
 
-
-## The Chi-Square Test for HWE
+## The Chi-Square Test for Hardy–Weinberg Equilibrium
 
 ::: {.columns}
 
@@ -1264,7 +1418,7 @@ This illustrates how the theoretical template becomes a practical statistical te
 We test whether observed genotype counts
 deviate from Hardy–Weinberg expectations.
 
-For each genotype:
+For each genotype class:
 
 $$
 \chi^2_i = \frac{(O - E)^2}{E}
@@ -1285,21 +1439,15 @@ $$
 
 **Inference**
 
-Compare $\chi^2$ to the chi-square distribution.
+Compare $\chi^2$ to the chi-square distribution with **1 degree of freedom** for a biallelic locus.
 
-For a biallelic locus:
+<br> 
 
-- **1 degree of freedom**
+If $\chi^2$ exceeds the critical value →  reject HWE.
 
-Why 1 df?
+<br> 
 
-Once $p$ is estimated,
-expected genotype frequencies are fixed.
-
-If $\chi^2$ is large $\Rightarrow$  
-deviation from HWE.
-
-Large deviation suggests:
+Significant deviation suggests:
 
 - Non-random mating  
 - Selection  
@@ -1310,47 +1458,53 @@ Large deviation suggests:
 
 :::
 
+
 ::: notes
 
-The left panel shows how we compute the test statistic.
+This slide formalizes the statistical test.
 
-For each genotype, we compare
-the observed count to the expected count under HWE.
+For each genotype class,
+we compare the observed count
+to the expected count under Hardy–Weinberg equilibrium.
 
 We subtract expected from observed,
 square the difference,
 and divide by the expected value.
 
 Dividing by E scales the deviation
-relative to how large that class is expected to be.
+relative to the expected size of the class.
 
-We then sum across genotypes
+We then sum across all genotype classes
 to obtain the total chi-square statistic.
 
-The right panel explains the inference step.
+For a biallelic locus,
+the test has one degree of freedom.
+
+There are three genotype classes,
+but one constraint because frequencies sum to one,
+and one parameter, the allele frequency p,
+is estimated from the data.
+
+So the degrees of freedom equal:
+
+3 minus 1 minus 1, which equals 1.
 
 We compare the calculated chi-square value
-to the chi-square distribution.
+to the chi-square distribution with one degree of freedom.
 
-For a biallelic locus, the test has 1 degree of freedom.
-
-Although there are three genotype classes,
-once we estimate the allele frequency p,
-the expected genotype frequencies are determined.
-That removes one degree of freedom.
-
-If the chi-square value is large,
+If it exceeds the critical value,
 we reject Hardy–Weinberg equilibrium.
 
-A significant deviation suggests that
-one or more evolutionary forces are acting.
+A significant deviation indicates
+that one or more evolutionary forces
+may be acting in the population.
 
 :::
 
 
 
-# 18.3 Mating systems and inbreeding
 
+# 3. Mating Systems and Inbreeding
 
 ## Random Mating and Hardy–Weinberg
 
@@ -1360,13 +1514,13 @@ one or more evolutionary forces are acting.
 
 **Random mating (HWE assumption)**
 
-- Every individual equally likely to mate
-- Mate choice independent of genotype
+- Individuals mate independently of genotype  
+- No genotype-based mate preference  
 
 If random mating holds:
 
-- Genotype frequencies follow $p^2, 2pq, q^2$
-- Allele frequencies remain constant
+- Genotype frequencies follow $p^2, 2pq, q^2$  
+- Allele frequencies remain constant  
 
 :::
 
@@ -1374,59 +1528,65 @@ If random mating holds:
 
 **If mating is not random**
 
-Hardy–Weinberg proportions may not hold.
+Hardy–Weinberg proportions may fail.
 
-Common violations:
+Common causes:
 
 - Assortative mating  
 - Disassortative mating  
-- Isolation by distance  
+- Population subdivision  
 - Inbreeding  
 
+Non-random mating primarily alters  
+**genotype frequencies**.
+
 :::
 
 :::
+
 
 ::: notes
 
-Random mating is one of the core assumptions of Hardy–Weinberg equilibrium.
+Random mating is one of the key assumptions
+of Hardy–Weinberg equilibrium.
 
-It means that individuals choose mates independently of their genotype
-at the locus we are studying.
+It means that individuals mate independently
+of their genotype at the locus under study.
 
-Importantly, random mating refers to randomness **with respect to that locus**.
-Individuals may not mate randomly overall —
-but as long as genotype does not influence mate choice,
-the assumption holds for that gene.
+Importantly, random mating refers to randomness
+with respect to that locus.
+
+Individuals may not mate randomly overall,
+but as long as genotype does not influence mating
+for that gene,
+the assumption holds.
 
 If random mating holds,
-genotype frequencies in the next generation follow
-p², 2pq, and q².
+genotype frequencies in the next generation
+follow p squared, 2pq, and q squared.
 
-Under the full set of Hardy–Weinberg assumptions,
-allele frequencies remain constant from generation to generation.
-That is what we mean by equilibrium.
+Under the full Hardy–Weinberg assumptions,
+allele frequencies remain constant across generations.
 
-However, if mating is not random,
+If mating is not random,
 Hardy–Weinberg genotype proportions may not hold.
 
-Crucially, non-random mating often changes
-**genotype frequencies**
-without necessarily changing
-**allele frequencies**.
+A crucial point is that non-random mating
+often changes genotype frequencies
+without necessarily changing allele frequencies.
 
-Common mechanisms include:
+For example,
+assortative mating increases homozygosity,
+while disassortative mating increases heterozygosity.
 
-Assortative mating — individuals prefer similar mates.
+Population subdivision can also create
+an apparent deficit of heterozygotes,
+a phenomenon we will later connect
+to the Wahlund effect.
 
-Disassortative mating — individuals prefer dissimilar mates.
-
-Isolation by distance — individuals mate locally.
-
-Inbreeding — mating between relatives.
-
-In the next slides, we will see how each of these
-alters genotype proportions in predictable ways.
+Inbreeding, which we now examine,
+systematically increases homozygosity
+in predictable ways.
 
 :::
 
@@ -1438,14 +1598,14 @@ alters genotype proportions in predictable ways.
 
 **Positive assortative mating**
 
-- Similar individuals mate
-- Example: tall × tall
+- Similar individuals mate  
+- Example: tall × tall  
 
 Effect:
 
-- Excess of **homozygotes**
-- Deviation from HWE
-- Allele frequencies unchanged
+- Excess of **homozygotes**  
+- Deviation from HWE  
+- Allele frequencies unchanged  
 
 :::
 
@@ -1453,58 +1613,59 @@ Effect:
 
 **Negative assortative mating**
 
-- Dissimilar individuals mate
-- Example: self-incompatibility (S locus) in *Brassica*
+- Dissimilar individuals mate  
+- Example: self-incompatibility (S locus) in *Brassica*  
 
 Effect:
 
-- Excess of **heterozygotes**
-- Deviation from HWE
-- Allele frequencies unchanged
+- Excess of **heterozygotes**  
+- Deviation from HWE  
+- Allele frequencies unchanged  
 
 :::
 
 :::
+
 
 ::: notes
 
-Now we focus on mate choice at the individual level.
+Now we examine how mate choice
+affects genotype frequencies.
 
 In positive assortative mating,
-individuals preferentially mate with others who are similar.
+individuals preferentially mate with similar partners.
 
 If similarity has a genetic basis,
-this increases the probability that similar alleles meet in offspring.
+this increases the probability
+that identical alleles combine in offspring.
 
-As a result, we observe an excess of homozygotes
+The result is an excess of homozygotes
 relative to Hardy–Weinberg expectations.
 
-Importantly, assortative mating does not automatically change allele frequencies.
+Importantly, assortative mating
+does not necessarily change allele frequencies.
 It changes how alleles are combined into genotypes.
 
-In contrast, negative assortative mating
-occurs when individuals preferentially mate with those who are genetically different.
+In negative assortative mating,
+individuals preferentially mate with genetically dissimilar partners.
 
-This increases the probability that different alleles meet,
+This increases the probability
+that different alleles combine,
 producing an excess of heterozygotes.
 
-A classic example is self-incompatibility in plants such as *Brassica*.
-Plants reject pollen carrying their own S alleles,
-which prevents self-fertilization
-and promotes heterozygosity.
+A classic example is self-incompatibility in plants such as *Brassica*,
+where individuals reject pollen carrying matching S alleles.
+This mechanism promotes heterozygosity.
 
-Again, allele frequencies may remain unchanged,
-but genotype proportions shift.
+The key point is that non-random mating
+alters genotype frequencies,
+even when allele frequencies remain constant.
 
-This illustrates an important principle:
-
-Non-random mating changes genotype frequencies,
-but does not necessarily change allele frequencies.
-
-That distinction is crucial when interpreting deviations
-from Hardy–Weinberg equilibrium.
+This distinction is central
+to understanding deviations from Hardy–Weinberg equilibrium.
 
 :::
+
 
 ## Disassortative Mating: The MHC Example
 
@@ -1514,66 +1675,84 @@ from Hardy–Weinberg equilibrium.
 
 **Major Histocompatibility Complex (MHC)**
 
-- Influences immune recognition
-- Affects body odor in vertebrates
-- Mate choice influenced by MHC genotype
+- Central to immune recognition  
+- Highly polymorphic  
+- Can influence mate choice  
+
+<br>
+
+**Evolutionary consequence**
+
+- Preference for different MHC genotypes  
+- Increased heterozygosity  
+- Potential fitness advantage  
+
 
 :::
 
 ::: {.column width="50%"}
 
-**Evolutionary consequence**
 
-- Preference for different MHC haplotypes
-- Increased heterozygosity
-- Potential fitness advantage
+**Example:  HLA-DQA1 (Tuscany sample)  shows heterozygote excess**
 
-Example:
-Tuscany HLA-DQA1 SNP shows heterozygote excess
+
+<br>
+
+<div style="font-size:0.9em; line-height:1.1;">
+
+|                      | A/A   | A/G   | G/G   | Sum |
+|----------------------|-------|-------|-------|-----|
+| **Observed number**  | 17    | 55    | 12    | 84  |
+| **Observed frequency** | 0.202 | 0.655 | 0.143 | 1   |
+| **Expected frequency** | 0.281 | 0.498 | 0.221 | 1   |
+| **Expected number**  | 23.574 | 41.851 | 18.574 | 84  |
+| **$\chi^2$ contribution** | 1.833 | 4.131 | 2.327 | 8.29 |
+
+</div>
+
+<br>
+
 
 :::
 
 :::
-
 
 ::: notes
 
-This slide provides a concrete biological example of disassortative mating.
+
+This slide illustrates a biological example
+of negative assortative mating.
 
 The Major Histocompatibility Complex, or MHC,
-plays a central role in immune recognition.
+is central to immune recognition.
 It encodes proteins that present pathogen-derived peptides to immune cells.
 
-MHC genes are highly polymorphic,
-meaning many alleles are maintained in populations.
+MHC genes are extremely polymorphic,
+with many alleles maintained in populations.
 
 In several vertebrates, including humans,
 MHC genotype influences body odor.
-Experiments have shown that individuals often prefer the scent
-of potential mates who carry different MHC alleles than their own.
+Experimental studies suggest that individuals
+often prefer mates with different MHC genotypes.
 
-This pattern represents negative assortative mating:
-individuals preferentially choose genetically dissimilar mates.
+This represents disassortative mating:
+individuals preferentially choose genetically dissimilar partners.
 
-What is the evolutionary consequence?
-
-If individuals mate with partners carrying different MHC haplotypes,
-offspring are more likely to be heterozygous at MHC loci.
+The evolutionary consequence is increased heterozygosity
+at MHC loci.
 
 MHC heterozygotes may recognize a broader range of pathogens,
 which can provide a fitness advantage.
 
-In the Tuscany sample at the HLA-DQA1 SNP,
-we observe an excess of heterozygotes relative to Hardy–Weinberg expectations.
+In the Tuscany HLA-DQA1 sample,
+we observe heterozygote excess relative to Hardy–Weinberg expectations.
 
-This illustrates how mate choice can generate
-predictable deviations from Hardy–Weinberg proportions,
-potentially driven by natural selection for immune diversity.
-
-Importantly, this is a case where behavior,
-genetics, and evolutionary fitness are directly linked.
+This example shows how mate choice
+can generate predictable deviations from Hardy–Weinberg proportions,
+potentially driven by selection for immune diversity.
 
 :::
+
 
 
 ## Spatial Mating and Population Structure
@@ -1584,9 +1763,9 @@ genetics, and evolutionary fitness are directly linked.
 
 **Isolation by distance**
 
-- Individuals mate locally
-- Limited gene flow across space
-- Gradual geographic allele differences
+- Individuals mate locally  
+- Limited gene flow  
+- Gradual geographic differences in allele frequencies  
 
 :::
 
@@ -1594,13 +1773,13 @@ genetics, and evolutionary fitness are directly linked.
 
 **Population structure**
 
-- Subpopulations have different allele frequencies
-- Each may follow HWE locally
+- Subpopulations differ in allele frequencies  
+- Each may follow HWE locally  
 
-If combined:
+If pooled:
 
-$\Rightarrow$ Excess of **homozygotes**
-$\Rightarrow$ **Wahlund effect**
+→ Excess of **homozygotes**  
+→ **Wahlund effect**
 
 :::
 
@@ -1609,32 +1788,24 @@ $\Rightarrow$ **Wahlund effect**
 ::: notes
 
 Now we move from individual mate choice
-to spatial and population-level processes.
-
-First, isolation by distance.
+to spatial structure.
 
 In many species, individuals mate locally.
-A fish is more likely to mate with another fish in the same lake
-than with one hundreds of kilometers away.
-Plants exchange pollen primarily with nearby plants.
-
-Because dispersal is limited,
-gene flow decreases with distance.
+Gene flow decreases with geographic distance.
 
 Over time, this produces gradual geographic differences
 in allele frequencies.
+This pattern is called isolation by distance.
 
-This spatial pattern is called isolation by distance.
+More generally, a species may be divided
+into partially isolated subpopulations.
 
-Now consider population structure more generally.
-
-A species may be divided into partially isolated subpopulations.
 Each subpopulation can follow Hardy–Weinberg equilibrium internally,
 with its own allele frequencies.
 
-However, if we ignore this structure
-and pool all individuals into a single sample,
-we will often observe an excess of homozygotes.
+However, if we pool individuals
+from genetically distinct subpopulations,
+we often observe an excess of homozygotes.
 
 Why?
 
@@ -1643,75 +1814,15 @@ that have different allele frequencies.
 
 This phenomenon is called the Wahlund effect.
 
-It produces a deficit of heterozygotes
-relative to Hardy–Weinberg expectations,
-even though no evolutionary force is acting within each subpopulation.
+Importantly, no evolutionary force
+is required within subpopulations.
+The deviation arises purely from hidden structure.
 
-This is extremely important in practice:
-a heterozygote deficit does not automatically imply selection or inbreeding —
-it may simply reflect hidden population structure.
-
-:::
-
-## Summary: Violations of Random Mating
-
-<div style="font-size:0.85em;">
-
-| Mechanism | Changes Allele Frequencies? | Changes Genotype Frequencies? | Typical Pattern |
-|-----------|-----------------------------|-------------------------------|-----------------|
-| Positive assortative mating | No | Yes | Excess homozygotes |
-| Negative assortative mating | No | Yes | Excess heterozygotes |
-| Inbreeding | No (initially) | Yes | Excess homozygotes |
-| Isolation by distance | Yes (spatially) | Yes | Gradual structure |
-| Population subdivision | Yes (between groups) | Yes | Wahlund effect |
-
-</div>
-
-
-::: notes
-
-This table summarizes how different violations of random mating
-affect genetic variation.
-
-The key distinction to keep in mind is:
-
-Does the mechanism change allele frequencies,
-or does it only change how alleles are combined into genotypes?
-
-Positive assortative mating increases homozygosity,
-but allele frequencies do not necessarily change.
-It alters genotype proportions only.
-
-Negative assortative mating increases heterozygosity,
-again without necessarily changing allele frequencies.
-
-Inbreeding also increases homozygosity.
-Initially, allele frequencies remain the same,
-but genotype frequencies shift toward more homozygotes.
-
-Isolation by distance is different.
-Because gene flow is limited across space,
-allele frequencies can vary geographically.
-So both allele frequencies and genotype frequencies change across regions.
-
-Population subdivision produces an important statistical effect.
-Each subpopulation may follow Hardy–Weinberg equilibrium locally,
-but when subpopulations with different allele frequencies are combined,
-we observe an excess of homozygotes.
-This is the Wahlund effect.
-
-The main takeaway is:
-
-A deviation from Hardy–Weinberg does not automatically imply selection.
-
-Different mechanisms leave different signatures,
-and careful interpretation is required.
-
-This table provides a conceptual map
-for diagnosing why Hardy–Weinberg might be violated.
+This is critical in practice:
+a heterozygote deficit does not automatically imply selection or inbreeding.
+It may simply reflect population structure.
 
 :::
-
 
 
 ## Geographic Gradients in Allele Frequency
@@ -1724,55 +1835,128 @@ for diagnosing why Hardy–Weinberg might be violated.
 
 :::
 
-::: {.column width="35%" }
-
+::: {.column width="35%"}
 
 **Figure 18-11**
 
-(a) Hypothetical sunflower allele frequency gradient across Kansas  
-(b) Duffy blood group allele ($FY^{0}$) frequency across Africa  
+(a) Hypothetical sunflower allele frequency gradient (Kansas)  
+(b) Duffy blood group allele ($FY^{0}$) across Africa  
 
-$\Rightarrow$ Geographic variation produces  
+$\Rightarrow$ Geographic variation creates  
 **population structure**
 
 <br>
 
-**Local equilibrium ≠ global equilibrium**
-
+**Local HWE ≠ global HWE**
 
 :::
 :::
-
 
 ::: notes
+
 These maps illustrate geographic gradients in allele frequency.
 
-In panel (a), a hypothetical sunflower species shows a smooth gradient across Kansas.
-The A allele is common in the northeast,
-intermediate in the center,
-and rare in the southwest.
+In panel (a), a hypothetical sunflower species
+shows a smooth change in allele frequency across Kansas.
+The A allele is common in one region,
+intermediate in another,
+and rare elsewhere.
 
-In panel (b), the Duffy blood group allele FY⁰ shows strong geographic structure in Africa.
-It is very common in central Africa,
-less common in eastern and northern Africa,
+In panel (b), the Duffy blood group allele,
+FY zero,
+shows strong geographic structure across Africa.
+It is common in central Africa,
+less common in other regions,
 and rare outside Africa.
 
 Because individuals mate locally,
-allele frequencies differ between regions.
+allele frequencies differ across space.
 
-Each region may satisfy Hardy–Weinberg equilibrium on its own.
-However, when we combine individuals across regions,
-we often observe excess homozygotes.
+Each local region may satisfy
+Hardy–Weinberg equilibrium internally.
 
-This is the key idea:
+However, if we pool individuals across regions,
+we mix populations with different allele frequencies.
+
+This produces an excess of homozygotes —
+the Wahlund effect.
+
+The key idea is:
+
 Local equilibrium does not imply global equilibrium.
 
-Geographic structure alone can cause deviation from Hardy–Weinberg expectations.
+Geographic structure alone
+can generate deviations from Hardy–Weinberg expectations.
+
 :::
 
 
 
-## The Inbreeding Coefficient ($F$)
+## Summary: Violations of Random Mating
+
+::: {.columns}
+
+::: {.column width="80%"}
+
+<div style="font-size:1em;">
+
+| Mechanism | Changes Allele Frequencies? | Changes Genotype Frequencies? | Typical Pattern |
+|-----------|-----------------------------|-------------------------------|-----------------|
+| Positive assortative mating | No | Yes | Excess homozygotes |
+| Negative assortative mating | No | Yes | Excess heterozygotes |
+| Inbreeding | No (initially) | Yes | Excess homozygotes |
+| Isolation by distance | Yes (spatially) | Yes | Gradual geographic structure |
+| Population subdivision | Yes (between groups) | Yes | Wahlund effect |
+
+</div>
+
+:::
+
+::: {.column width="20%"}
+
+:::
+:::
+
+::: notes
+
+This table summarizes how violations of random mating
+affect genetic variation.
+
+The key question is:
+Does the mechanism change allele frequencies,
+or does it only change genotype frequencies?
+
+Positive assortative mating increases homozygosity
+without necessarily changing allele frequencies.
+
+Negative assortative mating increases heterozygosity,
+again without necessarily changing allele frequencies.
+
+Inbreeding increases homozygosity as well.
+Initially, allele frequencies remain unchanged,
+but genotype frequencies shift.
+
+Isolation by distance differs.
+Limited gene flow creates spatial differences in allele frequencies.
+
+Population subdivision produces the Wahlund effect:
+each subpopulation may follow HWE locally,
+but when pooled, we observe excess homozygosity.
+
+The central takeaway is:
+
+A deviation from Hardy–Weinberg does not automatically imply selection.
+
+Different mechanisms produce different patterns,
+and careful interpretation is required.
+
+:::
+
+
+
+
+
+## Inbreeding
 
 ::: {.columns}
 
@@ -1780,34 +1964,40 @@ Geographic structure alone can cause deviation from Hardy–Weinberg expectation
 
 **Definition**
 
-Inbreeding increases the probability that:
+Inbreeding = mating between relatives.
 
-$\Rightarrow$ Two alleles in an individual are  
-**identical by descent (IBD)**
+Because relatives share alleles from common ancestors,
+offspring are more likely to inherit
+identical copies of an allele.
 
-$$
-F = P(\text{two alleles are IBD})
-$$
+Genetic consequences:
 
-IBD = both alleles trace back  
-to the same ancestral copy.
+- Increased **homozygosity**
+- Decreased **heterozygosity**
+- Higher probability of expressing
+  **recessive deleterious alleles**
+
+**Key concept:**  
+Inbreeding increases homozygosity.
 
 :::
 
 ::: {.column width="50%"}
 
-**Biological consequence**
+**Biological consequences**
 
-As $F$ increases:
+- Increased risk of inherited disorders  
+- Possible **inbreeding depression**  
+  (reduced survival or fertility)
 
-- Homozygosity increases
-- Recessive alleles are more often expressed
-- Risk of **inbreeding depression** increases
+However, in some species inbreeding can be advantageous:
 
-Risk depends on:
+- Common in self-pollinating plants  
+  (e.g., rice, wheat, *Arabidopsis*)  
+- Preserves beneficial allele combinations  
+- Enables colonization from a single individual  
 
-1. Frequency of deleterious alleles  
-2. Degree of inbreeding ($F$)
+The effects depend on ecological context.
 
 :::
 
@@ -1815,43 +2005,340 @@ Risk depends on:
 
 ::: notes
 
-Inbreeding increases the chance that both alleles at a locus
-come from the same ancestral allele copy.
+Inbreeding refers to mating between related individuals.
 
-When this happens, the alleles are identical by descent.
+Relatives share alleles inherited from common ancestors.
+Therefore, their offspring have a higher probability
+of receiving two copies of the same ancestral allele.
 
-The inbreeding coefficient F
-is the probability of this occurring.
+This increases homozygosity across the genome
+and reduces heterozygosity.
 
-As F increases,
-expected homozygosity increases.
+The key genetic consequence is that recessive deleterious alleles
+are more likely to be expressed.
 
-This raises the probability
-that recessive deleterious alleles are expressed,
-which can lead to inbreeding depression.
+This can increase the risk of inherited disorders.
 
-The impact depends both on allele frequency
-and on F.
+The reduction in survival or reproductive success
+that results from increased homozygosity
+is called inbreeding depression.
+
+However, inbreeding is not always harmful.
+
+Many plant species are highly self-fertilizing.
+Crops such as rice and wheat,
+and the model plant Arabidopsis,
+are predominantly inbred.
+
+Selfing allows reproduction when mates are scarce,
+helps establish new populations,
+and preserves favorable allele combinations.
+
+Thus, whether inbreeding is harmful or advantageous
+depends on the species and ecological context.
+
+The central population-genetic effect remains:
+inbreeding increases homozygosity.
+
+:::
+
+
+## Inbreeding and Identity by Descent (IBD)
+
+::: {.columns}
+
+::: {.column width="45%"}
+
+![](../images/fig18_12_33779.webp){width=80%}
+
+
+:::
+
+::: {.column width="55%"}
+
+Consider the half-sib pedigree in **Figure 18-12**:
+
+- B and C are half-siblings  
+- They share a common mother, A  
+- Their daughter is I  
+
+A has two gene copies:
+
+- One from her mother (pink)  
+- One from her father (blue)  
+
+I is **inbred** because there is a closed ancestral loop.
+
+- If I’s two alleles trace back to the same **physical gene copy** in A, they are **identical by descent (IBD)**.
+
+- The probability of this event is the  **inbreeding coefficient**, $F_I$.
+
+
+:::
+
+:::
+
+::: notes
+
+Let’s start with the full pedigree in Figure 18-12.
+
+B and C are half-siblings: they share the same mother, A, but have different fathers. Their daughter is I.
+
+Notice the closed ancestral loop:
+I → B → A → C → I.
+
+Whenever you see a closed loop like this, the offspring can be inbred.
+
+Now focus on A. She carries two physical copies of the gene—shown as a pink and a blue allele.
+
+If I receives two alleles that both trace back to the same physical copy in A (both coming from A’s pink copy, or both from A’s blue copy), then I’s two alleles are identical by descent.
+
+The probability that this happens is the inbreeding coefficient, $F_I$.
+
+Identical by descent does not mean merely identical in state — it means inherited from the same ancestral copy.
+
+Next we compute this probability step by step.
+
+:::
+
+
+## Step 1: Simplify to the Closed Inbreeding Loop
+
+::: {.columns}
+
+::: {.column width="45%"}
+
+![](../images/fig18_12_33779.webp){width=80%}
+
+
+:::
+
+::: {.column width="55%"}
+
+Using Figure 18-12b (simplified format):
+
+- Keep only individuals in the closed loop  
+- Label transmitted alleles:
+
+A → B transmits allele $z$  
+A → C transmits allele $y$  
+B → I transmits allele $w$  
+C → I transmits allele $x$  
+
+<br>
+
+We want:
+
+$$
+F_I = P(w \sim x)
+$$
+
+Probability that I’s two alleles are identical by descent.
+
+:::
+
+:::
+
+::: notes
+
+To calculate the inbreeding coefficient, we simplify the pedigree to the closed loop only.
+
+Sex does not matter for this calculation—only allele transmission along parent–offspring links.
+
+We label the transmitted alleles:
+A transmits z to B and y to C.
+Then B transmits w to I and C transmits x to I.
+
+So the question becomes precise:
+
+What is the probability that w and x are identical by descent?
+
+Equivalently: what is the probability that both of I’s alleles trace back to the same ancestral copy in A?
+
+Now we compute that probability in small steps.
+
+:::
+
+
+## Step 2: Assume Ancestor A Is Not Inbred
+
+::: {.columns}
+
+::: {.column width="45%"}
+
+![](../images/fig18_12_33779.webp){width=80%}
+
+
+:::
+
+::: {.column width="55%"}
+
+If A is not inbred then $F_A = 0$ and the inbreeding coefficient is computed using the following steps: 
+
+<div style="font-size:0.8em; line-height:1.1;">
+
+1. B transmits to I the allele he inherited from A:
+
+$$
+P(w \sim z) = \frac{1}{2}
+$$
+
+2. C transmits to I the allele she inherited from A:
+
+$$
+P(x \sim y) = \frac{1}{2}
+$$
+
+3. The alleles $y$ and $z$ originate from the same physical copy in A:
+
+$$
+P(y \sim z) = \frac{1}{2}
+$$
+
+Multiply independent probabilities:
+
+$$
+F_I = \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2}
+      = \frac{1}{8}
+$$
+
+So the offspring of half-sib matings has:
+
+$$
+F_I = \frac{1}{8}
+$$
+</div>
+
+:::
+
+:::
+
+::: notes
+
+First assume A is not inbred, so her two gene copies are independent.
+
+For I to be IBD at this locus, three independent events must occur:
+
+First: B must pass to I the allele B received from A. Probability one half.
+
+Second: C must pass to I the allele C received from A. Probability one half.
+
+Third: the allele A passed to B and the allele A passed to C must be the same physical copy in A—both pink or both blue. Probability one half.
+
+Because these events are independent, we multiply:
+
+(1/2) × (1/2) × (1/2) = 1/8.
+
+So in a half-sib mating, the offspring has $F_I = 1/8$.
+
+Interpretation: 12.5% probability that the two alleles at a locus are identical by descent.
+
+
+:::
+
+
+## Step 3: What If Ancestor A Is Inbred?
+
+::: {.columns}
+
+::: {.column width="45%"}
+
+![](../images/fig18_12_33779.webp){width=80%}
+
+
+:::
+
+::: {.column width="55%"}
+
+If A is inbred:
+
+- Her two gene copies may themselves be IBD  
+- This increases the probability that $y$ and $z$ are IBD  
+
+Probability that $y$ and $z$ are IBD:
+
+- Same physical copy in A → $\frac{1}{2}$  
+- Different physical copies in A,
+but those copies are themselves IBD → $\frac{1}{2}F_A$
+
+<div style="font-size:0.8em; line-height:1.1;">
+
+So:
+
+$$
+P(y \sim z) = \frac{1}{2} + \frac{1}{2}F_A
+            = \frac{1}{2}(1 + F_A)
+$$
+
+Now:
+
+$$
+F_I = \frac{1}{2} \times \frac{1}{2} \times 
+      \frac{1}{2}(1+F_A)
+$$
+
+$$
+F_I = \left(\frac{1}{2}\right)^3 (1+F_A)
+$$
+
+If $F_A = 0$:
+
+$$
+F_I = \frac{1}{8}
+$$
+</div>
+
+:::
+
+:::
+
+::: notes
+
+Now consider the more general case: what if A is inbred?
+
+Then A’s two physical gene copies might already be identical by descent.
+
+There are two ways that y and z can be IBD:
+
+1) A passes the same physical copy to both B and C (pink/pink or blue/blue). Probability one half.
+
+2) A passes different physical copies (pink and blue), but those copies are themselves IBD because A is inbred. Probability one half times $F_A$.
+
+So:
+P(y ~ z) = 1/2 + (1/2)F_A = (1/2)(1 + F_A).
+
+Multiply again with the two transmissions down to I, and we get:
+$F_I = (1/2)^3 (1 + F_A)$.
+
+If A is not inbred, $F_A = 0$, and we recover 1/8.
+
+This is exactly where the “(1 + F_A)” term in the general formula comes from.
 
 :::
 
 
 
-## Example: Half-Sib Mating
+## General Path Formula for Inbreeding
 
 ::: {.columns}
 
 ::: {.column width="50%"}
 
-Half-sibs share one common parent.
+**General formula**
 
-Offspring inbreeding coefficient:
+For any individual $X$:
 
 $$
-F = \frac{1}{8}
+F_X = \sum_A \left(\frac{1}{2}\right)^{n_1+n_2+1} (1 + F_A)
 $$
 
-If the shared parent is not inbred.
+Where:
+
+- $n_1$ = generations from ancestor $A$ to parent 1  
+- $n_2$ = generations from ancestor $A$ to parent 2  
+- $F_A$ = inbreeding coefficient of ancestor $A$  
+
+Sum over all common ancestors $A$.
 
 :::
 
@@ -1859,71 +2346,40 @@ If the shared parent is not inbred.
 
 **Interpretation**
 
-At any locus:
+- $n_1+n_2+1$ counts the number of **meioses** in the loop  
+- Each meiosis contributes a factor of $\tfrac{1}{2}$  
+- $(1 + F_A)$ adjusts for whether the ancestor is already inbred  
 
-$\Rightarrow$ 12.5% probability  
-that two alleles are identical by descent.
-
-If the common ancestor is already inbred:
+If the common ancestor is not inbred ($F_A = 0$):
 
 $$
-F = \frac{1}{8}(1 + F_A)
+F_X = \left(\frac{1}{2}\right)^{n_1+n_2+1}
 $$
 
 :::
 
 :::
-
 
 ::: notes
 
-Half-siblings share one parent.
+This is the compact “path method” version of what we just did.
 
-Tracing the inheritance path,
-there is a probability of 1/8
-that the offspring receives two alleles
-that descend from the same ancestral copy.
+Step 1 is always: identify the common ancestors shared by the two parents. If there are multiple, you add their contributions—this is why we sum over A.
 
-This means 12.5% of loci
-are expected to be homozygous due to identity by descent.
+For each ancestor A, count the number of generations from A down to parent 1 and to parent 2. That’s $n_1$ and $n_2$.
 
-If the shared ancestor is already inbred,
-that probability increases.
+Then add 1 for the final step where the two parental alleles come together in the offspring. So $n_1+n_2+1$ is the number of meioses along the loop.
 
-:::
+Each meiosis transmits an allele with probability one half, so we raise one half to that power.
 
+Finally, $(1 + F_A)$ accounts for the possibility that ancestor A is already inbred, which increases the probability of identity by descent.
 
-## Inbreeding Coefficient: Path Method
+In the half-sib example: $n_1=1$, $n_2=1$, so the exponent is 3, giving $(1/2)^3 = 1/8$.
 
-For individual $X$ whose parents share ancestor $A$:
+The exponent counts meioses along the closed path that connects the two parental alleles through ancestor A.
 
-$$
-F_X = \sum_A \left(\frac{1}{2}\right)^{n_1+n_2+1}(1+F_A)
-$$
+So the general formula is not magic—it is just the same loop logic written compactly.
 
-Where:
-
-- $n_1$ = generations from $A$ to parent 1  
-- $n_2$ = generations from $A$ to parent 2  
-- $F_A$ = inbreeding coefficient of ancestor $A$
-
-::: notes
-This is the compact “path method” used in pedigrees.
-
-The idea is: the offspring is inbred if the two alleles it receives can trace back to the same ancestral allele copy.
-
-For each common ancestor A of the two parents, we count the number of generational steps from A down to each parent.
-Those are n1 and n2.
-
-Each parent must transmit the allele down the path to the offspring.
-Each meiosis contributes a factor of 1/2, which is why we raise (1/2) to (n1 + n2 + 1).
-The “+1” accounts for the final step of combining the two parental alleles into the offspring.
-
-The term (1 + F_A) accounts for the possibility that the ancestor A is itself inbred.
-If A is not inbred, then F_A = 0 and the factor becomes 1.
-
-For a half-sib mating, the parents share one common parent A, and each is one generation from A.
-So n1 = 1 and n2 = 1, giving F = 1/8 (or 12.5%) when A is not inbred.
 :::
 
 
@@ -1957,8 +2413,7 @@ Across multiple countries,
 the frequency of genetic disorders
 is consistently higher among offspring of first cousins.
 
-For example, the average frequency increases
-from roughly 6 percent to about 14 percent.
+In many populations, the risk approximately doubles among offspring of first cousins.
 
 Why does this happen?
 
@@ -2013,6 +2468,7 @@ The smaller the population size,
 the faster inbreeding accumulates.
 
 In very small populations, such as N = 10,
+In the absence of mutation and migration.
 F rises quickly and eventually approaches 1.
 That means individuals become completely homozygous due to drift.
 
@@ -2034,7 +2490,124 @@ and loss of genetic variation.
 :::
 
 
-# 18.4 Sources and Structure of Genetic Variation
+## Genotype Frequencies Under Inbreeding
+
+::: {.columns}
+
+::: {.column width="50%"}
+
+Let:
+
+- $p$ = frequency of allele A  
+- $q$ = frequency of allele a  
+- $F$ = inbreeding coefficient  
+
+Under inbreeding the genotype frequencies can be calculated as:
+
+$$
+f(AA) = p^2 + Fpq
+$$
+
+$$
+f(Aa) = 2pq(1 - F)
+$$
+
+$$
+f(aa) = q^2 + Fpq
+$$
+
+:::
+
+::: {.column width="50%"}
+
+**Interpretation**
+
+- Homozygotes increase by $Fpq$  
+- Heterozygotes decrease by $2Fpq$  
+
+br>
+
+If $F = 0$ then Hardy–Weinberg  
+
+If $F = 1$ then complete homozygosity  
+
+br>
+
+Allele frequencies remain:
+
+$$
+p + q = 1
+$$
+
+:::
+
+:::
+
+::: notes
+
+We now translate the inbreeding coefficient
+into population genotype frequencies.
+
+Recall that F is the probability
+that the two alleles at a locus
+are identical by descent.
+
+Under Hardy–Weinberg equilibrium,
+genotype frequencies are p squared,
+2pq,
+and q squared.
+
+Inbreeding does not change allele frequencies.
+Instead, it changes how alleles combine into genotypes.
+
+A fraction F of individuals
+have alleles that are identical by descent.
+
+Those individuals must be homozygous.
+
+The remaining fraction, 1 minus F,
+follow Hardy–Weinberg proportions.
+
+So genotype frequencies become
+a mixture of two components:
+
+With probability F:
+alleles are identical by descent
+and contribute only to homozygotes.
+
+With probability 1 minus F:
+alleles combine randomly,
+producing Hardy–Weinberg proportions.
+
+Carrying out this mixture gives:
+
+f(AA) equals p squared plus Fpq.
+
+f(Aa) equals 2pq times one minus F.
+
+f(aa) equals q squared plus Fpq.
+
+Notice the pattern:
+
+Homozygotes increase by Fpq.
+
+Heterozygotes decrease by 2Fpq.
+
+Importantly, allele frequencies remain unchanged.
+
+If F equals zero,
+we recover Hardy–Weinberg.
+
+If F equals one,
+all individuals are homozygous.
+
+This formula connects pedigree inbreeding
+to population-level genotype frequencies.
+
+:::
+
+
+# 4.Mesurement of Genetic Variation
 
 
 
@@ -2044,50 +2617,43 @@ and loss of genetic variation.
 
 ::: {.column width="50%"}
 
-**Theory: How do we measure variation?**
+**Theory: How do we quantify variation?**
 
 For a DNA region:
 
 1. **Segregating sites ($S$)**  
-   Number of polymorphic nucleotide positions
+   Number of polymorphic nucleotide positions  
 
-2. **Number of haplotypes ($N_H$)**  
-   Distinct sequence types observed
+2. **Number of haplotypes ($H$)**  
+   Distinct sequence types observed  
 
 3. **Allele frequencies ($p_i$)**  
 
 4. **Gene diversity (GD)**  
-   $$GD = 1 - \sum p_i^2$$
+   $$ GD = 1 - \sum p_i^2 $$  
 
 5. **Nucleotide diversity ($\pi$)**  
-   Average pairwise nucleotide differences per site
+   Average pairwise nucleotide differences per site  
 
 :::
 
 ::: {.column width="50%"}
 
-**Numerical example: G6PD (5102 bp)**
+**Example: G6PD (5102 bp)**
 
-Sample:
+<br>
 
-- 47 men worldwide  
-- 18 polymorphic sites  
-- 5084 invariant sites  
+| Measure | Total | Africans | Non-Africans |
+|----------|-------|----------|--------------|
+| Sample size | 47 | 16 | 31 |
+| Segregating sites | 18 | 14 | 7 |
+| Haplotypes | 12 | 9 | 6 |
+| Gene diversity (SNP2) | 0.22 | 0.47 | 0.00 |
+| Nucleotide diversity ($\pi$) | 0.0006 | 0.0008 | 0.0002 |
 
-Worldwide allele frequencies:
+<br>
 
-- $B = 0.83$
-- $A^{-} = 0.13$
-- $A = 0.04$
-
-Regional diversity:
-
-| Population   | Gene Diversity | Nucleotide Diversity |
-|--------------|----------------|----------------------|
-| Africans     | 0.47           | 0.0008               |
-| Non-Africans | 0.00           | 0.0002               |
-
-Africans show substantially higher genetic variation.
+Africans show higher genetic diversity.
 
 :::
 
@@ -2095,39 +2661,48 @@ Africans show substantially higher genetic variation.
 
 ::: notes
 
-The left panel introduces general measures of genetic variation.
+The left panel introduces commonly used measures
+of genetic variation in DNA sequence data.
 
-Segregating sites, S, simply count how many positions are variable.
-This depends strongly on sample size.
+Segregating sites, S,
+simply count how many nucleotide positions are polymorphic.
+This statistic increases with sample size.
 
-The number of haplotypes counts distinct sequence types,
-but also increases with sampling effort.
+The number of haplotypes, H,
+counts distinct sequence types.
+This also depends on how many individuals are sampled.
 
-Allele frequencies provide a more stable description.
+Allele frequencies provide a more fundamental description.
 
-From allele frequencies, we compute gene diversity,
-which is the probability that two randomly chosen alleles differ.
+From allele frequencies,
+we compute gene diversity,
+which equals one minus the sum of squared allele frequencies.
+
+Gene diversity can be interpreted
+as the probability that two randomly chosen alleles differ.
 
 Nucleotide diversity, pi,
-averages pairwise differences across nucleotide sites.
-It reflects the overall level of sequence variation.
+is the average number of pairwise nucleotide differences per site.
+It summarizes sequence-level variation across the region.
 
-The right panel shows the G6PD example.
+Now consider the G6PD example.
 
-Out of 5102 base pairs,
-only 18 are polymorphic.
+Across 5102 base pairs,
+only 18 sites are polymorphic.
+Most nucleotide positions are invariant.
 
-Worldwide allele frequencies show that the B allele dominates,
-but there is regional variation.
+Genetic diversity is substantially higher in Africans
+than in non-Africans.
 
-In Africans, gene diversity and nucleotide diversity are substantially higher.
+This illustrates two general principles:
 
-This illustrates two important principles:
+First, genetic variation is sparse relative to genome length.
 
-First, most DNA sites are invariant.
-Second, levels of variation can differ dramatically between populations.
+Second, levels of genetic diversity can differ
+substantially between populations.
 
-These measures allow us to quantify and compare genetic diversity.
+These statistics allow us to quantify,
+compare, and interpret patterns of variation.
 
 :::
 
@@ -2138,7 +2713,7 @@ These measures allow us to quantify and compare genetic diversity.
 
 ::: {.columns}
 
-::: {.column width="65%"}
+::: {.column width="60%"}
 
 ![](../images/fig18_15.png){width=60%}
 
@@ -2199,28 +2774,27 @@ Genetic diversity reflects long-term effective population size.
 :::
 
 
-# 18.5 Evolutionary Forces
+# 5. Evolutionary Forces
 
-
-## Forces That Modulate Genetic Variation
+## Forces That Shape Genetic Variation
 
 ::: {.columns}
 
 ::: {.column width="50%"}
 
-**Evolutionary forces**
+**Fundamental evolutionary forces**
 
 - **Mutation**  
-  Creates new alleles  
+  Generates new alleles  
 
 - **Migration (gene flow)**  
-  Introduces alleles from other populations  
+  Moves alleles between populations  
 
 - **Recombination**  
   Reshuffles alleles into new haplotypes  
 
 - **Genetic drift**  
-  Random sampling effects in finite populations  
+  Random sampling in finite populations  
 
 - **Selection**  
   Differential reproductive success  
@@ -2231,11 +2805,11 @@ Genetic diversity reflects long-term effective population size.
 
 **What these forces determine**
 
-- How new alleles enter populations  
-- How alleles are removed  
-- How allele frequencies change over time  
-- How allele combinations are structured  
-- How populations diverge  
+- Introduction of new variation  
+- Loss or fixation of alleles  
+- Changes in allele frequencies  
+- Patterns of linkage and haplotypes  
+- Genetic divergence among populations  
 
 Together, these forces determine  
 the evolutionary trajectory of populations.
@@ -2244,38 +2818,42 @@ the evolutionary trajectory of populations.
 
 :::
 
+
 ::: notes
 
 Population genetics seeks to explain
-why allele frequencies change over time.
+how and why allele frequencies change over time.
 
-The left panel lists the five fundamental evolutionary forces.
+The five fundamental evolutionary forces
+govern this process.
 
-Mutation generates new variation.
+Mutation introduces new alleles into populations.
 
 Migration, or gene flow,
-moves alleles between populations.
+moves alleles between populations,
+reducing genetic differences.
 
-Recombination reshuffles alleles,
+Recombination reshuffles alleles along chromosomes,
 creating new haplotypes.
 
-Genetic drift causes random fluctuations
-in allele frequencies due to finite population size.
+Genetic drift produces random fluctuations
+in allele frequencies
+due to finite population size.
 
 Selection changes allele frequencies systematically
 when some genotypes leave more offspring than others.
 
-The right panel emphasizes what these forces control.
+Together, these forces determine
+how variation arises,
+how it is lost,
+how allele frequencies change,
+and how populations diverge.
 
-They determine how variation enters populations,
-how it is removed,
-how allele frequencies shift,
-and how genetic structure emerges.
-
-Together, they explain the evolutionary dynamics
+They define the evolutionary dynamics
 of genetic variation.
 
 :::
+
 
 
 ## Mutation: Source and Measurement
@@ -2284,18 +2862,21 @@ of genetic variation.
 
 ::: {.column width="50%"}
 
-**Mutation: the source of new alleles**
+**Mutation: the origin of new alleles**
 
-Mutation introduces new alleles into the gene pool.
+Mutation introduces new genetic variation into the gene pool.
 
-- Mutation rate = probability of change per generation  
+- Mutation rate = probability of change per site per generation  
 - Symbol: $\mu$
 
-Key points:
+Typical rates:
 
-- SNP mutation rates are **low**
-- Microsatellite mutation rates are **much higher**
-- Large genomes $\Rightarrow$ many new mutations per generation
+- SNPs (humans): $\mu \approx 1\times 10^{-8}$ per site per generation  
+- Microsatellites (STRs): $\mu \approx 10^{-4}$–$10^{-3}$ per locus per generation  
+
+Genome scale:
+
+- Humans: ~50–100 new point mutations per individual per generation  
 
 :::
 
@@ -2303,54 +2884,55 @@ Key points:
 
 **Estimating mutation rates**
 
-Pedigree-based approach:
+Pedigree-based sequencing:
 
-- Start with a known founder (often homozygous)
-- Track descendants over generations
-- Sequence genomes
-- Count **new mutations**
+- Sequence parents and offspring  
+- Identify **de novo mutations**  
+- Count new mutations per generation  
 
 Because mutations are rare,
-many nucleotides must be sequenced
-to estimate $\mu$ reliably.
+large numbers of nucleotides must be sequenced
+to estimate $\mu$ accurately.
 
 :::
 
 :::
-
 
 ::: notes
 
 Mutation is the ultimate source of all genetic variation.
-Without mutation, no new alleles could arise.
+Without mutation, no new alleles would arise.
 
 The mutation rate, denoted by mu,
-is the probability that an allele changes
-to another allelic form in one generation.
+is typically defined as the probability
+that a nucleotide changes per site per generation.
 
-For SNPs, mutation rates per nucleotide are very low.
-Microsatellites, in contrast,
+For SNPs in humans, the rate is extremely low,
+roughly 1 times 10 to the minus 8 per site per generation.
+
+However, the human genome contains about 3 billion base pairs.
+So per generation, each individual carries many new mutations.
+A useful rule of thumb is roughly 50 to 100 new point mutations
+per individual per generation.
+
+Microsatellites, also called STRs,
 mutate much more frequently.
+Typical rates are around 10 to the minus 4 to 10 to the minus 3
+per locus per generation,
+often due to replication slippage.
 
-Even though per-site mutation rates are low,
-large genomes contain billions of nucleotides,
-so many new mutations arise each generation.
+The right panel shows how mutation rates are estimated.
 
-Most new mutations are neutral,
-some are deleterious,
-and a few may be beneficial.
+In pedigree-based sequencing,
+we sequence parents and offspring
+and identify de novo mutations —
+variants present in the offspring but absent in the parents.
 
-The right panel shows how we estimate mutation rates.
+Because mutation events are rare,
+we need very large amounts of sequence data
+to observe enough events to estimate mu accurately.
 
-A common method is pedigree-based sequencing.
-We compare DNA sequences of parents and offspring
-and identify mutations that were not present in the parents.
-
-Because mutations are rare,
-we must sequence very large amounts of DNA
-to observe enough events to estimate mu precisely.
-
-:::
+::: 
 
 
 ## Migration (Gene Flow) and Admixture
@@ -2361,15 +2943,15 @@ to observe enough events to estimate mu precisely.
 
 **Migration (gene flow)**
 
-Movement of individuals or gametes
+Movement of individuals or gametes  
 between populations.
 
 Consequences:
 
-- Introduces new alleles
-- Increases genetic variation
-- Reduces divergence among subpopulations
-- Counteracts genetic drift
+- Introduces alleles into populations  
+- Increases within-population variation  
+- Reduces genetic divergence among populations  
+- Counteracts genetic drift  
 
 :::
 
@@ -2377,11 +2959,11 @@ Consequences:
 
 **Genetic admixture**
 
-Result of gene flow between previously separated populations.
+Gene flow between previously separated populations.
 
-- Individuals inherit DNA from multiple ancestral populations
-- Genomes become mosaics of ancestry segments
-- Common in humans and many other species
+- Individuals inherit ancestry from multiple populations  
+- Genomes become mosaics of ancestry segments  
+- Common in humans and many species  
 
 Admixture is the genomic signature of migration.
 
@@ -2389,34 +2971,99 @@ Admixture is the genomic signature of migration.
 
 :::
 
-
 ::: notes
 
-Besides mutation, migration is the only way
-to introduce new alleles into a population.
+In addition to mutation,
+migration is a fundamental source of genetic variation.
 
 Migration, or gene flow,
 occurs when individuals or gametes move between populations
-and reproduce.
+and successfully reproduce.
 
-Gene flow increases genetic variation within populations
-and reduces divergence between populations.
+Gene flow introduces alleles into recipient populations.
 
-In this sense, migration counteracts genetic drift,
-which tends to increase divergence.
+It increases genetic variation within populations
+and reduces genetic divergence among populations.
+
+In this way, migration counteracts genetic drift,
+which tends to differentiate populations over time.
 
 The genomic consequence of migration is admixture.
 
 When previously separated populations interbreed,
-individual genomes become mosaics
-containing segments of ancestry from different sources.
+their descendants inherit DNA from multiple ancestral sources.
 
-These ancestry blocks can be detected
-using genome-wide genetic markers.
+As a result, individual genomes become mosaics
+containing segments derived from different populations.
 
-Admixture therefore provides direct evidence
+These ancestry segments can be detected
+using genome-wide markers.
+
+Admixture therefore provides a measurable signature
 of historical gene flow.
 
+:::
+
+
+
+## Migration and Genetic Admixture
+
+::: {.columns}
+
+::: {.column width="65%"}
+
+![](../images/fig18_16.png){width=60%}
+
+:::
+
+::: {.column width="35%" }
+
+**Figure 18-16. Genetic admixture in individuals of mixed ancestry (South Africa).**
+
+Each vertical bar represents one individual.  
+Colors indicate genomic segments inherited  
+from different ancestral populations.
+
+Admixture reflects historical migration  
+and interbreeding between populations.
+
+:::
+:::
+
+
+::: notes
+::: notes
+
+This figure illustrates genetic admixture —
+the genomic signature of migration.
+
+Each vertical bar represents one individual.
+The colors show the proportion of that person's genome
+derived from different ancestral populations.
+
+Notice that individuals do not belong to a single ancestry category.
+Instead, their genomes are mosaics composed of segments
+inherited from multiple ancestral sources.
+
+This pattern arises when previously separated populations
+interbreed over generations.
+
+Migration introduces alleles from different regions,
+and recombination gradually breaks the genome
+into ancestry segments.
+
+Over time, these segments become smaller,
+but the mixed ancestry signal remains detectable.
+
+This figure demonstrates an important principle:
+
+Migration increases genetic variation within populations
+and reduces strict boundaries between populations.
+
+Admixture is therefore direct genomic evidence
+of historical gene flow.
+
+:::
 :::
 
 
@@ -2439,8 +3086,8 @@ Suppose the original haplotypes are:
 - $AB$  
 - $ab$
 
-These combinations are inherited together
-because the loci are physically linked.
+Because the loci are physically linked,
+these combinations tend to be inherited together.
 
 :::
 
@@ -2457,43 +3104,51 @@ Recombination:
 
 - Does **not** create new alleles  
 - Creates new combinations of existing alleles  
+- Reduces linkage disequilibrium  
 - Increases haplotype diversity  
 
 Over time, recombination reshapes
-patterns of genetic variation across loci.
+the association structure between loci.
 
 :::
 
 :::
+
 
 ::: notes
 
 Recombination reshuffles alleles across loci during meiosis.
 
 Importantly, recombination does not introduce new alleles.
-Only mutation can do that.
+Only mutation creates new alleles.
 
-Instead, recombination creates new combinations
+Instead, recombination generates new combinations
 of alleles that already exist in the population.
 
-In this example, we start with two parental haplotypes:
+In this example, we begin with two parental haplotypes:
 AB and ab.
 
-Because the loci are linked,
-these combinations tend to be inherited together.
+Because the loci are physically linked,
+these combinations tend to be transmitted together.
 
-However, if a crossover occurs between the two loci,
-we can generate two new haplotypes:
+If a crossover occurs between the two loci,
+new haplotypes can be produced:
 Ab and aB.
 
-These are called recombinant haplotypes.
+These are recombinant haplotypes.
 
-Recombination therefore increases haplotype diversity,
-even if allele frequencies remain unchanged.
+Recombination therefore increases haplotype diversity
+without changing allele frequencies.
 
-This reshuffling is crucial because
+Over time, recombination reduces linkage disequilibrium —
+the statistical association between alleles at different loci.
+
+This process is crucial because
 selection often acts on combinations of alleles,
-not just individual loci.
+and recombination determines how long those combinations persist.
+
+In this way, recombination shapes
+the genomic architecture of variation.
 
 :::
 
@@ -2506,16 +3161,16 @@ not just individual loci.
 **Linkage equilibrium**
 
 Two loci are in linkage equilibrium  
-when haplotypes occur as expected by chance.
+when alleles combine independently.
 
-If alleles combine independently:
+If independent:
 
 $$
 P_{AB} = p_A p_B
 $$
 
-That is, the frequency of haplotype $AB$  
-equals the product of the allele frequencies.
+That is, the haplotype frequency  
+equals the product of allele frequencies.
 
 <br>
 
@@ -2527,7 +3182,7 @@ $$
 P_{AB} \neq p_A p_B
 $$
 
-then alleles are associated **non-randomly**  
+alleles are associated **non-randomly**  
 across loci.
 
 :::
@@ -2539,7 +3194,7 @@ across loci.
 For two biallelic loci (A/a and B/b):
 
 - Observed haplotype frequency: $P_{AB}$
-- Expected frequency under independence: $p_A p_B$
+- Expected under independence: $p_A p_B$
 
 Define:
 
@@ -2549,12 +3204,12 @@ $$
 
 Interpretation:
 
-$D = 0 \quad \text{linkage equilibrium}$  
-
-$D \neq 0 \quad \text{linkage disequilibrium}$
+- $D = 0$ → linkage equilibrium  
+- $D > 0$ → excess of $AB$ haplotypes  
+- $D < 0$ → deficit of $AB$ haplotypes  
 
 $D$ measures the magnitude and direction  
-of deviation from independence.
+of statistical association.
 
 :::
 
@@ -2563,44 +3218,53 @@ of deviation from independence.
 
 ::: notes
 
-Linkage equilibrium occurs when alleles at two loci
-combine independently of each other.
+Linkage equilibrium means that alleles at two loci
+combine independently.
 
-In that case, the frequency of a haplotype
-equals the product of the individual allele frequencies.
+Statistically, this is the same as saying
+the loci are independent random variables.
 
-For example, if allele A has frequency pA
+If allele A has frequency pA
 and allele B has frequency pB,
 then the expected frequency of haplotype AB
-is simply pA times pB.
+is pA multiplied by pB.
 
-This reflects statistical independence.
+This is simply the multiplication rule of probability
+under independence.
 
 Linkage disequilibrium occurs when this independence is violated.
 
 If the observed haplotype frequency differs
-from the product of allele frequencies,
-then alleles are associated non-randomly.
+from pA times pB,
+then alleles are statistically associated.
 
-Importantly, LD is a statistical concept.
-It does not necessarily mean the loci are physically close,
-although physical linkage can make LD persist.
+Importantly, LD is a statistical property,
+not a purely physical one.
 
-The statistic D measures the difference
+Physical linkage can generate LD,
+but LD can also arise from selection,
+population structure,
+genetic drift,
+or recent admixture.
+
+The statistic D measures the deviation
 between observed and expected haplotype frequency.
 
-If D equals zero, there is no LD.
+If D equals zero,
+the loci are in linkage equilibrium.
 
 If D is positive,
-the haplotype occurs more often than expected.
+the AB haplotype occurs more often than expected.
 
 If D is negative,
 it occurs less often than expected.
 
-Thus, D quantifies both
-the magnitude and direction of association.
+Thus, D captures both
+the magnitude and direction
+of association between loci.
 
 :::
+
 
 
 ## Dynamics of Linkage Disequilibrium
@@ -2611,19 +3275,21 @@ the magnitude and direction of association.
 
 **How LD arises**
 
-LD can arise when alleles become associated
+LD arises when alleles become associated  
 non-randomly across loci.
 
 Common causes:
 
-- A **new mutation** appears on a single chromosome background  
-  $\Rightarrow$ It is initially associated with nearby alleles  
+- A **new mutation** appears on a single chromosome  
+  → initially in strong LD with nearby alleles  
 
 - **Migration (admixture)** mixes populations  
   with different haplotype frequencies  
 
-As a result, newly introduced alleles
-begin in LD with neighboring loci.
+- **Genetic drift** in finite populations  
+
+New alleles typically begin in LD  
+with their chromosomal background.
 
 :::
 
@@ -2631,7 +3297,7 @@ begin in LD with neighboring loci.
 
 **LD decay by recombination**
 
-Recombination gradually breaks down
+Recombination breaks down  
 non-random associations.
 
 Let $r$ = recombination fraction between loci.
@@ -2640,11 +3306,15 @@ $$
 D_{t+1} = (1-r)D_t
 $$
 
-- Small $r$ (tight linkage) $\Rightarrow$ slow decay  
-- Large $r$ (loose linkage) $\Rightarrow$ rapid decay  
-- $r = 0.5$ $\Rightarrow$ LD decays quickly  
+- Small $r$ (tight linkage) → slow decay  
+- Large $r$ (loose linkage) → rapid decay  
+- $r = 0.5$ → one-generation collapse toward equilibrium  
 
-Over generations, recombination erodes LD.
+Over generations:
+
+$$
+D_t = (1-r)^t D_0
+$$
 
 :::
 
@@ -2652,40 +3322,54 @@ Over generations, recombination erodes LD.
 
 ::: notes
 
-LD is not static — it is dynamic.
+Linkage disequilibrium is dynamic.
 
 First, how does LD arise?
 
 When a new mutation occurs,
-it appears on one specific chromosome.
-That chromosome carries particular neighboring alleles.
-Therefore, the new mutation begins in perfect LD
-with nearby loci.
+it appears on a single chromosome.
+That chromosome carries specific neighboring alleles.
 
-Migration can also create LD.
-If two populations have different haplotype combinations,
-mixing them produces non-random associations
-between alleles.
+Therefore, the new mutation begins in strong LD
+with its chromosomal background.
+
+Migration can also generate LD.
+If two populations have different haplotype structures,
+mixing them produces non-random allele associations.
+
+Genetic drift in small populations
+can also create LD through random sampling effects.
 
 Now consider decay.
 
-Recombination breaks apart haplotypes.
+Recombination breaks apart haplotypes during meiosis.
 
-The equation
+The recursion equation
 
 D_{t+1} = (1 − r) D_t
 
-shows that LD declines each generation
-by a fraction equal to the recombination rate.
+shows that each generation,
+LD is reduced by a factor of (1 − r).
 
-If r is small — meaning the loci are close together —
+If r is small — meaning loci are tightly linked —
 LD decays slowly.
 
-If r approaches 0.5 — meaning the loci assort independently —
-LD decays rapidly.
+If r is large — meaning loci assort more independently —
+LD decays quickly.
 
-Thus, LD reflects a balance between forces that create it
-and recombination, which breaks it down.
+When r equals 0.5,
+loci assort independently,
+and LD is halved each generation.
+
+More generally:
+
+D_t = (1 − r)^t D_0
+
+So LD decays exponentially over time.
+
+LD therefore reflects a balance
+between forces that create association
+and recombination, which erodes it.
 
 :::
 
@@ -2819,254 +3503,7 @@ purely by chance.
 
 
 
-## The Molecular Clock (Simple Version)
 
-::: {.columns}
-
-::: {.column width="50%"}
-
-**Theory**
-
-Neutral mutations accumulate over time.
-
-If the mutation rate is constant,
-DNA differences increase at a steady rate.
-
-For two diverging species:
-
-$$
-d = 2 \mu t
-$$
-
-Rearranged:
-
-$$
-t = \frac{d}{2\mu}
-$$
-
-Where:
-
-- $d$ = DNA sequence divergence  
-- $\mu$ = mutation rate per generation  
-- $t$ = time since divergence  
-
-:::
-
-::: {.column width="50%"}
-
-**Interpretation and Example**
-
-Both lineages accumulate mutations after they split.
-
-The factor 2 reflects:
-- Mutation in lineage 1  
-- Mutation in lineage 2  
-
-Example:
-
-Humans and chimpanzees differ by ~1.8%  
-at neutral sites.
-
-Using the human mutation rate:
-
-Estimated divergence ≈ 6 million years ago.
-
-Assumptions:
-
-- Mutations are neutral  
-- Mutation rate is approximately constant  
-
-:::
-
-:::
-
-::: notes
-
-The molecular clock is based on a simple but powerful idea:
-
-Neutral mutations accumulate at an approximately constant rate.
-
-If two species split from a common ancestor,
-each lineage begins accumulating new mutations independently.
-
-That is why the equation includes a factor of 2 —
-both lineages contribute to total divergence.
-
-The equation states:
-
-Sequence divergence equals
-two times the mutation rate
-times the time since divergence.
-
-If we can estimate the mutation rate
-and measure sequence divergence,
-we can solve for time.
-
-For example,
-humans and chimpanzees differ by about 1.8% at neutral sites.
-
-Using the estimated human mutation rate,
-this corresponds to roughly 6 million years since divergence.
-
-The molecular clock relies on key assumptions:
-
-First, mutations being considered are neutral.
-Second, the mutation rate is approximately constant over time.
-
-When those assumptions are reasonable,
-DNA can function as a biological clock.
-
-:::
-
-
-
-## The Domestication Bottleneck
-
-::: {.columns}
-
-::: {.column width="65%"}
-
-![](../images/fig18_un08_33779.png){width=60%}
-
-:::
-
-::: {.column width="35%" }
-
-**Crop domestication and improvement bottlenecks**
-
-Wild population  
-$\Rightarrow$ Traditional varieties  
-$\Rightarrow$ Elite modern varieties  
-
-Each step reduces genetic diversity.
-
-Colored dots = different alleles.
-
-:::
-:::
-
-
-::: notes
-This figure illustrates two genetic bottlenecks.
-
-First, during domestication,
-humans sampled only a subset of individuals
-from a wild population.
-
-The wild population contains many alleles
-— shown here as different colored dots.
-
-When only some individuals are selected,
-some alleles are lost by chance.
-
-The resulting traditional crop population
-has fewer alleles than the wild population.
-
-Second, modern plant breeding creates another bottleneck.
-
-Breeders select only a few elite lines
-with desirable traits like high yield.
-
-This further reduces genetic variation.
-
-The key evolutionary idea is:
-A bottleneck reduces genetic diversity
-because only a subset of alleles passes through.
-
-Lower diversity can increase vulnerability
-to disease and environmental change.
-
-That is why breeders sometimes cross
-modern crops with wild relatives
-to reintroduce lost variation.
-:::
-
-
-## Inbreeding
-
-::: {.columns}
-
-::: {.column width="50%"}
-
-**Definition**
-
-Inbreeding = mating between relatives.
-
-Because relatives share alleles from common ancestors,
-offspring are more likely to inherit
-identical copies of an allele.
-
-Genetic consequences:
-
-- Increased **homozygosity**
-- Decreased **heterozygosity**
-- Higher probability of expressing
-  **recessive deleterious alleles**
-
-**Key concept:**  
-Inbreeding increases homozygosity.
-
-:::
-
-::: {.column width="50%"}
-
-**Biological consequences**
-
-- Increased risk of inherited disorders  
-- Possible **inbreeding depression**  
-  (reduced survival or fertility)
-
-However, in some species inbreeding can be advantageous:
-
-- Common in self-pollinating plants  
-  (e.g., rice, wheat, *Arabidopsis*)  
-- Preserves beneficial allele combinations  
-- Enables colonization from a single individual  
-
-The effects depend on ecological context.
-
-:::
-
-:::
-
-::: notes
-
-Inbreeding refers to mating between related individuals.
-
-Relatives share alleles inherited from common ancestors.
-Therefore, their offspring have a higher probability
-of receiving two copies of the same ancestral allele.
-
-This increases homozygosity across the genome
-and reduces heterozygosity.
-
-The key genetic consequence is that recessive deleterious alleles
-are more likely to be expressed.
-
-This can increase the risk of inherited disorders.
-
-The reduction in survival or reproductive success
-that results from increased homozygosity
-is called inbreeding depression.
-
-However, inbreeding is not always harmful.
-
-Many plant species are highly self-fertilizing.
-Crops such as rice and wheat,
-and the model plant Arabidopsis,
-are predominantly inbred.
-
-Selfing allows reproduction when mates are scarce,
-helps establish new populations,
-and preserves favorable allele combinations.
-
-Thus, whether inbreeding is harmful or advantageous
-depends on the species and ecological context.
-
-The central population-genetic effect remains:
-inbreeding increases homozygosity.
-
-:::
 
 ## Natural Selection and Fitness
 
@@ -3141,8 +3578,7 @@ Relative fitness is what determines how allele frequencies change.
 
 
 
-
-## Example: Selection on a Dominant Allele
+## Example: Selection on a Dominant Beneficial Allele
 
 ::: {.columns}
 
@@ -3164,47 +3600,50 @@ Only $a/a$ individuals have reduced fitness.
 
 ::: {.column width="50%"}
 
-**Consequence**
+**Effect on allele frequency**
 
-Because A-containing genotypes  
-produce more offspring,
+After selection:
 
-Allele A increases in frequency.
+- Genotypes with A survive equally well  
+- $a/a$ individuals contribute fewer offspring  
 
-Example:
+Result:
 
-Initial frequency: $p = 0.10$  
-After one generation: $p = 0.17$
+- Frequency of allele A increases  
+- Frequency of allele a decreases  
 
-Selection increases the frequency  
-of beneficial alleles.
-
-:::
+Selection removes the low-fitness genotype  
+from the population.
 
 :::
 
+:::
 
 ::: notes
 
 Here, allele A is beneficial and dominant.
 
-Both A/A and A/a individuals have full fitness.
-Only a/a individuals reproduce less.
+Both A/A and A/a individuals
+have full relative fitness.
+Only a/a individuals have reduced fitness.
 
-Because A-containing genotypes
-contribute more offspring,
-they contribute more A alleles to the next generation.
+Because a/a individuals leave fewer offspring,
+fewer copies of allele a are transmitted
+to the next generation.
 
-After one generation,
-the frequency of A increases.
+Over time, allele A increases in frequency.
 
-This illustrates the core principle of natural selection:
+Notice an important principle:
 
-Genotypes with higher fitness
-increase in frequency over time.
+When a beneficial allele is dominant,
+selection acts efficiently against the recessive genotype,
+but once the deleterious allele becomes rare,
+it can persist hidden in heterozygotes.
+
+This explains why recessive deleterious alleles
+can remain in populations.
 
 :::
-
 
 
 ## Selection and Allele Frequency
@@ -3262,6 +3701,195 @@ Dominance affects the speed of evolutionary change.
 Selection acts on phenotypes,
 and whether an allele is expressed in heterozygotes
 determines how quickly it spreads.
+:::
+
+
+
+## General Model of Selection
+
+::: {.columns}
+
+::: {.column width="50%"}
+
+### Allele Frequency After Selection
+
+For two alleles A and a:
+
+Genotype fitnesses:
+
+$$
+w_{AA}, \quad w_{Aa}, \quad w_{aa}
+$$
+
+Mean fitness:
+
+$$
+\bar{w} = p^2 w_{AA} + 2pq w_{Aa} + q^2 w_{aa}
+$$
+
+Allele frequency in next generation:
+
+$$
+p' = \frac{p^2 w_{AA} + pq\, w_{Aa}}{\bar{w}}
+$$
+
+:::
+
+::: {.column width="50%"}
+
+### Interpretation
+
+- Selection acts on **genotypes**, not alleles  
+- Genotypes with higher fitness contribute more offspring  
+- The numerator counts transmission of allele **A** after selection  
+- The denominator rescales by average population fitness  
+
+If $w_{AA}$ and $w_{Aa}$ are high then allele **A increases**
+
+If $w_{aa}$ is low then allele **a decreases**
+
+<br>
+
+Selection changes allele frequencies through differences in reproductive success.
+
+:::
+
+:::
+
+::: notes
+
+This equation summarizes the worked example.
+
+Start with genotype frequencies under Hardy–Weinberg:
+p², 2pq, and q².
+
+We multiply each genotype by its fitness.
+That gives genotype frequencies after selection.
+
+The total of those values is the mean fitness,
+denoted w-bar.
+It represents the average reproductive success
+of the population.
+
+To obtain proper frequencies,
+we divide by the mean fitness.
+This is why the denominator appears.
+
+The numerator calculates the proportion of A alleles
+transmitted to the next generation.
+
+Notice something important:
+selection does not act directly on alleles.
+It acts on genotypes.
+Allele frequencies change as a consequence
+of differential genotype success.
+
+This equation is the general model
+for allele frequency change under viability selection.
+
+If fitness differences persist,
+allele frequencies will continue to shift
+generation after generation.
+
+:::
+
+
+
+## Example: Selection on a Dominant Beneficial Allele
+
+::: {.columns}
+
+::: {.column width="55%"}
+
+| Genotype | HW freq | Fitness ($w$) | After selection | Normalized freq ($f'$) |
+|----------|---------|---------------|-----------------|------------------------|
+| A/A | 0.01 | 1.0 | 0.01 | 0.017 |
+| A/a | 0.18 | 1.0 | 0.18 | 0.303 |
+| a/a | 0.81 | 0.5 | 0.405 | 0.681 |
+
+<br>
+
+Assume initial allele frequencies:
+
+$$
+p = 0.10, \qquad q = 0.90
+$$
+
+Under Hardy–Weinberg:
+
+$$
+p^2 = 0.01,\quad 2pq = 0.18,\quad q^2 = 0.81
+$$
+
+
+Mean fitness:
+
+$$
+\bar{w} = 0.01 + 0.18 + 0.405 = 0.595
+$$
+
+:::
+
+::: {.column width="45%"}
+
+**New Allele Frequency**
+
+$$
+p' = f'(AA) + \tfrac12 f'(Aa)
+$$
+
+$$
+p' = 0.017 + 0.152 = 0.169
+$$
+
+$$
+0.10 \rightarrow 0.17
+$$
+
+
+**Interpretation**
+
+- Selection reduces contribution of $a/a$
+- A-containing genotypes transmit more alleles
+- Allele A increases in frequency
+
+<br> 
+
+Selection changes allele frequencies  through differential reproductive success.
+
+:::
+
+:::
+
+::: notes
+
+This table shows the entire logic in one place.
+
+First, we calculate Hardy–Weinberg genotype frequencies
+from the initial allele frequency.
+
+Next, we multiply each genotype frequency by its relative fitness.
+This gives the genotype frequencies after selection,
+but before normalization.
+
+The sum of those values is the mean fitness of the population,
+denoted w-bar.
+
+Because the total is now less than 1,
+we divide each value by w-bar to normalize.
+
+Those normalized values are the genotype frequencies
+in the next generation.
+
+Finally, we compute the new allele frequency.
+
+We see that p increases from 0.10 to approximately 0.17
+after one generation.
+
+The key conceptual takeaway is:
+selection acts on genotypes,
+but allele frequencies change as a consequence.
+
 :::
 
 
@@ -3425,6 +4053,69 @@ is evidence of a recent selective sweep.
 :::
 
 
+## Selective Sweep and Genetic Variation
+
+::: {.columns}
+
+::: {.column width="65%"}
+
+![](../images/fig18_23_33779.png){width=70%}
+
+:::
+
+::: {.column width="35%"}
+
+**Figure 18-23. Gene diversity near the SLC24A5 locus on chromosome 15.**
+
+Gene diversity is reduced in Europeans  
+around SLC24A5.
+
+This pattern is consistent with  
+a **recent selective sweep**.
+
+:::
+
+:::
+
+::: notes
+
+This figure illustrates the genomic signature
+of a selective sweep.
+
+The horizontal axis shows position along a region of chromosome 15,
+spanning approximately 2 million base pairs.
+
+The vertical axis shows gene diversity.
+
+The gene SLC24A5 lies in the center of this region.
+This gene influences skin pigmentation.
+
+Notice that in Europeans,
+gene diversity drops sharply to nearly zero
+around this locus.
+
+In contrast, Africans, East Asians, and Native Americans
+retain substantially higher diversity in the same region.
+
+This pattern is consistent with a recent selective sweep in Europeans.
+
+A beneficial mutation rose rapidly in frequency.
+As it increased, nearby linked alleles were carried along —
+a process called genetic hitchhiking.
+
+Because the sweep happened recently,
+there has not been enough time for recombination
+to restore variation.
+
+The key principle is:
+
+Strong positive selection reduces genetic variation
+in the surrounding genomic region.
+
+This localized reduction in diversity
+is a hallmark of a selective sweep.
+
+:::
 
 ## Examples of Natural Selection in Humans
 
@@ -4114,330 +4805,62 @@ That is the framework of the field.
 :::
 
 
-
-## Inbreeding and Identity by Descent (IBD)
-
-::: {.columns}
-
-::: {.column width="55%"}
-
-![](../images/fig18_12_33779.webp){width=70%}
-
-**Figure 18-12. Half-sib pedigree**
-
-Closed loop:  
-$I \rightarrow B \rightarrow A \rightarrow C \rightarrow I$
-
-:::
-
-::: {.column width="45%"}
-
-Consider the half-sib pedigree in Figure 18-12:
-
-- B and C are half-siblings  
-- They share a common mother, A  
-- Their daughter is I  
-
-A has two gene copies:
-
-- One from her mother (pink)  
-- One from her father (blue)  
-
-I is **inbred** because there is a closed ancestral loop in the pedigree.
-
-If the two copies in I trace back to the same **physical copy** in A, they are **identical by descent (IBD)**.
-
-The probability of this event is the **inbreeding coefficient**, $F_I$.
-
-:::
-
-:::
-
-::: notes
-
-Let’s start with the full pedigree in Figure 18-12.
-
-B and C are half-siblings: they share the same mother, A, but have different fathers. Their daughter is I.
-
-Notice the closed ancestral loop:
-I → B → A → C → I.
-
-Whenever you see a closed loop like this, the offspring can be inbred.
-
-Now focus on A. She carries two physical copies of the gene—shown as a pink and a blue allele.
-
-If I receives two alleles that both trace back to the same physical copy in A (both coming from A’s pink copy, or both from A’s blue copy), then I’s two alleles are identical by descent.
-
-The probability that this happens is the inbreeding coefficient, $F_I$.
-
-Next we compute this probability step by step.
-
-:::
-
-
-## Step 1: Simplify to the Closed Inbreeding Loop
-
-::: {.columns}
-
-::: {.column width="55%"}
-
-![](../images/fig18_12_33779.webp){width=70%}
-
-**Figure 18-12. Half-sib pedigree**
-
-Closed loop:  
-$I \rightarrow B \rightarrow A \rightarrow C \rightarrow I$
-
-:::
-
-::: {.column width="45%"}
-
-Using Figure 18-12b (simplified format):
-
-- Keep only individuals in the closed loop  
-- Label transmitted alleles:
-
-A → B transmits allele $z$  
-A → C transmits allele $y$  
-B → I transmits allele $w$  
-C → I transmits allele $x$  
-
-We want:
-
-$$
-F_I = P(w \sim x)
-$$
-
-That is, the probability that I’s two alleles are **IBD**.
-
-:::
-
-:::
-
-::: notes
-
-To calculate the inbreeding coefficient, we simplify the pedigree to the closed loop only.
-
-Sex does not matter for this calculation—only allele transmission along parent–offspring links.
-
-We label the transmitted alleles:
-A transmits z to B and y to C.
-Then B transmits w to I and C transmits x to I.
-
-So the question becomes precise:
-
-What is the probability that w and x are identical by descent?
-
-Equivalently: what is the probability that both of I’s alleles trace back to the same ancestral copy in A?
-
-Now we compute that probability in small steps.
-
-:::
-
-
-## Step 2: Assume Ancestor A Is Not Inbred
-
-::: {.columns}
-
-::: {.column width="55%"}
-
-![](../images/fig18_12_33779.webp){width=70%}
-
-**Figure 18-12. Half-sib pedigree**
-
-Closed loop:  
-$I \rightarrow B \rightarrow A \rightarrow C \rightarrow I$
-
-:::
-
-::: {.column width="45%"}
-
-First assume:
-
-$$
-F_A = 0
-$$
-
-Now compute step by step:
-
-1. B transmits to I the allele he inherited from A:
-
-$$
-P(w \sim z) = \frac{1}{2}
-$$
-
-2. C transmits to I the allele she inherited from A:
-
-$$
-P(x \sim y) = \frac{1}{2}
-$$
-
-3. The alleles $y$ and $z$ are the same physical copy in A:
-
-$$
-P(y \sim z) = \frac{1}{2}
-$$
-
-Multiply independent probabilities:
-
-$$
-F_I = \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2}
-      = \frac{1}{8}
-$$
-
-So the offspring of half-sib matings has:
-
-$$
-F_I = \frac{1}{8}
-$$
-
-:::
-
-:::
-
-::: notes
-
-First assume A is not inbred, so her two gene copies are independent.
-
-For I to be IBD at this locus, three independent events must occur:
-
-First: B must pass to I the allele B received from A. Probability one half.
-
-Second: C must pass to I the allele C received from A. Probability one half.
-
-Third: the allele A passed to B and the allele A passed to C must be the same physical copy in A—both pink or both blue. Probability one half.
-
-Because these events are independent, we multiply:
-
-(1/2) × (1/2) × (1/2) = 1/8.
-
-So in a half-sib mating, the offspring has $F_I = 1/8$.
-
-Interpretation: there is a 12.5% chance that a locus is homozygous because the two alleles are identical by descent.
-
-Pause here—this is the key result.
-
-:::
-
-
-## Step 3: What If Ancestor A Is Inbred?
-
-::: {.columns}
-
-::: {.column width="55%"}
-
-![](../images/fig18_12_33779.webp){width=70%}
-
-**Figure 18-12. Half-sib pedigree**
-
-Closed loop:  
-$I \rightarrow B \rightarrow A \rightarrow C \rightarrow I$
-
-:::
-
-::: {.column width="45%"}
-
-If A is inbred:
-
-- Her two gene copies may themselves be IBD  
-- This increases the probability that $y$ and $z$ are IBD  
-
-Probability that $y$ and $z$ are IBD:
-
-- Same physical copy in A → $\frac{1}{2}$  
-- Different physical copies, but those copies are themselves IBD → $\frac{1}{2}F_A$
-
-So:
-
-$$
-P(y \sim z) = \frac{1}{2} + \frac{1}{2}F_A
-            = \frac{1}{2}(1 + F_A)
-$$
-
-Now:
-
-$$
-F_I = \frac{1}{2} \times \frac{1}{2} \times 
-      \frac{1}{2}(1+F_A)
-$$
-
-$$
-F_I = \left(\frac{1}{2}\right)^3 (1+F_A)
-$$
-
-If $F_A = 0$:
-
-$$
-F_I = \frac{1}{8}
-$$
-
-:::
-
-:::
-
-::: notes
-
-Now consider the more general case: what if A is inbred?
-
-Then A’s two physical gene copies might already be identical by descent.
-
-There are two ways that y and z can be IBD:
-
-1) A passes the same physical copy to both B and C (pink/pink or blue/blue). Probability one half.
-
-2) A passes different physical copies (pink and blue), but those copies are themselves IBD because A is inbred. Probability one half times $F_A$.
-
-So:
-P(y ~ z) = 1/2 + (1/2)F_A = (1/2)(1 + F_A).
-
-Multiply again with the two transmissions down to I, and we get:
-$F_I = (1/2)^3 (1 + F_A)$.
-
-If A is not inbred, $F_A = 0$, and we recover 1/8.
-
-This is exactly where the “(1 + F_A)” term in the general formula comes from.
-
-:::
-
-
-
-## General Path Formula for Inbreeding
+## The Molecular Clock (Simple Version)
 
 ::: {.columns}
 
 ::: {.column width="50%"}
 
-**General formula**
+**Theory**
 
-For any individual $X$:
+Neutral mutations accumulate over time.
+
+If the mutation rate is constant,
+DNA differences increase at a steady rate.
+
+For two diverging species:
 
 $$
-F_X = \sum_A \left(\frac{1}{2}\right)^{n_1+n_2+1}(1+F_A)
+d = 2 \mu t
+$$
+
+Rearranged:
+
+$$
+t = \frac{d}{2\mu}
 $$
 
 Where:
 
-- $n_1$ = generations from ancestor $A$ to parent 1  
-- $n_2$ = generations from ancestor $A$ to parent 2  
-- $F_A$ = inbreeding coefficient of ancestor $A$  
-
-Sum over all common ancestors $A$.
+- $d$ = DNA sequence divergence  
+- $\mu$ = mutation rate per generation  
+- $t$ = time since divergence  
 
 :::
 
 ::: {.column width="50%"}
 
-**Interpretation**
+**Interpretation and Example**
 
-- $n_1+n_2+1$ counts the number of **meioses** in the loop  
-- Each meiosis contributes a factor of $\tfrac{1}{2}$  
-- $(1 + F_A)$ adjusts for whether the ancestor is already inbred  
+Both lineages accumulate mutations after they split.
 
-If the common ancestor is not inbred ($F_A = 0$):
+The factor 2 reflects:
+- Mutation in lineage 1  
+- Mutation in lineage 2  
 
-$$
-F_X = \left(\frac{1}{2}\right)^{n_1+n_2+1}
-$$
+Example:
+
+Humans and chimpanzees differ by ~1.8%  
+at neutral sites.
+
+Using the human mutation rate:
+
+Estimated divergence ≈ 6 million years ago.
+
+Assumptions:
+
+- Mutations are neutral  
+- Mutation rate is approximately constant  
 
 :::
 
@@ -4445,23 +4868,105 @@ $$
 
 ::: notes
 
-This is the compact “path method” version of what we just did.
+The molecular clock is based on a simple but powerful idea:
 
-Step 1 is always: identify the common ancestors shared by the two parents. If there are multiple, you add their contributions—this is why we sum over A.
+Neutral mutations accumulate at an approximately constant rate.
 
-For each ancestor A, count the number of generations from A down to parent 1 and to parent 2. That’s $n_1$ and $n_2$.
+If two species split from a common ancestor,
+each lineage begins accumulating new mutations independently.
 
-Then add 1 for the final step where the two parental alleles come together in the offspring. So $n_1+n_2+1$ is the number of meioses along the loop.
+That is why the equation includes a factor of 2 —
+both lineages contribute to total divergence.
 
-Each meiosis transmits an allele with probability one half, so we raise one half to that power.
+The equation states:
 
-Finally, $(1 + F_A)$ accounts for the possibility that ancestor A is already inbred, which increases the probability of identity by descent.
+Sequence divergence equals
+two times the mutation rate
+times the time since divergence.
 
-In the half-sib example: $n_1=1$, $n_2=1$, so the exponent is 3, giving $(1/2)^3 = 1/8$.
+If we can estimate the mutation rate
+and measure sequence divergence,
+we can solve for time.
 
-So the general formula is not magic—it is just the same loop logic written compactly.
+For example,
+humans and chimpanzees differ by about 1.8% at neutral sites.
+
+Using the estimated human mutation rate,
+this corresponds to roughly 6 million years since divergence.
+
+The molecular clock relies on key assumptions:
+
+First, mutations being considered are neutral.
+Second, the mutation rate is approximately constant over time.
+
+When those assumptions are reasonable,
+DNA can function as a biological clock.
 
 :::
+
+
+
+## The Domestication Bottleneck
+
+::: {.columns}
+
+::: {.column width="65%"}
+
+![](../images/fig18_un08_33779.png){width=60%}
+
+:::
+
+::: {.column width="35%" }
+
+**Crop domestication and improvement bottlenecks**
+
+Wild population  
+$\Rightarrow$ Traditional varieties  
+$\Rightarrow$ Elite modern varieties  
+
+Each step reduces genetic diversity.
+
+Colored dots = different alleles.
+
+:::
+:::
+
+
+::: notes
+This figure illustrates two genetic bottlenecks.
+
+First, during domestication,
+humans sampled only a subset of individuals
+from a wild population.
+
+The wild population contains many alleles
+— shown here as different colored dots.
+
+When only some individuals are selected,
+some alleles are lost by chance.
+
+The resulting traditional crop population
+has fewer alleles than the wild population.
+
+Second, modern plant breeding creates another bottleneck.
+
+Breeders select only a few elite lines
+with desirable traits like high yield.
+
+This further reduces genetic variation.
+
+The key evolutionary idea is:
+A bottleneck reduces genetic diversity
+because only a subset of alleles passes through.
+
+Lower diversity can increase vulnerability
+to disease and environmental change.
+
+That is why breeders sometimes cross
+modern crops with wild relatives
+to reintroduce lost variation.
+:::
+
 
 
 

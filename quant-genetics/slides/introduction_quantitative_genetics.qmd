@@ -25,30 +25,30 @@ execute:
   message: false
 ---
 
-## Learning Goals
+## Learning Goals - Quantitative Genetics
 
-**19.1 Measuring Quantitative Variation**
+**1 Measuring Quantitative Variation**
 
 - Understand how mathematical models and statistics are used to study complex traits  
 
-**19.2 A Simple Genetic Model**
+**2 A Simple Genetic Model**
 
 - Assess the relative contributions of genetic and environmental factors to phenotypic traits  
 
-**19.3–19.4 Heritability**
+**3 Heritability**
 
 - Calculate and interpret **broad-sense heritability**  
 - Calculate and interpret **narrow-sense heritability**  
 - Use parental phenotypes to predict offspring phenotypes  
 
-**19.5–19.6 Mapping Quantitative Traits**
+**4 Mapping Quantitative Traits**
 
 - Determine how many genes contribute to variation in a trait  
 - Design and analyze QTL and association mapping studies  
 
 ::: notes
 
-Chapter 19 shifts our focus from single-gene traits to quantitative traits — traits that vary continuously, such as height, milk yield, blood pressure, or crop yield.
+In quantiative genetics our focus shifts from single-gene traits to quantitative traits — traits that vary continuously, such as height, milk yield, blood pressure, or crop yield.
 
 First, we will learn how to measure and describe quantitative variation using statistical tools. This is where population genetics meets statistics.
 

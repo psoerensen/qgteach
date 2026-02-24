@@ -74,8 +74,8 @@
    ========================= */
 
 .reveal .math.display {
-  margin-top: 0.2em;
-  margin-bottom: 0.2em;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
 }
 
 .reveal .math.inline {
@@ -132,5 +132,11 @@
 
 /* Nuclear option */
 .MathJax {
-  font-size: 75% !important;
+  font-size: 90% !important;
+}
+
+/* Remove vertical spacing for paragraphs that contain display math */
+.reveal .slides section p:has(> span.math.display) {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
