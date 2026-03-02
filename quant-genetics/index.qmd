@@ -9,43 +9,47 @@ This course provides the theoretical foundations of population and quantitative 
 
 The material examines how genetic variation arises and is maintained in populations, how evolutionary forces shape allele frequencies, and how genetic and environmental factors contribute to phenotypic variation. Classical population genetics is integrated with quantitative trait analysis and modern approaches to trait mapping.
 
----
+------------------------------------------------------------------------
 
 ## Core Topics
 
 ### Population Genetics
 
-- Measuring genetic variation (heterozygosity, nucleotide diversity, allele vs. genotype frequencies)  
-- Gene pools and Hardy–Weinberg equilibrium  
-- Mating systems and inbreeding  
-- Mutation, migration, recombination, and linkage disequilibrium  
-- Genetic drift and natural selection (directional, balancing, purifying)  
-- Applications in conservation biology, medical genetics, and forensics  
+-   **Genetic Variation & Structure:** Defining the gene pool; distinguishing between loci, alleles, haplotypes, and phase; measuring heterozygosity and nucleotide diversity.
+-   **The Hardy–Weinberg Principle:** Calculating allele and genotype frequencies; identifying assumptions of equilibrium and testing for statistical deviations.
+-   **Mating Systems:** Effects of non-random mating on genomic architecture; quantifying inbreeding ($F$) and its genetic consequences.
+-   **Evolutionary Dynamics:** How mutation, migration, and recombination drive diversity; the impact of population size on genetic drift.
+-   **Natural Selection:** Distinguishing between directional, balancing, and purifying selection; identifying genomic signatures of selective sweeps.
+-   **Linkage Disequilibrium (LD):** Mechanisms of LD generation and the rate of decay across the genome.
+-   **Applications:** Utilizing population genetics in conservation biology, medical association studies, and forensic genetics.
+
 
 ### Quantitative Genetics
 
-- Statistical modeling of complex traits  
-- Partitioning genetic and environmental sources of variation  
-- Broad- and narrow-sense heritability  
-- Prediction of offspring phenotypes  
-- QTL mapping and association mapping  
+-   **Measuring Variation:** Applying mathematical models and statistical methods (mean, variance, normal distribution) to describe and analyze continuous variation.
+-   **The Simple Genetic Model:** Deconstructing the phenotype into genetic and environmental deviations ($P = \mu + G + E$); assessing the relative contributions to total phenotypic variation.
+-   **Genetic Architecture:** Partitioning total genetic variance into additive ($V_A$) and dominance ($V_D$) components to determine the underlying landscape of complex traits.
+-   **Heritability Analysis:** Calculating and interpreting Broad-sense ($H^2$) vs. Narrow-sense ($h^2$) heritability; understanding the biological significance of additive effects.
+-   **Predicting Phenotypes:** Utilizing parental data and the Breeder’s Equation ($R = h^2 S$) to predict offspring phenotypes and response to selection.
+-   **Association Mapping:** Explaining the principles behind Genome-Wide Association Studies (GWAS); identifying Quantitative Trait Loci (QTLs) through Linkage Disequilibrium.
+-   **Genomic Insights:** Understanding the implications of polygenicity, effect sizes, and regulatory variants in human medicine and agricultural breeding.
 
----
+------------------------------------------------------------------------
 
 ## Learning Objectives
 
 Upon completion of the course, it should be possible to:
 
-- Explain how genetic variation is generated and maintained in populations  
-- Interpret Hardy–Weinberg equilibrium and deviations from it  
-- Describe the effects of drift, selection, mutation, and migration on allele frequencies  
-- Partition phenotypic variance into genetic and environmental components  
-- Calculate and interpret broad- and narrow-sense heritability  
-- Predict phenotypes from parental values  
-- Design and interpret QTL and association mapping studies  
-- Connect mathematical models with biological interpretation  
+-   Explain how genetic variation is generated and maintained in populations\
+-   Interpret Hardy–Weinberg equilibrium and deviations from it\
+-   Describe the effects of drift, selection, mutation, and migration on allele frequencies\
+-   Partition phenotypic variance into genetic and environmental components\
+-   Calculate and interpret broad- and narrow-sense heritability\
+-   Predict phenotypes from parental values\
+-   Design and interpret QTL and association mapping studies\
+-   Connect mathematical models with biological interpretation
 
----
+------------------------------------------------------------------------
 
 ## Course Structure
 
@@ -53,50 +57,50 @@ This book contains the **core notes** of the course.
 
 Each chapter includes:
 
-- Conceptual explanations  
-- Mathematical formulations  
-- Worked examples  
-- Computational demonstrations in R  
-- Figures and simulation examples  
+-   Conceptual explanations\
+-   Mathematical formulations\
+-   Worked examples\
+-   Computational demonstrations in R\
+-   Figures and simulation examples
 
----
+------------------------------------------------------------------------
 
 ## Slides
 
 Lecture slides are provided separately as Reveal.js presentations:
 
-- [Population Genetics](slides/introduction_population_genetics.html)
-- [Quantitative Genetics](slides/introduction_quantitative_genetics.html)
+-   [Population Genetics](slides/introduction_population_genetics.html)
+-   [Quantitative Genetics](slides/introduction_quantitative_genetics.html)
 
-Slides provide a structured overview of each topic.  
+Slides provide a structured overview of each topic.\
 The notes serve as the complete reference for study.
 
----
+------------------------------------------------------------------------
 
 ## Tutorials
 
-Hands-on tutorials support the development of computational and practical understanding.  
+Hands-on tutorials support the development of computational and practical understanding.\
 Active execution and modification of the provided R code is recommended.
 
----
+------------------------------------------------------------------------
 
 ## Prerequisites
 
 The course assumes:
 
-- Basic knowledge of genetics  
-- Introductory statistics  
-- Familiarity with R  
+-   Basic knowledge of genetics\
+-   Introductory statistics\
+-   Familiarity with R
 
----
+------------------------------------------------------------------------
 
 ## Recommended Use
 
 The material is designed to be:
 
-- Used during lectures  
-- Reviewed after class  
-- Consulted during project work  
-- Revisited during exam preparation  
+-   Used during lectures\
+-   Reviewed after class\
+-   Consulted during project work\
+-   Revisited during exam preparation
 
 Mathematical reasoning and quantitative interpretation are emphasized to support conceptual clarity and reproducibility.

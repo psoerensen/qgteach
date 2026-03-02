@@ -69,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -156,31 +185,25 @@ ul.task-list li input[type="checkbox"] {
 <section id="population-genetics" class="level3">
 <h3 class="anchored" data-anchor-id="population-genetics">Population Genetics</h3>
 <ul>
-<li>Measuring genetic variation (heterozygosity, nucleotide diversity, allele vs.&nbsp;genotype frequencies)<br>
-</li>
-<li>Gene pools and Hardy–Weinberg equilibrium<br>
-</li>
-<li>Mating systems and inbreeding<br>
-</li>
-<li>Mutation, migration, recombination, and linkage disequilibrium<br>
-</li>
-<li>Genetic drift and natural selection (directional, balancing, purifying)<br>
-</li>
-<li>Applications in conservation biology, medical genetics, and forensics</li>
+<li><strong>Genetic Variation &amp; Structure:</strong> Defining the gene pool; distinguishing between loci, alleles, haplotypes, and phase; measuring heterozygosity and nucleotide diversity.</li>
+<li><strong>The Hardy–Weinberg Principle:</strong> Calculating allele and genotype frequencies; identifying assumptions of equilibrium and testing for statistical deviations.</li>
+<li><strong>Mating Systems:</strong> Effects of non-random mating on genomic architecture; quantifying inbreeding (<span class="math inline">\(F\)</span>) and its genetic consequences.</li>
+<li><strong>Evolutionary Dynamics:</strong> How mutation, migration, and recombination drive diversity; the impact of population size on genetic drift.</li>
+<li><strong>Natural Selection:</strong> Distinguishing between directional, balancing, and purifying selection; identifying genomic signatures of selective sweeps.</li>
+<li><strong>Linkage Disequilibrium (LD):</strong> Mechanisms of LD generation and the rate of decay across the genome.</li>
+<li><strong>Applications:</strong> Utilizing population genetics in conservation biology, medical association studies, and forensic genetics.</li>
 </ul>
 </section>
 <section id="quantitative-genetics" class="level3">
 <h3 class="anchored" data-anchor-id="quantitative-genetics">Quantitative Genetics</h3>
 <ul>
-<li>Statistical modeling of complex traits<br>
-</li>
-<li>Partitioning genetic and environmental sources of variation<br>
-</li>
-<li>Broad- and narrow-sense heritability<br>
-</li>
-<li>Prediction of offspring phenotypes<br>
-</li>
-<li>QTL mapping and association mapping</li>
+<li><strong>Measuring Variation:</strong> Applying mathematical models and statistical methods (mean, variance, normal distribution) to describe and analyze continuous variation.</li>
+<li><strong>The Simple Genetic Model:</strong> Deconstructing the phenotype into genetic and environmental deviations (<span class="math inline">\(P = \mu + G + E\)</span>); assessing the relative contributions to total phenotypic variation.</li>
+<li><strong>Genetic Architecture:</strong> Partitioning total genetic variance into additive (<span class="math inline">\(V_A\)</span>) and dominance (<span class="math inline">\(V_D\)</span>) components to determine the underlying landscape of complex traits.</li>
+<li><strong>Heritability Analysis:</strong> Calculating and interpreting Broad-sense (<span class="math inline">\(H^2\)</span>) vs.&nbsp;Narrow-sense (<span class="math inline">\(h^2\)</span>) heritability; understanding the biological significance of additive effects.</li>
+<li><strong>Predicting Phenotypes:</strong> Utilizing parental data and the Breeder’s Equation (<span class="math inline">\(R = h^2 S\)</span>) to predict offspring phenotypes and response to selection.</li>
+<li><strong>Association Mapping:</strong> Explaining the principles behind Genome-Wide Association Studies (GWAS); identifying Quantitative Trait Loci (QTLs) through Linkage Disequilibrium.</li>
+<li><strong>Genomic Insights:</strong> Understanding the implications of polygenicity, effect sizes, and regulatory variants in human medicine and agricultural breeding.</li>
 </ul>
 <hr>
 </section>
