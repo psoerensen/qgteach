@@ -1110,35 +1110,35 @@
     "href": "quant-genetics/index.html#course-structure",
     "title": "Quantitative & Population Genetics",
     "section": "Course Structure",
-    "text": "Course Structure\nThis site serves as the core reference for the course. Each chapter is designed to build intuition by connecting theoretical concepts with practical data examples.\nTo support your learning, the materials include:\n\nConceptual Explanations: Clear definitions of key genetic principles.\nMathematical Basics: Step-by-step derivations of the models used in the field.\nWorked Examples: Practical calculations of frequencies, heritability, and selection.\nInteractive Figures: Visualizations and simulations created in R to illustrate complex dynamics."
+    "text": "Course Structure\nThis site serves as the core reference for the course. Each chapter is designed to build intuition by connecting theoretical concepts with practical data examples.\nThe materials include:\n\nConceptual Explanations: Definitions of key genetic principles.\nMathematical Basics: Step-by-step derivations of the models used in the field.\nWorked Examples: Practical calculations of frequencies, heritability, and selection.\nInteractive Figures: Visualizations and simulations created in R to illustrate complex dynamics."
   },
   {
     "objectID": "quant-genetics/index.html#slides",
     "href": "quant-genetics/index.html#slides",
     "title": "Quantitative & Population Genetics",
     "section": "Slides",
-    "text": "Slides\nLecture slides are provided as interactive Reveal.js presentations. These provide a structured overview of the key concepts, mathematical models, and genomic visualizations:\n\nPopulation Genetics\nQuantitative Genetics\n\nNote: The slides are for lecture guidance; the online notes serve as the primary reference for study and exam preparation."
+    "text": "Slides\nLecture slides are provided as interactive Reveal.js presentations. These provide a structured overview of the key concepts, mathematical models, and genomic visualizations:\n\nPopulation Genetics\nQuantitative Genetics\n\nNote: The slides provide lecture guidance; the online notes serve as the primary reference for study and examination preparation."
   },
   {
     "objectID": "quant-genetics/index.html#tutorials",
     "href": "quant-genetics/index.html#tutorials",
     "title": "Quantitative & Population Genetics",
     "section": "Tutorials",
-    "text": "Tutorials\nHands-on tutorials are integrated into the course to help you explore how genetics works in practice. We use R as a “virtual laboratory” to simulate populations and observe genetic change over time.\nKey areas covered in R:\n\nPopulation Basics: Calculating and plotting allele frequencies, genotype distributions, and Hardy-Weinberg expectations.\nEvolutionary Forces: Simulating how mutation, migration, selection, and genetic drift change populations across generations.\nGenomic Patterns: Visualizing Linkage Disequilibrium (LD), haplotype sweeps, and the impact of population bottlenecks.\nPedigrees & History: Plotting family trees to understand inbreeding and using coalescent models to look back at ancestral history.\n\nHow to use the code: The R code is provided as a starting point. You are encouraged to run the examples and experiment with different values—such as changing the population size or the strength of selection—to see how the results change."
+    "text": "Tutorials\nHands-on tutorials are integrated into the course to explore genetic principles in practice. R is utilized as a “virtual laboratory” to simulate populations and observe genetic change over time.\nKey areas covered in R:\n\nPopulation Basics: Calculating and plotting allele frequencies, genotype distributions, and Hardy-Weinberg expectations.\nEvolutionary Forces: Simulating how mutation, migration, selection, and genetic drift change populations across generations.\nGenomic Patterns: Visualizing Linkage Disequilibrium (LD), haplotype sweeps, and the impact of population bottlenecks.\nPedigrees & History: Plotting family trees to clarify inbreeding and utilizing coalescent models to examine ancestral history.\n\nUse of Code: The R code is provided as a starting point for experimentation. The modification of parameters—such as changing the population size or the strength of selection—allows for the observation of changes in genetic outcomes."
   },
   {
     "objectID": "quant-genetics/index.html#prerequisites",
     "href": "quant-genetics/index.html#prerequisites",
     "title": "Quantitative & Population Genetics",
     "section": "Prerequisites",
-    "text": "Prerequisites\nTo successfully engage with the material, users should have:\n\nBasic Genetics: Understanding of Mendelian inheritance, meiosis, and molecular biology.\nIntroductory Statistics: Familiarity with probability, mean, variance, and the normal distribution.\nFamiliarity with R: Basic ability to load data and run scripts."
+    "text": "Prerequisites\nEngagement with the material assumes:\n\nBasic Genetics: Understanding of Mendelian inheritance, meiosis, and molecular biology.\nIntroductory Statistics: Familiarity with probability, mean, variance, and the normal distribution.\nFamiliarity with R: Basic ability to load data and run scripts."
   },
   {
     "objectID": "quant-genetics/index.html#recommended-use",
     "href": "quant-genetics/index.html#recommended-use",
     "title": "Quantitative & Population Genetics",
     "section": "Recommended Use",
-    "text": "Recommended Use\nThis digital textbook is designed to be a living document for your study:\n\nDuring Lectures: Follow along with the conceptual explanations and live code demonstrations.\nSelf-Study: Review the mathematical derivations and worked examples after class.\nProject Work: Consult the R code and simulations as templates for your own data analysis.\nExam Preparation: Revisit the Learning Objectives and Summary slides to test your understanding.\n\nMathematical Reasoning: We emphasize the connection between statistical models and biological reality. Mastering the quantitative interpretations in these notes will provide the conceptual clarity needed for advanced genomic research."
+    "text": "Recommended Use\nThe material is designed to be:\n\nConsulted during lectures for conceptual explanations and code demonstrations.\nReviewed for a deeper understanding of mathematical derivations and worked examples.\nUtilized during project work as a template for data analysis.\nRevisited during examination preparation to test comprehension of Learning Objectives.\n\nMathematical Reasoning: Emphasis is placed on the connection between statistical models and biological reality. Mastering the quantitative interpretations in these notes provides the conceptual clarity necessary for advanced genomic research."
   },
   {
     "objectID": "genomics-systems-bioinfo/index.html",

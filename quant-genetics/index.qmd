@@ -48,12 +48,13 @@ Upon completion of the course, it should be possible to:
 
 This site serves as the core reference for the course. Each chapter is designed to build intuition by connecting theoretical concepts with practical data examples.
 
-To support your learning, the materials include:
+The materials include:
 
-- **Conceptual Explanations:** Clear definitions of key genetic principles.
+- **Conceptual Explanations:** Definitions of key genetic principles.
 - **Mathematical Basics:** Step-by-step derivations of the models used in the field.
 - **Worked Examples:** Practical calculations of frequencies, heritability, and selection.
 - **Interactive Figures:** Visualizations and simulations created in R to illustrate complex dynamics.
+
 
 ## Slides
 
@@ -62,25 +63,25 @@ Lecture slides are provided as interactive **Reveal.js** presentations. These pr
 - [Population Genetics](slides/introduction_population_genetics.html)
 - [Quantitative Genetics](slides/introduction_quantitative_genetics.html)
 
-*Note: The slides are for lecture guidance; the online notes serve as the primary reference for study and exam preparation.*
+*Note: The slides provide lecture guidance; the online notes serve as the primary reference for study and examination preparation.*
 
 ## Tutorials
 
-Hands-on tutorials are integrated into the course to help you explore how genetics works in practice. We use R as a "virtual laboratory" to simulate populations and observe genetic change over time.
+Hands-on tutorials are integrated into the course to explore genetic principles in practice. R is utilized as a "virtual laboratory" to simulate populations and observe genetic change over time.
 
 **Key areas covered in R:**
 
 - **Population Basics:** Calculating and plotting allele frequencies, genotype distributions, and Hardy-Weinberg expectations.
 - **Evolutionary Forces:** Simulating how mutation, migration, selection, and genetic drift change populations across generations.
 - **Genomic Patterns:** Visualizing Linkage Disequilibrium (LD), haplotype sweeps, and the impact of population bottlenecks.
-- **Pedigrees & History:** Plotting family trees to understand inbreeding and using coalescent models to look back at ancestral history.
+- **Pedigrees & History:** Plotting family trees to clarify inbreeding and utilizing coalescent models to examine ancestral history.
 
-**How to use the code:** 
-The R code is provided as a starting point. You are encouraged to run the examples and experiment with different values—such as changing the population size or the strength of selection—to see how the results change.
+**Use of Code:** 
+The R code is provided as a starting point for experimentation. The modification of parameters—such as changing the population size or the strength of selection—allows for the observation of changes in genetic outcomes.
 
 ## Prerequisites
 
-To successfully engage with the material, users should have:
+Engagement with the material assumes:
 
 - **Basic Genetics:** Understanding of Mendelian inheritance, meiosis, and molecular biology.
 - **Introductory Statistics:** Familiarity with probability, mean, variance, and the normal distribution.
@@ -88,11 +89,11 @@ To successfully engage with the material, users should have:
 
 ## Recommended Use
 
-This digital textbook is designed to be a living document for your study:
+The material is designed to be:
 
-- **During Lectures:** Follow along with the conceptual explanations and live code demonstrations.
-- **Self-Study:** Review the mathematical derivations and worked examples after class.
-- **Project Work:** Consult the R code and simulations as templates for your own data analysis.
-- **Exam Preparation:** Revisit the Learning Objectives and Summary slides to test your understanding.
+- Consulted during lectures for conceptual explanations and code demonstrations.
+- Reviewed for a deeper understanding of mathematical derivations and worked examples.
+- Utilized during project work as a template for data analysis.
+- Revisited during examination preparation to test comprehension of Learning Objectives.
 
-**Mathematical Reasoning:** We emphasize the connection between statistical models and biological reality. Mastering the quantitative interpretations in these notes will provide the conceptual clarity needed for advanced genomic research.
+**Mathematical Reasoning:** Emphasis is placed on the connection between statistical models and biological reality. Mastering the quantitative interpretations in these notes provides the conceptual clarity necessary for advanced genomic research.
