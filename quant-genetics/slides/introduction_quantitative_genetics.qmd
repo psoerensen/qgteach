@@ -146,9 +146,9 @@ To study complex traits, we need basic statistical tools:
 
 <br>
 
-- **Mean** → describes differences between groups  
-- **Variance** → quantifies variation within groups  
-- **Normal distribution** → describes how variation is distributed  
+- **Mean** describes differences between groups  
+- **Variance** quantifies variation within groups  
+- **Normal distribution** describes how variation is distributed  
 
 <br>
 
@@ -206,6 +206,8 @@ Quantitative genetics focuses on traits that do not follow simple Mendelian rati
 - Infinite range of values (e.g., height)  
 - Typically influenced by many genes and the environment  
 
+<br>
+
 **Categorical traits**
 
 - Discrete groups (e.g., purple vs. white flowers)  
@@ -218,7 +220,9 @@ Quantitative genetics focuses on traits that do not follow simple Mendelian rati
 **Threshold traits**
 
 - Categorical outcome  
-- Underlying liability is quantitative (e.g., type 2 diabetes)  
+- Underlying liability is quantitative (e.g., type 2 diabetes) 
+
+<br>
 
 **Meristic traits**
 
@@ -332,90 +336,6 @@ The sample mean is our best estimate of the unknown population mean.
 
 
 
-## Mean Using Frequencies
-
-::: {.columns}
-
-::: {.column width="50%"}
-
-**Definition (Grouped Data)**
-
-If data are grouped into classes:
-
-$$
-\bar{X} = \frac{\sum f_i X_i}{n}
-$$
-
-- $f_i$ = frequency of class $i$  
-- $X_i$ = value or midpoint of class $i$  
-- $n = \sum f_i$
-
-The mean is a **weighted average**.
-
-:::
-
-::: {.column width="50%"}
-
-**Example**
-
-Suppose height data are grouped:
-
-| Height (cm) | Frequency ($f_i$) |
-|-------------|-------------------|
-| 165 | 2 |
-| 170 | 3 |
-| 175 | 1 |
-
-Total $n = 6$
-
-$$
-\bar{X} =
-\frac{(2 \cdot 165) + (3 \cdot 170) + (1 \cdot 175)}{6}
-$$
-
-$$
-\bar{X} =
-\frac{1015}{6}
-= 169.2 \text{ cm}
-$$
-
-:::
-
-:::
-
-::: notes
-
-Sometimes we do not have access to individual observations.  
-Instead, data are grouped into classes with associated frequencies.
-
-In that case, we compute a weighted mean.
-
-Each class value is multiplied by how often it occurs, and we then divide by the total number of observations.
-
-On the left, the formula shows that the mean is a weighted average.  
-The total sample size equals the sum of all class frequencies.
-
-On the right, we see a small example.
-
-We multiply each height by its frequency:
-two times 165,
-three times 170,
-and one time 175.
-
-We then divide by the total number of individuals, which is six.
-
-In larger datasets, classes often represent intervals, such as 165–169 cm.  
-In that case, we use the class midpoint as the value $X_i$.
-
-The grouped mean allows us to summarize populations and compare groups.
-
-For example, if one group averages 170 cm and another averages 166 cm,  
-we can begin to ask whether the difference is due to genetics, environment, or both.
-
-Later, we will connect this idea to how variance can be partitioned into genetic and environmental components.
-
-:::
-
 
 ## The Variance
 
@@ -458,18 +378,11 @@ $$
 \bar{X} = 170
 $$
 
-Deviations:
--2, 2, 0, 4, -4  
+Deviations: -2, 2, 0, 4, -4  
 
-Squared deviations:
-4, 4, 0, 16, 16  
+Squared deviations: 4, 4, 0, 16, 16  (sum = 40)
 
-Sum of squares:
-$$
-40
-$$
-
-Variance (using n=5):
+Variance (n = 5):
 $$
 \sigma^2 = \frac{40}{5} = 8
 $$
@@ -478,7 +391,6 @@ Standard deviation:
 $$
 \sigma = \sqrt{8} \approx 2.83 \text{ cm}
 $$
-
 :::
 
 :::
@@ -724,21 +636,17 @@ $$
 
 **Interpretation**
 
-- $\mu$ defines the population baseline  
-- $G$ captures genetic differences among individuals  
-- $E$ captures environmental differences  
+Differences between individuals arise from:
 
-Two individuals may differ because:
-
-- They carry different alleles  
-- They experience different environments  
+- Genetic variation  
+- Environmental variation  
 - Or both  
 
-This model forms the foundation for:
+This model underlies:
 
 - Variance partitioning  
-- Heritability  
-- Prediction of response to selection  
+- Heritability estimation  
+- Prediction of selection response  
 
 :::
 
@@ -787,10 +695,8 @@ and modern genomic prediction models.
 
 **Step 1: Observed phenotype**
 
-- Yao Ming’s height:  
-  P = 229 cm  
-- Population mean:  
-  $\mu$ = 170 cm  
+- Yao Ming’s height:  \( P = 229 \) cm  
+- Population mean:  \( \mu = 170 \) cm  
 
 <br>
 
@@ -810,7 +716,7 @@ He is **59 cm taller than average**.
 
 ::: {.column width="50%"}
 
-**Step 3: Apply the genetic model**
+**Step 3: Interpret using the genetic model**
 
 Recall:
 
@@ -824,14 +730,14 @@ $$
 59 = G + E
 $$
 
-His exceptional height must be due to:
+The deviation must arise from:
 
-- A genetic component ($G$)  
-- An environmental component ($E$)  
+- Genetic effects ($G$)  
+- Environmental effects ($E$)  
 - Or both  
 
-We observe only the total deviation —  
-not its individual components.
+We observe only the total deviation — not its separate components.
+
 
 :::
 
@@ -1073,8 +979,7 @@ $$
 Check:
 
 $$
-V_P = V_G + V_E
-V_P = 12.00 + 2.67 = 14.67
+V_P = V_G + V_E = 12.00 + 2.67 = 14.67
 $$
 
 :::
@@ -1084,29 +989,21 @@ $$
 **Interpretation**
 
 - Most variation is genetic  
-  (12.00 out of 14.67)
+  (12.00 of 14.67)
 
 - Environmental variation is smaller  
   (2.67)
 
-- The decomposition works because:
+- The decomposition holds because:
 
   $$
   \mathrm{Cov}(G,E) = 0
   $$
 
 - Genotypes were randomized  
-  across environments
+  across environments  
 
-<br>
-
-This example illustrates that:
-
-$$
-V_P = V_G + V_E
-$$
-
-holds when genotype and environment are independent.
+This illustrates that variance components add when genotype and environment are independent.
 
 :::
 
@@ -1150,56 +1047,57 @@ Heritability is simply a ratio constructed from these variance components.
 
 :::
 
-
-## Correlation: What Does It Measure?
+## Covariance and Correlation in Quantitative Genetics
 
 ::: {.columns}
 
 ::: {.column width="50%"}
 
-**Definition**
+**Covariance: The Core Quantity**
 
-Correlation measures how two variables change together.
+Covariance measures whether two variables
+vary together:
 
 $$
-r = \frac{\mathrm{Cov}(X,Y)}{\sigma_X \sigma_Y}
+\mathrm{Cov}(X,Y)
 $$
 
-- $-1 \le r \le 1$
-- $r = 1$ → perfect positive relationship  
-- $r = 0$ → no linear relationship  
-- $r = -1$ → perfect negative relationship  
+It appears everywhere in QG:
+
+- Phenotypic variance  
+- Genetic variance  
+- Genetic covariance between traits  
+- Response to selection  
+
+Variance is simply:
+
+$$
+\mathrm{Var}(X) = \mathrm{Cov}(X,X)
+$$
 
 :::
 
 ::: {.column width="50%"}
 
-**Why It Matters in Genetics**
+**Standardized Form: Correlation**
 
-Recall:
+Correlation rescales covariance:
+
+$$
+r = \frac{\mathrm{Cov}(X,Y)}{\sigma_X \sigma_Y}
+$$
+
+- Unitless  
+- Bounded between −1 and 1  
+- Measures strength of linear association  
+
+In the variance model:
 
 $$
 V_P = V_G + V_E + 2\mathrm{Cov}(G,E)
 $$
 
-If genotype and environment are independent:
-
-$$
-\mathrm{Cov}(G,E) = 0
-$$
-
-Then:
-
-$$
-V_P = V_G + V_E
-$$
-
-If $G$ and $E$ are correlated,  
-the covariance term does not vanish,  
-and variance cannot be cleanly partitioned.
-
-Correlation determines whether  
-heritability can be properly estimated.
+If $\mathrm{Cov}(G,E)$ = 0, variance components add cleanly.
 
 :::
 
@@ -1207,32 +1105,29 @@ heritability can be properly estimated.
 
 ::: notes
 
-Correlation measures whether two variables vary together.
+Covariance measures whether two variables vary together.
 
-It is a standardized form of covariance,
-which makes it unitless and bounded between minus one and one.
+In quantitative genetics, this idea is fundamental.
+Even variance is just a special case of covariance —
+it is the covariance of a variable with itself.
 
-Now connect this to genetics.
-
-In our variance model,
-phenotypic variance equals genetic variance plus environmental variance
-plus a covariance term.
+When we decompose phenotypic variance,
+we say that phenotypic variance equals genetic variance
+plus environmental variance
+plus twice the covariance between genetic and environmental effects.
 
 If genotype and environment are independent,
-that covariance equals zero,
-and the clean partition holds.
+that covariance is zero,
+and the variance partitions cleanly.
 
-But if genetic and environmental effects are correlated,
-the covariance term remains.
+If they are correlated,
+the covariance term remains,
+and we cannot cleanly separate genetic and environmental effects.
 
-In that case, we cannot cleanly separate genetic and environmental variation.
-
-This is why correlation is central in quantitative genetics —
-it determines whether heritability can be estimated correctly.
+In many ways,
+quantitative genetics is the study of variances and covariances.
 
 :::
-
-
 
 
 ## Visualizing Correlation
@@ -1422,7 +1317,7 @@ Interpretation:
 
 **Experiment II: More Variable Environments**
 
-- $V_G = 12.0$  (same genotypes)
+- $V_G = 12.0$
 - $V_E = 24.0$
 - $V_P = 36.0$
 
@@ -4119,6 +4014,91 @@ h^2 = \frac{V_A}{V_P}
 $$
 
 Only additive variance drives response to selection.
+
+
+## Mean Using Frequencies
+
+::: {.columns}
+
+::: {.column width="50%"}
+
+**Definition (Grouped Data)**
+
+If data are grouped into classes:
+
+$$
+\bar{X} = \frac{\sum f_i X_i}{n}
+$$
+
+- $f_i$ = frequency of class $i$  
+- $X_i$ = value or midpoint of class $i$  
+- $n = \sum f_i$
+
+The mean is a **weighted average**.
+
+:::
+
+::: {.column width="50%"}
+
+**Example**
+
+Suppose height data are grouped:
+
+| Height (cm) | Frequency ($f_i$) |
+|-------------|-------------------|
+| 165 | 2 |
+| 170 | 3 |
+| 175 | 1 |
+
+Total $n = 6$
+
+$$
+\bar{X} =
+\frac{(2 \cdot 165) + (3 \cdot 170) + (1 \cdot 175)}{6}
+$$
+
+$$
+\bar{X} =
+\frac{1015}{6}
+= 169.2 \text{ cm}
+$$
+
+:::
+
+:::
+
+::: notes
+
+Sometimes we do not have access to individual observations.  
+Instead, data are grouped into classes with associated frequencies.
+
+In that case, we compute a weighted mean.
+
+Each class value is multiplied by how often it occurs, and we then divide by the total number of observations.
+
+On the left, the formula shows that the mean is a weighted average.  
+The total sample size equals the sum of all class frequencies.
+
+On the right, we see a small example.
+
+We multiply each height by its frequency:
+two times 165,
+three times 170,
+and one time 175.
+
+We then divide by the total number of individuals, which is six.
+
+In larger datasets, classes often represent intervals, such as 165–169 cm.  
+In that case, we use the class midpoint as the value $X_i$.
+
+The grouped mean allows us to summarize populations and compare groups.
+
+For example, if one group averages 170 cm and another averages 166 cm,  
+we can begin to ask whether the difference is due to genetics, environment, or both.
+
+Later, we will connect this idea to how variance can be partitioned into genetic and environmental components.
+
+:::
 
 
 -->

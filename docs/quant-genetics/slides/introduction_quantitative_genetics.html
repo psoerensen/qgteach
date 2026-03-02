@@ -267,11 +267,11 @@ Peter Sørensen
 <p>To study complex traits, we need basic statistical tools:</p>
 <p><br></p>
 <ul>
-<li><strong>Mean</strong> → describes differences between groups<br>
+<li><strong>Mean</strong> describes differences between groups<br>
 </li>
-<li><strong>Variance</strong> → quantifies variation within groups<br>
+<li><strong>Variance</strong> quantifies variation within groups<br>
 </li>
-<li><strong>Normal distribution</strong> → describes how variation is distributed</li>
+<li><strong>Normal distribution</strong> describes how variation is distributed</li>
 </ul>
 <p><br></p>
 <p>Quantitative genetics focuses on traits with <strong>complex inheritance</strong>.</p>
@@ -318,6 +318,7 @@ f(x) = \frac{1}{\sqrt{2\pi\sigma^2}}
 </li>
 <li>Typically influenced by many genes and the environment</li>
 </ul>
+<p><br></p>
 <p><strong>Categorical traits</strong></p>
 <ul>
 <li>Discrete groups (e.g., purple vs.&nbsp;white flowers)<br>
@@ -331,6 +332,7 @@ f(x) = \frac{1}{\sqrt{2\pi\sigma^2}}
 </li>
 <li>Underlying liability is quantitative (e.g., type 2 diabetes)</li>
 </ul>
+<p><br></p>
 <p><strong>Meristic traits</strong></p>
 <ul>
 <li>Countable values (e.g., clutch size)<br>
@@ -415,87 +417,6 @@ Even though the sample size here is only five individuals, the exact same comput
           display:block!important;
       }</style></aside>
 </section>
-<section id="mean-using-frequencies" class="slide level2">
-<h2>Mean Using Frequencies</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Definition (Grouped Data)</strong></p>
-<p>If data are grouped into classes:</p>
-<p><span class="math display">\[
-\bar{X} = \frac{\sum f_i X_i}{n}
-\]</span></p>
-<ul>
-<li><span class="math inline">\(f_i\)</span> = frequency of class <span class="math inline">\(i\)</span><br>
-</li>
-<li><span class="math inline">\(X_i\)</span> = value or midpoint of class <span class="math inline">\(i\)</span><br>
-</li>
-<li><span class="math inline">\(n = \sum f_i\)</span></li>
-</ul>
-<p>The mean is a <strong>weighted average</strong>.</p>
-</div><div class="column" style="width:50%;">
-<p><strong>Example</strong></p>
-<p>Suppose height data are grouped:</p>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Height (cm)</th>
-<th>Frequency (<span class="math inline">\(f_i\)</span>)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>165</td>
-<td>2</td>
-</tr>
-<tr class="even">
-<td>170</td>
-<td>3</td>
-</tr>
-<tr class="odd">
-<td>175</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
-<p>Total <span class="math inline">\(n = 6\)</span></p>
-<p><span class="math display">\[
-\bar{X} =
-\frac{(2 \cdot 165) + (3 \cdot 170) + (1 \cdot 175)}{6}
-\]</span></p>
-<p><span class="math display">\[
-\bar{X} =
-\frac{1015}{6}
-= 169.2 \text{ cm}
-\]</span></p>
-</div></div>
-<aside class="notes">
-<p>Sometimes we do not have access to individual observations.<br>
-Instead, data are grouped into classes with associated frequencies.</p>
-<p>In that case, we compute a weighted mean.</p>
-<p>Each class value is multiplied by how often it occurs, and we then divide by the total number of observations.</p>
-<p>On the left, the formula shows that the mean is a weighted average.<br>
-The total sample size equals the sum of all class frequencies.</p>
-<p>On the right, we see a small example.</p>
-<p>We multiply each height by its frequency: two times 165, three times 170, and one time 175.</p>
-<p>We then divide by the total number of individuals, which is six.</p>
-<p>In larger datasets, classes often represent intervals, such as 165–169 cm.<br>
-In that case, we use the class midpoint as the value <span class="math inline">\(X_i\)</span>.</p>
-<p>The grouped mean allows us to summarize populations and compare groups.</p>
-<p>For example, if one group averages 170 cm and another averages 166 cm,<br>
-we can begin to ask whether the difference is due to genetics, environment, or both.</p>
-<p>Later, we will connect this idea to how variance can be partitioned into genetic and environmental components.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
 <section id="the-variance" class="slide level2">
 <h2>The Variance</h2>
 <div class="columns">
@@ -521,11 +442,8 @@ d_i = X_i - \bar{X}
 \bar{X} = 170
 \]</span></p>
 <p>Deviations: -2, 2, 0, 4, -4</p>
-<p>Squared deviations: 4, 4, 0, 16, 16</p>
-<p>Sum of squares: <span class="math display">\[
-40
-\]</span></p>
-<p>Variance (using n=5): <span class="math display">\[
+<p>Squared deviations: 4, 4, 0, 16, 16 (sum = 40)</p>
+<p>Variance (n = 5): <span class="math display">\[
 \sigma^2 = \frac{40}{5} = 8
 \]</span></p>
 <p>Standard deviation: <span class="math display">\[
@@ -681,28 +599,21 @@ p = P - \mu = G + E
 \]</span></p>
 </div><div class="column" style="width:50%;">
 <p><strong>Interpretation</strong></p>
+<p>Differences between individuals arise from:</p>
 <ul>
-<li><span class="math inline">\(\mu\)</span> defines the population baseline<br>
+<li>Genetic variation<br>
 </li>
-<li><span class="math inline">\(G\)</span> captures genetic differences among individuals<br>
-</li>
-<li><span class="math inline">\(E\)</span> captures environmental differences</li>
-</ul>
-<p>Two individuals may differ because:</p>
-<ul>
-<li>They carry different alleles<br>
-</li>
-<li>They experience different environments<br>
+<li>Environmental variation<br>
 </li>
 <li>Or both</li>
 </ul>
-<p>This model forms the foundation for:</p>
+<p>This model underlies:</p>
 <ul>
 <li>Variance partitioning<br>
 </li>
-<li>Heritability<br>
+<li>Heritability estimation<br>
 </li>
-<li>Prediction of response to selection</li>
+<li>Prediction of selection response</li>
 </ul>
 </div></div>
 <aside class="notes">
@@ -737,11 +648,9 @@ p = P - \mu = G + E
 <div class="column" style="width:50%;">
 <p><strong>Step 1: Observed phenotype</strong></p>
 <ul>
-<li>Yao Ming’s height:<br>
-P = 229 cm<br>
+<li>Yao Ming’s height: ( P = 229 ) cm<br>
 </li>
-<li>Population mean:<br>
-<span class="math inline">\(\mu\)</span> = 170 cm</li>
+<li>Population mean: ( = 170 ) cm</li>
 </ul>
 <p><br></p>
 <p><strong>Step 2: Deviation from the mean</strong></p>
@@ -753,7 +662,7 @@ p = 229 - 170 = 59 \text{ cm}
 \]</span></p>
 <p>He is <strong>59 cm taller than average</strong>.</p>
 </div><div class="column" style="width:50%;">
-<p><strong>Step 3: Apply the genetic model</strong></p>
+<p><strong>Step 3: Interpret using the genetic model</strong></p>
 <p>Recall:</p>
 <p><span class="math display">\[
 p = G + E
@@ -762,16 +671,15 @@ p = G + E
 <p><span class="math display">\[
 59 = G + E
 \]</span></p>
-<p>His exceptional height must be due to:</p>
+<p>The deviation must arise from:</p>
 <ul>
-<li>A genetic component (<span class="math inline">\(G\)</span>)<br>
+<li>Genetic effects (<span class="math inline">\(G\)</span>)<br>
 </li>
-<li>An environmental component (<span class="math inline">\(E\)</span>)<br>
+<li>Environmental effects (<span class="math inline">\(E\)</span>)<br>
 </li>
 <li>Or both</li>
 </ul>
-<p>We observe only the total deviation —<br>
-not its individual components.</p>
+<p>We observe only the total deviation — not its separate components.</p>
 </div></div>
 <aside class="notes">
 <p>This slide applies the quantitative genetic model to a concrete example.</p>
@@ -899,29 +807,23 @@ V_E = 2.67
 \]</span></p>
 <p>Check:</p>
 <p><span class="math display">\[
-V_P = V_G + V_E
-V_P = 12.00 + 2.67 = 14.67
+V_P = V_G + V_E = 12.00 + 2.67 = 14.67
 \]</span></p>
 </div><div class="column" style="width:50%;">
 <p><strong>Interpretation</strong></p>
 <ul>
 <li><p>Most variation is genetic<br>
-(12.00 out of 14.67)</p></li>
+(12.00 of 14.67)</p></li>
 <li><p>Environmental variation is smaller<br>
 (2.67)</p></li>
-<li><p>The decomposition works because:</p>
+<li><p>The decomposition holds because:</p>
 <p><span class="math display">\[
 \mathrm{Cov}(G,E) = 0
 \]</span></p></li>
 <li><p>Genotypes were randomized<br>
 across environments</p></li>
 </ul>
-<p><br></p>
-<p>This example illustrates that:</p>
-<p><span class="math display">\[
-V_P = V_G + V_E
-\]</span></p>
-<p>holds when genotype and environment are independent.</p>
+<p>This illustrates that variance components add when genotype and environment are independent.</p>
 </div></div>
 <aside class="notes">
 <p>This slide applies the variance decomposition to real data.</p>
@@ -951,52 +853,55 @@ V_P = V_G + V_E
           display:block!important;
       }</style></aside>
 </section>
-<section id="correlation-what-does-it-measure" class="slide level2">
-<h2>Correlation: What Does It Measure?</h2>
+<section id="covariance-and-correlation-in-quantitative-genetics" class="slide level2">
+<h2>Covariance and Correlation in Quantitative Genetics</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><strong>Definition</strong></p>
-<p>Correlation measures how two variables change together.</p>
+<p><strong>Covariance: The Core Quantity</strong></p>
+<p>Covariance measures whether two variables vary together:</p>
+<p><span class="math display">\[
+\mathrm{Cov}(X,Y)
+\]</span></p>
+<p>It appears everywhere in QG:</p>
+<ul>
+<li>Phenotypic variance<br>
+</li>
+<li>Genetic variance<br>
+</li>
+<li>Genetic covariance between traits<br>
+</li>
+<li>Response to selection</li>
+</ul>
+<p>Variance is simply:</p>
+<p><span class="math display">\[
+\mathrm{Var}(X) = \mathrm{Cov}(X,X)
+\]</span></p>
+</div><div class="column" style="width:50%;">
+<p><strong>Standardized Form: Correlation</strong></p>
+<p>Correlation rescales covariance:</p>
 <p><span class="math display">\[
 r = \frac{\mathrm{Cov}(X,Y)}{\sigma_X \sigma_Y}
 \]</span></p>
 <ul>
-<li><span class="math inline">\(-1 \le r \le 1\)</span></li>
-<li><span class="math inline">\(r = 1\)</span> → perfect positive relationship<br>
+<li>Unitless<br>
 </li>
-<li><span class="math inline">\(r = 0\)</span> → no linear relationship<br>
+<li>Bounded between −1 and 1<br>
 </li>
-<li><span class="math inline">\(r = -1\)</span> → perfect negative relationship</li>
+<li>Measures strength of linear association</li>
 </ul>
-</div><div class="column" style="width:50%;">
-<p><strong>Why It Matters in Genetics</strong></p>
-<p>Recall:</p>
+<p>In the variance model:</p>
 <p><span class="math display">\[
 V_P = V_G + V_E + 2\mathrm{Cov}(G,E)
 \]</span></p>
-<p>If genotype and environment are independent:</p>
-<p><span class="math display">\[
-\mathrm{Cov}(G,E) = 0
-\]</span></p>
-<p>Then:</p>
-<p><span class="math display">\[
-V_P = V_G + V_E
-\]</span></p>
-<p>If <span class="math inline">\(G\)</span> and <span class="math inline">\(E\)</span> are correlated,<br>
-the covariance term does not vanish,<br>
-and variance cannot be cleanly partitioned.</p>
-<p>Correlation determines whether<br>
-heritability can be properly estimated.</p>
+<p>If <span class="math inline">\(\mathrm{Cov}(G,E)\)</span> = 0, variance components add cleanly.</p>
 </div></div>
 <aside class="notes">
-<p>Correlation measures whether two variables vary together.</p>
-<p>It is a standardized form of covariance, which makes it unitless and bounded between minus one and one.</p>
-<p>Now connect this to genetics.</p>
-<p>In our variance model, phenotypic variance equals genetic variance plus environmental variance plus a covariance term.</p>
-<p>If genotype and environment are independent, that covariance equals zero, and the clean partition holds.</p>
-<p>But if genetic and environmental effects are correlated, the covariance term remains.</p>
-<p>In that case, we cannot cleanly separate genetic and environmental variation.</p>
-<p>This is why correlation is central in quantitative genetics — it determines whether heritability can be estimated correctly.</p>
+<p>Covariance measures whether two variables vary together.</p>
+<p>In quantitative genetics, this idea is fundamental. Even variance is just a special case of covariance — it is the covariance of a variable with itself.</p>
+<p>When we decompose phenotypic variance, we say that phenotypic variance equals genetic variance plus environmental variance plus twice the covariance between genetic and environmental effects.</p>
+<p>If genotype and environment are independent, that covariance is zero, and the variance partitions cleanly.</p>
+<p>If they are correlated, the covariance term remains, and we cannot cleanly separate genetic and environmental effects.</p>
+<p>In many ways, quantitative genetics is the study of variances and covariances.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1106,7 +1011,7 @@ H^2 = \frac{12.0}{14.67} = 0.82
 </div><div class="column" style="width:50%;">
 <p><strong>Experiment II: More Variable Environments</strong></p>
 <ul>
-<li><span class="math inline">\(V_G = 12.0\)</span> (same genotypes)</li>
+<li><span class="math inline">\(V_G = 12.0\)</span></li>
 <li><span class="math inline">\(V_E = 24.0\)</span></li>
 <li><span class="math inline">\(V_P = 36.0\)</span></li>
 </ul>
@@ -3066,6 +2971,91 @@ h^2 = \frac{V_A}{V_P}
 $$
 
 Only additive variance drives response to selection.
+
+
+## Mean Using Frequencies
+
+::: {.columns}
+
+::: {.column width="50%"}
+
+**Definition (Grouped Data)**
+
+If data are grouped into classes:
+
+$$
+\bar{X} = \frac{\sum f_i X_i}{n}
+$$
+
+- $f_i$ = frequency of class $i$  
+- $X_i$ = value or midpoint of class $i$  
+- $n = \sum f_i$
+
+The mean is a **weighted average**.
+
+:::
+
+::: {.column width="50%"}
+
+**Example**
+
+Suppose height data are grouped:
+
+| Height (cm) | Frequency ($f_i$) |
+|-------------|-------------------|
+| 165 | 2 |
+| 170 | 3 |
+| 175 | 1 |
+
+Total $n = 6$
+
+$$
+\bar{X} =
+\frac{(2 \cdot 165) + (3 \cdot 170) + (1 \cdot 175)}{6}
+$$
+
+$$
+\bar{X} =
+\frac{1015}{6}
+= 169.2 \text{ cm}
+$$
+
+:::
+
+:::
+
+::: notes
+
+Sometimes we do not have access to individual observations.  
+Instead, data are grouped into classes with associated frequencies.
+
+In that case, we compute a weighted mean.
+
+Each class value is multiplied by how often it occurs, and we then divide by the total number of observations.
+
+On the left, the formula shows that the mean is a weighted average.  
+The total sample size equals the sum of all class frequencies.
+
+On the right, we see a small example.
+
+We multiply each height by its frequency:
+two times 165,
+three times 170,
+and one time 175.
+
+We then divide by the total number of individuals, which is six.
+
+In larger datasets, classes often represent intervals, such as 165–169 cm.  
+In that case, we use the class midpoint as the value $X_i$.
+
+The grouped mean allows us to summarize populations and compare groups.
+
+For example, if one group averages 170 cm and another averages 166 cm,  
+we can begin to ask whether the difference is due to genetics, environment, or both.
+
+Later, we will connect this idea to how variance can be partitioned into genetic and environmental components.
+
+:::
 
 
 -->
