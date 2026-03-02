@@ -130,6 +130,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Introduction to Quantiative Genetics</h1>
+  <p class="subtitle">Chapter 19 - Complex Traits - Introduction to Genetic Analysis (12th ed.)</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -149,15 +150,15 @@ Peter Sørensen
 </section>
 <section id="learning-goals---quantitative-genetics" class="slide level2">
 <h2>Learning Goals - Quantitative Genetics</h2>
-<p><strong>1. Measuring Quantitative Variation</strong></p>
+<p><strong>1 Measuring Quantitative Variation</strong></p>
 <ul>
-<li>Understand how mathematical models and statistical methods are used to study complex traits</li>
+<li>Understand how mathematical models and statistics are used to study complex traits</li>
 </ul>
-<p><strong>2. A Simple Genetic Model</strong></p>
+<p><strong>2 A Simple Genetic Model</strong></p>
 <ul>
-<li>Assess the relative contributions of genetic and environmental factors to phenotypic variation</li>
+<li>Assess the relative contributions of genetic and environmental factors to phenotypic traits</li>
 </ul>
-<p><strong>3. Heritability</strong></p>
+<p><strong>3 Heritability</strong></p>
 <ul>
 <li>Calculate and interpret <strong>broad-sense heritability</strong><br>
 </li>
@@ -165,17 +166,19 @@ Peter Sørensen
 </li>
 <li>Use parental phenotypes to predict offspring phenotypes</li>
 </ul>
-<p><strong>4. Mapping Quantitative Traits</strong></p>
+<p><strong>4 Mapping Quantitative Traits</strong></p>
 <ul>
-<li>Explain the principle behind association mapping studies</li>
+<li>Determine how many genes contribute to variation in a trait<br>
+</li>
+<li>Design and analyze QTL and association mapping studies</li>
 </ul>
 <aside class="notes">
-<p>In quantitative genetics, our focus shifts from single-gene traits to quantitative traits — traits that vary continuously, such as height, milk yield, blood pressure, or crop yield.</p>
-<p>First, we look at how to measure quantitative variation. We use mathematical models and statistical methods to describe and analyze complex traits. This is really where genetics meets statistics.</p>
-<p>Next, we introduce a simple genetic model. This model allows us to separate phenotypic variation into genetic and environmental components, and to assess how much each contributes to the trait.</p>
-<p>We then study heritability. Broad-sense heritability measures the total genetic contribution to phenotypic variation. Narrow-sense heritability focuses specifically on additive genetic effects, which are especially important because they allow us to predict offspring phenotypes from parental phenotypes.</p>
-<p>Finally, we discuss the principle behind association mapping studies. These approaches test for statistical associations between genetic variants and traits, helping us identify loci that contribute to quantitative variation.</p>
-<p>By the end of this chapter, you should understand how quantitative traits are analyzed, how heritability is interpreted, and how genetic loci contributing to complex traits can be identified.</p>
+<p>In quantiative genetics our focus shifts from single-gene traits to quantitative traits — traits that vary continuously, such as height, milk yield, blood pressure, or crop yield.</p>
+<p>First, we will learn how to measure and describe quantitative variation using statistical tools. This is where population genetics meets statistics.</p>
+<p>Next, we introduce a simple genetic model that separates phenotypic variation into genetic and environmental components.</p>
+<p>We then study heritability: Broad-sense heritability measures the total genetic contribution to variation. Narrow-sense heritability focuses on additive genetic effects and allows prediction of offspring phenotypes.</p>
+<p>Finally, we examine mapping approaches: QTL mapping in populations with known pedigrees. Association mapping in random-mating populations.</p>
+<p>By the end of this chapter, you should understand how quantitative traits are analyzed and how loci contributing to complex traits can be identified.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -196,26 +199,38 @@ Peter Sørensen
 <li>Do <strong>not</strong> follow simple Mendelian ratios</li>
 <li>Are influenced by:
 <ul>
-<li><strong>Multiple genes</strong> (Polygenic)</li>
+<li><strong>Multiple genes</strong></li>
 <li><strong>Environmental factors</strong></li>
 </ul></li>
 </ul>
 <p>Examples:</p>
 <ul>
-<li>Human height, Blood pressure, Crop yield, Milk production</li>
+<li>Human height<br>
+</li>
+<li>Blood pressure<br>
+</li>
+<li>Crop yield<br>
+</li>
+<li>Milk production</li>
 </ul>
 <p><strong>Multifactorial hypothesis</strong></p>
 <ul>
-<li>Many Mendelian loci (each with a small effect)</li>
+<li>Many Mendelian loci (each small effect)</li>
 <li>Environmental contributions</li>
 </ul>
 <aside class="notes">
-<p>Complex traits differ fundamentally from the Mendelian traits we studied earlier. Instead of clear, discrete categories—like Mendel’s purple vs.&nbsp;white flowers—we see a <strong>continuous spectrum</strong>.</p>
-<p>Take human height: people aren’t just “tall” or “short.” They vary across a bell curve. This variation comes from two sources: <strong>multiple genes</strong>, each contributing a small nudge to the phenotype, and <strong>environmental factors</strong> like nutrition and lifestyle.</p>
-<p>Historically, this caused a massive rift in biology. When Mendel’s laws were rediscovered in 1900, scientists couldn’t see how his “discrete units” could possibly explain “continuous variation.”</p>
-<p>On one side, the <strong>Biometricians</strong> argued that continuous traits were too complex for Mendel’s laws. On the other, the <strong>Mendelians</strong> focused only on discrete traits and ignored the rest.</p>
-<p>The resolution was the <strong>Multifactorial Hypothesis</strong>. It proved that if you have enough Mendelian loci—each following Mendel’s laws but each having only a tiny effect—the result is a smooth, continuous distribution.</p>
-<p>This slide represents the <strong>birth of Quantitative Genetics</strong>: the synthesis that unified Mendelian inheritance with the statistical description of variation.</p>
+<p>Complex traits differ from the simple Mendelian traits we studied earlier.</p>
+<p>Instead of falling into clear categories — like purple vs.&nbsp;white flowers — they show a continuous distribution.</p>
+<p>Human height is a classic example. People are not just “tall” or “short” — they vary across a spectrum.</p>
+<p>These traits are influenced by many genes, each contributing a small effect, as well as environmental factors such as nutrition, climate, and lifestyle.</p>
+<p>Historically, this caused major confusion.</p>
+<p>When Mendel’s laws were rediscovered around 1900, scientists struggled to reconcile them with continuous traits.</p>
+<p>Biometricians argued that continuous traits did not follow Mendel.</p>
+<p>Mendelians focused on discrete traits and ignored quantitative variation.</p>
+<p>The resolution came with the multifactorial hypothesis:</p>
+<p>Continuous traits can be explained by many Mendelian loci, each with small effects, plus environmental variation.</p>
+<p>This unified Mendelian genetics and statistical descriptions of variation.</p>
+<p>Quantitative genetics was born from this synthesis.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -243,11 +258,15 @@ Peter Sørensen
 <li>Population-specific variation</li>
 </ul>
 <aside class="notes">
-<p>Classic Mendelian analysis is powerful, but it does not work for continuous variation. Because we cannot sort individuals into simple categories like “tall” or “short” with expected 3-to-1 ratios, we must turn to the language of <strong>mathematics and statistics</strong>.</p>
-<p>A central concept you will hear throughout this course is <strong>Genetic Architecture</strong>. This refers to the full landscape of genetic factors influencing a trait.</p>
-<p>When we talk about architecture, we are asking: First, how many genes are involved? Is it ten, or ten thousand? Second, what is the size of their effects? Do a few “major” genes do most of the work, or is the trait driven by thousands of “tiny” effects? And finally, how does this vary between populations?</p>
-<p>For example, the genetic architecture of blood pressure may differ between two populations if their allele frequencies or environments are different.</p>
-<p>Mapping this architecture is one of the grand challenges of modern biology, with massive implications for personalized medicine, sustainable agriculture, and livestock breeding.</p>
+<p>Classic Mendelian analysis does not work well for continuous traits.</p>
+<p>We cannot sort individuals into simple categories with expected ratios.</p>
+<p>Instead, quantitative genetics uses mathematical models and statistics.</p>
+<p>A central concept is genetic architecture — the full set of genetic factors influencing a trait.</p>
+<p>This includes: - How many genes affect the trait<br>
+- How large their effects are<br>
+- Whether effects differ among populations</p>
+<p>For example, the genetic architecture of blood pressure may differ between human populations because allele frequencies and environments differ.</p>
+<p>Understanding complex traits is one of the major challenges in modern genetics, with applications in medicine, agriculture, and livestock breeding.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -261,40 +280,21 @@ Peter Sørensen
       }</style></aside>
 </section>
 <section id="measuring-quantitative-variation" class="slide level2">
-<h2>Measuring Quantitative Variation</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
+<h2>19.1 Measuring Quantitative Variation</h2>
 <p>To study complex traits, we need basic statistical tools:</p>
-<p><br></p>
 <ul>
-<li><strong>Mean</strong> → describes differences between groups<br>
+<li>Mean → describes differences between groups<br>
 </li>
-<li><strong>Variance</strong> → quantifies variation within groups<br>
+<li>Variance → quantifies variation within groups<br>
 </li>
-<li><strong>Normal distribution</strong> → describes how variation is distributed</li>
+<li>Normal distribution → describes how variation is distributed</li>
 </ul>
-<p><br></p>
 <p>Quantitative genetics focuses on traits with <strong>complex inheritance</strong>.</p>
-</div><div class="column" style="width:50%;">
-<p><strong>Mean</strong></p>
-<p><span class="math display">\[
-\bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i
-\]</span></p>
-<p><strong>Variance</strong></p>
-<p><span class="math display">\[
-\mathrm{Var}(X) = \frac{1}{n-1} \sum_{i=1}^{n} (x_i - \bar{x})^2
-\]</span></p>
-<p><strong>Normal distribution</strong></p>
-<p><span class="math display">\[
-f(x) = \frac{1}{\sqrt{2\pi\sigma^2}}
-\exp\left(-\frac{(x-\mu)^2}{2\sigma^2}\right)
-\]</span></p>
-</div></div>
 <aside class="notes">
-<p>To understand quantitative traits, we first need basic statistical tools.</p>
-<p>The mean allows us to compare groups — for example, average height in two populations.</p>
-<p>Variance tells us how much individuals differ around the mean. Two populations may have the same average, but very different levels of variation.</p>
-<p>Many quantitative traits follow an approximately normal, bell-shaped distribution. This distribution plays a central role in quantitative genetics.</p>
+<p>To understand quantitative traits, we first need statistical tools.</p>
+<p>The mean, or average, helps us compare groups. For example, we can compare the average height of two populations.</p>
+<p>Variance measures how spread out individuals are around the mean. Two populations may have the same average height, but one may show much greater variation.</p>
+<p>The normal distribution is also central. Many complex traits follow an approximately bell-shaped curve.</p>
 <p>Quantitative genetics focuses on traits that do not follow simple Mendelian ratios. Instead, they are influenced by multiple genes and environmental factors.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -310,41 +310,34 @@ f(x) = \frac{1}{\sqrt{2\pi\sigma^2}}
 </section>
 <section id="types-of-traits-and-inheritance" class="slide level2">
 <h2>Types of Traits and Inheritance</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
 <p><strong>Continuous traits</strong></p>
 <ul>
-<li>Infinite range of values (e.g., height)<br>
-</li>
-<li>Typically influenced by many genes and the environment</li>
+<li>Infinite range of values (e.g., height)</li>
+<li>Typically influenced by many genes + environment</li>
 </ul>
 <p><strong>Categorical traits</strong></p>
 <ul>
-<li>Discrete groups (e.g., purple vs.&nbsp;white flowers)<br>
-</li>
-<li>May follow simple or complex inheritance</li>
+<li>Discrete groups (e.g., purple vs.&nbsp;white flowers)</li>
+<li>May show simple or complex inheritance</li>
 </ul>
-</div><div class="column" style="width:50%;">
 <p><strong>Threshold traits</strong></p>
 <ul>
-<li>Categorical outcome<br>
-</li>
-<li>Underlying liability is quantitative (e.g., type 2 diabetes)</li>
+<li>Categorical outcome</li>
+<li>Underlying risk is quantitative (e.g., type 2 diabetes)</li>
 </ul>
 <p><strong>Meristic traits</strong></p>
 <ul>
-<li>Countable values (e.g., clutch size)<br>
-</li>
+<li>Countable values (e.g., clutch size)</li>
 <li>Quantitative but not continuous</li>
 </ul>
-</div></div>
+<p><strong>Key concept:</strong><br>
+A complex trait does not follow simple Mendelian inheritance.</p>
 <aside class="notes">
-<p>Quantitative traits come in several forms, and it is important not to confuse the type of trait with the type of inheritance.</p>
-<p>Continuous traits can take on an infinite range of values. Height is a classic example. If measured precisely enough, there are infinitely many possible values.</p>
-<p>Categorical traits fall into distinct groups. Some follow simple Mendelian inheritance, such as flower color in classic pea experiments. However, many categorical traits — especially diseases — involve complex inheritance.</p>
-<p>Threshold traits are a special case. The observed outcome is categorical — for example, affected or not affected — but the underlying liability is quantitative. Type 2 diabetes is a good example. Disease occurs once an individual’s underlying risk passes a certain threshold.</p>
-<p>Meristic traits are countable traits. For example, a bird can lay one, two, or three eggs — but not two and a half. These traits are discrete, yet still quantitative in nature.</p>
-<p>The key message is this: complex traits are defined by complex inheritance, not by whether the phenotype is continuous or categorical.</p>
+<p>A continuous trait can take on an infinite range of values. Height is a classic example. If measured precisely, there are infinitely many possible values.</p>
+<p>Categorical traits fall into distinct classes. Some show simple Mendelian inheritance, but many diseases do not.</p>
+<p>Type 2 diabetes is an example of a threshold trait. Individuals are either affected or not, but the risk depends on many genetic and environmental factors. Disease occurs once risk passes a threshold.</p>
+<p>Meristic traits are counting traits. For example, a bird can lay 1, 2, or 3 eggs, but not 2.5 eggs. These traits are discrete but still quantitative.</p>
+<p>The important takeaway: A complex trait is defined by complex inheritance, not by whether it is continuous or categorical.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -362,46 +355,51 @@ f(x) = \frac{1}{\sqrt{2\pi\sigma^2}}
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><strong>Definition</strong></p>
-<p>When studying quantitative traits, we usually sample from a population.</p>
+<p>To study quantitative traits we sample from a population.</p>
 <p><br></p>
 <p>Sample mean:</p>
 <p><span class="math display">\[
-\bar{X} = \frac{1}{n} \sum_{i=1}^{n} X_i
+\bar{X} = \frac{\sum X_i}{n}
 \]</span></p>
 <p><br></p>
 <p>Population mean:</p>
 <p><span class="math display">\[
 \mu
 \]</span></p>
-<p>The mean describes the <strong>center</strong> of the data.</p>
+<p>The mean describes the center of the data.</p>
 </div><div class="column" style="width:50%;">
 <p><strong>Example</strong></p>
-<p>Height (cm) for 5 individuals:<br>
+<p>Suppose we measure height (cm) for a random sample of 5 individuals:<br>
 168, 172, 170, 174, 166</p>
 <p><br></p>
 <p><span class="math display">\[
-\bar{X} = \frac{168 + 172 + 170 + 174 + 166}{5}
+\bar{X} = \frac{168+172+170+174+166}{5}
 \]</span></p>
 <p><br></p>
+<p>We use <span class="math inline">\(\bar{X}\)</span> to estimate the true population mean <span class="math inline">\(\mu\)</span>.</p>
 <p><span class="math display">\[
 \bar{X} = \frac{850}{5} = 170
 \]</span></p>
-<p>We use <span class="math inline">\(\bar{X}\)</span> to estimate the true population mean <span class="math inline">\(\mu\)</span>.</p>
 </div></div>
 <aside class="notes">
 <p>When studying quantitative traits, we usually cannot measure the entire population.<br>
-Instead, we take a random sample.</p>
-<p>If the sample is truly random, it provides an unbiased estimate of population parameters.</p>
-<p>The sample mean is calculated by adding up all observed values and dividing by the number of observations.</p>
-<p>Formally, we write this as one over n times the sum of all observations, but conceptually it simply means: add everything up and divide by n.</p>
-<p>We use X-bar to denote the sample mean.<br>
-The true population mean is denoted by the Greek letter mu.</p>
-<p>Because traits such as height vary among individuals, the phenotype is a random variable.<br>
-Sampling therefore introduces natural variation due to chance.</p>
-<p>On the left, you see the formal definition of the sample mean and how it differs from the population mean.</p>
-<p>On the right, we compute the mean for a small example.<br>
-Even though the sample size here is only five individuals, the exact same computation applies whether n equals 5, 100, or 10,000.</p>
-<p>The key idea is this:</p>
+Instead, we take a <strong>random sample</strong>.</p>
+<p>If the sample is truly random, it provides an unbiased estimate of population properties.</p>
+<p>The sample mean is calculated by summing all observed values and dividing by the sample size:</p>
+<p><span class="math display">\[
+\bar{X} = \frac{\sum X_i}{n}
+\]</span></p>
+<p>We use <span class="math inline">\(\bar{X}\)</span> (X-bar) to represent the sample mean.</p>
+<p>The true population mean is denoted by the Greek letter <span class="math inline">\(\mu\)</span>.</p>
+<p>Because height varies from individual to individual, it is a <strong>random variable</strong>.<br>
+Sampling introduces natural variation due to chance.</p>
+<p>Left panel:</p>
+<p>The formula defines the sample mean and distinguishes it from the population mean.</p>
+<p>Right panel:</p>
+<p>This numerical example shows how the formula works in practice.</p>
+<p>Even though the sample size here is only five individuals,<br>
+the exact same computation applies when <span class="math inline">\(n = 100\)</span> or <span class="math inline">\(n = 10{,}000\)</span>.</p>
+<p>Key idea:</p>
 <p>The sample mean is our best estimate of the unknown population mean.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -427,11 +425,11 @@ Even though the sample size here is only five individuals, the exact same comput
 <ul>
 <li><span class="math inline">\(f_i\)</span> = frequency of class <span class="math inline">\(i\)</span><br>
 </li>
-<li><span class="math inline">\(X_i\)</span> = value or midpoint of class <span class="math inline">\(i\)</span><br>
+<li><span class="math inline">\(X_i\)</span> = value (or midpoint) of class <span class="math inline">\(i\)</span><br>
 </li>
 <li><span class="math inline">\(n = \sum f_i\)</span></li>
 </ul>
-<p>The mean is a <strong>weighted average</strong>.</p>
+<p>The mean is a weighted average.</p>
 </div><div class="column" style="width:50%;">
 <p><strong>Example</strong></p>
 <p>Suppose height data are grouped:</p>
@@ -459,31 +457,32 @@ Even though the sample size here is only five individuals, the exact same comput
 </table>
 <p>Total <span class="math inline">\(n = 6\)</span></p>
 <p><span class="math display">\[
-\bar{X} =
-\frac{(2 \cdot 165) + (3 \cdot 170) + (1 \cdot 175)}{6}
+\bar{X} = \frac{(2 \cdot 165) + (3 \cdot 170) + (1 \cdot 175)}{6}
 \]</span></p>
 <p><span class="math display">\[
-\bar{X} =
-\frac{1015}{6}
+\bar{X} = \frac{330 + 510 + 175}{6}
+= \frac{1015}{6}
 = 169.2 \text{ cm}
 \]</span></p>
 </div></div>
 <aside class="notes">
-<p>Sometimes we do not have access to individual observations.<br>
-Instead, data are grouped into classes with associated frequencies.</p>
-<p>In that case, we compute a weighted mean.</p>
-<p>Each class value is multiplied by how often it occurs, and we then divide by the total number of observations.</p>
-<p>On the left, the formula shows that the mean is a weighted average.<br>
-The total sample size equals the sum of all class frequencies.</p>
-<p>On the right, we see a small example.</p>
-<p>We multiply each height by its frequency: two times 165, three times 170, and one time 175.</p>
-<p>We then divide by the total number of individuals, which is six.</p>
-<p>In larger datasets, classes often represent intervals, such as 165–169 cm.<br>
-In that case, we use the class midpoint as the value <span class="math inline">\(X_i\)</span>.</p>
-<p>The grouped mean allows us to summarize populations and compare groups.</p>
-<p>For example, if one group averages 170 cm and another averages 166 cm,<br>
-we can begin to ask whether the difference is due to genetics, environment, or both.</p>
-<p>Later, we will connect this idea to how variance can be partitioned into genetic and environmental components.</p>
+<p>Sometimes we do not have individual observations. Instead, data are grouped into classes with frequencies.</p>
+<p>In that case, we compute a <strong>weighted mean</strong>.</p>
+<p>Each class value is multiplied by how often it occurs. We then divide by the total number of observations.</p>
+<p>Left panel:</p>
+<p>The formula shows that the mean is a weighted average. The total sample size equals the sum of frequencies.</p>
+<p>Right panel:</p>
+<p>This small example illustrates the calculation.</p>
+<p>We multiply each height by its frequency: 2 × 165, 3 × 170, 1 × 175.</p>
+<p>Then divide by the total number of individuals (6).</p>
+<p>In real datasets, classes may represent intervals, and we would use class midpoints as <span class="math inline">\(X_i\)</span>.</p>
+<p>The grouped mean allows us to:</p>
+<ul>
+<li>Describe populations</li>
+<li>Compare groups</li>
+</ul>
+<p>For example: If urban men average 170 cm and rural men average 166 cm, we can begin asking whether the difference is due to genetics, environment, or both.</p>
+<p>Later, we will partition variance into genetic and environmental components.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -501,10 +500,10 @@ we can begin to ask whether the difference is due to genetics, environment, or b
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><strong>Definition</strong></p>
-<p>Variance describes the spread of the data.</p>
+<p>Variance describes the spread the data.</p>
 <p>Deviation from the mean:</p>
 <p><span class="math display">\[
-d_i = X_i - \bar{X}
+x_i = X_i - \bar{X}
 \]</span></p>
 <p>Population variance:</p>
 <p><span class="math display">\[
@@ -516,16 +515,15 @@ d_i = X_i - \bar{X}
 \]</span></p>
 </div><div class="column" style="width:50%;">
 <p><strong>Example</strong></p>
-<p>Using the sample: 168, 172, 170, 174, 166</p>
+<p>Using the sample:<br>
+168, 172, 170, 174, 166</p>
 <p>Mean: <span class="math display">\[
 \bar{X} = 170
-\]</span></p>
-<p>Deviations: -2, 2, 0, 4, -4</p>
+\]</span> Deviations: -2, 2, 0, 4, -4</p>
 <p>Squared deviations: 4, 4, 0, 16, 16</p>
 <p>Sum of squares: <span class="math display">\[
 40
-\]</span></p>
-<p>Variance (using n=5): <span class="math display">\[
+\]</span> Variance (using <span class="math inline">\(n=5\)</span>): <span class="math display">\[
 \sigma^2 = \frac{40}{5} = 8
 \]</span></p>
 <p>Standard deviation: <span class="math display">\[
@@ -533,24 +531,24 @@ d_i = X_i - \bar{X}
 \]</span></p>
 </div></div>
 <aside class="notes">
-<p>The mean tells us the center of the distribution, but it does not tell us how spread out the values are.</p>
+<p>The mean tells us the center of the distribution. But it does not tell us how spread out the values are.</p>
 <p>Variance measures the average squared deviation from the mean.</p>
-<p>On the left, we define deviations as each observation minus the mean.</p>
-<p>Because positive and negative deviations cancel each other out, we square them before averaging.</p>
-<p>The population variance is simply the mean of these squared deviations.</p>
-<p>The standard deviation is the square root of the variance, which brings the units back to centimeters.</p>
-<p>On the right, we use the same five heights:</p>
-<p>168, 172, 170, 174, 166.</p>
+<p>Left panel:</p>
+<p>First, compute deviations: Each observation minus the mean.</p>
+<p>Because positive and negative deviations cancel out, we square them.</p>
+<p>Population variance equals the mean of squared deviations.</p>
+<p>The standard deviation is the square root of variance, which brings the units back to centimeters.</p>
+<p>Right panel:</p>
+<p>Using the same five heights:</p>
+<p>168, 172, 170, 174, 166</p>
 <p>We already calculated the mean as 170.</p>
-<p>The deviations are: minus 2, plus 2, zero, plus 4, and minus 4.</p>
-<p>Squaring removes the signs: 4, 4, 0, 16, and 16.</p>
+<p>Deviations: -2, 2, 0, 4, -4</p>
+<p>Squaring removes signs: 4, 4, 0, 16, 16</p>
 <p>The sum of squared deviations is 40.</p>
 <p>Dividing by 5 gives a variance of 8.</p>
-<p>Taking the square root gives a standard deviation of about 2.83 centimeters.</p>
-<p>In real statistical analyses, when working with a sample, we usually divide by n minus 1 instead of n.<br>
-But the principle remains the same.</p>
-<p>Variance and standard deviation quantify how much individuals differ from the mean.</p>
-<p>Later, this idea becomes central when we partition phenotypic variance into genetic and environmental components.</p>
+<p>Taking the square root gives a standard deviation of about 2.83 cm.</p>
+<p>In real studies, we often divide by (n − 1) for sample variance. But the principle remains the same.</p>
+<p>Variance and standard deviation quantify how much individuals differ from the mean. This is essential for partitioning phenotypic variance into genetic and environmental components later.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -568,7 +566,7 @@ But the principle remains the same.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><strong>Definition</strong></p>
-<p>Many biological traits follow an approximately <strong>normal distribution</strong>.</p>
+<p>Many biological traits follow a <strong>normal distribution</strong>.</p>
 <p>A normal distribution is fully defined by:</p>
 <ul>
 <li>Mean: <span class="math inline">\(\mu\)</span><br>
@@ -584,40 +582,40 @@ f(x) = \frac{1}{\sigma \sqrt{2\pi}}
 \]</span></p>
 </div><div class="column" style="width:50%;">
 <p><strong>Key Properties</strong></p>
+<p>Characteristics:</p>
 <ul>
 <li>Bell-shaped curve<br>
 </li>
-<li>Symmetric around the mean <span class="math inline">\(\mu\)</span><br>
+<li>Symmetrical around the mean <span class="math inline">\(\mu\)</span><br>
 </li>
 <li>Spread determined by <span class="math inline">\(\sigma\)</span><br>
 </li>
-<li>Total area under the curve = 1</li>
+<li>Total area under curve = 1</li>
 </ul>
 <p><br></p>
 <p>Central role in quantitative genetics:</p>
 <ul>
 <li>Describing quantitative traits<br>
 </li>
-<li>Modeling phenotypic variation<br>
+<li>Modeling phenotypic variance<br>
 </li>
-<li>Partitioning genetic and environmental variance</li>
+<li>Partitioning genetic and environmental effects</li>
 </ul>
 </div></div>
 <aside class="notes">
-<p>On the left, we introduce the normal distribution.</p>
-<p>Many biological traits follow an approximately normal, bell-shaped distribution.</p>
+<p>Left panel:</p>
 <p>The normal distribution is completely determined by two parameters:</p>
-<p>The mean, μ — which determines the center of the distribution.</p>
-<p>The variance, σ² — or equivalently the standard deviation σ — which determines the spread.</p>
+<p>The mean, μ — which determines the center.</p>
+<p>The variance, σ² (or standard deviation σ) — which determines the spread.</p>
 <p>The probability density function shown here gives the exact mathematical form of the curve.</p>
-<p>Notice that the exponential term contains (x − μ)² divided by 2σ². This means values close to μ have higher probability density, while extreme values become increasingly rare.</p>
-<p>On the right, we summarize key properties.</p>
-<p>The curve is symmetric around μ.</p>
-<p>Changing μ shifts the distribution left or right.</p>
-<p>Changing σ changes the spread. A larger σ produces a wider, flatter curve. A smaller σ produces a narrower, taller curve.</p>
-<p>The total area under the curve equals 1, because the distribution represents total probability.</p>
-<p>This structure is central to quantitative genetics.</p>
-<p>When we later partition phenotypic variance into genetic and environmental components, we are effectively partitioning σ² — the variance of a normally distributed trait.</p>
+<p>The exponential term contains (x − μ)² divided by 2σ². This explains why values close to μ are most common, and extreme values become increasingly rare.</p>
+<p>Right panel:</p>
+<p>Visually, the distribution is bell-shaped and symmetric around μ.</p>
+<p>Changing μ shifts the curve left or right.</p>
+<p>Changing σ stretches or compresses the curve. Larger σ → wider, flatter curve. Smaller σ → narrower, taller curve.</p>
+<p>The total area under the curve equals 1, because it represents total probability.</p>
+<p>This mathematical structure allows us to model phenotypic variation rigorously.</p>
+<p>Later, when we partition phenotypic variance into genetic and environmental components, we are effectively partitioning σ² of a normal distribution.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -630,22 +628,92 @@ f(x) = \frac{1}{\sigma \sqrt{2\pi}}
           display:block!important;
       }</style></aside>
 </section>
-<section id="normal-distribution-effect-of-μ-and-σ" class="slide level2">
-<h2>Normal Distribution (Effect of μ and σ)</h2>
-
-<img data-src="introduction_quantitative_genetics_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"><aside class="notes">
-<p>Here we see three normal distributions.</p>
-<p>The dashed vertical lines mark the mean of each distribution.</p>
-<p>First, focus on the two curves with the same mean, μ equals zero.</p>
-<p>The only difference between them is the standard deviation.</p>
-<p>When σ increases, the distribution becomes wider and flatter. When σ decreases, the curve becomes narrower and taller.</p>
-<p>Notice that changing σ affects the spread of the distribution, but it does not move the mean.</p>
-<p>Now look at the curve where μ equals one.</p>
-<p>Here, the standard deviation is the same as the first curve, but the entire distribution is shifted to the right.</p>
-<p>Changing μ shifts the center of the distribution, while changing σ changes how dispersed the values are around that center.</p>
-<p>In all three cases, the total area under the curve equals one, because the curve represents a probability distribution.</p>
-<p>In quantitative genetics, many complex traits are approximately normally distributed.</p>
-<p>Later, when we partition phenotypic variance into genetic and environmental components, we are effectively partitioning σ² — the variance of such a distribution.</p>
+<section id="frequency-distribution-of-height" class="slide level2">
+<h2>Frequency Distribution of Height</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="../images/fig19_01_33779.png" style="width:90.0%"></p>
+</div><div class="column" style="width:50%;">
+<p><strong>Figure 19-1.</strong><br>
+Frequency histogram of simulated height data<br>
+for 100 adult men from Shanghai, China.</p>
+<ul>
+<li>X-axis = height classes (cm)<br>
+</li>
+<li>Y-axis = number of individuals / frequency<br>
+</li>
+<li>Most individuals cluster near the mean (~170 cm)<br>
+</li>
+<li>Few individuals at the extremes</li>
+</ul>
+</div></div>
+<aside class="notes">
+<p>This figure shows a frequency histogram of height.</p>
+<p>The horizontal axis shows height intervals in centimeters. The vertical axis shows either the number of individuals or the relative frequency in each class.</p>
+<p>Most individuals fall in the middle height classes, around 167–174 cm.</p>
+<p>Very few individuals are found at the extremes, such as below 158 cm or above 182 cm.</p>
+<p>This pattern — many individuals near the mean and fewer at the extremes — is typical of quantitative traits and approximates a normal distribution.</p>
+<p>The histogram gives us a visual impression of the amount of variation in the population.</p>
+<p>If the bars were tightly clustered, variation would be small. If they were spread out, variation would be larger.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="normal-distribution" class="slide level2">
+<h2>Normal Distribution</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="../images/fig19_02_33779.webp" style="width:50.0%"></p>
+</div><div class="column" style="width:50%;">
+<p><strong>Figure 19-2</strong></p>
+<ol type="a">
+<li>Histogram of U.S. women’s height
+<ul>
+<li>Red line = fitted normal curve<br>
+</li>
+<li>Mean = 164.4 cm<br>
+</li>
+<li>SD = 6.18 cm</li>
+</ul></li>
+</ol>
+<p><br></p>
+<ol start="2" type="a">
+<li>The 68–95–99.7 rule
+<ul>
+<li>68% within ±1 SD<br>
+</li>
+<li>95% within ±2 SD<br>
+</li>
+<li>99.7% within ±3 SD</li>
+</ul></li>
+</ol>
+<p><br></p>
+<ol start="3" type="a">
+<li>Same mean, different SD
+<ul>
+<li>Smaller SD → narrower curve<br>
+</li>
+<li>Larger SD → wider curve</li>
+</ul></li>
+</ol>
+</div></div>
+<aside class="notes">
+<p>Panel (a) shows real data for height in adult U.S. women. The bars represent observed frequencies, and the red curve is the best-fitting normal distribution.</p>
+<p>The distribution is symmetric and centered around the mean, which is 164.4 cm. The standard deviation is 6.18 cm.</p>
+<p>Panel (b) illustrates one of the most important properties of the normal distribution — the 68–95–99.7 rule.</p>
+<p>Approximately: • 68% of observations fall within one standard deviation of the mean. • 95% fall within two standard deviations. • 99.7% fall within three standard deviations.</p>
+<p>This rule is extremely useful in quantitative genetics for describing how much variation exists in a population.</p>
+<p>Panel (c) shows how changing the standard deviation affects the shape of the curve.</p>
+<p>All curves have the same mean, but: • A small standard deviation produces a tall, narrow curve. • A large standard deviation produces a flatter, wider curve.</p>
+<p>The standard deviation therefore controls the spread of the distribution.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -659,11 +727,11 @@ f(x) = \frac{1}{\sigma \sqrt{2\pi}}
       }</style></aside>
 </section>
 <section id="a-simple-genetic-model-for-quantitative-traits" class="slide level2">
-<h2>A Simple Genetic Model for Quantitative Traits</h2>
+<h2>19.2 A Simple Genetic Model for Quantitative Traits</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><strong>Theory</strong></p>
-<p>A quantitative trait can be modeled as:</p>
+<p>A quantitative trait value can be modeled as:</p>
 <p><span class="math display">\[
 P = \mu + G + E
 \]</span></p>
@@ -682,13 +750,13 @@ p = P - \mu = G + E
 </div><div class="column" style="width:50%;">
 <p><strong>Interpretation</strong></p>
 <ul>
-<li><span class="math inline">\(\mu\)</span> defines the population baseline<br>
+<li><span class="math inline">\(\mu\)</span> sets the baseline of the population<br>
 </li>
-<li><span class="math inline">\(G\)</span> captures genetic differences among individuals<br>
+<li><span class="math inline">\(G\)</span> explains differences due to genotype<br>
 </li>
-<li><span class="math inline">\(E\)</span> captures environmental differences</li>
+<li><span class="math inline">\(E\)</span> explains differences due to environment</li>
 </ul>
-<p>Two individuals may differ because:</p>
+<p>Two individuals can differ because:</p>
 <ul>
 <li>They carry different alleles<br>
 </li>
@@ -696,7 +764,7 @@ p = P - \mu = G + E
 </li>
 <li>Or both</li>
 </ul>
-<p>This model forms the foundation for:</p>
+<p>This model is the foundation for:</p>
 <ul>
 <li>Variance partitioning<br>
 </li>
@@ -706,19 +774,20 @@ p = P - \mu = G + E
 </ul>
 </div></div>
 <aside class="notes">
+<p>Left panel:</p>
 <p>This is the fundamental model of quantitative genetics.</p>
-<p>The phenotype, P, is expressed as the population mean plus a genetic deviation and an environmental deviation.</p>
-<p>In other words, individuals differ from the average because of genetic effects, environmental effects, or both.</p>
-<p>We often subtract the mean and work with deviations:</p>
-<p>p equals G plus E.</p>
-<p>This simplifies the mathematics because we focus only on what causes individuals to differ.</p>
-<p>On the right, we interpret each component.</p>
-<p>The population mean, μ, is simply the average phenotype.</p>
-<p>The genetic deviation, G, captures how an individual’s genotype shifts their phenotype above or below the mean.</p>
+<p>The phenotype P equals: the population mean plus a genetic deviation plus an environmental deviation.</p>
+<p>We often subtract the mean and work with the deviation:</p>
+<p>p = G + E</p>
+<p>This simplifies the mathematics because we focus only on what makes individuals differ.</p>
+<p>Right panel:</p>
+<p>Conceptually, μ is simply the average phenotype in the population.</p>
+<p>The genetic deviation, G, captures how an individual’s genotype shifts them above or below the mean.</p>
 <p>The environmental deviation, E, captures all non-genetic influences.</p>
-<p>If two individuals differ in phenotype, that difference must arise from differences in G, differences in E, or both.</p>
-<p>This deceptively simple equation is the backbone of quantitative genetics.</p>
-<p>From it, we derive variance partitioning, broad- and narrow-sense heritability, the breeder’s equation, and modern genomic prediction models.</p>
+<p>If two individuals differ in phenotype, that difference must come from differences in G, differences in E, or both.</p>
+<p>This deceptively simple equation is the backbone of the entire chapter.</p>
+<p>From it, we derive: - Variance partitioning - Broad- and narrow-sense heritability - The breeder’s equation - QTL mapping and GWAS - Modern genomic prediction models</p>
+<p>Everything builds from this model.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -731,47 +800,28 @@ p = P - \mu = G + E
           display:block!important;
       }</style></aside>
 </section>
-<section id="illustrative-example-decomposing-a-phenotype" class="slide level2">
-<h2>Illustrative Example: Decomposing a Phenotype</h2>
+<section id="example-decomposing-a-phenotype" class="slide level2">
+<h2>Example: Decomposing a Phenotype</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
+<p><img data-src="../images/fig19_03_98475.webp" style="width:90.0%"></p>
+</div><div class="column" style="width:50%;">
 <p><strong>Step 1: Observed phenotype</strong></p>
 <ul>
-<li>Yao Ming’s height:<br>
-P = 229 cm<br>
+<li>Yao Ming’s height: <span class="math inline">\(P = 229\)</span> cm<br>
 </li>
-<li>Population mean:<br>
-<span class="math inline">\(\mu\)</span> = 170 cm</li>
+<li>Population mean: <span class="math inline">\(\mu \approx 170\)</span> cm</li>
 </ul>
-<p><br></p>
-<p><strong>Step 2: Deviation from the mean</strong></p>
+<p><strong>Step 2: How far is he from the average?</strong></p>
 <p><span class="math display">\[
-p = P - \mu
+p = P - \mu = 229 - 170 = 59\text{ cm}
 \]</span></p>
-<p><span class="math display">\[
-p = 229 - 170 = 59 \text{ cm}
-\]</span></p>
-<p>He is <strong>59 cm taller than average</strong>.</p>
-</div><div class="column" style="width:50%;">
+<p>He is <strong>59 cm taller than the population mean</strong>.</p>
 <p><strong>Step 3: Apply the genetic model</strong></p>
-<p>Recall:</p>
-<p><span class="math display">\[
-p = G + E
-\]</span></p>
-<p>Therefore:</p>
-<p><span class="math display">\[
+<p>Our model says that <span class="math inline">\(p = G + E\)</span> and therefore<br>
+<span class="math display">\[
 59 = G + E
-\]</span></p>
-<p>His exceptional height must be due to:</p>
-<ul>
-<li>A genetic component (<span class="math inline">\(G\)</span>)<br>
-</li>
-<li>An environmental component (<span class="math inline">\(E\)</span>)<br>
-</li>
-<li>Or both</li>
-</ul>
-<p>We observe only the total deviation —<br>
-not its individual components.</p>
+\]</span> His exceptional height must be due to a genetic component (<span class="math inline">\(G\)</span>), an environmental component (<span class="math inline">\(E\)</span>), or both.</p>
 </div></div>
 <aside class="notes">
 <p>This slide applies the quantitative genetic model to a concrete example.</p>
@@ -803,69 +853,74 @@ not its individual components.</p>
 <h2>From Phenotype to Variance</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><strong>Start with the model</strong></p>
+<p><strong>Mathematical derivation</strong></p>
+<p>Start with the phenotype model:</p>
 <p><span class="math display">\[
 P = \mu + G + E
 \]</span></p>
-<p>Phenotypic variance:</p>
+<p>Deviation from the mean:</p>
 <p><span class="math display">\[
-V_P = \mathrm{Var}(P)
+p = P - \mu = G + E
 \]</span></p>
-<p>Since <span class="math inline">\(\mu\)</span> is constant:</p>
+<p>Variance:</p>
 <p><span class="math display">\[
-V_P = \mathrm{Var}(G + E)
+V_P = \text{Var}(p)
 \]</span></p>
-<p>Basic statistical rule:</p>
+<p>Substitute:</p>
 <p><span class="math display">\[
-V_P = V_G + V_E + 2\mathrm{Cov}(G,E)
+V_P = \text{Var}(G + E)
+\]</span></p>
+<p>Statistical rule:</p>
+<p><span class="math display">\[
+V_P = V_G + V_E + 2\text{Cov}(G,E)
 \]</span></p>
 </div><div class="column" style="width:50%;">
-<p><strong>If genetic and environmental effects are independent</strong></p>
+<p><strong>Interpretation</strong></p>
+<p>If genotype and environment are independent:</p>
 <p><span class="math display">\[
-\mathrm{Cov}(G,E) = 0
+\text{Cov}(G,E) = 0
 \]</span></p>
 <p>Then:</p>
 <p><span class="math display">\[
 V_P = V_G + V_E
 \]</span></p>
 <p>Meaning:</p>
-<p><br></p>
-<p>Total variation = genetic variation + environmental variation</p>
-<p><br></p>
-<p>This is the foundation of heritability.</p>
+<ul>
+<li>Total variation = genetic variation
+<ul>
+<li>environmental variation</li>
+</ul></li>
+</ul>
+<p>This partition works only when:</p>
+<ul>
+<li>Genotypes are randomly exposed to environments<br>
+</li>
+<li>There is no systematic matching of<br>
+“good genes” with “good environments”</li>
+</ul>
+<p>If such matching occurs:</p>
+<ul>
+<li><span class="math inline">\(\text{Cov}(G,E) \neq 0\)</span><br>
+</li>
+<li>Variance cannot be cleanly decomposed</li>
+</ul>
 </div></div>
 <aside class="notes">
-<p>We begin with the phenotype model:</p>
-<p>P equals μ plus G plus E.</p>
-<p>Phenotypic variance measures how much individuals differ from the mean.</p>
-<p>Because μ is a constant, it does not contribute to variance.</p>
-<p>So the variance of P becomes the variance of G plus E.</p>
-<p>A basic statistical rule tells us that the variance of a sum equals the sum of the variances plus twice the covariance.</p>
-<p>If genetic and environmental effects are independent, their covariance is zero.</p>
-<p>In that case, total phenotypic variation equals genetic variation plus environmental variation.</p>
-<p>This simple relationship is the foundation of heritability.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="visualizing-variance-partitioning" class="slide level2">
-<h2>Visualizing Variance Partitioning</h2>
-
-<img data-src="introduction_quantitative_genetics_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"><aside class="notes">
-<p>Here we see total phenotypic variance represented as a single bar.</p>
-<p>That total variance can be partitioned into two components: a genetic component and an environmental component.</p>
-<p>In this example, genetic variance accounts for 40 percent of the total, while environmental variance accounts for 60 percent.</p>
-<p>The exact numbers are not important.</p>
-<p>What matters is the principle: phenotypic variation can be decomposed into genetic and environmental variation.</p>
-<p>This visual framework prepares us to define heritability as the proportion of total variance that is genetic.</p>
+<p>We begin again with the phenotype model:</p>
+<p>P = μ + G + E.</p>
+<p>Subtracting the mean gives:</p>
+<p>p = G + E.</p>
+<p>Variance measures the average squared deviation from the mean, so phenotypic variance equals the variance of (G + E).</p>
+<p>Now we apply a fundamental statistical identity:</p>
+<p>Var(G + E) = Var(G) + Var(E) + 2Cov(G,E).</p>
+<p>This extra covariance term is crucial.</p>
+<p>If genetic and environmental effects are independent, the covariance equals zero.</p>
+<p>In that case, the equation simplifies to:</p>
+<p>V_P = V_G + V_E.</p>
+<p>This clean partition is foundational in quantitative genetics.</p>
+<p>However, if certain genotypes systematically experience certain environments — for example, if the best genotypes are consistently placed in the best environments — then G and E are correlated.</p>
+<p>In that case, the covariance term is not zero, and the simple variance decomposition breaks down.</p>
+<p>This assumption of independence underlies heritability estimation.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -893,31 +948,33 @@ V_P = 14.67
 V_G = 12.00
 \]</span></p>
 <p>Environmental variance<br>
-(variation among environments):</p>
+(variation among environment means):</p>
 <p><span class="math display">\[
 V_E = 2.67
 \]</span></p>
 <p>Check:</p>
 <p><span class="math display">\[
 V_P = V_G + V_E
-V_P = 12.00 + 2.67 = 14.67
+\]</span></p>
+<p><span class="math display">\[
+14.67 = 12.00 + 2.67
 \]</span></p>
 </div><div class="column" style="width:50%;">
 <p><strong>Interpretation</strong></p>
 <ul>
 <li><p>Most variation is genetic<br>
-(12.00 out of 14.67)</p></li>
+(<span class="math inline">\(12.00\)</span> out of <span class="math inline">\(14.67\)</span>)</p></li>
 <li><p>Environmental variation is smaller<br>
-(2.67)</p></li>
+(<span class="math inline">\(2.67\)</span>)</p></li>
 <li><p>The decomposition works because:</p>
 <p><span class="math display">\[
-\mathrm{Cov}(G,E) = 0
+\text{Cov}(G,E) = 0
 \]</span></p></li>
 <li><p>Genotypes were randomized<br>
 across environments</p></li>
 </ul>
 <p><br></p>
-<p>This example illustrates that:</p>
+<p>This concrete example shows that:</p>
 <p><span class="math display">\[
 V_P = V_G + V_E
 \]</span></p>
@@ -927,18 +984,21 @@ V_P = V_G + V_E
 <p>This slide applies the variance decomposition to real data.</p>
 <p>In Experiment I, 10 inbred maize lines were grown in three environments.</p>
 <p>Using all 30 observations, the total phenotypic variance is 14.67.</p>
-<p>We estimate:</p>
-<p>V_G as the variance among line means — 12.00.</p>
-<p>V_E as the environmental contribution — 2.67.</p>
+<p>We then estimate:</p>
+<ul>
+<li>V_G as the variance among line means → 12.00<br>
+</li>
+<li>V_E as the variance among environment means → 2.67</li>
+</ul>
 <p>When we add them:</p>
-<p>12.00 plus 2.67 equals 14.67.</p>
+<p>12.00 + 2.67 = 14.67.</p>
 <p>So the equation works exactly.</p>
 <p>Why?</p>
-<p>Because the experiment was designed properly. Genotypes were randomly assigned across environments.</p>
-<p>That means genetic and environmental effects are independent, so Cov(G,E) equals zero.</p>
+<p>Because the experiment was designed properly: genotypes were randomly assigned to environments.</p>
+<p>That means genotype and environment are independent, so Cov(G,E) = 0.</p>
 <p>This example makes the abstract variance equation tangible.</p>
-<p>And it leads naturally to the next concept:</p>
-<p>Heritability is simply a ratio constructed from these variance components.</p>
+<p>It also sets up the next concept naturally:</p>
+<p>Heritability is simply a ratio built from these variance components.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -951,52 +1011,128 @@ V_P = V_G + V_E
           display:block!important;
       }</style></aside>
 </section>
-<section id="correlation-what-does-it-measure" class="slide level2">
-<h2>Correlation: What Does It Measure?</h2>
+<section id="correlation-between-variables" class="slide level2">
+<h2>Correlation Between Variables</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><strong>Definition</strong></p>
-<p>Correlation measures how two variables change together.</p>
+<p>Correlation measures the relationship<br>
+between two variables.</p>
+<p>Mathematically:</p>
 <p><span class="math display">\[
-r = \frac{\mathrm{Cov}(X,Y)}{\sigma_X \sigma_Y}
+r = \frac{\text{Cov}(X,Y)}{\sigma_X \sigma_Y}
 \]</span></p>
+<p>Properties:</p>
 <ul>
 <li><span class="math inline">\(-1 \le r \le 1\)</span></li>
-<li><span class="math inline">\(r = 1\)</span> → perfect positive relationship<br>
+<li><span class="math inline">\(r = 1\)</span> → perfect positive correlation<br>
 </li>
-<li><span class="math inline">\(r = 0\)</span> → no linear relationship<br>
+<li><span class="math inline">\(r = 0\)</span> → no correlation<br>
 </li>
-<li><span class="math inline">\(r = -1\)</span> → perfect negative relationship</li>
+<li><span class="math inline">\(r = -1\)</span> → perfect negative correlation</li>
 </ul>
 </div><div class="column" style="width:50%;">
-<p><strong>Why It Matters in Genetics</strong></p>
-<p>Recall:</p>
+<p><strong>Interpretation (Twin Example)</strong></p>
+<p>Imagine plotting:</p>
+<ul>
+<li>Twin 1 height (x-axis)<br>
+</li>
+<li>Twin 2 height (y-axis)</li>
+</ul>
+<p>• Perfect correlation<br>
+→ All points lie on a straight line</p>
+<p>• Strong positive correlation<br>
+→ Clear upward trend with scatter</p>
+<p>• No correlation<br>
+→ Random cloud of points</p>
+<p>Correlation quantifies<br>
+how tightly the points cluster around a line.</p>
+</div></div>
+<aside class="notes">
+<p>Correlation measures whether two variables change together.</p>
+<p>In quantitative genetics, we often study:</p>
+<ul>
+<li>Resemblance between relatives</li>
+<li>Relationships between genotype and phenotype</li>
+<li>Relationships between different traits</li>
+</ul>
+<p>The correlation coefficient r is based on covariance, but standardized by the standard deviations of the two variables.</p>
+<p>That is why r is unitless and bounded between −1 and 1.</p>
+<p>The twin-height example makes this intuitive.</p>
+<p>If one twin’s height perfectly predicts the other, all points lie on a line → r = 1.</p>
+<p>If there is an upward trend with scatter, r is positive but less than 1.</p>
+<p>If there is no relationship, points form a cloud → r ≈ 0.</p>
+<p>This visual intuition is important because later we estimate heritability using correlations.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="correlation-covariance-and-the-variance-model" class="slide level2">
+<h2>Correlation, Covariance, and the Variance Model</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Statistical identity</strong></p>
+<p>Variance of a sum:</p>
 <p><span class="math display">\[
-V_P = V_G + V_E + 2\mathrm{Cov}(G,E)
+\text{Var}(G + E)
+=
+V_G + V_E + 2\text{Cov}(G,E)
 \]</span></p>
-<p>If genotype and environment are independent:</p>
+<p>If:</p>
 <p><span class="math display">\[
-\mathrm{Cov}(G,E) = 0
+\text{Cov}(G,E) = 0
 \]</span></p>
 <p>Then:</p>
 <p><span class="math display">\[
 V_P = V_G + V_E
 \]</span></p>
-<p>If <span class="math inline">\(G\)</span> and <span class="math inline">\(E\)</span> are correlated,<br>
-the covariance term does not vanish,<br>
-and variance cannot be cleanly partitioned.</p>
-<p>Correlation determines whether<br>
-heritability can be properly estimated.</p>
+</div><div class="column" style="width:50%;">
+<p><strong>Why this matters</strong></p>
+<p>Our genetic model assumes:</p>
+<p><span class="math display">\[
+P = \mu + G + E
+\]</span></p>
+<p>The clean partition:</p>
+<p>Phenotypic variance<br>
+= Genetic variance + Environmental variance</p>
+<p>works only if:</p>
+<ul>
+<li>Genotype and environment are independent</li>
+</ul>
+<p>If:</p>
+<ul>
+<li>Best genotypes → best environments</li>
+</ul>
+<p>Then:</p>
+<ul>
+<li><span class="math inline">\(\text{Cov}(G,E) \ne 0\)</span><br>
+</li>
+<li>Variance cannot be cleanly decomposed</li>
+</ul>
+<p>This assumption is crucial for estimating heritability.</p>
 </div></div>
 <aside class="notes">
-<p>Correlation measures whether two variables vary together.</p>
-<p>It is a standardized form of covariance, which makes it unitless and bounded between minus one and one.</p>
-<p>Now connect this to genetics.</p>
-<p>In our variance model, phenotypic variance equals genetic variance plus environmental variance plus a covariance term.</p>
-<p>If genotype and environment are independent, that covariance equals zero, and the clean partition holds.</p>
-<p>But if genetic and environmental effects are correlated, the covariance term remains.</p>
-<p>In that case, we cannot cleanly separate genetic and environmental variation.</p>
-<p>This is why correlation is central in quantitative genetics — it determines whether heritability can be estimated correctly.</p>
+<p>Correlation is just standardized covariance.</p>
+<p>Covariance tells us whether two variables vary together.</p>
+<p>Now apply this idea to genetics.</p>
+<p>We wrote earlier:</p>
+<p>V_P = V_G + V_E.</p>
+<p>But strictly speaking:</p>
+<p>Var(G + E) = V_G + V_E + 2Cov(G,E).</p>
+<p>The covariance term disappears only if genotype and environment are independent.</p>
+<p>If certain genotypes systematically experience certain environments, then Cov(G,E) is not zero.</p>
+<p>For example: - Elite athletes receive elite training. - High genetic potential children receive enriched schooling.</p>
+<p>In such cases, genetic and environmental effects are correlated.</p>
+<p>If Cov(G,E) ≠ 0, heritability estimates become biased.</p>
+<p>This assumption of independence is foundational for everything that follows.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1009,10 +1145,122 @@ heritability can be properly estimated.</p>
           display:block!important;
       }</style></aside>
 </section>
-<section id="visualizing-correlation" class="slide level2">
-<h2>Visualizing Correlation</h2>
-
-<img data-src="introduction_quantitative_genetics_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"></section>
+<section id="strength-of-correlation" class="slide level2">
+<h2>Strength of Correlation</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="../images/fig19_04_33779.png" style="width:50.0%"></p>
+</div><div class="column" style="width:50%;">
+<p><strong>Figure 19-4.</strong><br>
+Scatter plots illustrating different strengths of correlation:</p>
+<ul>
+<li><ol type="a">
+<li>Perfect correlation (<span class="math inline">\(r = 1.0\)</span>)<br>
+</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Strong positive correlation (<span class="math inline">\(r = 0.74\)</span>)<br>
+</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>No correlation (<span class="math inline">\(r = 0.0\)</span>)</li>
+</ol></li>
+</ul>
+<p>Red line = best-fit line<br>
+Slope of red line = correlation coefficient</p>
+</div></div>
+<aside class="notes">
+<p>This figure illustrates how correlation appears visually in scatter plots.</p>
+<p>In all three panels: - The x-axis shows the height of Twin 1. - The y-axis shows the height of Twin 2.</p>
+<p>Panel (a): Perfect correlation (r = 1.0) Every data point lies exactly on a straight line. If one twin is tall, the other is exactly the same height. There is no deviation from the line.</p>
+<p>Panel (b): Strong positive correlation (r = 0.74) There is a clear upward trend. When one twin is tall, the other tends to be tall. However, points scatter around the line. The relationship is strong but not perfect.</p>
+<p>Panel (c): No correlation (r = 0.0) The points form a random cloud. Knowing the height of Twin 1 gives no information about Twin 2. The best-fit line is horizontal.</p>
+<p>The slope of the red line equals the correlation coefficient. The stronger the relationship, the steeper the slope (when variables are standardized).</p>
+<p>This concept will be crucial when we analyze resemblance between relatives and estimate heritability.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="key-concept-why-correlation-matters" class="slide level2">
+<h2>Key Concept: Why Correlation Matters</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Individual Level</strong></p>
+<p>Deviation from the mean:</p>
+<p><span class="math display">\[
+x = g + e
+\]</span></p>
+<ul>
+<li><span class="math inline">\(g\)</span> = genetic deviation<br>
+</li>
+<li><span class="math inline">\(e\)</span> = environmental deviation</li>
+</ul>
+<hr>
+<p><strong>Population Level</strong></p>
+<p><span class="math display">\[
+V_P = V_G + V_E
+\quad
+(\text{if } g \perp e)
+\]</span></p>
+<p>Variance can be partitioned<br>
+only if genotype and environment are independent.</p>
+</div><div class="column" style="width:50%;">
+<p><strong>Why Correlation Is Central</strong></p>
+<p>Correlation allows us to measure:</p>
+<ul>
+<li>Resemblance between relatives<br>
+</li>
+<li>Association between traits<br>
+</li>
+<li>Dependence between <span class="math inline">\(g\)</span> and <span class="math inline">\(e\)</span></li>
+</ul>
+<p>If:</p>
+<p><span class="math display">\[
+\text{Cov}(g,e) \ne 0
+\]</span></p>
+<p>Then:</p>
+<p><span class="math display">\[
+V_P \ne V_G + V_E
+\]</span></p>
+<p>Correlation determines whether variance can be cleanly decomposed.</p>
+</div></div>
+<aside class="notes">
+<p>Left panel:</p>
+<p>At the individual level, a phenotype is the sum of a genetic and an environmental deviation.</p>
+<p>At the population level, we describe variation using variance.</p>
+<p>Under independence, phenotypic variance equals genetic variance plus environmental variance.</p>
+<p>This is the foundation for defining heritability.</p>
+<p>Right panel:</p>
+<p>But the key condition is independence.</p>
+<p>If genotype and environment are correlated, then covariance appears in the variance equation, and the clean partition breaks down.</p>
+<p>This is why correlation is central in quantitative genetics.</p>
+<p>We use correlation to:</p>
+<ul>
+<li>Measure resemblance between relatives (heritability)</li>
+<li>Measure association between traits (genetic correlations)</li>
+<li>Detect gene–environment dependence</li>
+</ul>
+<p>Correlation connects statistical structure to biological interpretation.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
 <section id="broad-sense-heritability-h2" class="slide level2">
 <h2>Broad-Sense Heritability (<span class="math inline">\(H^2\)</span>)</h2>
 <div class="columns">
@@ -1020,7 +1268,7 @@ heritability can be properly estimated.</p>
 <p><strong>Definition</strong></p>
 <p>Key question:</p>
 <ul>
-<li>How much of the observed <em>variation</em> is genetic?</li>
+<li>How much of trait <em>variation</em> is genetic?</li>
 </ul>
 <p>Broad-sense heritability:</p>
 <p><span class="math display">\[
@@ -1039,14 +1287,14 @@ H^2 = \frac{V_G}{V_P}
 </div><div class="column" style="width:50%;">
 <p><strong>Interpretation</strong></p>
 <ul>
-<li><span class="math inline">\(H^2 = 0\)</span> → all variation is environmental<br>
+<li><span class="math inline">\(H^2 = 0\)</span> → all variation environmental<br>
 </li>
-<li><span class="math inline">\(H^2 = 1\)</span> → all variation is genetic</li>
+<li><span class="math inline">\(H^2 = 1\)</span> → all variation genetic</li>
 </ul>
 <p>Important:</p>
 <ul>
 <li>Describes <strong>variation in a population</strong></li>
-<li>Not the “% genetic” of an individual</li>
+<li>Not “% genetic” for an individual</li>
 <li>Population- and environment-specific</li>
 </ul>
 <p>“Broad-sense” includes:</p>
@@ -1059,19 +1307,25 @@ H^2 = \frac{V_G}{V_P}
 </ul>
 </div></div>
 <aside class="notes">
-<p>Broad-sense heritability answers a specific question:</p>
+<p>Broad-sense heritability answers a very specific question:</p>
 <p>Of all the variation we observe in a population, what fraction is associated with genetic differences?</p>
 <p>It is defined as the ratio of genetic variance to total phenotypic variance.</p>
-<p>Its value ranges from zero to one.</p>
-<p>If H² equals zero, all observed differences are environmental.</p>
-<p>If H² equals one, all observed differences are genetic.</p>
-<p>But this does NOT mean a trait is genetically determined in an individual.</p>
+<p>The range is between 0 and 1.</p>
+<p>If H² = 0, all observed differences are environmental.</p>
+<p>If H² = 1, all observed differences are genetic.</p>
+<p>But this does NOT mean a trait is “genetically determined” in an individual.</p>
 <p>Heritability always refers to variation within a population.</p>
-<p>If everyone had identical genotypes, genetic variance would be zero, even if genes are biologically essential for the trait.</p>
-<p>The term “broad-sense” is used because V_G includes additive variance, dominance variance, and interaction, or epistatic, variance.</p>
+<p>If everyone had identical genotypes, genetic variance would be zero, even if genes are biologically essential.</p>
+<p>The term “broad-sense” is used because V_G includes:</p>
+<ul>
+<li>Additive variance</li>
+<li>Dominance variance</li>
+<li>Interaction (epistatic) variance</li>
+</ul>
 <p>Later, we will distinguish this from narrow-sense heritability, which focuses only on additive variance.</p>
-<p>Heritability is not a universal constant.</p>
-<p>It depends on the population, the environment, and the amount of genetic variation present.</p>
+<p>Also emphasize:</p>
+<p>Heritability depends on: - The population - The environment - The amount of genetic variation present</p>
+<p>It is not a universal constant.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1099,7 +1353,7 @@ H^2 = \frac{12.0}{14.67} = 0.82
 \]</span></p>
 <p>Interpretation:</p>
 <ul>
-<li>82% of the observed variation is genetic<br>
+<li>82% of variation is genetic<br>
 </li>
 <li>Trait appears highly heritable</li>
 </ul>
@@ -1107,7 +1361,8 @@ H^2 = \frac{12.0}{14.67} = 0.82
 <p><strong>Experiment II: More Variable Environments</strong></p>
 <ul>
 <li><span class="math inline">\(V_G = 12.0\)</span> (same genotypes)</li>
-<li><span class="math inline">\(V_E = 24.0\)</span></li>
+<li><span class="math inline">\(V_E = 24.0\)</span><br>
+</li>
 <li><span class="math inline">\(V_P = 36.0\)</span></li>
 </ul>
 <p><span class="math display">\[
@@ -1115,23 +1370,24 @@ H^2 = \frac{12.0}{36.0} = 0.33
 \]</span></p>
 <p>Interpretation:</p>
 <ul>
-<li>33% of the observed variation is genetic<br>
+<li>Only 33% of variation is genetic<br>
 </li>
-<li>Environmental variation dominates</li>
+<li>Environmental variance dominates</li>
 </ul>
 </div></div>
 <aside class="notes">
 <p>This slide compares two experiments using the same 10 maize inbred lines.</p>
-<p>Importantly, the genetic variance is identical in both experiments: V_G equals 12.0.</p>
-<p>In Experiment I, environmental variance is small. So most of the total variance is genetic. Heritability is high: 0.82.</p>
+<p>The genetic variance is identical in both experiments: V_G = 12.0.</p>
+<p>In Experiment I, environmental variance is small (2.67). So most of the total variance is genetic. Heritability is high: 0.82.</p>
 <p>In Experiment II, the environments are much more variable. Environmental variance increases to 24.0. Total variance increases to 36.0.</p>
 <p>Even though the genetics did not change, heritability drops dramatically to 0.33.</p>
-<p>This illustrates a crucial concept in quantitative genetics:</p>
+<p>This illustrates one of the most important concepts in quantitative genetics:</p>
 <p>Heritability is not a fixed property of a trait.</p>
 <p>It depends on: - The amount of genetic variation - The amount of environmental variation - The specific population being studied</p>
 <p>If environmental variance increases, heritability decreases.</p>
 <p>If environmental variance decreases, heritability increases.</p>
-<p>This does NOT mean genes became less biologically important. It means their contribution to variation changed.</p>
+<p>Heritability is therefore population- and environment-specific.</p>
+<p>And crucially: This does NOT mean the genes became less biologically important. It means their contribution to <em>variation</em> changed.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1157,16 +1413,16 @@ H^2 = \frac{12.0}{36.0} = 0.33
 </ul>
 <p>Under independence:</p>
 <p><span class="math display">\[
-\mathrm{Cov}(\text{Twin 1}, \text{Twin 2}) = V_G
+\text{Cov}(\text{Twin 1}, \text{Twin 2}) = V_G
 \]</span></p>
 <p>Therefore:</p>
 <p><span class="math display">\[
 H^2 = \frac{V_G}{V_P}
-     = \frac{\mathrm{Cov}(\text{twins})}{V_P}
+     = \frac{\text{Cov(twins)}}{V_P}
 \]</span></p>
 <p>Key assumption:</p>
 <p><span class="math display">\[
-\mathrm{Cov}(G,E) = 0
+\text{Cov}(G,E) = 0
 \]</span></p>
 </div><div class="column" style="width:50%;">
 <p><strong>Example: IQ in Twins Reared Apart</strong></p>
@@ -1184,34 +1440,34 @@ H^2 = \frac{119.2}{154.3} = 0.77
 <ul>
 <li><p>77% of IQ variation (in this population)<br>
 is associated with genetic differences</p></li>
-<li><p>Refers to population variation<br>
-— not individuals</p></li>
+<li><p>This describes variation in a population<br>
+— not individuals.</p></li>
 </ul>
 </div></div>
 <aside class="notes">
 <p>Left panel:</p>
 <p>Identical twins share the same genotype.</p>
-<p>If they are reared apart, their environmental effects can be treated as independent.</p>
+<p>If they are reared apart, their environmental deviations can be treated as independent.</p>
 <p>Under that assumption, the covariance between twin phenotypes reflects genetic variance.</p>
-<p>In other words:</p>
-<p>Covariance between Twin 1 and Twin 2 equals V_G.</p>
-<p>Therefore, broad-sense heritability can be estimated as:</p>
-<p>H² equals covariance between twins divided by total phenotypic variance.</p>
+<p>Thus:</p>
+<p>Cov(twin 1, twin 2) = V_G</p>
+<p>And broad-sense heritability can be estimated as:</p>
+<p>H² = Cov(twins) / V_P.</p>
 <p>Right panel:</p>
-<p>In this example, the covariance between twin IQ scores is 119.2. Total phenotypic variance is 154.3.</p>
-<p>Dividing gives H² equal to 0.77.</p>
-<p>Interpretation is critical:</p>
-<p>This does NOT mean IQ is 77 percent genetic for an individual.</p>
-<p>It means that 77 percent of the variation in IQ within this population, under these environmental conditions, is associated with genetic differences.</p>
-<p>Twin studies rely on important assumptions:</p>
+<p>In this example, covariance between twin IQ scores is 119.2. Total phenotypic variance is 154.3.</p>
+<p>Dividing gives H² = 0.77.</p>
+<p>Interpretation is crucial:</p>
+<p>This does NOT mean IQ is 77% genetic for an individual.</p>
+<p>It means 77% of the variation in IQ within this population, under these environmental conditions, is associated with genetic differences.</p>
+<p>Twin studies rely on assumptions:</p>
 <ul>
-<li>Environments are truly independent<br>
+<li>Truly independent environments<br>
 </li>
-<li>There is no strong gene–environment correlation<br>
+<li>No strong gene–environment correlation<br>
 </li>
-<li>Measurements are accurate</li>
+<li>Accurate measurement</li>
 </ul>
-<p>These assumptions must always be evaluated when interpreting heritability estimates.</p>
+<p>These assumptions must always be considered when interpreting heritability estimates.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1382,9 +1638,8 @@ H^2 = \frac{V_G}{V_P}
 </ul>
 <p>Total genetic variance:</p>
 <p><span class="math display">\[
-V_G = V_A + V_D + V_I
+V_G = V_A + V_D \; (+ \text{interaction variance})
 \]</span></p>
-<p>where <span class="math inline">\(V_I\)</span> = interaction (epistatic) variance</p>
 </div><div class="column" style="width:50%;">
 <p><strong>Narrow-Sense Heritability</strong></p>
 <p><span class="math display">\[
@@ -1400,31 +1655,245 @@ h^2 = \frac{V_A}{V_P}
 <li>Determine response to selection</li>
 </ul>
 <p>Key idea:</p>
-<p>Additive genetic variation drives response to selection.</p>
+<p>Only additive genetic variation drives evolutionary change.</p>
 </div></div>
 <aside class="notes">
 <p>Left panel:</p>
 <p>Broad-sense heritability measures total genetic variance.</p>
-<p>But genetic variance is composed of several components.</p>
-<p>Additive variance, V_A, reflects the average effect of alleles.</p>
-<p>Dominance variance, V_D, depends on interactions between alleles at the same locus.</p>
-<p>There may also be interaction, or epistatic, variance, arising from interactions between loci.</p>
+<p>But genetic variance is not a single entity.</p>
+<p>It includes:</p>
+<ul>
+<li>Additive variance (V_A)</li>
+<li>Dominance variance (V_D)</li>
+<li>Possibly gene–gene interaction variance</li>
+</ul>
 <p>Only additive variance is transmitted predictably from parents to offspring.</p>
-<p>Dominance and interaction effects depend on specific allele combinations, which are reshuffled each generation during meiosis.</p>
+<p>Dominance effects depend on allele combinations within individuals. Because meiosis reshuffles alleles each generation, dominance effects are not transmitted in a consistent way.</p>
 <p>Right panel:</p>
 <p>Narrow-sense heritability isolates the additive component:</p>
-<p>h² equals V_A divided by V_P.</p>
-<p>This is the most important measure for:</p>
+<p>h² = V_A / V_P.</p>
+<p>This is the most important form of heritability for:</p>
 <ul>
 <li>Predicting offspring phenotypes<br>
 </li>
-<li>Measuring resemblance between relatives<br>
+<li>Understanding resemblance between relatives<br>
 </li>
 <li>Predicting response to selection</li>
 </ul>
-<p>If h² is high, selection produces a strong response.</p>
-<p>If h² is low, response to selection is limited.</p>
-<p>The distinction between H² and h² is fundamental in quantitative genetics.</p>
+<p>If h² is high, selection produces rapid evolutionary change. If h² is low, response to selection is limited.</p>
+<p>This distinction between H² and h² is fundamental in quantitative genetics.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="additive-vs-dominant-gene-action" class="slide level2">
+<h2>Additive vs Dominant Gene Action</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="../images/fig19_06_33779.png" style="width:90.0%"></p>
+</div><div class="column" style="width:50%;">
+<p><strong>Figure 19-6. Gene action at locus B</strong></p>
+<ol type="a">
+<li>Additive gene action<br>
+</li>
+<li>Dominant gene action</li>
+</ol>
+<ul>
+<li>X-axis: Genotype (<span class="math inline">\(B_1B_1\)</span>, <span class="math inline">\(B_1B_2\)</span>, <span class="math inline">\(B_2B_2\)</span>)<br>
+</li>
+<li>Y-axis: Number of flowers</li>
+</ul>
+<p>Key idea:</p>
+<ul>
+<li>Additive → heterozygote is intermediate<br>
+</li>
+<li>Dominant → heterozygote equals one homozygote</li>
+</ul>
+</div></div>
+<aside class="notes">
+<p>This figure illustrates two different modes of gene action at a single locus.</p>
+<p>The horizontal axis shows the three possible genotypes: B1/B1, B1/B2, and B2/B2. The vertical axis shows the number of flowers.</p>
+<p>In panel (a), we see additive gene action. B1/B1 produces 1 flower. B1/B2 produces 2 flowers. B2/B2 produces 3 flowers. The heterozygote lies exactly midway between the two homozygotes. Here, A = 1 and D = 0. All genetic effects are additive.</p>
+<p>In panel (b), we see dominant gene action. B1/B1 produces 1 flower. B1/B2 produces 3 flowers. B2/B2 produces 3 flowers. The heterozygote has the same phenotype as B2/B2. Here, A = 1 and D = 1.</p>
+<p>The key biological point: Only additive gene action contributes to additive variance (V_A), which determines narrow-sense heritability and response to selection. Dominance contributes to genetic variance, but not to predictable transmission across generations.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="additivity-and-dominance-in-the-genetic-model" class="slide level2">
+<h2>Additivity and Dominance in the Genetic Model</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Example: Same phenotype, different inheritance</strong></p>
+<p>With dominance:</p>
+<ul>
+<li><span class="math inline">\(B_1B_2\)</span> → 3 flowers<br>
+</li>
+<li><span class="math inline">\(B_2B_2\)</span> → 3 flowers</li>
+</ul>
+<p>Population mean = 2.5</p>
+<p>Genotypic deviation:</p>
+<p><span class="math display">\[
+g = 3 - 2.5 = 0.5
+\]</span></p>
+<p>But offspring means differ:</p>
+<ul>
+<li><span class="math inline">\(B_1B_2\)</span> → mean offspring = 2.75<br>
+</li>
+<li><span class="math inline">\(B_2B_2\)</span> → mean offspring = 3.0</li>
+</ul>
+<p>Same phenotype<br>
+≠ same transmitted effect</p>
+</div><div class="column" style="width:50%;">
+<p><strong>Genetic Decomposition</strong></p>
+<p>Full phenotypic model in the case of dominance:</p>
+<p><span class="math display">\[
+p = a + d + e
+\]</span> Where:</p>
+<ul>
+<li><p><span class="math inline">\(a\)</span> = additive deviation<br>
+→ breeding value<br>
+→ predictably transmitted</p></li>
+<li><p><span class="math inline">\(d\)</span> = dominance deviation<br>
+→ allele interaction<br>
+→ not predictably transmitted</p></li>
+<li><p><span class="math inline">\(e\)</span> = environmental deviation</p></li>
+</ul>
+<p>Only <span class="math inline">\(a\)</span> contributes to predictable parent–offspring resemblance.</p>
+</div></div>
+<aside class="notes">
+<p>Left panel:</p>
+<p>In this example, two genotypes produce the same phenotype: 3 flowers.</p>
+<p>The population mean is 2.5, so both have genotypic deviation g = 0.5.</p>
+<p>However, when they reproduce, their offspring means differ.</p>
+<p>The heterozygote produces a mixture of genotypes. The homozygote produces only one genotype.</p>
+<p>Thus, although the parents look the same, they do not transmit the same genetic effect.</p>
+<p>This reveals an important distinction: Phenotype does not fully reveal transmissible genetic value.</p>
+<p>Right panel:</p>
+<p>To formalize this, we decompose:</p>
+<p>g = a + d.</p>
+<p>The additive deviation (a) is the average effect of substituting one allele for another. It is the breeding value.</p>
+<p>The dominance deviation (d) captures interactions between alleles at the same locus.</p>
+<p>The full phenotypic model becomes:</p>
+<p>x = a + d + e.</p>
+<p>Only the additive component (a) predictably contributes to resemblance between parents and offspring.</p>
+<p>This leads directly to narrow-sense heritability, which focuses on additive variance.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="decomposing-genetic-effects" class="slide level2">
+<h2>Decomposing Genetic Effects</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div style="font-size: 0.85em">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Genotype</th>
+<th><span class="math inline">\(B_1B_1\)</span></th>
+<th><span class="math inline">\(B_1B_2\)</span></th>
+<th><span class="math inline">\(B_2B_2\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Trait value</strong></td>
+<td>1</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td><strong>Genetic deviation (<span class="math inline">\(g\)</span>)</strong></td>
+<td>−1.5</td>
+<td>0.5</td>
+<td>0.5</td>
+</tr>
+<tr class="odd">
+<td><strong>Additive deviation (<span class="math inline">\(a\)</span>)</strong></td>
+<td>−1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td><strong>Dominance deviation (<span class="math inline">\(d\)</span>)</strong></td>
+<td>−0.5</td>
+<td>0.5</td>
+<td>−0.5</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div><div class="column" style="width:50%;">
+<p><strong>Partition of genetic deviation</strong></p>
+<p><span class="math display">\[
+g = a + d
+\]</span></p>
+<p>Where:</p>
+<ul>
+<li><p><span class="math inline">\(g\)</span> = total genetic deviation<br>
+</p></li>
+<li><p><span class="math inline">\(a\)</span> = additive deviation<br>
+→ breeding value<br>
+→ predictably transmitted</p></li>
+<li><p><span class="math inline">\(d\)</span> = dominance deviation<br>
+→ allele interaction<br>
+→ not predictably transmitted</p></li>
+</ul>
+<p>Only <strong>additive effects</strong> drive<br>
+parent–offspring resemblance.</p>
+</div></div>
+<aside class="notes">
+<p>This table makes the decomposition concrete.</p>
+<p>The population mean is 2.5 flowers.</p>
+<p>Genetic deviation (g) is calculated as:</p>
+<p>trait value − population mean.</p>
+<p>For <span class="math inline">\(B_1B_1\)</span>: 1 − 2.5 = −1.5</p>
+<p>For both <span class="math inline">\(B_1B_2\)</span> and <span class="math inline">\(B_2B_2\)</span>: 3 − 2.5 = 0.5</p>
+<p>So the heterozygote and one homozygote have the same total genetic deviation.</p>
+<p>But when we partition:</p>
+<p>g = a + d</p>
+<p>We see something important.</p>
+<p>Additive deviation (a):</p>
+<ul>
+<li>Changes linearly across genotypes (−1, 0, 1)</li>
+<li>Represents the breeding value</li>
+<li>Predicts the average performance of offspring</li>
+</ul>
+<p>Dominance deviation (d):</p>
+<ul>
+<li>Captures allele interaction</li>
+<li>Positive in the heterozygote</li>
+<li>Not predictably transmitted</li>
+</ul>
+<p>Biological meaning:</p>
+<p>Two individuals can have identical phenotypes, yet differ in their additive genetic value.</p>
+<p>That is why narrow-sense heritability focuses on additive variance.</p>
+<p>This table is the bridge from genetic model → breeding value → h².</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1441,15 +1910,29 @@ h^2 = \frac{V_A}{V_P}
 <h2>Modes of Gene Action at One Locus</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="introduction_quantitative_genetics_files/figure-revealjs/unnamed-chunk-4-1.png" width="960"></p>
-</figure>
-</div>
-</div>
-</div>
+<p><strong>Genotypes at locus <span class="math inline">\(B\)</span></strong></p>
+<p><span class="math inline">\(BB\)</span>, <span class="math inline">\(Bb\)</span>, <span class="math inline">\(bb\)</span></p>
+<h3 id="additive-gene-action">Additive gene action</h3>
+<ul>
+<li><span class="math inline">\(BB = 3\)</span></li>
+<li><span class="math inline">\(Bb = 2\)</span></li>
+<li><span class="math inline">\(bb = 1\)</span></li>
+</ul>
+<p>Heterozygote is <strong>midway</strong></p>
+<h3 id="dominant-gene-action">Dominant gene action</h3>
+<ul>
+<li><span class="math inline">\(BB = 3\)</span></li>
+<li><span class="math inline">\(Bb = 3\)</span></li>
+<li><span class="math inline">\(bb = 1\)</span></li>
+</ul>
+<p><span class="math inline">\(B\)</span> is <strong>dominant</strong></p>
+<h3 id="partial-dominance">Partial dominance</h3>
+<ul>
+<li><span class="math inline">\(BB = 3\)</span></li>
+<li><span class="math inline">\(Bb = 2.5\)</span></li>
+<li><span class="math inline">\(bb = 1\)</span></li>
+</ul>
+<p>Intermediate, but not exactly midway</p>
 </div><div class="column" style="width:50%;">
 <p><strong>Why this matters</strong></p>
 <p>Additive gene action:</p>
@@ -1468,17 +1951,16 @@ h^2 = \frac{V_A}{V_P}
 <p>Only additive effects contribute to <strong>narrow-sense heritability</strong></p>
 </div></div>
 <aside class="notes">
-<p>This figure illustrates three different modes of gene action at a single locus.</p>
-<p>On the x-axis we have the three genotypes: bb, Bb, and BB.</p>
-<p>On the y-axis we have the trait value.</p>
-<p>Let’s go panel by panel.</p>
-<p>In the top panel, we see additive gene action. The heterozygote lies exactly halfway between the two homozygotes. Each allele contributes a fixed amount to the phenotype. The effects add linearly.</p>
-<p>In the middle panel, we see dominance. The heterozygote has the same phenotype as one of the homozygotes. This means the allele B is dominant over b. The effect depends on allele combinations, not simple addition.</p>
-<p>In the bottom panel, we see partial dominance. The heterozygote is intermediate, but not exactly midway between the homozygotes. There is some dominance, but not complete.</p>
-<p>The key idea is this:</p>
-<p>Only additive gene action produces predictable transmission from parents to offspring.</p>
-<p>Dominance effects depend on how alleles combine within individuals. Because meiosis reshuffles alleles each generation, dominance effects are not transmitted in a consistent way.</p>
-<p>That is why additive variance, V_A, is the component that determines narrow-sense heritability and response to selection.</p>
+<p>Left panel:</p>
+<p>These are three classic patterns of gene action.</p>
+<p>Additive: Each allele contributes equally. The heterozygote is exactly midway.</p>
+<p>Dominance: One allele masks the other. The heterozygote resembles one homozygote.</p>
+<p>Partial dominance: Intermediate, but not linear.</p>
+<p>Right panel:</p>
+<p>Additive effects create predictable inheritance. That’s because the average allele effect is transmitted.</p>
+<p>Dominance depends on allele combinations. Since allele combinations reshuffle every generation, dominance effects are not transmitted consistently.</p>
+<p>This is why only additive variance contributes to narrow-sense heritability.</p>
+<p>This slide prepares us for defining h².</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1500,7 +1982,7 @@ h^2 = \frac{V_A}{V_P}
 h^2 = \frac{V_A}{V_P}
 \]</span></p>
 <ul>
-<li><span class="math inline">\(V_A\)</span> = additive genetic variance<br>
+<li><span class="math inline">\(V_A\)</span> = additive variance<br>
 </li>
 <li><span class="math inline">\(V_P\)</span> = total phenotypic variance</li>
 </ul>
@@ -1511,41 +1993,37 @@ H^2 = \frac{V_G}{V_P}
 \]</span></p>
 <p>But:</p>
 <p><span class="math display">\[
-V_G = V_A + V_D + V_I
+V_G = V_A + V_D (+ V_I)
 \]</span></p>
 </div><div class="column" style="width:50%;">
 <p><strong>Estimation</strong></p>
 <p>Parent–offspring covariance:</p>
 <p><span class="math display">\[
-\mathrm{Cov}_{\text{parent, offspring}} = \frac{1}{2} V_A
+\text{Cov}_{\text{parent, offspring}} = \frac{1}{2} V_A
 \]</span></p>
 <p>Therefore:</p>
 <p><span class="math display">\[
-h^2 = \frac{2\,\mathrm{Cov}_{\text{parent, offspring}}}{V_P}
+h^2 = \frac{2\,\text{Cov}_{\text{parent, offspring}}}{V_P}
 \]</span></p>
-<p>Half-sibs share <span class="math inline">\(\frac{1}{4}\)</span> of additive effects:</p>
+<p>Alternative:</p>
+<p>Half-sibs share <span class="math inline">\(\frac{1}{4}\)</span> genes</p>
 <p><span class="math display">\[
-V_A = 4\,\mathrm{Cov}_{\text{half-sibs}}
+V_A = 4\,\text{Cov}_{\text{half-sibs}}
 \]</span></p>
 <p>Example:</p>
 <p>Human height: <span class="math inline">\(h^2 \approx 0.8\)</span></p>
 </div></div>
 <aside class="notes">
 <p>Left panel:</p>
-<p>Narrow-sense heritability isolates additive genetic variance.</p>
-<p>Broad-sense heritability includes all genetic effects, including dominance and interactions.</p>
-<p>But only additive effects are transmitted predictably from parents to offspring.</p>
-<p>That is why h² focuses on V_A.</p>
+<p>Narrow-sense heritability isolates additive variance.</p>
+<p>Broad-sense heritability includes all genetic effects, but only additive effects drive predictable inheritance.</p>
 <p>Right panel:</p>
-<p>An offspring inherits half its alleles from a parent.</p>
-<p>Because additive effects sum across alleles, the covariance between parent and offspring equals one-half of V_A.</p>
+<p>An offspring inherits half its alleles from a parent. So the covariance between parent and offspring equals 1/2 V_A.</p>
 <p>Rearranging gives:</p>
-<p>h² equals two times the covariance between parent and offspring, divided by total phenotypic variance.</p>
-<p>Similarly, half-siblings share one-quarter of their additive effects, so V_A equals four times the covariance between half-sibs.</p>
-<p>For example, human height has h² around 0.8.</p>
-<p>This means most of the variation in height within a population is due to additive genetic differences.</p>
-<p>But this does NOT mean height is genetically fixed.</p>
-<p>Environmental variation still contributes to phenotypic differences.</p>
+<p>h² = 2 × Cov(parent, offspring) / V_P.</p>
+<p>Similarly, half-sibs share 1/4 of genes, so V_A = 4 × Cov(half-sibs).</p>
+<p>Human height has h² ≈ 0.8, meaning most variation is additive and transmissible.</p>
+<p>But this does NOT mean height is genetically fixed. Environment still contributes to variation.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1562,32 +2040,56 @@ V_A = 4\,\mathrm{Cov}_{\text{half-sibs}}
 <h2>Genotype × Environment Interaction</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="introduction_quantitative_genetics_files/figure-revealjs/unnamed-chunk-5-1.png" width="960"></p>
-</figure>
-</div>
-</div>
-</div>
+<p><img data-src="../images/fig19_un01_33779.png" style="width:90.0%"></p>
 </div><div class="column" style="width:50%;">
-<p><strong>Reaction norms for two genotypes (IL1, IL2)</strong></p>
-<p><strong>No interaction</strong> - Parallel lines<br>
-- Genotype difference is constant across environments</p>
-<p><strong>G×E interaction</strong> - Lines cross (or diverge)<br>
-- Genotype ranking depends on environment</p>
-<p><strong>Key idea:</strong><br>
-Genotype performance can be environment-dependent.</p>
+<p><strong>Reaction norms for two inbred lines (IL1, IL2)</strong></p>
+<p>Left panel: No interaction<br>
+- Parallel lines<br>
+- Difference between genotypes is constant<br>
+- Genetic effect is stable across environments</p>
+<p>Right panel: Genotype × Environment interaction<br>
+- Lines cross<br>
+- Relative performance changes<br>
+- Genetic differences depend on environment</p>
+<p>Key idea:</p>
+<p>Genotype performance is environment-dependent.</p>
 </div></div>
 <aside class="notes">
-<p>This figure shows reaction norms: how the same genotypes perform across environments.</p>
-<p>On the left, there is no genotype-by-environment interaction. The two lines are parallel. IL1 is always higher than IL2 by the same amount. So the genetic difference is stable across environments.</p>
-<p>On the right, we have genotype-by-environment interaction. The lines cross. IL1 performs better in environment E1, but worse in environment E2. So the ranking of genotypes depends on the environment.</p>
-<p>This is what we mean by G×E: the difference between genotypes changes across environments.</p>
-<p>Why does it matter?</p>
-<p>If there is strong G×E, selection in one environment may not give the best genotype in another environment.</p>
-<p>In that case, we often extend the model by adding an interaction term: phenotype equals mean plus genotype plus environment plus genotype-by-environment interaction.</p>
+<p>The simple model:</p>
+<p>X = μ + g + e</p>
+<p>assumes that genetic and environmental effects are independent.</p>
+<p>A genotype–environment (G×E) interaction occurs when:</p>
+<p>The difference between genotypes changes across environments.</p>
+<p>We illustrate this using two inbred lines (IL1 and IL2) grown in two environments (E1 and E2).</p>
+<p>Left panel: No interaction</p>
+<ul>
+<li>IL1 is always 1 unit higher than IL2.</li>
+<li>The lines are parallel.</li>
+<li>The genetic difference is consistent across environments.</li>
+<li>We can meaningfully talk about an overall genetic difference.</li>
+</ul>
+<p>Right panel: Interaction</p>
+<ul>
+<li>IL1 performs better in E1 but worse in E2.</li>
+<li>The lines cross.</li>
+<li>The genetic ranking changes across environments.</li>
+<li>Averaging across environments could misleadingly suggest no genetic difference.</li>
+</ul>
+<p>This type of graph is called a reaction norm: It shows how a genotype responds across environments.</p>
+<p>Statistically, we expand the model:</p>
+<p>X = μ + g + e + ge</p>
+<p>where: - ge = genotype × environment interaction term - V_GE = interaction variance</p>
+<p>If we omit this term, we assume no interaction.</p>
+<p>Important implication:</p>
+<p>If G×E exists: - Selection may work differently in different environments. - A “superior” genotype in one environment may not be superior in another.</p>
+<p>Beyond G×E:</p>
+<p>Interactions can also occur between genes. This is called epistasis.</p>
+<p>Extended genetic model:</p>
+<p>X = μ + a + d + i + e</p>
+<p>where: - a = additive deviation - d = dominance deviation - i = epistatic deviation</p>
+<p>Like dominance variance, interaction variance is generally not predictably transmitted across generations.</p>
+<p>Key takeaway:</p>
+<p>Additive effects determine predictable inheritance. Interactions complicate prediction.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1604,42 +2106,63 @@ Genotype performance can be environment-dependent.</p>
 <h2>Narrow-Sense Heritability (h²)</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="introduction_quantitative_genetics_files/figure-revealjs/unnamed-chunk-6-1.png" width="960"></p>
-</figure>
-</div>
-</div>
-</div>
+<p><img data-src="../images/fig19_08_33779.png" style="width:60.0%"></p>
 </div><div class="column" style="width:50%;">
-<p><strong>Parent–Offspring Regression for Height</strong></p>
+<p><strong>Figure 19-8.</strong><br>
+Parent–offspring regression for height</p>
 <ul>
-<li>Each point = one parent–offspring pair<br>
+<li>Top: mother–daughter pairs<br>
 </li>
-<li>Clear positive relationship<br>
+<li>Bottom: father–son pairs</li>
+</ul>
+<p>Key points:</p>
+<ul>
+<li>Clear positive correlations<br>
 </li>
-<li>Slope of regression line ≈ <span class="math inline">\(h^2\)</span></li>
+<li>Slope of regression line ≈ h²<br>
+</li>
+<li>Estimates:
+<ul>
+<li>Daughters: h² ≈ 0.86<br>
+</li>
+<li>Sons: h² ≈ 0.82</li>
+</ul></li>
 </ul>
 <p>Interpretation:</p>
-<p>The steeper the slope, the greater the additive genetic contribution to variation.</p>
+<p>Most variation in height is additive and transmitted from parent to offspring.</p>
 </div></div>
 <aside class="notes">
-<p>This figure shows parent–offspring regressions for height.</p>
-<p>In the top panel, we see mother–daughter pairs. In the bottom panel, father–son pairs.</p>
-<p>Each point represents one parent–offspring pair.</p>
-<p>There is a clear positive relationship: taller parents tend to have taller children.</p>
-<p>The red line is the best-fit regression line.</p>
-<p>The slope of this line estimates narrow-sense heritability, h².</p>
-<p>Why does this work?</p>
-<p>Because additive genetic effects are transmitted predictably from parents to offspring.</p>
-<p>If additive variance is large, offspring closely resemble their parents, and the regression slope is steep.</p>
-<p>If additive variance is small, offspring resemble their parents less, and the slope is flatter.</p>
-<p>In this example, the slope is close to 0.8, meaning most of the variation in height is due to additive genetic differences.</p>
-<p>But remember:</p>
-<p>This describes variation in a population, not how “genetic” height is for any one individual.</p>
-<p>Environment still contributes to variation.</p>
+<p>This figure illustrates narrow-sense heritability (h²).</p>
+<p>Definition:</p>
+<p>h² = V_A / V_P</p>
+<p>where: - V_A = additive genetic variance - V_P = total phenotypic variance</p>
+<p>Narrow-sense heritability measures the proportion of phenotypic variance that is predictably transmitted to offspring.</p>
+<p>In parent–offspring regression:</p>
+<p>The slope of the regression line equals h².</p>
+<p>Top panel (mother–daughter pairs):</p>
+<ul>
+<li>X-axis: mother’s height (inches), ~60–72</li>
+<li>Y-axis: daughter’s height (inches), ~60–72</li>
+<li>Strong positive relationship</li>
+<li>Estimated h² ≈ 0.86</li>
+</ul>
+<p>Bottom panel (father–son pairs):</p>
+<ul>
+<li>X-axis: father’s height (inches), ~62–82</li>
+<li>Y-axis: son’s height (inches), ~62–78</li>
+<li>Strong positive relationship</li>
+<li>Estimated h² ≈ 0.82</li>
+</ul>
+<p>Most points cluster near the regression line, with some natural scatter due to: - Environmental variation - Non-additive genetic effects - Measurement error</p>
+<p>Key interpretation:</p>
+<p>Height shows high narrow-sense heritability. This means most of the variation is additive and can respond to selection.</p>
+<p>Important cautions:</p>
+<ul>
+<li>These estimates are population-specific.</li>
+<li>Environmental similarity between parents and offspring can inflate estimates.</li>
+<li>h² does not measure genetic determination of an individual.</li>
+</ul>
+<p>It measures transmissible variation in a population.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1787,7 +2310,7 @@ it means additive variance is limited relative to total variance.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><strong>What is transmitted?</strong></p>
-<p>Individual deviation from the mean:</p>
+<p>Individual deviation:</p>
 <p><span class="math display">\[
 x = a + d + e
 \]</span></p>
@@ -1800,21 +2323,21 @@ x'' = a'' + d'' + e''
 \]</span></p>
 <p>Expected offspring deviation:</p>
 <p><span class="math display">\[
-\mathbb{E}[x_0] = \frac{a' + a''}{2}
+x_0 = \frac{a' + a''}{2}
 \]</span></p>
 <p>Only <strong>additive effects (<span class="math inline">\(a\)</span>)</strong><br>
 are predictably transmitted.</p>
 <p>Dominance (<span class="math inline">\(d\)</span>) and environment (<span class="math inline">\(e\)</span>)<br>
-are not transmitted predictably.</p>
+are not inherited.</p>
 </div><div class="column" style="width:50%;">
 <p><strong>Prediction Using <span class="math inline">\(h^2\)</span></strong></p>
 <p>Since <span class="math inline">\(a\)</span> is not directly observed:</p>
 <p><span class="math display">\[
-\widehat{x}_{\text{offspring}} = h^2 \,\bar{x}_{\text{parents}}
+\hat{x}_{\text{offspring}} = h^2 \times \bar{x}_{\text{parents}}
 \]</span></p>
 <p>Predicted phenotype:</p>
 <p><span class="math display">\[
-\widehat{X}_{\text{offspring}} = \mu + \widehat{x}_{\text{offspring}}
+\hat{X}_{\text{offspring}} = \mu + \hat{x}_{\text{offspring}}
 \]</span></p>
 <p><strong>Example (Sheep fleece)</strong></p>
 <p>Population mean = 6.0 lb<br>
@@ -1830,26 +2353,25 @@ Mean parental deviation = 0.75<br>
 </div></div>
 <aside class="notes">
 <p>Left panel:</p>
-<p>Each individual’s phenotypic deviation from the mean can be decomposed into three components:</p>
-<p>Additive genetic effects, dominance effects, and environmental effects.</p>
-<p>When parents reproduce, only additive effects are transmitted predictably.</p>
-<p>Dominance effects are not transmitted predictably, because allele combinations are reshuffled each generation.</p>
-<p>Environmental effects are not inherited, because offspring experience their own environments.</p>
-<p>Therefore, the expected offspring deviation equals the average of the parents’ additive deviations.</p>
+<p>Each individual’s phenotype can be decomposed:</p>
+<p>x = a + d + e.</p>
+<p>When parents reproduce, only additive effects are predictably transmitted.</p>
+<p>Dominance effects are not transmitted because new genotype combinations form each generation.</p>
+<p>Environmental effects are not transmitted because offspring experience new environments.</p>
+<p>Therefore, the expected offspring deviation equals the average parental additive deviation.</p>
 <p>Right panel:</p>
-<p>Because we cannot directly observe additive deviations, we use narrow-sense heritability to estimate them.</p>
+<p>Because we cannot directly observe additive deviations, we estimate them using narrow-sense heritability.</p>
 <p>The expected offspring deviation equals:</p>
-<p>h² times the mean parental phenotypic deviation.</p>
+<p>h² × mean parental phenotypic deviation.</p>
 <p>In the sheep example:</p>
-<p>Population mean is 6.0 pounds. Parents are 0.75 pounds above the mean. Heritability is 0.4.</p>
-<p>So the predicted offspring deviation is:</p>
-<p>0.4 times 0.75 equals 0.3.</p>
-<p>The predicted offspring phenotype is therefore 6.3 pounds.</p>
-<p>Notice that offspring are predicted to be less extreme than their parents.</p>
-<p>This is regression toward the mean.</p>
-<p>If h² equals 1, offspring would lie exactly halfway between the parents.</p>
-<p>If h² equals 0, offspring would equal the population mean.</p>
-<p>This principle underlies selective breeding and evolutionary response to selection.</p>
+<p>Population mean = 6.0 lb. Mean parental deviation = 0.75. Heritability = 0.4.</p>
+<p>Predicted offspring deviation = 0.4 × 0.75 = 0.3.</p>
+<p>Predicted offspring phenotype = 6.3 lb.</p>
+<p>Notice the offspring are predicted to be less extreme than the parents.</p>
+<p>Why?</p>
+<p>Because only the additive portion of the parental superiority is transmitted.</p>
+<p>If h² = 1, offspring would be exactly midway between parents. If h² = 0, offspring would equal the population mean.</p>
+<p>This principle underlies selective breeding and evolutionary response.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1869,17 +2391,17 @@ Mean parental deviation = 0.75<br>
 <p><strong>Artificial selection</strong></p>
 <p>Humans select individuals with desirable phenotypes for reproduction.</p>
 <p><strong>Selection differential</strong> <span class="math display">\[
-S = \bar{X}_{\text{selected}} - \bar{X}_{\text{population}}
+S = \bar{X}_{selected} - \bar{X}_{population}
 \]</span></p>
 <p><strong>Response to selection</strong> <span class="math display">\[
-R = \bar{X}_{\text{offspring}} - \bar{X}_{\text{population}}
+R = \bar{X}_{offspring} - \bar{X}_{population}
 \]</span></p>
 <p><strong>Breeder’s equation</strong> <span class="math display">\[
 R = h^2 S
 \qquad
 h^2 = \frac{R}{S}
 \]</span></p>
-<p>Only <strong>additive genetic variance</strong> contributes to the response.</p>
+<p>Only <strong>additive genetic variance</strong> contributes to response.</p>
 </div><div class="column" style="width:50%;">
 <p><strong>Example: Provitamin A in maize</strong></p>
 <p>Base population mean = 1.25 µg/g<br>
@@ -1897,26 +2419,25 @@ R = 1.44 - 1.25 = 0.19
 <p><span class="math display">\[
 h^2 = \frac{0.19}{0.38} = 0.50
 \]</span></p>
-<p>About 50% of the variation contributing to selection is additive and transmitted to the next generation.</p>
+<p>About 50% of variation is additive and transmissible.</p>
 </div></div>
 <aside class="notes">
 <p>Left panel:</p>
-<p>Artificial selection occurs when humans choose individuals with desirable phenotypes to reproduce.</p>
-<p>The selection differential, S, measures how much better the selected parents are compared to the base population.</p>
-<p>The response, R, measures how much the offspring generation changes relative to the original population mean.</p>
-<p>The breeder’s equation links these quantities:</p>
-<p>R equals h² times S.</p>
-<p>Only additive genetic variance contributes to a predictable response to selection.</p>
+<p>Artificial selection occurs when humans select individuals with desirable phenotypes to reproduce.</p>
+<p>The selection differential (<span class="math inline">\(S\)</span>) measures how much better the selected parents are compared to the base population.</p>
+<p>The response (<span class="math inline">\(R\)</span>) measures how much the offspring generation changes relative to the original population.</p>
+<p>The breeder’s equation links response to selection and heritability: <span class="math inline">\(R = h^2 S\)</span>.</p>
+<p>Only additive genetic variance contributes to predictable response.</p>
 <p>Right panel:</p>
 <p>In the maize example:</p>
-<p>The base population mean is 1.25 µg per gram.</p>
-<p>Selected plants have a mean of 1.63, so S equals 0.38.</p>
-<p>The offspring mean is 1.44, so R equals 0.19.</p>
-<p>Because R is half of S, heritability equals 0.50.</p>
-<p>This means that about half of the variation responsible for selection response is additive and transmissible.</p>
-<p>The remaining variation is due to environmental effects and non-additive genetic effects, which do not produce a predictable response.</p>
+<p>The base population mean is 1.25 µg/g.</p>
+<p>Selected plants have mean 1.63 µg/g, so <span class="math inline">\(S = 0.38\)</span>.</p>
+<p>The offspring mean is 1.44 µg/g, so <span class="math inline">\(R = 0.19\)</span>.</p>
+<p>Because <span class="math inline">\(R\)</span> is half of <span class="math inline">\(S\)</span>, <span class="math inline">\(h^2 = 0.50\)</span>.</p>
+<p>This suggests about half of the phenotypic variation is additive and transmissible.</p>
+<p>The remainder is due to dominance and/or environmental effects, which do not yield a predictable response.</p>
 <p>Key insight:</p>
-<p>The larger h² is, the stronger and faster the response to selection.</p>
+<p>Larger <span class="math inline">\(h^2\)</span> implies a stronger and faster response to selection.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -2046,9 +2567,9 @@ h^2 = \frac{V_A}{V_P}
 </ul>
 <p><strong>Heritability does NOT mean:</strong></p>
 <ul>
-<li>Not the “% genetic” of an individual<br>
+<li>Not the “% genetic” for an individual<br>
 </li>
-<li>Not that a trait is genetically fixed<br>
+<li>Not that a trait is genetically determined<br>
 </li>
 <li>Not that a trait cannot change<br>
 </li>
@@ -2060,17 +2581,12 @@ h^2 = \frac{V_A}{V_P}
 <aside class="notes">
 <p>This is one of the most misunderstood concepts in genetics.</p>
 <p>Heritability does NOT tell us how genetic a trait is in a particular person.</p>
-<p>If height has h² = 0.8, that does not mean a person is “80% genetic and 20% environmental.”</p>
-<p>It means that 80% of the variation in height within a specific population, under specific environmental conditions, is associated with additive genetic differences.</p>
-<p>Heritability does not imply immutability.</p>
-<p>A trait can have very high heritability and still change dramatically if the environment changes.</p>
-<p>For example, average human height increased substantially during the 20th century due to improved nutrition, even though height has high heritability.</p>
-<p>Heritability is not universal.</p>
-<p>It depends on: - The population being studied - The amount of genetic variation present - The amount of environmental variation present</p>
-<p>If environmental variance increases, heritability decreases — even if genes remain biologically essential.</p>
-<p>The key takeaway:</p>
-<p>Heritability measures variation among individuals in a population.</p>
-<p>It does not measure destiny, and it does not apply to individuals.</p>
+<p>If height has h² = 0.8, that does not mean a person is “80% genetic and 20% environmental.” It means that 80% of the variation in height within a specific population, under specific environmental conditions, is associated with additive genetic differences.</p>
+<p>Heritability also does NOT imply immutability.</p>
+<p>A trait can have very high heritability and still change dramatically if the environment changes. For example, average height increased substantially over the 20th century due to improved nutrition, even though height has high heritability.</p>
+<p>Heritability is not universal. It depends on: - The population being studied - The amount of genetic variation present - The amount of environmental variation present</p>
+<p>If environmental variance increases, heritability decreases — even if genes are biologically important.</p>
+<p>Finally, heritability measures variation, not destiny. It tells us about differences among individuals in a population, not about inevitability for any individual.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -2083,101 +2599,140 @@ h^2 = \frac{V_A}{V_P}
           display:block!important;
       }</style></aside>
 </section>
-<section id="from-phenotype-to-genotype-the-missing-link" class="slide level2">
-<h2>From Phenotype to Genotype: The “Missing” Link</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>What we know so far:</strong></p>
+<section id="mapping-qtl-in-known-pedigrees" class="slide level2">
+<h2>19.5 Mapping QTL in Known Pedigrees</h2>
+<p>Quantitative Trait Loci (QTL):</p>
 <ul>
-<li>Traits like height are <strong>heritable</strong> (<span class="math inline">\(h^2 \approx 0.8\)</span>).</li>
-<li>This variation is <strong>multifactorial</strong> (many genes + environment).</li>
-<li>We can <strong>predict</strong> offspring from parents using the selection response.</li>
-</ul>
-<p><br></p>
-<p><strong>The Big Question:</strong></p>
-<ul>
-<li><em>Where</em> are these genes located?</li>
-<li><em>Which</em> specific DNA variants drive the <span class="math inline">\(V_G\)</span>?</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><strong>The Solution: Association Mapping</strong></p>
-<ol type="1">
-<li><strong>The Strategy:</strong> Search the entire genome for statistical correlations.</li>
-<li><strong>The Tool:</strong> High-density SNP markers (M).</li>
-<li><strong>The Principle:</strong> Linkage Disequilibrium (LD) with the causal variants (Q).</li>
-</ol>
-<p><br></p>
-<blockquote>
-<p>“We move from describing <strong>how much</strong> is inherited to identifying <strong>what</strong> is inherited.”</p>
-</blockquote>
-</div></div>
-<aside class="notes">
-<p>This is a critical transition in the lecture.</p>
-<p>Up until now, we have treated the “Genotype” as a black box (V_G). We know it’s there because children look like parents, but we don’t know the physical address of the genes.</p>
-<p>In the next section, we move into Mapping. The goal here is to open that black box. We use the concept of Linkage Disequilibrium to find the specific “neighborhoods” in the genome that contribute to the variance we measured in the first half of the lecture.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="mapping-genes-for-complex-traits" class="slide level2">
-<h2>Mapping Genes for Complex Traits</h2>
-<p>Quantitative trait loci (QTL):</p>
-<ul>
-<li>Genomic regions affecting trait variation</li>
-</ul>
-<p>Two major approaches:</p>
-<p>QTL mapping<br>
-- Controlled crosses<br>
-- Known pedigrees</p>
-<p>Association mapping / GWAS<br>
-- Random-mating populations<br>
-- Uses linkage disequilibrium<br>
-- Genome-wide SNP scans</p>
-<p>GWAS can directly identify candidate genes.</p>
-<aside class="notes">
-<p>Finally, we examined how to identify genes underlying complex traits.</p>
-<p>QTL mapping: - Uses controlled crosses - Tracks segregation in pedigrees</p>
-<p>Association mapping: - Uses natural populations - Relies on linkage disequilibrium - Scans the entire genome</p>
-<p>Genome-wide association studies test hundreds of thousands of SNPs simultaneously.</p>
-<p>These approaches have identified genes for: - Disease susceptibility in humans - Agronomic traits in crops - Size differences in dogs</p>
-<p>Quantitative genetics now integrates statistics, molecular biology, and genomics.</p>
-<p>It is central to modern biology.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="genome-wide-association-study-gwas" class="slide level2">
-<h2>Genome-Wide Association Study (GWAS)</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Goal</strong></p>
-<p>Identify genomic regions influencing complex traits<br>
-in random-mating populations.</p>
-<p><strong>Core idea</strong></p>
-<p>Test statistical association between:</p>
-<ul>
-<li>Genetic markers (SNPs)<br>
+<li>Genes contributing to variation in complex traits<br>
 </li>
-<li>Phenotypic variation</li>
+<li>Typically small, additive effects</li>
 </ul>
-</div><div class="column" style="width:50%;">
-<p><strong>GWAS characteristics</strong></p>
+<p>Key challenge:</p>
+<ul>
+<li>Genotype distributions overlap<br>
+</li>
+<li>Cannot infer genotype from phenotype alone</li>
+</ul>
+<p>Solution:</p>
+<ul>
+<li>Use linked marker loci<br>
+</li>
+<li>Look for statistical association between marker genotype and trait value</li>
+</ul>
+<aside class="notes">
+<p>QTL are normal genes, but their alleles have small quantitative effects.</p>
+<p>Unlike Mendelian traits, phenotypic distributions overlap. So we cannot determine genotype directly from phenotype.</p>
+<p>Instead, we use marker loci that are linked to QTL.</p>
+<p>If a marker is near a QTL, individuals with different marker genotypes will differ in mean trait value.</p>
+<p>That is the fundamental logic of QTL mapping.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="basic-experimental-design" class="slide level2">
+<h2>Basic Experimental Design</h2>
+<p>Example: Tomato fruit weight</p>
+<p>Parents: - Beefmaster (230 g)<br>
+- Sungold (10 g)</p>
+<p>Steps:</p>
+<ol type="1">
+<li>Cross parents → F₁<br>
+</li>
+<li>Backcross → BC₁ population<br>
+</li>
+<li>Measure fruit weight<br>
+</li>
+<li>Genotype markers across genome</li>
+</ol>
+<p>BC₁ marker genotypes:</p>
+<ul>
+<li>B/B<br>
+</li>
+<li>B/S</li>
+</ul>
+<aside class="notes">
+<p>We cross two inbred lines with contrasting phenotypes.</p>
+<p>In the backcross population, fruit weight varies continuously.</p>
+<p>At each marker locus, plants are either: - Homozygous for Beefmaster (B/B) - Heterozygous (B/S)</p>
+<p>We then compare mean fruit weight between these two groups.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="detecting-a-qtl" class="slide level2">
+<h2>Detecting a QTL</h2>
+<p>If marker is NOT linked to QTL:</p>
+<ul>
+<li>Mean(B/B) ≈ Mean(B/S)</li>
+</ul>
+<p>If marker IS linked to QTL:</p>
+<ul>
+<li>Mean(B/B) ≠ Mean(B/S)</li>
+</ul>
+<p>Example:</p>
+<ul>
+<li>Marker M1 → means similar → no QTL<br>
+</li>
+<li>Marker M3 → means differ → QTL nearby</li>
+</ul>
+<p>Conclusion:</p>
+<ul>
+<li>QTL mapping identifies genomic regions<br>
+</li>
+<li>Statistical tests determine significance</li>
+</ul>
+<aside class="notes">
+<p>At markers far from a QTL, the two genotype classes have similar means.</p>
+<p>Near a QTL, the means differ substantially.</p>
+<p>The larger the difference, the stronger the evidence for linkage.</p>
+<p>In practice, likelihood-based statistics are used to determine whether the difference is large enough to declare a significant QTL.</p>
+<p>Main takeaway:</p>
+<p>QTL mapping uses segregation in controlled crosses plus molecular markers to locate genes affecting quantitative traits.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="association-mapping-gwas" class="slide level2">
+<h2>Association Mapping (GWAS)</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Association mapping identifies loci controlling quantitative traits<br>
+in <strong>random-mating populations</strong>.</p>
+<p><strong>Core idea</strong></p>
+<ul>
+<li>Uses naturally occurring <strong>linkage disequilibrium (LD)</strong></li>
+<li>Tests statistical association between:
+<ul>
+<li>Genetic markers (e.g., SNPs)</li>
+<li>Phenotypic variation</li>
+</ul></li>
+</ul>
+<hr>
+<p><strong>Genome-Wide Association Study (GWAS)</strong></p>
 <ul>
 <li>Scans the entire genome<br>
 </li>
@@ -2185,24 +2740,37 @@ in random-mating populations.</p>
 </li>
 <li>No need to specify candidate genes in advance</li>
 </ul>
-<p><strong>Compared to classical QTL mapping</strong></p>
+</div><div class="column" style="width:50%;">
+<p><strong>Example: ApoE gene (1990s study)</strong></p>
+<ul>
+<li>e4 allele associated with cardiovascular disease<br>
+</li>
+<li>Carriers had ~42% higher risk</li>
+</ul>
+<hr>
+<p><strong>Advantages over classical QTL mapping</strong></p>
 <ul>
 <li>No controlled crosses required<br>
 </li>
 <li>No pedigree information needed<br>
 </li>
-<li>Works directly in natural populations</li>
+<li>Tests many alleles simultaneously<br>
+</li>
+<li>Can directly pinpoint causal genes</li>
 </ul>
+<hr>
+<p><strong>Key idea</strong></p>
+<p>If a SNP is in LD with a QTL,<br>
+that SNP will show a statistical association with the trait.</p>
 </div></div>
 <aside class="notes">
-<p>A Genome-Wide Association Study, or GWAS, aims to identify genomic regions that influence complex traits.</p>
-<p>Unlike classical QTL mapping, GWAS works in natural, random-mating populations.</p>
-<p>The core idea is simple: We test whether genetic variation at a marker SNP is statistically associated with phenotypic variation.</p>
-<p>We do this across the entire genome, testing thousands to millions of SNPs.</p>
-<p>One major advantage is that we do not need to specify candidate genes in advance. The genome is scanned in an unbiased way.</p>
-<p>Compared to classical QTL mapping, GWAS does not require controlled crosses, and it does not require pedigree information.</p>
-<p>Instead, it relies on naturally occurring genetic variation and statistical association.</p>
-<p>In the next slide, we will explain why this works from a genetic perspective — specifically, the role of linkage disequilibrium.</p>
+<p>Association mapping identifies loci affecting quantitative traits in natural, random-mating populations.</p>
+<p>The key concept is linkage disequilibrium (LD). If a marker SNP is physically close to a causal variant, they tend to be inherited together. Therefore, the marker shows statistical association with the trait.</p>
+<p>Early studies often tested candidate genes. For example, ApoE was studied because of its role in lipid metabolism. Carriers of the e4 allele had about a 42% higher risk of cardiovascular disease.</p>
+<p>Modern GWAS scans the entire genome simultaneously. With dense SNP arrays and sequencing, millions of markers can be tested without prior biological assumptions.</p>
+<p>Compared to classical QTL mapping, association mapping: - Does not require controlled crosses - Does not require pedigree information - Works directly in natural populations - Can sometimes pinpoint causal genes</p>
+<p>The strength of association depends on how tightly linked the SNP is to the causal variant.</p>
+<p>This approach has transformed human genetics, plant breeding, and animal genetics.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -2215,46 +2783,57 @@ in random-mating populations.</p>
           display:block!important;
       }</style></aside>
 </section>
-<section id="why-gwas-works-markerqtl-linkage-disequilibrium" class="slide level2">
-<h2>Why GWAS Works: Marker–QTL Linkage Disequilibrium</h2>
+<section id="association-mapping-gwas-1" class="slide level2">
+<h2>Association Mapping (GWAS)</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="introduction_quantitative_genetics_files/figure-revealjs/unnamed-chunk-7-1.png" width="960"></p>
-</figure>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:50%;">
-<p><strong>Concept</strong></p>
+<p>Association mapping identifies loci controlling quantitative traits in <strong>random-mating populations</strong>.</p>
+<p><strong>Core idea</strong></p>
 <ul>
-<li>A causal mutation (QTL) affects the trait<br>
-</li>
-<li>A nearby SNP is in <strong>linkage disequilibrium (LD)</strong><br>
-</li>
-<li>The SNP is correlated with the QTL</li>
+<li>Uses naturally occurring <strong>linkage disequilibrium (LD)</strong></li>
+<li>Tests statistical association between:
+<ul>
+<li>Genetic markers (e.g., SNPs)</li>
+<li>Phenotypic variation</li>
+</ul></li>
 </ul>
-<p>Therefore:</p>
-<p>The SNP shows statistical association<br>
-even if it is not the causal mutation.</p>
-<p><strong>Key point</strong></p>
-<p>GWAS detects regions in LD<br>
-with functional variants.</p>
+<p><strong>Genome-Wide Association Study (GWAS)</strong></p>
+<ul>
+<li>Scans the entire genome<br>
+</li>
+<li>Tests thousands to millions of SNPs<br>
+</li>
+<li>No need to specify candidate genes in advance</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><strong>Example: ApoE gene (1990s study)</strong></p>
+<ul>
+<li>e4 allele associated with cardiovascular disease<br>
+</li>
+<li>Carriers had ~42% higher risk</li>
+</ul>
+<p><strong>Advantages over classical QTL mapping</strong></p>
+<ul>
+<li>No controlled crosses required<br>
+</li>
+<li>No pedigree information needed<br>
+</li>
+<li>Tests many alleles simultaneously<br>
+</li>
+<li>Can directly pinpoint causal genes</li>
+</ul>
+<p><strong>Key idea</strong></p>
+<p>If a SNP is in LD with a QTL,<br>
+that SNP will show a statistical association with the trait.</p>
 </div></div>
 <aside class="notes">
-<p>This figure illustrates why GWAS works.</p>
-<p>The horizontal line represents a chromosome segment.</p>
-<p>The red marker is a causal mutation — a quantitative trait locus, or QTL.</p>
-<p>The black dots are SNP markers.</p>
-<p>Because the QTL and a nearby SNP are physically close, they tend to be inherited together. This non-random association is called linkage disequilibrium, or LD.</p>
-<p>Even if we do not genotype the causal mutation itself, the nearby SNP is correlated with it.</p>
-<p>So when we test that SNP statistically, it appears associated with the trait.</p>
-<p>This is the key principle:</p>
-<p>GWAS detects markers in LD with causal variants.</p>
-<p>Importantly, the associated SNP is not necessarily the functional mutation. Further fine-mapping and functional studies are required.</p>
+<p>Association mapping identifies loci affecting quantitative traits in natural, random-mating populations.</p>
+<p>The key concept is linkage disequilibrium (LD). If a marker SNP is physically close to a causal variant, they tend to be inherited together. Therefore, the marker shows statistical association with the trait.</p>
+<p>Early studies often tested candidate genes. For example, ApoE was studied because of its role in lipid metabolism. Carriers of the e4 allele had about a 42% higher risk of cardiovascular disease.</p>
+<p>Modern GWAS scans the entire genome simultaneously. With dense SNP arrays and sequencing, millions of markers can be tested without prior biological assumptions.</p>
+<p>Compared to classical QTL mapping, association mapping: - Does not require controlled crosses - Does not require pedigree information - Works directly in natural populations - Can sometimes pinpoint causal genes</p>
+<p>The strength of association depends on how tightly linked the SNP is to the causal variant.</p>
+<p>This approach has transformed human genetics, plant breeding, and animal genetics.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -2267,202 +2846,67 @@ with functional variants.</p>
           display:block!important;
       }</style></aside>
 </section>
-<section id="why-gwas-works-markerqtl-linkage-disequilibrium-1" class="slide level2">
-<h2>Why GWAS Works: Marker–QTL Linkage Disequilibrium</h2>
+<section id="the-basic-method-of-gwas" class="slide level2">
+<h2>The Basic Method of GWAS</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="introduction_quantitative_genetics_files/figure-revealjs/unnamed-chunk-8-1.png" width="960"></p>
-</figure>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:50%;">
-<p><strong>The Interpretation</strong></p>
+<p>GWAS relies on <strong>linkage disequilibrium (LD)</strong> across the genome.</p>
+<p><strong>Key genomic features</strong></p>
 <ul>
-<li><strong>Association Peak:</strong> The highest points cluster over a specific genomic region.</li>
-<li><strong>Candidate Gene (QTL):</strong> The vertical dashed line shows the “lead SNP” falls directly within <strong>Gene B</strong>.</li>
-<li><strong>The “Neighborhood” Effect:</strong> Note how the shading spans the whole gene. Because of LD, many SNPs in the red-shaded region appear significant, but only one gene is likely the true functional driver.</li>
+<li>Nearby SNPs → strong LD<br>
+</li>
+<li>Distant SNPs → weak/no LD<br>
+</li>
+<li>Recombination hotspots disrupt LD<br>
+</li>
+<li>SNPs form <strong>haplotype blocks</strong></li>
 </ul>
-<p><strong>Key point</strong> This visual demonstrates <strong>Fine-Mapping</strong>: the process of narrowing down a broad GWAS “skyscraper” to the specific gene region most likely to contain the causal variant.</p>
-</div></div>
-</section>
-<section id="from-biological-data-to-statistical-model" class="slide level2">
-<h2>From Biological Data to Statistical Model</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Phenotype data</strong></p>
-<p>Measured trait values for <span class="math inline">\(n\)</span> individuals.</p>
-<p>Example (height):</p>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Individual</th>
-<th>Phenotype (<span class="math inline">\(y\)</span>)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Ind₁</td>
-<td>170</td>
-</tr>
-<tr class="even">
-<td>Ind₂</td>
-<td>165</td>
-</tr>
-<tr class="odd">
-<td>Ind₃</td>
-<td>182</td>
-</tr>
-<tr class="even">
-<td>…</td>
-<td>…</td>
-</tr>
-</tbody>
-</table>
-<p>Phenotypes form a vector:</p>
-<p><span class="math display">\[
-\mathbf{y} =
-\begin{pmatrix}
-y_1 \\
-y_2 \\
-y_3 \\
-\vdots
-\end{pmatrix}
-\]</span></p>
-</div><div class="column" style="width:50%;">
-<p><strong>Genotype matrix</strong></p>
-<p>Genotypes organized into an <span class="math inline">\(n \times m\)</span> matrix.</p>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th></th>
-<th>SNP₁</th>
-<th>SNP₂</th>
-<th>SNP₃</th>
-<th>…</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Ind₁</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Ind₂</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Ind₃</td>
-<td>2</td>
-<td>0</td>
-<td>1</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>…</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>Common SNP coding:</p>
+<p><strong>Within a haplotype block</strong></p>
 <ul>
-<li>0 = Homozygous reference<br>
+<li>SNPs are highly correlated<br>
 </li>
-<li>1 = Heterozygous<br>
+<li>One SNP can serve as a <strong>proxy</strong><br>
 </li>
-<li>2 = Homozygous alternative</li>
-</ul>
-<p><span class="math display">\[
-\mathbf{X}
-\]</span></p>
-</div></div>
-<aside class="notes">
-<p>Genome-wide association studies require two types of data.</p>
-<p>First, phenotypes. These are measured trait values — for example, height or milk yield. We represent them as a vector, y, with one value per individual.</p>
-<p>Second, genotypes. These are organized into a matrix, X, where rows are individuals and columns are SNP markers.</p>
-<p>Each entry is coded as 0, 1, or 2, representing the number of alternative alleles.</p>
-<p>Together, the phenotype vector and genotype matrix form the basis for statistical modeling.</p>
-<p>GWAS essentially asks:</p>
-<p>Does variation in a column of X predict variation in y?</p>
-<p>That connection is what we model next.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="the-principle-behind-gwas" class="slide level2">
-<h2>The Principle Behind GWAS</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Goal</strong></p>
-<p>Identify loci associated with variation in a trait.</p>
-<p>For each SNP:</p>
-<p>Test whether genotype predicts phenotype.</p>
-<p>Statistical model (single SNP):</p>
-<p><span class="math display">\[
-y_i = \mu + \beta x_{ij} + \varepsilon_i
-\]</span></p>
-<ul>
-<li><span class="math inline">\(y_i\)</span> = phenotype of individual <span class="math inline">\(i\)</span><br>
-</li>
-<li><span class="math inline">\(x_{ij}\)</span> = genotype (0,1,2) at SNP <span class="math inline">\(j\)</span><br>
-</li>
-<li><span class="math inline">\(\beta\)</span> = SNP effect<br>
-</li>
-<li><span class="math inline">\(\varepsilon_i\)</span> = residual variation</li>
+<li>Functional SNP need not be directly genotyped</li>
 </ul>
 </div><div class="column" style="width:50%;">
-<p><strong>Procedure</strong></p>
+<p><strong>Basic GWAS workflow</strong></p>
 <ol type="1">
-<li>Test SNP₁<br>
+<li>Sample large population
+<ul>
+<li>e.g., 50,000 cases + 50,000 controls<br>
 </li>
-<li>Test SNP₂<br>
+</ul></li>
+<li>Genotype hundreds of thousands of SNPs<br>
 </li>
-<li>Test SNP₃<br>
+<li>Test each SNP for association<br>
 </li>
-<li>…<br>
-</li>
-<li>Test all <span class="math inline">\(m\)</span> SNPs</li>
+<li>Plot P-values across the genome</li>
 </ol>
-<p>Thousands to millions of tests.</p>
-<p>If <span class="math inline">\(\beta \neq 0\)</span> (statistically significant)<br>
-→ evidence of association.</p>
+<p><strong>Interpretation</strong></p>
+<ul>
+<li>Each SNP tested independently<br>
+</li>
+<li>Significant SNPs indicate genomic region of interest<br>
+</li>
+<li>Association ≠ causation<br>
+</li>
+<li>Functional validation required</li>
+</ul>
+<p><strong>Key principle</strong></p>
+<p>LD allows detection of causal loci even without directly genotyping the functional mutation.</p>
 </div></div>
 <aside class="notes">
-<p>This slide builds directly on the previous one.</p>
-<p>We now connect the genotype matrix X and the phenotype vector y.</p>
-<p>For each SNP — meaning for each column of X — we fit a simple regression model.</p>
-<p>The phenotype equals:</p>
-<p>an overall mean, plus the SNP effect, plus residual variation.</p>
-<p>The key question is:</p>
-<p>Is the SNP effect, beta, significantly different from zero?</p>
-<p>If beta is statistically different from zero, we conclude that this SNP is associated with the trait.</p>
-<p>We repeat this test for every SNP in the genome.</p>
-<p>In other words, GWAS scans the genome one column of the genotype matrix at a time.</p>
-<p>Each SNP is tested independently.</p>
-<p>Later, we correct for multiple testing and visualize results in a Manhattan plot.</p>
-<p>The important idea is simple:</p>
-<p>GWAS is repeated regression across the genome.</p>
+<p>GWAS works because of linkage disequilibrium (LD).</p>
+<p>SNPs that are physically close tend to be inherited together, forming haplotype blocks — regions of strong correlation.</p>
+<p>Recombination hotspots break up LD, so SNPs separated by hotspots are largely independent.</p>
+<p>If a functional mutation affects a trait, nearby SNPs in the same haplotype block will also show association. These SNPs act as proxies.</p>
+<p>Thus, GWAS does not require direct genotyping of the causal mutation — only sufficient marker density to tag each haplotype block.</p>
+<p>In a typical human GWAS: - Tens of thousands of individuals - Hundreds of thousands to millions of SNPs - Millions to billions of genotype observations</p>
+<p>Each SNP is tested statistically. For binary traits, logistic regression or chi-square tests are used. For quantitative traits, linear regression is typical.</p>
+<p>Small P-values indicate evidence against the null hypothesis of no association. Results are visualized using Manhattan plots.</p>
+<p>Important: Association does not prove causation. Further molecular and functional studies are required.</p>
+<p>This illustrates how GWAS can identify specific genes underlying complex traits.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -2475,48 +2919,39 @@ y_i = \mu + \beta x_{ij} + \varepsilon_i
           display:block!important;
       }</style></aside>
 </section>
-<section id="from-p-values-to-manhattan-plot" class="slide level2">
-<h2>From P-values to Manhattan Plot</h2>
+<section id="linkage-disequilibrium-and-recombination-hotspots" class="slide level2">
+<h2>Linkage Disequilibrium and Recombination Hotspots</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="introduction_quantitative_genetics_files/figure-revealjs/unnamed-chunk-9-1.png" width="960"></p>
-</figure>
-</div>
-</div>
-</div>
+<p><img data-src="../images/fig19_17_33779.png" style="width:85.0%"></p>
 </div><div class="column" style="width:50%;">
-<p><strong>Each point = one SNP</strong></p>
-<ul>
-<li>X-axis → genomic position<br>
-</li>
-<li>Y-axis → <span class="math inline">\(-\log_{10}(p)\)</span></li>
-</ul>
-<p>Higher points = stronger evidence<br>
-against the null hypothesis.</p>
-<p><strong>Dashed line</strong></p>
-<ul>
-<li>Genome-wide significance threshold<br>
-(e.g.&nbsp;<span class="math inline">\(p = 5 \times 10^{-8}\)</span>)</li>
-</ul>
-<p>Peaks indicate genomic regions<br>
-associated with the trait.</p>
+<p><strong>Figure 19-17.</strong></p>
+<p>Top:<br>
+- SNP patterns across 18 chromosomes<br>
+- Two haplotype blocks: SNP1–5 and SNP6–10<br>
+- Recombination hotspot between SNP5 and SNP6<br>
+- SNP8 (bold) is a functional SNP affecting phenotype</p>
+<p>Bottom (LD heatmap):<br>
+- Red = strong linkage disequilibrium (LD)<br>
+- White = weak or no LD<br>
+- Strong LD within haplotype blocks<br>
+- Weak LD across hotspot</p>
+<p>Key idea:</p>
+<p>Recombination hotspots break up LD<br>
+and define haplotype blocks.</p>
 </div></div>
 <aside class="notes">
-<p>After testing every SNP, we obtain a p-value for each one.</p>
-<p>To visualize results, we plot genomic position on the x-axis and minus log base 10 of the p-value on the y-axis.</p>
-<p>Why minus log 10?</p>
-<p>Because very small p-values become large positive numbers, making strong signals easier to see.</p>
-<p>Each dot represents one SNP.</p>
-<p>Most SNPs show no association, so they cluster near the bottom.</p>
-<p>Occasionally, a SNP shows a very small p-value, creating a visible peak.</p>
-<p>The dashed horizontal line represents the genome-wide significance threshold.</p>
-<p>Peaks above this line indicate regions associated with the trait.</p>
-<p>This type of plot is called a Manhattan plot, because the peaks resemble skyscrapers.</p>
-<p>Importantly, a peak identifies a genomic region — not necessarily the causal mutation.</p>
+<p>This figure illustrates how linkage disequilibrium is structured along a chromosome.</p>
+<p>At the top, we see 18 chromosomes from different individuals. There are 10 SNPs across this chromosomal region.</p>
+<p>Two haplotype blocks are visible: - SNP1 through SNP5 form one block. - SNP6 through SNP10 form another block.</p>
+<p>Between SNP5 and SNP6 there is a recombination hotspot. This hotspot increases crossing over and disrupts LD between the two regions.</p>
+<p>Within each block: - SNP combinations are highly correlated. - Only a few haplotypes are observed.</p>
+<p>SNP8 (shown in bold) is assumed to be functional — meaning it directly affects phenotype.</p>
+<p>Because SNP8 is in strong LD with nearby SNPs (such as SNP6, 7, 9, and 10), any of these SNPs can serve as proxies in a GWAS.</p>
+<p>The lower triangular heatmap shows pairwise LD: - Red squares indicate strong LD. - White squares indicate weak or no LD.</p>
+<p>Notice the clear block structure: Strong LD in the upper-left and upper-right triangles, but weak LD across the recombination breakpoint.</p>
+<p>This block structure is what makes GWAS feasible. We do not need to genotype every functional mutation — we only need enough SNPs to tag each haplotype block.</p>
+<p>Recombination hotspots therefore shape the resolution of association mapping.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -2638,8 +3073,8 @@ for several common human diseases.</p>
           display:block!important;
       }</style></aside>
 </section>
-<section id="review-quantitative-genetics" class="slide level2">
-<h2>Review – Quantitative Genetics</h2>
+<section id="chapter-19-review-quantitative-genetics" class="slide level2">
+<h2>Chapter 19 Review – Quantitative Genetics</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p>Quantitative genetics studies <strong>complex traits</strong>:</p>
@@ -2654,7 +3089,7 @@ for several common human diseases.</p>
 <ul>
 <li>Continuous (e.g., height)<br>
 </li>
-<li>Threshold (e.g., disease status)<br>
+<li>Categorical / threshold (e.g., disease status)<br>
 </li>
 <li>Meristic (counting traits)</li>
 </ul>
@@ -2675,10 +3110,10 @@ for several common human diseases.</p>
 how these components generate phenotypic variation.</p>
 </div></div>
 <aside class="notes">
-<p>Quantitative genetics studies traits that do not follow simple Mendelian inheritance.</p>
-<p>Complex traits are influenced by: multiple genes, environmental factors, and interactions among them.</p>
-<p>They may appear as: continuous traits like height, threshold traits like disease status, or meristic traits such as litter size.</p>
-<p>A central goal is to understand genetic architecture: how many loci are involved, how large their effects are, and how genes and environment interact.</p>
+<p>This chapter introduced quantitative genetics — the study of traits that do not follow simple Mendelian inheritance.</p>
+<p>Complex traits are influenced by: - Many genes - Environmental factors - Interactions among genes and environments</p>
+<p>They may appear as: - Continuous traits like height - Threshold traits like disease status - Counting traits like litter size</p>
+<p>A key goal is to understand the genetic architecture of a trait — how many genes are involved, how large their effects are, and how genes and environment interact.</p>
 <p>This framework is essential in medicine, agriculture, and evolutionary biology.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -2697,7 +3132,7 @@ how these components generate phenotypic variation.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><strong>Phenotype model</strong> <span class="math display">\[
-P = \mu + G + E
+p = \mu + g + e
 \]</span></p>
 <p><strong>Phenotypic variance</strong> <span class="math display">\[
 V_P = V_G + V_E
@@ -2716,20 +3151,23 @@ h^2 = \frac{V_A}{V_P}
 <p>Total variation can be partitioned into: - Genetic variance<br>
 - Environmental variance</p>
 <p><strong>Broad-sense heritability (H²)</strong><br>
-Proportion of total variation due to genetic effects<br>
-(additive, dominance, epistatic).</p>
+Proportion of total variation due to genetics. Includes: - Additive effects<br>
+- Dominance effects<br>
+- Interaction (epistatic) effects</p>
 <p><strong>Narrow-sense heritability (h²)</strong><br>
 Proportion due to additive (transmissible) variation.</p>
-<p>Only additive variance predicts response to selection.</p>
+<p>Only additive variance predicts<br>
+response to selection.</p>
 </div></div>
 <aside class="notes">
-<p>The phenotype can be modeled as:</p>
-<p>population mean plus genetic deviation plus environmental deviation.</p>
-<p>Phenotypic variance can be partitioned into genetic and environmental components.</p>
-<p>Broad-sense heritability measures the proportion of total variance due to all genetic effects.</p>
-<p>But not all genetic effects are transmitted predictably.</p>
-<p>Narrow-sense heritability focuses only on additive genetic variance — the component passed from parent to offspring.</p>
-<p>This is the key quantity for predicting evolutionary change and response to selection.</p>
+<p>We use a simple statistical model:</p>
+<p>An individual’s phenotype equals: population mean plus genetic deviation plus environmental deviation.</p>
+<p>Variation in a population is measured by variance.</p>
+<p>Phenotypic variance can be partitioned into: - Genetic variance - Environmental variance</p>
+<p>Broad-sense heritability, H², measures the proportion of total variation due to genetic effects (additive, dominance, and interactions).</p>
+<p>But not all genetic variation is transmitted predictably.</p>
+<p>Narrow-sense heritability, h², focuses only on additive genetic variance — the component passed from parent to offspring.</p>
+<p>This is the key quantity for predicting response to selection.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -2747,28 +3185,28 @@ Proportion due to additive (transmissible) variation.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><strong>Genetic deviation</strong> <span class="math display">\[
-G = A + D
+g = a + d
 \]</span></p>
 <ul>
-<li>(A) = additive deviation (breeding value)<br>
+<li>(a) = additive deviation (breeding value)<br>
 </li>
-<li>(D) = dominance deviation</li>
+<li>(d) = dominance deviation</li>
 </ul>
 <p>Only additive effects are predictably transmitted.</p>
-<p><strong>Response to selection</strong> <span class="math display">\[
+<p><strong>Prediction of response to selection</strong> <span class="math display">\[
 R = h^2 S
 \]</span></p>
 <ul>
 <li>(S) = selection differential<br>
 </li>
-<li>(R) = response</li>
+<li>(R) = selection response</li>
 </ul>
 <p>Traits respond to selection when additive variation exists.</p>
 </div><div class="column" style="width:50%;">
 <p><strong>Interpretation</strong></p>
 <p>Genetic effects can be decomposed into:</p>
 <ul>
-<li>Additive effects → transmitted<br>
+<li>Additive effects → transmitted from parent to offspring<br>
 </li>
 <li>Dominance effects → not predictably transmitted</li>
 </ul>
@@ -2781,15 +3219,15 @@ R = h^2 S
 Low (h^2) → limited response</p>
 </div></div>
 <aside class="notes">
-<p>We decompose genetic deviation into additive and dominance components.</p>
-<p>Additive effects represent breeding value — the component transmitted predictably from parent to offspring.</p>
+<p>We decomposed genetic deviation into additive and dominance components.</p>
+<p>Additive effects represent the breeding value — the component transmitted predictably from parent to offspring.</p>
 <p>Dominance effects depend on allele combinations and are not predictably inherited across generations.</p>
-<p>Additive variance drives evolutionary change and artificial selection.</p>
+<p>Additive variance drives both evolutionary change and artificial selection.</p>
 <p>The breeder’s equation states:</p>
 <p>Response equals heritability times selection differential.</p>
 <p>If heritability is high, selection produces rapid change.</p>
-<p>If heritability is low, response is limited.</p>
-<p>Long-term selection experiments demonstrate that many populations contain substantial additive genetic variation.</p>
+<p>If heritability is low, response is small.</p>
+<p>Long-term experiments in flies and mice show that populations often contain substantial additive genetic variation.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -2802,40 +3240,29 @@ Low (h^2) → limited response</p>
           display:block!important;
       }</style></aside>
 </section>
-<section id="summary-mapping-complex-traits" class="slide level2">
-<h2>Summary – Mapping Complex Traits</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>The Goal of Mapping</strong></p>
+<section id="mapping-genes-for-complex-traits" class="slide level2">
+<h2>Mapping Genes for Complex Traits</h2>
+<p>Quantitative trait loci (QTL):</p>
 <ul>
-<li>Move from <strong>statistical variance</strong> (<span class="math inline">\(V_G\)</span>) to <strong>physical loci</strong> (QTLs).</li>
-<li>Identify which specific regions of the genome drive the trait.</li>
+<li>Genomic regions affecting trait variation</li>
 </ul>
-<p><strong>The Strategy: GWAS</strong></p>
-<ul>
-<li>Scan the whole genome using <strong>SNPs</strong>.</li>
-<li>Test for statistical association between Marker (M) and Trait.</li>
-<li>Relies on <strong>Linkage Disequilibrium (LD)</strong>.</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><strong>Key Discoveries from GWAS</strong></p>
-<ul>
-<li><strong>Polygenicity:</strong> Most complex traits are influenced by thousands of loci.</li>
-<li><strong>Small Effects:</strong> Most individual variants explain <span class="math inline">\(&lt;1\%\)</span> of the variance.</li>
-<li><strong>Non-coding regions:</strong> Many QTLs are in regulatory regions, not just proteins.</li>
-</ul>
-<p><strong>The Result: Manhattan Plot</strong></p>
-<ul>
-<li>Skyscrapers = Genomic regions in LD with a causal variant.</li>
-<li>Threshold = Corrects for millions of tests.</li>
-</ul>
-</div></div>
+<p>Two major approaches:</p>
+<p>QTL mapping<br>
+- Controlled crosses<br>
+- Known pedigrees</p>
+<p>Association mapping / GWAS<br>
+- Random-mating populations<br>
+- Uses linkage disequilibrium<br>
+- Genome-wide SNP scans</p>
+<p>GWAS can directly identify candidate genes.</p>
 <aside class="notes">
-<p>To wrap up, we move from the abstract “variance” components to the physical reality of the genome.</p>
-<p>Mapping allows us to identify the specific Quantitative Trait Loci, or QTLs, that make up the genetic architecture we discussed.</p>
-<p>In modern Association Mapping (GWAS), we don’t need to track families; instead, we use population-level Linkage Disequilibrium. We use SNPs as “markers” or flags. If a marker is consistently associated with a trait, it means that marker is physically close to—or in LD with—the true causal mutation.</p>
-<p>What has GWAS taught us? First, that most traits are incredibly polygenic—thousands of genes are involved. Second, the effect of any single gene is usually tiny. And third, many of these “hits” are in non-coding, regulatory regions of the DNA.</p>
-<p>The Manhattan Plot is our final map. Each peak is a “neighborhood” in the genome that we can now investigate to understand the biology of the trait.</p>
+<p>Finally, we examined how to identify genes underlying complex traits.</p>
+<p>QTL mapping: - Uses controlled crosses - Tracks segregation in pedigrees</p>
+<p>Association mapping: - Uses natural populations - Relies on linkage disequilibrium - Scans the entire genome</p>
+<p>Genome-wide association studies test hundreds of thousands of SNPs simultaneously.</p>
+<p>These approaches have identified genes for: - Disease susceptibility in humans - Agronomic traits in crops - Size differences in dogs</p>
+<p>Quantitative genetics now integrates statistics, molecular biology, and genomics.</p>
+<p>It is central to modern biology.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -2847,228 +3274,108 @@ Low (h^2) → limited response</p>
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<!-- 
-
-## Frequency Distribution of Height
-
-::: {.columns}
-
-::: {.column width="50%"}
-
-![](../images/fig19_01_33779.png){width=90%}
-
-:::
-
-::: {.column width="50%" }
-
-**Figure 19-1.**  
-Frequency histogram of simulated height data  
-for 100 adult men from Shanghai, China.
-
-- X-axis = height classes (cm)  
-- Y-axis = number of individuals / frequency  
-- Most individuals cluster near the mean (~170 cm)  
-- Few individuals at the extremes  
-
-:::
-
-:::
-
-
-::: notes
-This figure shows a frequency histogram of height.
-
-The horizontal axis shows height intervals in centimeters.
-The vertical axis shows either the number of individuals
-or the relative frequency in each class.
-
-Most individuals fall in the middle height classes,
-around 167–174 cm.
-
-Very few individuals are found at the extremes,
-such as below 158 cm or above 182 cm.
-
-This pattern — many individuals near the mean
-and fewer at the extremes —
-is typical of quantitative traits
-and approximates a normal distribution.
-
-The histogram gives us a visual impression
-of the amount of variation in the population.
-
-If the bars were tightly clustered,
-variation would be small.
-If they were spread out,
-variation would be larger.
-:::
-
-
-
-## Normal Distribution
-
-::: {.columns}
-
-::: {.column width="50%"}
-
-![](../images/fig19_02_33779.webp){width=50%}
-
-:::
-
-::: {.column width="50%" }
-
-**Figure 19-2**
-
-a. Histogram of U.S. women’s height  
-   - Red line = fitted normal curve  
-   - Mean = 164.4 cm  
-   - SD = 6.18 cm  
-
-<br>
-
-b. The 68–95–99.7 rule  
-   - 68% within ±1 SD  
-   - 95% within ±2 SD  
-   - 99.7% within ±3 SD  
-
-<br>
-
-c. Same mean, different SD  
-   - Smaller SD → narrower curve  
-   - Larger SD → wider curve  
-
-:::
-
-:::
-
-
-::: notes
-Panel (a) shows real data for height in adult U.S. women.
-The bars represent observed frequencies,
-and the red curve is the best-fitting normal distribution.
-
-The distribution is symmetric and centered around the mean,
-which is 164.4 cm.
-The standard deviation is 6.18 cm.
-
-Panel (b) illustrates one of the most important properties
-of the normal distribution — the 68–95–99.7 rule.
-
-Approximately:
-• 68% of observations fall within one standard deviation of the mean.
-• 95% fall within two standard deviations.
-• 99.7% fall within three standard deviations.
-
-This rule is extremely useful in quantitative genetics
-for describing how much variation exists in a population.
-
-Panel (c) shows how changing the standard deviation
-affects the shape of the curve.
-
-All curves have the same mean,
-but:
-• A small standard deviation produces a tall, narrow curve.
-• A large standard deviation produces a flatter, wider curve.
-
-The standard deviation therefore controls the spread of the distribution.
-:::
-
-
-
-## Different Types of Genetic Effects
-
-::: {.columns}
-
-::: {.column width="50%"}
-
-**Additive Effects**
-
-Each allele contributes independently.
-
-Example:
-
-| Genotype | Trait value |
-|----------|------------|
-| AA | 10 |
-| Aa | 7 |
-| aa | 4 |
-
-Heterozygote is exactly intermediate.
-
-→ Effects add up.
-
-:::
-
-::: {.column width="50%"}
-
-**Dominance Effects**
-
-Alleles interact within a locus.
-
-Example:
-
-| Genotype | Trait value |
-|----------|------------|
-| AA | 10 |
-| Aa | 10 |
-| aa | 4 |
-
-Heterozygote resembles one homozygote.
-
-→ Effect depends on allele combination.
-
-:::
-
-:::
-
-::: notes
-
-Here we illustrate two types of genetic effects.
-
-Additive effects are simple and predictable.
-
-Each allele contributes a certain amount to the phenotype.
-The heterozygote is exactly intermediate between the two homozygotes.
-
-This means effects add linearly.
-
-Dominance effects occur when alleles interact.
-
-The heterozygote does not lie halfway between the homozygotes.
-Instead, it may resemble one of them.
-
-Because meiosis reshuffles alleles each generation,
-dominance effects are not transmitted predictably.
-
-That is why additive variance is the component that determines
-response to selection.
-
-:::
-
-
-## Narrow-Sense Heritability
-
-Broad-sense heritability:
-
-$$
-H^2 = \frac{V_G}{V_P}
-$$
-
-Total genetic variance:
-
-$$
-V_G = V_A + V_D
-$$
-
-Narrow-sense heritability:
-
-$$
-h^2 = \frac{V_A}{V_P}
-$$
-
-Only additive variance drives response to selection.
-
-
--->
+</section>
+<section id="from-qtl-mapping-to-modern-genomics" class="slide level2">
+<h2>From QTL Mapping to Modern Genomics</h2>
+<p>Classical QTL Mapping<br>
+- Controlled crosses (e.g., backcross, F₂) - Known pedigrees<br>
+- Detect regions linked to trait variation<br>
+- Limited allelic diversity (2 parental alleles)</p>
+<p>↓</p>
+<p>Genome-Wide Association Studies (GWAS)<br>
+- Random-mating populations<br>
+- Millions of SNPs across genome<br>
+- Exploit linkage disequilibrium<br>
+- Can identify candidate genes directly</p>
+<p>↓</p>
+<p>Genomic Prediction / Genomic Selection<br>
+- Uses <em>all</em> markers simultaneously<br>
+- No need to identify individual QTL<br>
+- Predict breeding values directly<br>
+- Widely used in livestock, crops, and human risk prediction</p>
+<p><strong>Core principle (unchanged):</strong><br>
+Genotype–phenotype correlations reveal the genetic basis of complex traits.</p>
+<aside class="notes">
+<p>This slide places classical QTL mapping in historical and conceptual context.</p>
+<p>First, QTL mapping: It relies on controlled crosses and known pedigrees. We track recombination events and test whether marker genotypes correlate with trait differences. However, only two parental alleles are compared.</p>
+<p>Second, GWAS: Instead of controlled crosses, we use natural populations. We genotype hundreds of thousands to millions of SNPs. Because of linkage disequilibrium, markers tag nearby functional variants. We can sometimes identify the causal gene directly.</p>
+<p>Third, genomic prediction: Here we move beyond identifying individual QTL. Instead, we use all SNPs simultaneously in statistical models. The goal is prediction — estimating breeding values or disease risk.</p>
+<p>Important message: The core logic is the same across all methods: If genotype correlates with phenotype, then genetic variation contributes to trait variation.</p>
+<p>What changes is the scale, resolution, and statistical modeling.</p>
+<p>This connects classical quantitative genetics to modern genomics.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="from-classical-quantitative-genetics-to-modern-genomics" class="slide level2">
+<h2>From Classical Quantitative Genetics to Modern Genomics</h2>
+<p>Foundations:</p>
+<ul>
+<li>Variance partitioning<br>
+<span class="math display">\[
+V_P = V_G + V_E
+\]</span> <span class="math display">\[
+H^2 = \frac{V_G}{V_P}, \quad h^2 = \frac{V_A}{V_P}
+\]</span></li>
+</ul>
+<p>Prediction:</p>
+<ul>
+<li>Response to selection<br>
+<span class="math display">\[
+R = h^2 S
+\]</span></li>
+</ul>
+<p>Gene discovery:</p>
+<ul>
+<li>QTL mapping → controlled crosses, known pedigrees<br>
+</li>
+<li>GWAS → random-mating populations, linkage disequilibrium</li>
+</ul>
+<p>Modern extension:</p>
+<ul>
+<li>Genomic prediction → uses all SNPs simultaneously
+<ul>
+<li>Estimates genomic breeding values<br>
+</li>
+<li>Predicts phenotypes from genome-wide markers</li>
+</ul></li>
+</ul>
+<p>Key idea:</p>
+<p>Quantitative genetics connects statistical models<br>
+to molecular identification of genes underlying complex traits.</p>
+<aside class="notes">
+<p>This slide ties the entire chapter together.</p>
+<p>We began with a simple statistical decomposition:</p>
+<p>Phenotypic variance equals genetic variance plus environmental variance.</p>
+<p>From that, we defined: - Broad-sense heritability (H²) - Narrow-sense heritability (h²)</p>
+<p>Narrow-sense heritability allows prediction of evolutionary change through the breeder’s equation:</p>
+<p>R = h²S</p>
+<p>This connects statistical variance to real biological change under selection.</p>
+<p>We then moved to gene discovery.</p>
+<p>Classical QTL mapping uses controlled crosses and pedigrees. It identifies genomic regions linked to trait differences.</p>
+<p>Association mapping and GWAS extend this to natural populations. By exploiting linkage disequilibrium, we can scan the entire genome and identify candidate genes.</p>
+<p>Finally, genomic prediction represents the modern synthesis: Instead of focusing on single loci, we use all SNPs simultaneously to predict breeding values or disease risk.</p>
+<p>So the chapter moves from: Variance → Heritability → Selection → Gene mapping → Genomic prediction.</p>
+<p>This progression shows how classical quantitative genetics naturally leads into modern genomics.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   const backBtn = document.createElement("a");
@@ -3221,7 +3528,7 @@ document.addEventListener("DOMContentLoaded", function() {
         pause: true,
 
         // Flags if speaker notes should be visible to all viewers
-        showNotes: true,
+        showNotes: false,
 
         // Global override for autoplaying embedded media (null/true/false)
         autoPlayMedia: null,
@@ -3315,82 +3622,6 @@ document.addEventListener("DOMContentLoaded", function() {
         ]
       });
     </script>
-    
-
-    <script>
-
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-
-      // slide changes (different for each slide format).
-
-      (function () {
-
-        // dispatch for htmlwidgets
-
-        function fireSlideEnter() {
-
-          const event = window.document.createEvent("Event");
-
-          event.initEvent("slideenter", true, true);
-
-          window.document.dispatchEvent(event);
-
-        }
-
-    
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-
-          fireSlideEnter();
-
-    
-
-          // dispatch for shiny
-
-          if (window.jQuery) {
-
-            if (previousSlide) {
-
-              window.jQuery(previousSlide).trigger("hidden");
-
-            }
-
-            if (currentSlide) {
-
-              window.jQuery(currentSlide).trigger("shown");
-
-            }
-
-          }
-
-        }
-
-    
-
-        // hookup for slidy
-
-        if (window.w3c_slidy) {
-
-          window.w3c_slidy.add_observer(function (slide_num) {
-
-            // slide_num starts at position 1
-
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-
-          });
-
-        }
-
-    
-
-      })();
-
-    </script>
-
-    
-
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")

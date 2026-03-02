@@ -1,0 +1,692 @@
+---
+title: "Population Genetics — Conceptual Framework"
+subtitle: "Lean Lecture Version"
+author: 
+  - name: "Peter Sørensen"
+    affiliation:
+      - "Center for Quantitative Genetics and Genomics"
+      - "Aarhus University"
+format:
+  revealjs:
+    theme: default
+    transition: fade
+    slide-number: true
+    progress: true
+    center: false
+    auto-scale: true
+    width: 1280
+    height: 720
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+## Population Genetics: The Big Framework
+
+From DNA variation  
+to  
+evolutionary forces.
+
+---
+
+## What Is Population Genetics Really About?
+
+Everything reduces to:
+
+- Allele frequencies  
+- Genotype frequencies  
+- Changes across generations  
+
+> **Evolution = change in allele frequencies over time**
+
+---
+
+## What Do We Actually Measure?
+
+From genotype data we compute:
+
+- Allele frequencies ($p$, $q$)  
+- Genotype frequencies  
+- Heterozygosity  
+- Linkage disequilibrium  
+- Genetic diversity ($\pi$, GD)
+
+All observable patterns are summaries of frequencies.
+
+---
+
+## The Gene Pool
+
+Diploid population:
+
+- $N$ individuals  
+- $2N$ alleles  
+
+Allele frequency:
+
+$$
+p = \frac{\#A}{2N}
+$$
+
+> The gene pool is the fundamental unit of analysis.
+
+---
+
+## The Null Model: Hardy–Weinberg
+
+If mating is random:
+
+$$
+f(AA)=p^2,\quad f(Aa)=2pq,\quad f(aa)=q^2
+$$
+
+$$
+p^2 + 2pq + q^2 = 1
+$$
+
+This is probability — not biology.
+
+---
+
+## Why Hardy–Weinberg Works
+
+Random union of gametes:
+
+- Probability of $A$ = $p$  
+- Probability of $a$ = $q$  
+
+Multiplication rule:
+
+$$
+P(AA)=p \times p = p^2
+$$
+
+> HW assumes independence between gametes.
+
+---
+
+## What Hardy–Weinberg Really Means
+
+If HW holds:
+
+- No evolutionary forces  
+- Allele frequencies constant  
+- Genotype proportions predictable  
+
+HW = **no evolution baseline**
+
+---
+
+## When HW Fails
+
+Deviation implies:
+
+- Non-random mating  
+- Selection  
+- Population structure  
+- Drift  
+- Migration  
+
+Different forces → different patterns.
+
+---
+
+## Homozygote Excess: Why?
+
+Possible explanations:
+
+- Inbreeding  
+- Wahlund effect  
+- Positive assortative mating  
+
+> Same statistical pattern, different biological causes.
+
+---
+
+## Inbreeding and $F$
+
+Under inbreeding:
+
+$$
+f(Aa)=2pq(1-F)
+$$
+
+$$
+f(AA)=p^2 + Fpq
+$$
+
+Inbreeding:
+
+- Changes genotype frequencies  
+- Does **not** change allele frequencies  
+
+This distinction is critical.
+
+---
+
+## Genetic Drift
+
+Finite populations:
+
+- Sampling error each generation  
+- Allele frequencies fluctuate randomly  
+
+Drift is stronger when $N$ is small.
+
+---
+
+## Drift vs Selection
+
+| Drift | Selection |
+|-------|-----------|
+| Random | Systematic |
+| Strong in small $N$ | Depends on fitness differences |
+| Can fix harmful alleles | Favors beneficial alleles |
+
+Students must clearly distinguish these.
+
+---
+
+## Mutation
+
+Mutation:
+
+- Introduces new alleles  
+- Rare per site  
+- Continuous  
+
+Without mutation:
+
+- All variation eventually disappears.
+
+---
+
+## Migration (Gene Flow)
+
+Migration:
+
+- Moves alleles between populations  
+- Reduces divergence  
+- Increases within-population diversity  
+
+Admixture leaves genomic signatures.
+
+---
+
+## Recombination
+
+Recombination:
+
+- Does not change allele frequencies  
+- Changes haplotypes  
+- Breaks down linkage disequilibrium  
+
+Reshuffles genetic variation.
+
+---
+
+## Linkage Disequilibrium (LD)
+
+If independent:
+
+$$
+P_{AB} = p_A p_B
+$$
+
+If not:
+
+$$
+D = P_{AB} - p_A p_B
+$$
+
+LD = non-random allele association.
+
+---
+
+## Why LD Exists
+
+LD arises from:
+
+- New mutation  
+- Selection  
+- Drift  
+- Population structure  
+- Admixture  
+
+LD decays by recombination:
+
+$$
+D_t = (1-r)^t D_0
+$$
+
+---
+
+## Natural Selection
+
+Selection acts on genotypes:
+
+$$
+p' = \frac{p^2 w_{AA} + pq w_{Aa}}{\bar w}
+$$
+
+Alleles change because genotypes differ in fitness.
+
+---
+
+## Dominant vs Recessive Selection
+
+- Dominant beneficial allele spreads quickly  
+- Recessive beneficial allele spreads slowly when rare  
+
+Dominance affects **rate**, not direction.
+
+---
+
+## Selective Sweep
+
+When beneficial mutation rises:
+
+- Nearby alleles hitchhike  
+- Diversity drops  
+- LD increases  
+
+Sweep = reduced variation around selected site.
+
+---
+
+## Balancing Selection
+
+Opposite of sweep:
+
+- Maintains multiple alleles  
+- High diversity  
+- Often immune genes  
+
+Pattern: unusually high variation.
+
+---
+
+## Mutation–Drift Balance
+
+Neutral diversity:
+
+$$
+\hat{H} \approx \frac{4N_e\mu}{1+4N_e\mu}
+$$
+
+Genetic diversity reflects:
+
+- Effective population size  
+- Mutation rate  
+
+---
+
+## Master Summary
+
+Population genetics connects:
+
+Observed patterns  
+→ Deviations from null  
+→ Evolutionary forces  
+
+Everything reduces to:
+
+- Frequencies  
+- Independence assumptions  
+- Identifying which force caused deviation  
+
+---
+
+## What You Must Be Able To Do
+
+You should be able to:
+
+1. Calculate allele frequencies  
+2. Apply Hardy–Weinberg  
+3. Interpret deviations  
+4. Distinguish drift vs selection  
+5. Recognize sweep vs balancing selection patterns  
+
+If you can do this — you understand the chapter.
+
+
+---
+
+# 🧮 In-Class Exercises
+
+---
+
+## Exercise 1 — Allele Frequencies
+
+In a population of 200 individuals, genotype counts are:
+
+- 60 AA  
+- 100 Aa  
+- 40 aa  
+
+**Questions:**
+
+1. What is the allele frequency of A?  
+2. What is the allele frequency of a?  
+
+Take 2 minutes. Discuss with your neighbor.
+
+::: notes
+Total individuals = 200  
+Total alleles = 400  
+
+#A alleles = 2*60 + 100 = 220  
+p = 220/400 = 0.55  
+
+q = 1 − p = 0.45  
+:::
+
+---
+
+## Exercise 2 — Hardy–Weinberg Expectation
+
+Suppose:
+
+$p = 0.7$, $q = 0.3$
+
+1. What are the expected genotype frequencies under HW?
+2. If observed heterozygotes = 0.30, is there deviation?
+
+Work it out.
+
+::: notes
+Expected:
+AA = 0.49  
+Aa = 0.42  
+aa = 0.09  
+
+Observed Aa = 0.30 → heterozygote deficit  
+
+Possible causes:
+- Inbreeding
+- Population structure
+- Selection
+:::
+
+---
+
+## Exercise 3 — Estimating Inbreeding
+
+Suppose:
+
+$p = 0.6$, $q = 0.4$  
+Observed heterozygotes = 0.30  
+
+Expected under HW:
+
+$$
+2pq = 2(0.6)(0.4) = 0.48
+$$
+
+Estimate:
+
+$$
+F = 1 - \frac{H_{obs}}{H_{exp}}
+$$
+
+::: notes
+F = 1 − (0.30 / 0.48)
+  = 1 − 0.625
+  = 0.375
+
+Substantial inbreeding.
+:::
+
+---
+
+## Exercise 4 — Selection Direction
+
+Suppose:
+
+$p = 0.4$
+
+Fitness values:
+
+- $w_{AA} = 1.2$
+- $w_{Aa} = 1.0$
+- $w_{aa} = 0.8$
+
+Will allele A increase or decrease?
+
+No full calculation needed — reason conceptually.
+
+::: notes
+AA has highest fitness → A favored  
+A should increase  
+
+Key point:
+Selection acts on genotypes.
+:::
+
+---
+
+# 🎯 Clicker Questions
+
+---
+
+## Clicker 1
+
+Inbreeding:
+
+A) Changes allele frequencies  
+B) Changes genotype frequencies  
+C) Changes both  
+D) Changes neither  
+
+::: notes
+Correct: B  
+Inbreeding reshuffles genotypes but does not change p.
+:::
+
+---
+
+## Clicker 2
+
+Which scenario produces stronger drift?
+
+A) Large population, weak selection  
+B) Small population, no selection  
+C) Large population, strong selection  
+D) Migration between populations  
+
+::: notes
+Correct: B  
+Drift ∝ 1/N.
+:::
+
+---
+
+## Clicker 3
+
+A recent selective sweep produces:
+
+A) High diversity near selected site  
+B) Low diversity near selected site  
+C) No change in LD  
+D) Increased heterozygosity genome-wide  
+
+::: notes
+Correct: B  
+Also increases LD locally.
+:::
+
+---
+
+## Clicker 4
+
+Recombination directly changes:
+
+A) Allele frequencies  
+B) Genotype fitness  
+C) Linkage disequilibrium  
+D) Mutation rate  
+
+::: notes
+Correct: C  
+Recombination reshuffles alleles.
+:::
+
+---
+
+## Clicker 5
+
+Two subpopulations are mixed. Each is in HW individually.  
+The combined population shows heterozygote deficit.
+
+This is:
+
+A) Selection  
+B) Inbreeding  
+C) Wahlund effect  
+D) Drift  
+
+::: notes
+Correct: C  
+Population structure causes deficit.
+:::
+
+---
+
+## Clicker 6
+
+A beneficial allele is recessive.
+
+When rare, selection is:
+
+A) Very strong  
+B) Weak  
+C) Neutral  
+D) Impossible to determine  
+
+::: notes
+Correct: B  
+Rare recessives mostly occur in heterozygotes.
+:::
+
+
+
+
+```{r}
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+```
+
+## How to use this deck
+
+- Students watch narrated slides before class
+- Class time: clickers + short calculations + discussion
+- Followed by 2h exercise session
+
+---
+
+# Hardy–Weinberg
+
+## HWE model
+
+- Allele frequencies: p and q = 1 − p
+- Expected genotype frequencies:
+  - AA = p^2
+  - Aa = 2pq
+  - aa = q^2
+
+---
+
+## Clicker
+
+If p = 0.7, heterozygote frequency is:
+
+A. 0.21  
+B. 0.42  
+C. 0.49  
+D. 0.09  
+
+---
+
+# LD Decay
+
+```{r}
+r <- c(0.01, 0.05, 0.2)
+t <- 0:50
+D0 <- 1
+df <- expand.grid(t=t, r=r)
+df$D <- (1-df$r)^df$t * D0
+df$r <- factor(df$r)
+
+ggplot(df, aes(t, D, color=r)) +
+  geom_line(linewidth=1) +
+  labs(x="Generations", y="D",
+       title="LD decay: D(t) = (1-r)^t D0") +
+  theme_minimal()
+```
+
+---
+
+# Genetic Drift
+
+```{r}
+simulate_drift <- function(Ne=20, p0=0.5, gens=30, reps=20) {
+  out <- lapply(seq_len(reps), function(k){
+    p <- numeric(gens+1); p[1] <- p0
+    for (t in 1:gens) {
+      p[t+1] <- rbinom(1, 2*Ne, p[t])/(2*Ne)
+    }
+    data.frame(gen=0:gens, p=p, rep=k, Ne=Ne)
+  })
+  bind_rows(out)
+}
+
+df <- bind_rows(
+  simulate_drift(Ne=20, reps=25),
+  simulate_drift(Ne=200, reps=25)
+)
+
+df$Ne <- factor(df$Ne)
+
+ggplot(df, aes(gen, p, group=rep)) +
+  geom_line(alpha=0.6) +
+  facet_wrap(~Ne, nrow=1) +
+  labs(x="Generation", y="Allele frequency",
+       title="Genetic drift: small Ne fluctuates more") +
+  theme_minimal()
+```
+
+---
+
+# Selective Sweep (Schematic)
+
+```{r}
+pos <- 1:300
+center <- 150
+dist <- abs(pos-center)
+
+div <- 0.35 - 0.30*exp(-(dist^2)/(2*25^2))
+ld  <- 0.10 + 0.85*exp(-(dist^2)/(2*18^2))
+
+df1 <- data.frame(dist=dist, y=div, what="Gene diversity")
+df2 <- data.frame(dist=dist, y=ld,  what="LD (r² proxy)")
+df  <- bind_rows(df1, df2)
+
+ggplot(df, aes(dist, y)) +
+  geom_line(linewidth=1) +
+  facet_wrap(~what, ncol=1, scales="free_y") +
+  labs(x="Distance from selected site",
+       title="Textbook sweep signature (schematic)") +
+  theme_minimal()
+```
+
+---
+
+# Take-home
+
+- HWE = null model
+- Inbreeding reduces heterozygosity
+- LD decays with recombination
+- Drift stronger in small Ne
+- Selection leaves genomic signatures
