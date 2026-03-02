@@ -13,108 +13,86 @@ The material examines how genetic variation arises and is maintained in populati
 
 ### Population Genetics
 
--   **Genetic Variation & Structure:** Defining the gene pool; distinguishing between loci, alleles, haplotypes, and phase; measuring heterozygosity and nucleotide diversity.
--   **The Hardy–Weinberg Principle:** Calculating allele and genotype frequencies; identifying assumptions of equilibrium and testing for statistical deviations.
--   **Mating Systems:** Effects of non-random mating on genomic architecture; quantifying inbreeding ($F$) and its genetic consequences.
--   **Evolutionary Dynamics:** How mutation, migration, and recombination drive diversity; the impact of population size on genetic drift.
--   **Natural Selection:** Distinguishing between directional, balancing, and purifying selection; identifying genomic signatures of selective sweeps.
--   **Linkage Disequilibrium (LD):** Mechanisms of LD generation and the rate of decay across the genome.
--   **Applications:** Utilizing population genetics in conservation biology, medical association studies, and forensic genetics.
-
+- **Genetic Variation & Structure:** Defining the gene pool; distinguishing between loci, alleles, haplotypes, and phase; measuring heterozygosity and nucleotide diversity.
+- **The Hardy–Weinberg Principle:** Calculating allele and genotype frequencies; identifying assumptions of equilibrium and testing for statistical deviations.
+- **Mating Systems:** Effects of non-random mating on genomic architecture; quantifying inbreeding ($F$) and its genetic consequences.
+- **Evolutionary Dynamics:** How mutation, migration, and recombination drive diversity; the impact of population size on genetic drift.
+- **Natural Selection:** Distinguishing between directional, balancing, and purifying selection; identifying genomic signatures of selective sweeps.
+- **Linkage Disequilibrium (LD):** Mechanisms of LD generation and the rate of decay across the genome.
+- **Applications:** Utilizing population genetics in conservation biology, medical association studies, and forensic genetics.
 
 ### Quantitative Genetics
 
--   **Measuring Variation:** Applying mathematical models and statistical methods (mean, variance, normal distribution) to describe and analyze continuous variation.
--   **The Simple Genetic Model:** Deconstructing the phenotype into genetic and environmental deviations ($P = \mu + G + E$); assessing the relative contributions to total phenotypic variation.
--   **Genetic Architecture:** Partitioning total genetic variance into additive ($V_A$) and dominance ($V_D$) components to determine the underlying landscape of complex traits.
--   **Heritability Analysis:** Calculating and interpreting Broad-sense ($H^2$) vs. Narrow-sense ($h^2$) heritability; understanding the biological significance of additive effects.
--   **Predicting Phenotypes:** Utilizing parental data and the Breeder’s Equation ($R = h^2 S$) to predict offspring phenotypes and response to selection.
--   **Association Mapping:** Explaining the principles behind Genome-Wide Association Studies (GWAS); identifying Quantitative Trait Loci (QTLs) through Linkage Disequilibrium.
--   **Genomic Insights:** Understanding the implications of polygenicity, effect sizes, and regulatory variants in human medicine and agricultural breeding.
-
+- **Measuring Variation:** Applying mathematical models and statistical methods (mean, variance, normal distribution) to describe and analyze continuous variation.
+- **The Simple Genetic Model:** Deconstructing the phenotype into genetic and environmental deviations ($P = \mu + G + E$); assessing the relative contributions to total phenotypic variation.
+- **Genetic Architecture:** Partitioning total genetic variance into additive ($V_A$) and dominance ($V_D$) components to determine the underlying landscape of complex traits.
+- **Heritability Analysis:** Calculating and interpreting Broad-sense ($H^2$) vs. Narrow-sense ($h^2$) heritability; understanding the biological significance of additive effects.
+- **Predicting Phenotypes:** Utilizing parental data and the Breeder’s Equation ($R = h^2 S$) to predict offspring phenotypes and response to selection.
+- **Association Mapping:** Explaining the principles behind Genome-Wide Association Studies (GWAS); identifying Quantitative Trait Loci (QTLs) through Linkage Disequilibrium.
+- **Genomic Insights:** Understanding the implications of polygenicity, effect sizes, and regulatory variants in human medicine and agricultural breeding.
 
 ## Learning Objectives
 
 Upon completion of the course, it should be possible to:
 
--   Explain how genetic variation is generated, maintained, and detected in populations.
--   Interpret Hardy–Weinberg equilibrium and identify the evolutionary forces causing deviations from it.
--   Quantify the effects of drift, selection, mutation, and migration on allele frequencies and genomic signatures.
--   Partition phenotypic variance into genetic (additive and dominance) and environmental components.
--   Calculate and interpret broad-sense ($H^2$) and narrow-sense ($h^2$) heritability.
--   Predict offspring phenotypes from parental values using the Breeder’s Equation.
--   Design and interpret the results of Genome-Wide Association Studies (GWAS).
--   Connect abstract mathematical models with concrete biological interpretations and real-world data.
-
+- Explain how genetic variation is generated, maintained, and detected in populations.
+- Interpret Hardy–Weinberg equilibrium and identify the evolutionary forces causing deviations from it.
+- Quantify the effects of drift, selection, mutation, and migration on allele frequencies and genomic signatures.
+- Partition phenotypic variance into genetic (additive and dominance) and environmental components.
+- Calculate and interpret broad-sense ($H^2$) and narrow-sense ($h^2$) heritability.
+- Predict offspring phenotypes from parental values using the Breeder’s Equation.
+- Design and interpret the results of Genome-Wide Association Studies (GWAS).
+- Connect abstract mathematical models with concrete biological interpretations and real-world data.
 
 ## Course Structure
 
-This site contains the **core notes** and supplementary materials for the course. 
+This site serves as the core reference for the course. Each chapter is designed to build intuition by connecting theoretical concepts with practical data examples.
 
-To bridge the gap between theory and application, each chapter includes:
+To support your learning, the materials include:
 
--   **Conceptual Explanations:** Clear definitions of genetic principles.
--   **Mathematical Formulations:** Derivations of the statistical models used in the field.
--   **Worked Examples:** Step-by-step calculations of frequencies, heritability, and selection response.
--   **Computational Demonstrations:** Practical R code using packages such as `ggplot2` and `patchwork`.
--   **Simulations:** Visual examples of genetic drift, LD decay, and QTL mapping to build intuition.
-
+- **Conceptual Explanations:** Clear definitions of key genetic principles.
+- **Mathematical Basics:** Step-by-step derivations of the models used in the field.
+- **Worked Examples:** Practical calculations of frequencies, heritability, and selection.
+- **Interactive Figures:** Visualizations and simulations created in R to illustrate complex dynamics.
 
 ## Slides
 
 Lecture slides are provided as interactive **Reveal.js** presentations. These provide a structured overview of the key concepts, mathematical models, and genomic visualizations:
 
--   [Population Genetics](slides/introduction_population_genetics.html)
--   [Quantitative Genetics](slides/introduction_quantitative_genetics.html)
+- [Population Genetics](slides/introduction_population_genetics.html)
+- [Quantitative Genetics](slides/introduction_quantitative_genetics.html)
 
 *Note: The slides are for lecture guidance; the online notes serve as the primary reference for study and exam preparation.*
 
-
 ## Tutorials
 
-Hands-on tutorials are designed to bridge the gap between theory and data analysis. These support the development of both computational skills and biological intuition:
+Hands-on tutorials are integrated into the course to help you explore how genetics works in practice. We use R as a "virtual laboratory" to simulate populations and observe genetic change over time.
 
--   **R Implementation:** Step-by-step guides using `ggplot2`, `patchwork`, and `dplyr`.
--   **Simulations:** Interactive examples of Genetic Drift, HWE deviations, and QTL Mapping.
--   **Data Analysis:** Practical exercises in calculating heritability and interpreting GWAS results.
+**Key areas covered in R:**
 
-**Active learning:** You are encouraged to execute and modify the provided R code to explore how changing parameters (like population size or heritability) impacts genetic outcomes.
+- **Population Basics:** Calculating and plotting allele frequencies, genotype distributions, and Hardy-Weinberg expectations.
+- **Evolutionary Forces:** Simulating how mutation, migration, selection, and genetic drift change populations across generations.
+- **Genomic Patterns:** Visualizing Linkage Disequilibrium (LD), haplotype sweeps, and the impact of population bottlenecks.
+- **Pedigrees & History:** Plotting family trees to understand inbreeding and using coalescent models to look back at ancestral history.
 
-
-## Slides
-
-Lecture slides are provided separately as Reveal.js presentations:
-
--   [Population Genetics](slides/introduction_population_genetics.html)
--   [Quantitative Genetics](slides/introduction_quantitative_genetics.html)
-
-Slides provide a structured overview of each topic.\
-The notes serve as the complete reference for study.
-
-
-## Tutorials
-
-Hands-on tutorials support the development of computational and practical understanding.\
-Active execution and modification of the provided R code is recommended.
-
+**How to use the code:** 
+The R code is provided as a starting point. You are encouraged to run the examples and experiment with different values—such as changing the population size or the strength of selection—to see how the results change.
 
 ## Prerequisites
 
-To successfully engage with the material, students should have:
+To successfully engage with the material, users should have:
 
--   **Basic Genetics:** Understanding of Mendelian inheritance, meiosis, and molecular biology.
--   **Introductory Statistics:** Familiarity with probability, mean, variance, and the normal distribution.
--   **Familiarity with R:** Basic ability to load data and run scripts; experience with `ggplot2` is an advantage.
-
+- **Basic Genetics:** Understanding of Mendelian inheritance, meiosis, and molecular biology.
+- **Introductory Statistics:** Familiarity with probability, mean, variance, and the normal distribution.
+- **Familiarity with R:** Basic ability to load data and run scripts.
 
 ## Recommended Use
 
 This digital textbook is designed to be a living document for your study:
 
--   **During Lectures:** Follow along with the conceptual explanations and live code demonstrations.
--   **Self-Study:** Review the mathematical derivations and worked examples after class.
--   **Project Work:** Consult the R code and simulations as templates for your own data analysis.
--   **Exam Preparation:** Revisit the Learning Objectives and Summary slides to test your understanding.
+- **During Lectures:** Follow along with the conceptual explanations and live code demonstrations.
+- **Self-Study:** Review the mathematical derivations and worked examples after class.
+- **Project Work:** Consult the R code and simulations as templates for your own data analysis.
+- **Exam Preparation:** Revisit the Learning Objectives and Summary slides to test your understanding.
 
 **Mathematical Reasoning:** We emphasize the connection between statistical models and biological reality. Mastering the quantitative interpretations in these notes will provide the conceptual clarity needed for advanced genomic research.
-

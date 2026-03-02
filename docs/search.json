@@ -1110,7 +1110,7 @@
     "href": "quant-genetics/index.html#course-structure",
     "title": "Quantitative & Population Genetics",
     "section": "Course Structure",
-    "text": "Course Structure\nThis site contains the core notes and supplementary materials for the course.\nTo bridge the gap between theory and application, each chapter includes:\n\nConceptual Explanations: Clear definitions of genetic principles.\nMathematical Formulations: Derivations of the statistical models used in the field.\nWorked Examples: Step-by-step calculations of frequencies, heritability, and selection response.\nComputational Demonstrations: Practical R code using packages such as ggplot2 and patchwork.\nSimulations: Visual examples of genetic drift, LD decay, and QTL mapping to build intuition."
+    "text": "Course Structure\nThis site serves as the core reference for the course. Each chapter is designed to build intuition by connecting theoretical concepts with practical data examples.\nTo support your learning, the materials include:\n\nConceptual Explanations: Clear definitions of key genetic principles.\nMathematical Basics: Step-by-step derivations of the models used in the field.\nWorked Examples: Practical calculations of frequencies, heritability, and selection.\nInteractive Figures: Visualizations and simulations created in R to illustrate complex dynamics."
   },
   {
     "objectID": "quant-genetics/index.html#slides",
@@ -1124,28 +1124,14 @@
     "href": "quant-genetics/index.html#tutorials",
     "title": "Quantitative & Population Genetics",
     "section": "Tutorials",
-    "text": "Tutorials\nHands-on tutorials are designed to bridge the gap between theory and data analysis. These support the development of both computational skills and biological intuition:\n\nR Implementation: Step-by-step guides using ggplot2, patchwork, and dplyr.\nSimulations: Interactive examples of Genetic Drift, HWE deviations, and QTL Mapping.\nData Analysis: Practical exercises in calculating heritability and interpreting GWAS results.\n\nActive learning: You are encouraged to execute and modify the provided R code to explore how changing parameters (like population size or heritability) impacts genetic outcomes."
-  },
-  {
-    "objectID": "quant-genetics/index.html#slides-1",
-    "href": "quant-genetics/index.html#slides-1",
-    "title": "Quantitative & Population Genetics",
-    "section": "Slides",
-    "text": "Slides\nLecture slides are provided separately as Reveal.js presentations:\n\nPopulation Genetics\nQuantitative Genetics\n\nSlides provide a structured overview of each topic.\nThe notes serve as the complete reference for study."
-  },
-  {
-    "objectID": "quant-genetics/index.html#tutorials-1",
-    "href": "quant-genetics/index.html#tutorials-1",
-    "title": "Quantitative & Population Genetics",
-    "section": "Tutorials",
-    "text": "Tutorials\nHands-on tutorials support the development of computational and practical understanding.\nActive execution and modification of the provided R code is recommended."
+    "text": "Tutorials\nHands-on tutorials are integrated into the course to help you explore how genetics works in practice. We use R as a “virtual laboratory” to simulate populations and observe genetic change over time.\nKey areas covered in R:\n\nPopulation Basics: Calculating and plotting allele frequencies, genotype distributions, and Hardy-Weinberg expectations.\nEvolutionary Forces: Simulating how mutation, migration, selection, and genetic drift change populations across generations.\nGenomic Patterns: Visualizing Linkage Disequilibrium (LD), haplotype sweeps, and the impact of population bottlenecks.\nPedigrees & History: Plotting family trees to understand inbreeding and using coalescent models to look back at ancestral history.\n\nHow to use the code: The R code is provided as a starting point. You are encouraged to run the examples and experiment with different values—such as changing the population size or the strength of selection—to see how the results change."
   },
   {
     "objectID": "quant-genetics/index.html#prerequisites",
     "href": "quant-genetics/index.html#prerequisites",
     "title": "Quantitative & Population Genetics",
     "section": "Prerequisites",
-    "text": "Prerequisites\nTo successfully engage with the material, students should have:\n\nBasic Genetics: Understanding of Mendelian inheritance, meiosis, and molecular biology.\nIntroductory Statistics: Familiarity with probability, mean, variance, and the normal distribution.\nFamiliarity with R: Basic ability to load data and run scripts; experience with ggplot2 is an advantage."
+    "text": "Prerequisites\nTo successfully engage with the material, users should have:\n\nBasic Genetics: Understanding of Mendelian inheritance, meiosis, and molecular biology.\nIntroductory Statistics: Familiarity with probability, mean, variance, and the normal distribution.\nFamiliarity with R: Basic ability to load data and run scripts."
   },
   {
     "objectID": "quant-genetics/index.html#recommended-use",
