@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Quantiative Genetics"
+title: "Introduction to Quantitative Genetics"
 author: 
   - name: "Peter Sørensen"
     affiliation:
@@ -20,7 +20,7 @@ format:
     theme: default
     freeze: false
     self-contained: false
-    show-notes: true
+    show-notes: false
 execute:
   echo: false
   warning: false
