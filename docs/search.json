@@ -1082,14 +1082,14 @@
     "href": "quant-genetics/index.html",
     "title": "Quantitative & Population Genetics",
     "section": "",
-    "text": "This course provides the theoretical foundations of population and quantitative genetics, with emphasis on the mathematical and statistical principles used to study genetic variation and complex traits.\nThe material examines how genetic variation arises and is maintained in populations, how evolutionary forces shape allele frequencies, and how genetic and environmental factors contribute to phenotypic variation. Classical population genetics is integrated with quantitative trait analysis and modern approaches to trait mapping."
+    "text": "This course provides the theoretical foundations of population and quantitative genetics, with an emphasis on the mathematical and statistical principles used to study genetic variation and complex traits.\nThe material examines how genetic variation arises and is maintained in populations, how evolutionary forces shape allele frequencies, and how genetic and environmental factors contribute to phenotypic variation. Classical population genetics is integrated with quantitative trait analysis and modern genomic approaches to trait mapping."
   },
   {
     "objectID": "quant-genetics/index.html#course-material",
     "href": "quant-genetics/index.html#course-material",
     "title": "Quantitative & Population Genetics",
     "section": "",
-    "text": "This course provides the theoretical foundations of population and quantitative genetics, with emphasis on the mathematical and statistical principles used to study genetic variation and complex traits.\nThe material examines how genetic variation arises and is maintained in populations, how evolutionary forces shape allele frequencies, and how genetic and environmental factors contribute to phenotypic variation. Classical population genetics is integrated with quantitative trait analysis and modern approaches to trait mapping."
+    "text": "This course provides the theoretical foundations of population and quantitative genetics, with an emphasis on the mathematical and statistical principles used to study genetic variation and complex traits.\nThe material examines how genetic variation arises and is maintained in populations, how evolutionary forces shape allele frequencies, and how genetic and environmental factors contribute to phenotypic variation. Classical population genetics is integrated with quantitative trait analysis and modern genomic approaches to trait mapping."
   },
   {
     "objectID": "quant-genetics/index.html#core-topics",
@@ -1103,25 +1103,39 @@
     "href": "quant-genetics/index.html#learning-objectives",
     "title": "Quantitative & Population Genetics",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nUpon completion of the course, it should be possible to:\n\nExplain how genetic variation is generated and maintained in populations\n\nInterpret Hardy–Weinberg equilibrium and deviations from it\n\nDescribe the effects of drift, selection, mutation, and migration on allele frequencies\n\nPartition phenotypic variance into genetic and environmental components\n\nCalculate and interpret broad- and narrow-sense heritability\n\nPredict phenotypes from parental values\n\nDesign and interpret QTL and association mapping studies\n\nConnect mathematical models with biological interpretation"
+    "text": "Learning Objectives\nUpon completion of the course, it should be possible to:\n\nExplain how genetic variation is generated, maintained, and detected in populations.\nInterpret Hardy–Weinberg equilibrium and identify the evolutionary forces causing deviations from it.\nQuantify the effects of drift, selection, mutation, and migration on allele frequencies and genomic signatures.\nPartition phenotypic variance into genetic (additive and dominance) and environmental components.\nCalculate and interpret broad-sense (\\(H^2\\)) and narrow-sense (\\(h^2\\)) heritability.\nPredict offspring phenotypes from parental values using the Breeder’s Equation.\nDesign and interpret the results of Genome-Wide Association Studies (GWAS).\nConnect abstract mathematical models with concrete biological interpretations and real-world data."
   },
   {
     "objectID": "quant-genetics/index.html#course-structure",
     "href": "quant-genetics/index.html#course-structure",
     "title": "Quantitative & Population Genetics",
     "section": "Course Structure",
-    "text": "Course Structure\nThis book contains the core notes of the course.\nEach chapter includes:\n\nConceptual explanations\n\nMathematical formulations\n\nWorked examples\n\nComputational demonstrations in R\n\nFigures and simulation examples"
+    "text": "Course Structure\nThis site contains the core notes and supplementary materials for the course.\nTo bridge the gap between theory and application, each chapter includes:\n\nConceptual Explanations: Clear definitions of genetic principles.\nMathematical Formulations: Derivations of the statistical models used in the field.\nWorked Examples: Step-by-step calculations of frequencies, heritability, and selection response.\nComputational Demonstrations: Practical R code using packages such as ggplot2 and patchwork.\nSimulations: Visual examples of genetic drift, LD decay, and QTL mapping to build intuition."
   },
   {
     "objectID": "quant-genetics/index.html#slides",
     "href": "quant-genetics/index.html#slides",
     "title": "Quantitative & Population Genetics",
     "section": "Slides",
-    "text": "Slides\nLecture slides are provided separately as Reveal.js presentations:\n\nPopulation Genetics\nQuantitative Genetics\n\nSlides provide a structured overview of each topic.\nThe notes serve as the complete reference for study."
+    "text": "Slides\nLecture slides are provided as interactive Reveal.js presentations. These provide a structured overview of the key concepts, mathematical models, and genomic visualizations:\n\nPopulation Genetics\nQuantitative Genetics\n\nNote: The slides are for lecture guidance; the online notes serve as the primary reference for study and exam preparation."
   },
   {
     "objectID": "quant-genetics/index.html#tutorials",
     "href": "quant-genetics/index.html#tutorials",
+    "title": "Quantitative & Population Genetics",
+    "section": "Tutorials",
+    "text": "Tutorials\nHands-on tutorials are designed to bridge the gap between theory and data analysis. These support the development of both computational skills and biological intuition:\n\nR Implementation: Step-by-step guides using ggplot2, patchwork, and dplyr.\nSimulations: Interactive examples of Genetic Drift, HWE deviations, and QTL Mapping.\nData Analysis: Practical exercises in calculating heritability and interpreting GWAS results.\n\nActive learning: You are encouraged to execute and modify the provided R code to explore how changing parameters (like population size or heritability) impacts genetic outcomes."
+  },
+  {
+    "objectID": "quant-genetics/index.html#slides-1",
+    "href": "quant-genetics/index.html#slides-1",
+    "title": "Quantitative & Population Genetics",
+    "section": "Slides",
+    "text": "Slides\nLecture slides are provided separately as Reveal.js presentations:\n\nPopulation Genetics\nQuantitative Genetics\n\nSlides provide a structured overview of each topic.\nThe notes serve as the complete reference for study."
+  },
+  {
+    "objectID": "quant-genetics/index.html#tutorials-1",
+    "href": "quant-genetics/index.html#tutorials-1",
     "title": "Quantitative & Population Genetics",
     "section": "Tutorials",
     "text": "Tutorials\nHands-on tutorials support the development of computational and practical understanding.\nActive execution and modification of the provided R code is recommended."
@@ -1131,14 +1145,14 @@
     "href": "quant-genetics/index.html#prerequisites",
     "title": "Quantitative & Population Genetics",
     "section": "Prerequisites",
-    "text": "Prerequisites\nThe course assumes:\n\nBasic knowledge of genetics\n\nIntroductory statistics\n\nFamiliarity with R"
+    "text": "Prerequisites\nTo successfully engage with the material, students should have:\n\nBasic Genetics: Understanding of Mendelian inheritance, meiosis, and molecular biology.\nIntroductory Statistics: Familiarity with probability, mean, variance, and the normal distribution.\nFamiliarity with R: Basic ability to load data and run scripts; experience with ggplot2 is an advantage."
   },
   {
     "objectID": "quant-genetics/index.html#recommended-use",
     "href": "quant-genetics/index.html#recommended-use",
     "title": "Quantitative & Population Genetics",
     "section": "Recommended Use",
-    "text": "Recommended Use\nThe material is designed to be:\n\nUsed during lectures\n\nReviewed after class\n\nConsulted during project work\n\nRevisited during exam preparation\n\nMathematical reasoning and quantitative interpretation are emphasized to support conceptual clarity and reproducibility."
+    "text": "Recommended Use\nThis digital textbook is designed to be a living document for your study:\n\nDuring Lectures: Follow along with the conceptual explanations and live code demonstrations.\nSelf-Study: Review the mathematical derivations and worked examples after class.\nProject Work: Consult the R code and simulations as templates for your own data analysis.\nExam Preparation: Revisit the Learning Objectives and Summary slides to test your understanding.\n\nMathematical Reasoning: We emphasize the connection between statistical models and biological reality. Mastering the quantitative interpretations in these notes will provide the conceptual clarity needed for advanced genomic research."
   },
   {
     "objectID": "genomics-systems-bioinfo/index.html",

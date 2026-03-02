@@ -176,9 +176,8 @@ window.Quarto = {
 
 <section id="course-material" class="level2">
 <h2 class="anchored" data-anchor-id="course-material">Course Material</h2>
-<p>This course provides the theoretical foundations of population and quantitative genetics, with emphasis on the mathematical and statistical principles used to study genetic variation and complex traits.</p>
-<p>The material examines how genetic variation arises and is maintained in populations, how evolutionary forces shape allele frequencies, and how genetic and environmental factors contribute to phenotypic variation. Classical population genetics is integrated with quantitative trait analysis and modern approaches to trait mapping.</p>
-<hr>
+<p>This course provides the theoretical foundations of population and quantitative genetics, with an emphasis on the mathematical and statistical principles used to study genetic variation and complex traits.</p>
+<p>The material examines how genetic variation arises and is maintained in populations, how evolutionary forces shape allele frequencies, and how genetic and environmental factors contribute to phenotypic variation. Classical population genetics is integrated with quantitative trait analysis and modern genomic approaches to trait mapping.</p>
 </section>
 <section id="core-topics" class="level2">
 <h2 class="anchored" data-anchor-id="core-topics">Core Topics</h2>
@@ -205,50 +204,55 @@ window.Quarto = {
 <li><strong>Association Mapping:</strong> Explaining the principles behind Genome-Wide Association Studies (GWAS); identifying Quantitative Trait Loci (QTLs) through Linkage Disequilibrium.</li>
 <li><strong>Genomic Insights:</strong> Understanding the implications of polygenicity, effect sizes, and regulatory variants in human medicine and agricultural breeding.</li>
 </ul>
-<hr>
 </section>
 </section>
 <section id="learning-objectives" class="level2">
 <h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
 <p>Upon completion of the course, it should be possible to:</p>
 <ul>
-<li>Explain how genetic variation is generated and maintained in populations<br>
-</li>
-<li>Interpret Hardy–Weinberg equilibrium and deviations from it<br>
-</li>
-<li>Describe the effects of drift, selection, mutation, and migration on allele frequencies<br>
-</li>
-<li>Partition phenotypic variance into genetic and environmental components<br>
-</li>
-<li>Calculate and interpret broad- and narrow-sense heritability<br>
-</li>
-<li>Predict phenotypes from parental values<br>
-</li>
-<li>Design and interpret QTL and association mapping studies<br>
-</li>
-<li>Connect mathematical models with biological interpretation</li>
+<li>Explain how genetic variation is generated, maintained, and detected in populations.</li>
+<li>Interpret Hardy–Weinberg equilibrium and identify the evolutionary forces causing deviations from it.</li>
+<li>Quantify the effects of drift, selection, mutation, and migration on allele frequencies and genomic signatures.</li>
+<li>Partition phenotypic variance into genetic (additive and dominance) and environmental components.</li>
+<li>Calculate and interpret broad-sense (<span class="math inline">\(H^2\)</span>) and narrow-sense (<span class="math inline">\(h^2\)</span>) heritability.</li>
+<li>Predict offspring phenotypes from parental values using the Breeder’s Equation.</li>
+<li>Design and interpret the results of Genome-Wide Association Studies (GWAS).</li>
+<li>Connect abstract mathematical models with concrete biological interpretations and real-world data.</li>
 </ul>
-<hr>
 </section>
 <section id="course-structure" class="level2">
 <h2 class="anchored" data-anchor-id="course-structure">Course Structure</h2>
-<p>This book contains the <strong>core notes</strong> of the course.</p>
-<p>Each chapter includes:</p>
+<p>This site contains the <strong>core notes</strong> and supplementary materials for the course.</p>
+<p>To bridge the gap between theory and application, each chapter includes:</p>
 <ul>
-<li>Conceptual explanations<br>
-</li>
-<li>Mathematical formulations<br>
-</li>
-<li>Worked examples<br>
-</li>
-<li>Computational demonstrations in R<br>
-</li>
-<li>Figures and simulation examples</li>
+<li><strong>Conceptual Explanations:</strong> Clear definitions of genetic principles.</li>
+<li><strong>Mathematical Formulations:</strong> Derivations of the statistical models used in the field.</li>
+<li><strong>Worked Examples:</strong> Step-by-step calculations of frequencies, heritability, and selection response.</li>
+<li><strong>Computational Demonstrations:</strong> Practical R code using packages such as <code>ggplot2</code> and <code>patchwork</code>.</li>
+<li><strong>Simulations:</strong> Visual examples of genetic drift, LD decay, and QTL mapping to build intuition.</li>
 </ul>
-<hr>
 </section>
 <section id="slides" class="level2">
 <h2 class="anchored" data-anchor-id="slides">Slides</h2>
+<p>Lecture slides are provided as interactive <strong>Reveal.js</strong> presentations. These provide a structured overview of the key concepts, mathematical models, and genomic visualizations:</p>
+<ul>
+<li><a href="slides/introduction_population_genetics.html">Population Genetics</a></li>
+<li><a href="slides/introduction_quantitative_genetics.html">Quantitative Genetics</a></li>
+</ul>
+<p><em>Note: The slides are for lecture guidance; the online notes serve as the primary reference for study and exam preparation.</em></p>
+</section>
+<section id="tutorials" class="level2">
+<h2 class="anchored" data-anchor-id="tutorials">Tutorials</h2>
+<p>Hands-on tutorials are designed to bridge the gap between theory and data analysis. These support the development of both computational skills and biological intuition:</p>
+<ul>
+<li><strong>R Implementation:</strong> Step-by-step guides using <code>ggplot2</code>, <code>patchwork</code>, and <code>dplyr</code>.</li>
+<li><strong>Simulations:</strong> Interactive examples of Genetic Drift, HWE deviations, and QTL Mapping.</li>
+<li><strong>Data Analysis:</strong> Practical exercises in calculating heritability and interpreting GWAS results.</li>
+</ul>
+<p><strong>Active learning:</strong> You are encouraged to execute and modify the provided R code to explore how changing parameters (like population size or heritability) impacts genetic outcomes.</p>
+</section>
+<section id="slides-1" class="level2">
+<h2 class="anchored" data-anchor-id="slides-1">Slides</h2>
 <p>Lecture slides are provided separately as Reveal.js presentations:</p>
 <ul>
 <li><a href="slides/introduction_population_genetics.html">Population Genetics</a></li>
@@ -256,39 +260,31 @@ window.Quarto = {
 </ul>
 <p>Slides provide a structured overview of each topic.<br>
 The notes serve as the complete reference for study.</p>
-<hr>
 </section>
-<section id="tutorials" class="level2">
-<h2 class="anchored" data-anchor-id="tutorials">Tutorials</h2>
+<section id="tutorials-1" class="level2">
+<h2 class="anchored" data-anchor-id="tutorials-1">Tutorials</h2>
 <p>Hands-on tutorials support the development of computational and practical understanding.<br>
 Active execution and modification of the provided R code is recommended.</p>
-<hr>
 </section>
 <section id="prerequisites" class="level2">
 <h2 class="anchored" data-anchor-id="prerequisites">Prerequisites</h2>
-<p>The course assumes:</p>
+<p>To successfully engage with the material, students should have:</p>
 <ul>
-<li>Basic knowledge of genetics<br>
-</li>
-<li>Introductory statistics<br>
-</li>
-<li>Familiarity with R</li>
+<li><strong>Basic Genetics:</strong> Understanding of Mendelian inheritance, meiosis, and molecular biology.</li>
+<li><strong>Introductory Statistics:</strong> Familiarity with probability, mean, variance, and the normal distribution.</li>
+<li><strong>Familiarity with R:</strong> Basic ability to load data and run scripts; experience with <code>ggplot2</code> is an advantage.</li>
 </ul>
-<hr>
 </section>
 <section id="recommended-use" class="level2">
 <h2 class="anchored" data-anchor-id="recommended-use">Recommended Use</h2>
-<p>The material is designed to be:</p>
+<p>This digital textbook is designed to be a living document for your study:</p>
 <ul>
-<li>Used during lectures<br>
-</li>
-<li>Reviewed after class<br>
-</li>
-<li>Consulted during project work<br>
-</li>
-<li>Revisited during exam preparation</li>
+<li><strong>During Lectures:</strong> Follow along with the conceptual explanations and live code demonstrations.</li>
+<li><strong>Self-Study:</strong> Review the mathematical derivations and worked examples after class.</li>
+<li><strong>Project Work:</strong> Consult the R code and simulations as templates for your own data analysis.</li>
+<li><strong>Exam Preparation:</strong> Revisit the Learning Objectives and Summary slides to test your understanding.</li>
 </ul>
-<p>Mathematical reasoning and quantitative interpretation are emphasized to support conceptual clarity and reproducibility.</p>
+<p><strong>Mathematical Reasoning:</strong> We emphasize the connection between statistical models and biological reality. Mastering the quantitative interpretations in these notes will provide the conceptual clarity needed for advanced genomic research.</p>
 
 
 </section>
