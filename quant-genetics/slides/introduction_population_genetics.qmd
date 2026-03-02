@@ -21,7 +21,7 @@ format:
     theme: default
     freeze: false
     self-contained: true
-    show-notes: true
+    show-notes: false
 execute:
   echo: false
   warning: false
