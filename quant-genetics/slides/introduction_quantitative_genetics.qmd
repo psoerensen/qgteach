@@ -66,59 +66,6 @@ By the end of this chapter, you should understand how quantitative traits are an
 
 
 
-## Natural and Artificial Selection
-
-::: {.columns}
-
-::: {.column width="50%"}
-
-Natural selection and selective breeding can both cause changes in animals and plants:
-
-<br>
-
-Natural selection happens naturally.
-
-<br>
-
-Selective breeding occurs when humans intervene => artificial selection. 
-
-<br>
-
-Selective breeding (and natural selection) takes place over many generations. 
-
-:::
-
-::: {.column width="50%"}
-
-![](../images/selective_breeding.png){width=50%}
-
-:::
-
-:::
-
-::: notes
-
-This slide contrasts natural and artificial selection.
-
-The top image shows Darwin’s finches.
-Different beak shapes evolved because birds with beaks better suited to available food survived and reproduced more successfully.
-This is natural selection — the environment determines which traits increase in frequency.
-
-The bottom image shows vegetables with diverse shapes and colors.
-This diversity is the result of artificial selection.
-Humans choose individuals with desirable traits and breed them intentionally.
-
-In both cases, the underlying mechanism is the same:
-individuals with certain heritable traits leave more offspring.
-
-The difference lies in who or what applies the selection pressure —
-nature or humans.
-
-Both processes operate over multiple generations
-and lead to genetic change in populations.
-
-:::
-
 
 
 ## What Is Quantitative Genetics?
@@ -200,6 +147,60 @@ and predict response to selection.
 In short,
 quantitative genetics provides the mathematical framework
 for understanding and predicting complex trait variation.
+
+:::
+
+
+## Natural and Artificial Selection
+
+::: {.columns}
+
+::: {.column width="50%"}
+
+Natural selection and selective breeding can both cause changes in animals and plants:
+
+<br>
+
+Natural selection happens naturally.
+
+<br>
+
+Selective breeding occurs when humans intervene => artificial selection. 
+
+<br>
+
+Selective breeding (and natural selection) takes place over many generations. 
+
+:::
+
+::: {.column width="50%"}
+
+![](../images/selective_breeding.png){width=50%}
+
+:::
+
+:::
+
+::: notes
+
+This slide contrasts natural and artificial selection.
+
+The top image shows Darwin’s finches.
+Different beak shapes evolved because birds with beaks better suited to available food survived and reproduced more successfully.
+This is natural selection — the environment determines which traits increase in frequency.
+
+The bottom image shows vegetables with diverse shapes and colors.
+This diversity is the result of artificial selection.
+Humans choose individuals with desirable traits and breed them intentionally.
+
+In both cases, the underlying mechanism is the same:
+individuals with certain heritable traits leave more offspring.
+
+The difference lies in who or what applies the selection pressure —
+nature or humans.
+
+Both processes operate over multiple generations
+and lead to genetic change in populations.
 
 :::
 
