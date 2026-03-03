@@ -80,9 +80,10 @@ Hands-on tutorials are integrated into the course to explore genetic principles 
 The R code is provided as a starting point for experimentation. The modification of parameters—such as changing the population size or the strength of selection—allows for the observation of changes in genetic outcomes.
 
 
-## Interactive Laboratory
+## Interactive Tools
 
-This course includes interactive tools that let you explore key ideas in population and quantitative genetics by changing parameters and immediately seeing the consequences.
+Interactive tools are provided to examine selected models and parameters used in population and quantitative genetics.
+
 
 ### Population Genetics Simulators
 
@@ -121,7 +122,7 @@ Some tools are provided as standalone R scripts for local execution:
 
 To run a script locally:
 
-```{r}
+```r
 source("apps/hwe_simulation.R")
 ```
 
