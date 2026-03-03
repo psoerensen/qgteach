@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="Peter Sørensen">
-  <meta name="dcterms.date" content="2026-03-02">
+  <meta name="dcterms.date" content="2026-03-03">
   <title>Course Materials – Introduction to Quantitative Genetics</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -145,7 +145,7 @@ Peter Sørensen
     </div>
 </div>
 
-  <p class="date">2026-03-02</p>
+  <p class="date">2026-03-03</p>
 </section>
 <section id="learning-goals---quantitative-genetics" class="slide level2">
 <h2>Learning Goals - Quantitative Genetics</h2>
@@ -167,7 +167,7 @@ Peter Sørensen
 </ul>
 <p><strong>4. Mapping Quantitative Traits</strong></p>
 <ul>
-<li>Explain the principle behind association mapping studies</li>
+<li>Explain the principle behind genome-wide association studies</li>
 </ul>
 <aside class="notes">
 <p>In quantitative genetics, our focus shifts from single-gene traits to quantitative traits — traits that vary continuously, such as height, milk yield, blood pressure, or crop yield.</p>
@@ -188,34 +188,27 @@ Peter Sørensen
           display:block!important;
       }</style></aside>
 </section>
-<section id="what-are-complex-quantitative-traits" class="slide level2">
-<h2>What Are Complex (Quantitative) Traits?</h2>
-<p>Quantitative (complex) traits:</p>
-<ul>
-<li>Show a <strong>continuous range of variation</strong></li>
-<li>Do <strong>not</strong> follow simple Mendelian ratios</li>
-<li>Are influenced by:
-<ul>
-<li><strong>Multiple genes</strong> (Polygenic)</li>
-<li><strong>Environmental factors</strong></li>
-</ul></li>
-</ul>
-<p>Examples:</p>
-<ul>
-<li>Human height, Blood pressure, Crop yield, Milk production</li>
-</ul>
-<p><strong>Multifactorial hypothesis</strong></p>
-<ul>
-<li>Many Mendelian loci (each with a small effect)</li>
-<li>Environmental contributions</li>
-</ul>
+<section id="natural-and-artificial-selection" class="slide level2">
+<h2>Natural and Artificial Selection</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Natural selection and selective breeding can both cause changes in animals and plants:</p>
+<p><br></p>
+<p>Natural selection happens naturally.</p>
+<p><br></p>
+<p>Selective breeding occurs when humans intervene =&gt; artificial selection.</p>
+<p><br></p>
+<p>Selective breeding (and natural selection) takes place over many generations.</p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="../images/selective_breeding.png" style="width:50.0%"></p>
+</div></div>
 <aside class="notes">
-<p>Complex traits differ fundamentally from the Mendelian traits we studied earlier. Instead of clear, discrete categories—like Mendel’s purple vs.&nbsp;white flowers—we see a <strong>continuous spectrum</strong>.</p>
-<p>Take human height: people aren’t just “tall” or “short.” They vary across a bell curve. This variation comes from two sources: <strong>multiple genes</strong>, each contributing a small nudge to the phenotype, and <strong>environmental factors</strong> like nutrition and lifestyle.</p>
-<p>Historically, this caused a massive rift in biology. When Mendel’s laws were rediscovered in 1900, scientists couldn’t see how his “discrete units” could possibly explain “continuous variation.”</p>
-<p>On one side, the <strong>Biometricians</strong> argued that continuous traits were too complex for Mendel’s laws. On the other, the <strong>Mendelians</strong> focused only on discrete traits and ignored the rest.</p>
-<p>The resolution was the <strong>Multifactorial Hypothesis</strong>. It proved that if you have enough Mendelian loci—each following Mendel’s laws but each having only a tiny effect—the result is a smooth, continuous distribution.</p>
-<p>This slide represents the <strong>birth of Quantitative Genetics</strong>: the synthesis that unified Mendelian inheritance with the statistical description of variation.</p>
+<p>This slide contrasts natural and artificial selection.</p>
+<p>The top image shows Darwin’s finches. Different beak shapes evolved because birds with beaks better suited to available food survived and reproduced more successfully. This is natural selection — the environment determines which traits increase in frequency.</p>
+<p>The bottom image shows vegetables with diverse shapes and colors. This diversity is the result of artificial selection. Humans choose individuals with desirable traits and breed them intentionally.</p>
+<p>In both cases, the underlying mechanism is the same: individuals with certain heritable traits leave more offspring.</p>
+<p>The difference lies in who or what applies the selection pressure — nature or humans.</p>
+<p>Both processes operate over multiple generations and lead to genetic change in populations.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -230,24 +223,166 @@ Peter Sørensen
 </section>
 <section id="what-is-quantitative-genetics" class="slide level2">
 <h2>What Is Quantitative Genetics?</h2>
-<p>Quantitative genetics:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Quantitative genetics studies complex traits influenced by many genes and environmental factors.</p>
+<p><br></p>
+<p>It extends Mendelian genetics by focusing on the combined effects of many genes and the environment.</p>
+<p><br></p>
+<p>Statistical models are central to its analysis.</p>
+<p><br></p>
+<p>A biological discipline with great applied significance for agriculture, human healthcare, and for understanding evolutionary processes.</p>
+</div><div class="column" style="width:50%;">
+<p><strong>Core concepts</strong></p>
 <ul>
-<li>Uses <strong>mathematical models</strong></li>
-<li>Applies <strong>statistical methods</strong></li>
-<li>Studies inheritance of complex traits</li>
+<li>Definition of a quantitative trait</li>
+<li>Genetic models for quantitative traits</li>
+<li>Genetic parameters (heritability, variance, correlation)</li>
+<li>Statistical and mathematical modeling</li>
 </ul>
-<p>Central goal is to <strong>define the genetic architecture of a trait</strong>:</p>
+<p><br></p>
+<p><strong>Relevant for genetic analyses</strong></p>
 <ul>
-<li>Number of genes involved</li>
-<li>Size of their effects</li>
-<li>Population-specific variation</li>
+<li>Estimating heritability</li>
+<li>Estimating genetic risk or breeding values from pedigree or genomic data</li>
+<li>Predicting response to selection</li>
+<li>Evaluating consequences of selection</li>
 </ul>
+</div></div>
 <aside class="notes">
-<p>Classic Mendelian analysis is powerful, but it does not work for continuous variation. Because we cannot sort individuals into simple categories like “tall” or “short” with expected 3-to-1 ratios, we must turn to the language of <strong>mathematics and statistics</strong>.</p>
-<p>A central concept you will hear throughout this course is <strong>Genetic Architecture</strong>. This refers to the full landscape of genetic factors influencing a trait.</p>
-<p>When we talk about architecture, we are asking: First, how many genes are involved? Is it ten, or ten thousand? Second, what is the size of their effects? Do a few “major” genes do most of the work, or is the trait driven by thousands of “tiny” effects? And finally, how does this vary between populations?</p>
-<p>For example, the genetic architecture of blood pressure may differ between two populations if their allele frequencies or environments are different.</p>
-<p>Mapping this architecture is one of the grand challenges of modern biology, with massive implications for personalized medicine, sustainable agriculture, and livestock breeding.</p>
+<p><br></p>
+<p>Quantitative genetics is the study of complex traits — traits influenced by many genes and by environmental factors.</p>
+<p>It builds on Mendelian genetics, but instead of focusing on single genes with large effects, it studies the combined effects of many genes acting together.</p>
+<p>Because these effects are small and distributed, statistical models are essential.</p>
+<p>Quantitative genetics has major applications: in agriculture, in human healthcare, and in understanding evolutionary change.</p>
+<p>In this course, we will focus on four core elements: how we define quantitative traits, how we model them genetically, how we estimate key parameters such as heritability and genetic correlation, and how we use statistical models to analyze data.</p>
+<p>These tools allow us to estimate heritability, predict breeding values, assess genetic risk, and predict response to selection.</p>
+<p>In short, quantitative genetics provides the mathematical framework for understanding and predicting complex trait variation.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-is-quantitative-genetics-1" class="slide level2">
+<h2>What Is Quantitative Genetics?</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Phenotype (P) is determined by genotype (G) and environment (E):</p>
+<p><span class="math display">\[
+P = G + E
+\]</span></p>
+<ul>
+<li>Parents transmit a random sample of their genes to offspring<br>
+</li>
+<li>Each offspring receives a different genetic combination</li>
+</ul>
+<p>Quantitative genetics asks:</p>
+<p>How much of the phenotypic variation is due to genetic differences?</p>
+<p>This leads to the concept of <strong>heritability</strong>.</p>
+</div><div class="column" style="width:50%;">
+<p>Why does this matter?</p>
+<p>Quantitative genetics allows us to:</p>
+<ul>
+<li>Improve traits through selective breeding<br>
+</li>
+<li>Predict genetic risk in human populations<br>
+</li>
+<li>Understand how natural selection changes populations</li>
+</ul>
+<p>In all cases, we seek to estimate the effect of genotypes (<span class="math inline">\(G\)</span>) on phenotypes (<span class="math inline">\(P\)</span>).</p>
+</div></div>
+<aside class="notes">
+<p>Quantitative genetics starts from a simple model: phenotype equals genotype plus environment.</p>
+<p>Because parents transmit a random sample of their genes, offspring differ genetically. Those genetic differences contribute to phenotypic differences.</p>
+<p>The central question is: how much of the variation we observe is due to genetic variation?</p>
+<p>That leads to heritability.</p>
+<p>But quantitative genetics is not only theoretical.</p>
+<p>In animal and plant breeding, we use it to improve traits over generations.</p>
+<p>In human genetics, we use it to estimate genetic risk from genomic information.</p>
+<p>And in evolutionary biology, it helps us understand how natural selection changes populations over time.</p>
+<p>In all these cases, the key task is to estimate the effect of genotypes on phenotypes.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-are-complex-quantitative-traits" class="slide level2">
+<h2>What Are Complex (Quantitative) Traits?</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Mendelian traits</strong></p>
+<ul>
+<li>Discrete phenotypes (e.g., red/white, sick/healthy)</li>
+<li>Simple genotype–phenotype relationship</li>
+<li>Often large gene effects</li>
+</ul>
+<p><br></p>
+<p><strong>Quantitative traits</strong></p>
+<ul>
+<li>Many phenotype classes, often continuously distributed</li>
+<li>Influenced by many genes, each with small effects</li>
+<li>Individual gene effects are typically not directly observable</li>
+<li>Often influenced by the environment</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="../images/quantitative_traits.png" style="width:65.0%"></p>
+</div></div>
+</section>
+<section id="types-of-traits-and-inheritance" class="slide level2">
+<h2>Types of Traits and Inheritance</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Individuals are described by their phenotype (e.g., appearance, performance, or disease status).</p>
+<p><br></p>
+<p><strong>Continuous traits</strong></p>
+<ul>
+<li>Infinite range of values (e.g., height)<br>
+</li>
+<li>Typically influenced by many genes and the environment</li>
+</ul>
+<p><br></p>
+<p><strong>Categorical traits</strong></p>
+<ul>
+<li>Discrete groups (e.g., purple vs.&nbsp;white flowers)<br>
+</li>
+<li>May involve simple or complex inheritance</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><strong>Threshold traits</strong></p>
+<ul>
+<li>Categorical outcome<br>
+</li>
+<li>Underlying liability is quantitative (e.g., type 2 diabetes)</li>
+</ul>
+<p><br></p>
+<p><strong>Meristic traits</strong></p>
+<ul>
+<li>Countable values (e.g., clutch size)<br>
+</li>
+<li>Quantitative but not continuous</li>
+</ul>
+</div></div>
+<aside class="notes">
+<p>Quantitative traits come in several forms, and it is important not to confuse the type of trait with the type of inheritance.</p>
+<p>Continuous traits can take an infinite range of values. Height is a classic example. If measured precisely enough, there are infinitely many possible values.</p>
+<p>Categorical traits fall into distinct groups. Some follow simple Mendelian inheritance, such as flower color in peas. But many categorical traits, especially diseases, involve complex inheritance.</p>
+<p>Threshold traits are a special case. The observed outcome is categorical — for example, affected or unaffected — but the underlying liability is quantitative. Disease occurs once an individual’s underlying risk exceeds a threshold.</p>
+<p>Meristic traits are countable traits. A bird can lay one, two, or three eggs — but not two and a half. These traits are discrete, yet still quantitative.</p>
+<p>The key message is this: complex traits are defined by complex inheritance, not by whether the phenotype is continuous or categorical.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -267,14 +402,14 @@ Peter Sørensen
 <p>To study complex traits, we need basic statistical tools:</p>
 <p><br></p>
 <ul>
-<li><strong>Mean</strong> describes differences between groups<br>
+<li><strong>Mean</strong> describes the average level of a trait<br>
 </li>
-<li><strong>Variance</strong> quantifies variation within groups<br>
+<li><strong>Variance</strong> quantifies variation around the mean<br>
 </li>
-<li><strong>Normal distribution</strong> describes how variation is distributed</li>
+<li><strong>Normal distribution</strong> describes how trait values are distributed</li>
 </ul>
 <p><br></p>
-<p>Quantitative genetics focuses on traits with <strong>complex inheritance</strong>.</p>
+<p>These tools allow us to quantify and compare phenotypic variation.</p>
 </div><div class="column" style="width:50%;">
 <p><strong>Mean</strong></p>
 <p><span class="math display">\[
@@ -291,62 +426,11 @@ f(x) = \frac{1}{\sqrt{2\pi\sigma^2}}
 \]</span></p>
 </div></div>
 <aside class="notes">
-<p>To understand quantitative traits, we first need basic statistical tools.</p>
-<p>The mean allows us to compare groups — for example, average height in two populations.</p>
-<p>Variance tells us how much individuals differ around the mean. Two populations may have the same average, but very different levels of variation.</p>
-<p>Many quantitative traits follow an approximately normal, bell-shaped distribution. This distribution plays a central role in quantitative genetics.</p>
-<p>Quantitative genetics focuses on traits that do not follow simple Mendelian ratios. Instead, they are influenced by multiple genes and environmental factors.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="types-of-traits-and-inheritance" class="slide level2">
-<h2>Types of Traits and Inheritance</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Continuous traits</strong></p>
-<ul>
-<li>Infinite range of values (e.g., height)<br>
-</li>
-<li>Typically influenced by many genes and the environment</li>
-</ul>
-<p><br></p>
-<p><strong>Categorical traits</strong></p>
-<ul>
-<li>Discrete groups (e.g., purple vs.&nbsp;white flowers)<br>
-</li>
-<li>May follow simple or complex inheritance</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><strong>Threshold traits</strong></p>
-<ul>
-<li>Categorical outcome<br>
-</li>
-<li>Underlying liability is quantitative (e.g., type 2 diabetes)</li>
-</ul>
-<p><br></p>
-<p><strong>Meristic traits</strong></p>
-<ul>
-<li>Countable values (e.g., clutch size)<br>
-</li>
-<li>Quantitative but not continuous</li>
-</ul>
-</div></div>
-<aside class="notes">
-<p>Quantitative traits come in several forms, and it is important not to confuse the type of trait with the type of inheritance.</p>
-<p>Continuous traits can take on an infinite range of values. Height is a classic example. If measured precisely enough, there are infinitely many possible values.</p>
-<p>Categorical traits fall into distinct groups. Some follow simple Mendelian inheritance, such as flower color in classic pea experiments. However, many categorical traits — especially diseases — involve complex inheritance.</p>
-<p>Threshold traits are a special case. The observed outcome is categorical — for example, affected or not affected — but the underlying liability is quantitative. Type 2 diabetes is a good example. Disease occurs once an individual’s underlying risk passes a certain threshold.</p>
-<p>Meristic traits are countable traits. For example, a bird can lay one, two, or three eggs — but not two and a half. These traits are discrete, yet still quantitative in nature.</p>
-<p>The key message is this: complex traits are defined by complex inheritance, not by whether the phenotype is continuous or categorical.</p>
+<p>To study quantitative traits, we need basic statistical tools.</p>
+<p>First, the mean. The mean describes the average level of a trait in a population.</p>
+<p>Second, variance. Variance tells us how much individuals differ around that average. Two populations may have the same mean, but very different levels of variability.</p>
+<p>Many quantitative traits follow an approximately normal, bell-shaped distribution. This distribution plays a central role in quantitative genetics, because it emerges naturally when many small effects combine.</p>
+<p>These simple statistical concepts — mean, variance, and the normal distribution — form the foundation for everything we do in quantitative genetics.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -485,9 +569,8 @@ But the principle remains the same.</p>
 <h2>The Normal Distribution</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><strong>Definition</strong></p>
 <p>Many biological traits follow an approximately <strong>normal distribution</strong>.</p>
-<p>A normal distribution is fully defined by:</p>
+<p>A normal distribution is fully determined by:</p>
 <ul>
 <li>Mean: <span class="math inline">\(\mu\)</span><br>
 </li>
@@ -507,12 +590,12 @@ f(x) = \frac{1}{\sigma \sqrt{2\pi}}
 </li>
 <li>Symmetric around the mean <span class="math inline">\(\mu\)</span><br>
 </li>
-<li>Spread determined by <span class="math inline">\(\sigma\)</span><br>
+<li>Spread determined by the standard deviation <span class="math inline">\(\sigma\)</span><br>
 </li>
-<li>Total area under the curve = 1</li>
+<li>Total area under the curve equals 1</li>
 </ul>
 <p><br></p>
-<p>Central role in quantitative genetics:</p>
+<p><strong>Central role in quantitative genetics</strong></p>
 <ul>
 <li>Describing quantitative traits<br>
 </li>
@@ -522,20 +605,18 @@ f(x) = \frac{1}{\sigma \sqrt{2\pi}}
 </ul>
 </div></div>
 <aside class="notes">
-<p>On the left, we introduce the normal distribution.</p>
-<p>Many biological traits follow an approximately normal, bell-shaped distribution.</p>
-<p>The normal distribution is completely determined by two parameters:</p>
-<p>The mean, μ — which determines the center of the distribution.</p>
-<p>The variance, σ² — or equivalently the standard deviation σ — which determines the spread.</p>
+<p>Many biological traits follow an approximately normal, or bell-shaped, distribution.</p>
+<p>A normal distribution is completely determined by two parameters:</p>
+<p>The mean, which determines the center of the distribution.</p>
+<p>And the variance — or equivalently the standard deviation — which determines how spread out the values are.</p>
 <p>The probability density function shown here gives the exact mathematical form of the curve.</p>
-<p>Notice that the exponential term contains (x − μ)² divided by 2σ². This means values close to μ have higher probability density, while extreme values become increasingly rare.</p>
-<p>On the right, we summarize key properties.</p>
-<p>The curve is symmetric around μ.</p>
-<p>Changing μ shifts the distribution left or right.</p>
-<p>Changing σ changes the spread. A larger σ produces a wider, flatter curve. A smaller σ produces a narrower, taller curve.</p>
-<p>The total area under the curve equals 1, because the distribution represents total probability.</p>
+<p>The exponent contains the squared distance from the mean, divided by twice the variance. This means values close to the mean have higher probability density, while extreme values become increasingly rare.</p>
+<p>The curve is symmetric around the mean.</p>
+<p>Changing the mean shifts the distribution left or right.</p>
+<p>Changing the standard deviation changes the spread. A larger standard deviation produces a wider, flatter curve. A smaller one produces a narrower, taller curve.</p>
+<p>The total area under the curve equals one, because it represents total probability.</p>
 <p>This structure is central to quantitative genetics.</p>
-<p>When we later partition phenotypic variance into genetic and environmental components, we are effectively partitioning σ² — the variance of a normally distributed trait.</p>
+<p>When we partition phenotypic variance into genetic and environmental components, we are effectively partitioning the variance of a normally distributed trait.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -580,8 +661,8 @@ f(x) = \frac{1}{\sigma \sqrt{2\pi}}
 <h2>A Simple Genetic Model for Quantitative Traits</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><strong>Theory</strong></p>
-<p>A quantitative trait can be modeled as:</p>
+<p><strong>Model</strong></p>
+<p>A quantitative trait can be expressed as:</p>
 <p><span class="math display">\[
 P = \mu + G + E
 \]</span></p>
@@ -601,35 +682,33 @@ p = P - \mu = G + E
 <p><strong>Interpretation</strong></p>
 <p>Differences between individuals arise from:</p>
 <ul>
-<li>Genetic variation<br>
+<li>Genetic effects<br>
 </li>
-<li>Environmental variation<br>
+<li>Environmental effects<br>
 </li>
 <li>Or both</li>
 </ul>
-<p>This model underlies:</p>
+<p><br></p>
+<p><strong>This model underlies:</strong></p>
 <ul>
 <li>Variance partitioning<br>
 </li>
-<li>Heritability estimation<br>
+<li>Heritability<br>
 </li>
-<li>Prediction of selection response</li>
+<li>Prediction of response to selection</li>
 </ul>
 </div></div>
 <aside class="notes">
 <p>This is the fundamental model of quantitative genetics.</p>
-<p>The phenotype, P, is expressed as the population mean plus a genetic deviation and an environmental deviation.</p>
-<p>In other words, individuals differ from the average because of genetic effects, environmental effects, or both.</p>
-<p>We often subtract the mean and work with deviations:</p>
-<p>p equals G plus E.</p>
-<p>This simplifies the mathematics because we focus only on what causes individuals to differ.</p>
-<p>On the right, we interpret each component.</p>
-<p>The population mean, μ, is simply the average phenotype.</p>
-<p>The genetic deviation, G, captures how an individual’s genotype shifts their phenotype above or below the mean.</p>
-<p>The environmental deviation, E, captures all non-genetic influences.</p>
+<p>The phenotype equals the population mean plus a genetic deviation plus an environmental deviation.</p>
+<p>Individuals differ from the average because of genetic effects, environmental effects, or both.</p>
+<p>We often subtract the mean and work with deviations, so that little p equals G plus E.</p>
+<p>This focuses attention on what causes individuals to differ, rather than on the overall average.</p>
+<p>The genetic deviation captures how an individual’s genotype shifts the phenotype above or below the mean.</p>
+<p>The environmental deviation captures all non-genetic influences.</p>
 <p>If two individuals differ in phenotype, that difference must arise from differences in G, differences in E, or both.</p>
-<p>This deceptively simple equation is the backbone of quantitative genetics.</p>
-<p>From it, we derive variance partitioning, broad- and narrow-sense heritability, the breeder’s equation, and modern genomic prediction models.</p>
+<p>This simple equation is the backbone of quantitative genetics.</p>
+<p>From it, we derive variance partitioning, heritability, the breeder’s equation, and modern genomic prediction models.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -707,6 +786,153 @@ p = G + E
           display:block!important;
       }</style></aside>
 </section>
+<section id="modes-of-gene-action-at-one-locus" class="slide level2">
+<h2>Modes of Gene Action at One Locus</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="introduction_quantitative_genetics_files/figure-revealjs/unnamed-chunk-2-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<p><strong>Why this matters</strong></p>
+<p>Additive gene action:</p>
+<ul>
+<li>Allele effects add linearly</li>
+<li>Produces predictable transmission</li>
+<li>Creates additive variance (<span class="math inline">\(V_A\)</span>)</li>
+</ul>
+<p>Dominance:</p>
+<ul>
+<li>Depends on allele combinations</li>
+<li>Does not transmit predictably</li>
+<li>Contributes to <span class="math inline">\(V_D\)</span>, not <span class="math inline">\(V_A\)</span></li>
+</ul>
+<p>Key insight:</p>
+<p>Only additive effects contribute to <strong>narrow-sense heritability</strong></p>
+</div></div>
+<aside class="notes">
+<p>This figure illustrates three different modes of gene action at a single locus.</p>
+<p>On the x-axis we have the three genotypes: bb, Bb, and BB.</p>
+<p>On the y-axis we have the trait value.</p>
+<p>Let’s go panel by panel.</p>
+<p>In the top panel, we see additive gene action. The heterozygote lies exactly halfway between the two homozygotes. Each allele contributes a fixed amount to the phenotype. The effects add linearly.</p>
+<p>In the middle panel, we see dominance. The heterozygote has the same phenotype as one of the homozygotes. This means the allele B is dominant over b. The effect depends on allele combinations, not simple addition.</p>
+<p>In the bottom panel, we see partial dominance. The heterozygote is intermediate, but not exactly midway between the homozygotes. There is some dominance, but not complete.</p>
+<p>The key idea is this:</p>
+<p>Only additive gene action produces predictable transmission from parents to offspring.</p>
+<p>Dominance effects depend on how alleles combine within individuals. Because meiosis reshuffles alleles each generation, dominance effects are not transmitted in a consistent way.</p>
+<p>That is why additive variance, V_A, is the component that determines narrow-sense heritability and response to selection.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="genotype-by-genotype-interaction-epistasis" class="slide level2">
+<h2>Genotype by Genotype Interaction (Epistasis)</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="introduction_quantitative_genetics_files/figure-revealjs/unnamed-chunk-3-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<p><strong>Interaction between Locus 1 and Locus 2</strong></p>
+<p><strong>No Interaction (Additive)</strong></p>
+<ul>
+<li><strong>Parallel lines:</strong> The lines do not cross or diverge.</li>
+<li>The effect of <strong><span class="math inline">\(AA\)</span></strong> is the same regardless of whether the background is <strong><span class="math inline">\(bb\)</span></strong> or <strong><span class="math inline">\(BB\)</span></strong>.</li>
+<li>Genetic effects at different loci simply add up linearly.</li>
+</ul>
+<p><strong>G<span class="math inline">\(\times\)</span>G Interaction (Epistasis)</strong></p>
+<ul>
+<li><strong>Non-parallel lines:</strong> Lines cross or show different slopes.</li>
+<li>The effect of <strong><span class="math inline">\(AA\)</span></strong> depends on the genotype at <strong>Locus 2</strong>.</li>
+<li><em>Example:</em> <strong><span class="math inline">\(AA\)</span></strong> only increases the trait value if the individual also carries <strong><span class="math inline">\(BB\)</span></strong>.</li>
+</ul>
+<p><strong>Key Idea:</strong><br>
+The phenotypic expression of one gene is modified by the presence of another gene.</p>
+</div></div>
+<aside class="notes">
+<p>This figure illustrates Gene-by-Gene interaction, commonly called Epistasis. In the top panel, we see an additive relationship. Moving from locus 2 “bb” to “BB” increases the trait, and moving from locus 1 “aa” to “AA” also increases the trait. Because the lines are parallel, the effect of Locus 1 is independent of Locus 2. In the bottom panel, we see Epistasis. Here, the “AA” genotype has no effect if the background is “bb”. It only shows a phenotypic increase when combined with “BB” at the second locus. In quantitative genetics, epistasis complicates our models because the “value” of an allele changes depending on the rest of the genome. While (additive variance) is the main driver of selection, epistasis contributes to the “hidden” part of the total genetic variance ( ).</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="genotype-environment-interaction" class="slide level2">
+<h2>Genotype × Environment Interaction</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="introduction_quantitative_genetics_files/figure-revealjs/unnamed-chunk-4-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<p><strong>No interaction</strong></p>
+<ul>
+<li>Parallel lines<br>
+</li>
+<li>Genotype difference is constant across environments</li>
+</ul>
+<p><strong>G×E interaction</strong></p>
+<ul>
+<li>Lines cross (or diverge)<br>
+</li>
+<li>Genotype ranking depends on environment</li>
+</ul>
+<p><strong>Key idea:</strong><br>
+Genotype performance can be environment-dependent.</p>
+</div></div>
+<aside class="notes">
+<p>This figure shows reaction norms: how the same genotypes perform across environments.</p>
+<p>On the left, there is no genotype-by-environment interaction. The two lines are parallel. IL1 is always higher than IL2 by the same amount. So the genetic difference is stable across environments.</p>
+<p>On the right, we have genotype-by-environment interaction. The lines cross. IL1 performs better in environment E1, but worse in environment E2. So the ranking of genotypes depends on the environment.</p>
+<p>This is what we mean by G×E: the difference between genotypes changes across environments.</p>
+<p>Why does it matter?</p>
+<p>If there is strong G×E, selection in one environment may not give the best genotype in another environment.</p>
+<p>In that case, we often extend the model by adding an interaction term: phenotype equals mean plus genotype plus environment plus genotype-by-environment interaction.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
 <section id="from-phenotype-to-variance" class="slide level2">
 <h2>From Phenotype to Variance</h2>
 <div class="columns">
@@ -767,7 +993,7 @@ V_P = V_G + V_E
 <section id="visualizing-variance-partitioning" class="slide level2">
 <h2>Visualizing Variance Partitioning</h2>
 
-<img data-src="introduction_quantitative_genetics_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"><aside class="notes">
+<img data-src="introduction_quantitative_genetics_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"><aside class="notes">
 <p>Here we see total phenotypic variance represented as a single bar.</p>
 <p>That total variance can be partitioned into two components: a genetic component and an environmental component.</p>
 <p>In this example, genetic variance accounts for 40 percent of the total, while environmental variance accounts for 60 percent.</p>
@@ -862,7 +1088,7 @@ across environments</p></li>
 <p><span class="math display">\[
 \mathrm{Cov}(X,Y)
 \]</span></p>
-<p>It appears everywhere in QG:</p>
+<p>It appears everywhere in Quantitative Genetics:</p>
 <ul>
 <li>Phenotypic variance<br>
 </li>
@@ -893,7 +1119,7 @@ r = \frac{\mathrm{Cov}(X,Y)}{\sigma_X \sigma_Y}
 <p><span class="math display">\[
 V_P = V_G + V_E + 2\mathrm{Cov}(G,E)
 \]</span></p>
-<p>If <span class="math inline">\(\mathrm{Cov}(G,E)\)</span> = 0, variance components add cleanly.</p>
+<p>If Cov(G,E) = 0, variance components add cleanly.</p>
 </div></div>
 <aside class="notes">
 <p>Covariance measures whether two variables vary together.</p>
@@ -917,7 +1143,7 @@ V_P = V_G + V_E + 2\mathrm{Cov}(G,E)
 <section id="visualizing-correlation" class="slide level2">
 <h2>Visualizing Correlation</h2>
 
-<img data-src="introduction_quantitative_genetics_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"></section>
+<img data-src="introduction_quantitative_genetics_files/figure-revealjs/unnamed-chunk-6-1.png" width="960" class="r-stretch"></section>
 <section id="broad-sense-heritability-h2" class="slide level2">
 <h2>Broad-Sense Heritability (<span class="math inline">\(H^2\)</span>)</h2>
 <div class="columns">
@@ -1342,60 +1568,6 @@ h^2 = \frac{V_A}{V_P}
           display:block!important;
       }</style></aside>
 </section>
-<section id="modes-of-gene-action-at-one-locus" class="slide level2">
-<h2>Modes of Gene Action at One Locus</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="introduction_quantitative_genetics_files/figure-revealjs/unnamed-chunk-4-1.png" width="960"></p>
-</figure>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:50%;">
-<p><strong>Why this matters</strong></p>
-<p>Additive gene action:</p>
-<ul>
-<li>Allele effects add linearly</li>
-<li>Produces predictable transmission</li>
-<li>Creates additive variance (<span class="math inline">\(V_A\)</span>)</li>
-</ul>
-<p>Dominance:</p>
-<ul>
-<li>Depends on allele combinations</li>
-<li>Does not transmit predictably</li>
-<li>Contributes to <span class="math inline">\(V_D\)</span>, not <span class="math inline">\(V_A\)</span></li>
-</ul>
-<p>Key insight:</p>
-<p>Only additive effects contribute to <strong>narrow-sense heritability</strong></p>
-</div></div>
-<aside class="notes">
-<p>This figure illustrates three different modes of gene action at a single locus.</p>
-<p>On the x-axis we have the three genotypes: bb, Bb, and BB.</p>
-<p>On the y-axis we have the trait value.</p>
-<p>Let’s go panel by panel.</p>
-<p>In the top panel, we see additive gene action. The heterozygote lies exactly halfway between the two homozygotes. Each allele contributes a fixed amount to the phenotype. The effects add linearly.</p>
-<p>In the middle panel, we see dominance. The heterozygote has the same phenotype as one of the homozygotes. This means the allele B is dominant over b. The effect depends on allele combinations, not simple addition.</p>
-<p>In the bottom panel, we see partial dominance. The heterozygote is intermediate, but not exactly midway between the homozygotes. There is some dominance, but not complete.</p>
-<p>The key idea is this:</p>
-<p>Only additive gene action produces predictable transmission from parents to offspring.</p>
-<p>Dominance effects depend on how alleles combine within individuals. Because meiosis reshuffles alleles each generation, dominance effects are not transmitted in a consistent way.</p>
-<p>That is why additive variance, V_A, is the component that determines narrow-sense heritability and response to selection.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
 <section id="narrow-sense-heritability-h2" class="slide level2">
 <h2>Narrow-Sense Heritability (<span class="math inline">\(h^2\)</span>)</h2>
 <div class="columns">
@@ -1463,48 +1635,6 @@ V_A = 4\,\mathrm{Cov}_{\text{half-sibs}}
           display:block!important;
       }</style></aside>
 </section>
-<section id="genotype-environment-interaction" class="slide level2">
-<h2>Genotype × Environment Interaction</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="introduction_quantitative_genetics_files/figure-revealjs/unnamed-chunk-5-1.png" width="960"></p>
-</figure>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:50%;">
-<p><strong>Reaction norms for two genotypes (IL1, IL2)</strong></p>
-<p><strong>No interaction</strong> - Parallel lines<br>
-- Genotype difference is constant across environments</p>
-<p><strong>G×E interaction</strong> - Lines cross (or diverge)<br>
-- Genotype ranking depends on environment</p>
-<p><strong>Key idea:</strong><br>
-Genotype performance can be environment-dependent.</p>
-</div></div>
-<aside class="notes">
-<p>This figure shows reaction norms: how the same genotypes perform across environments.</p>
-<p>On the left, there is no genotype-by-environment interaction. The two lines are parallel. IL1 is always higher than IL2 by the same amount. So the genetic difference is stable across environments.</p>
-<p>On the right, we have genotype-by-environment interaction. The lines cross. IL1 performs better in environment E1, but worse in environment E2. So the ranking of genotypes depends on the environment.</p>
-<p>This is what we mean by G×E: the difference between genotypes changes across environments.</p>
-<p>Why does it matter?</p>
-<p>If there is strong G×E, selection in one environment may not give the best genotype in another environment.</p>
-<p>In that case, we often extend the model by adding an interaction term: phenotype equals mean plus genotype plus environment plus genotype-by-environment interaction.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
 <section id="narrow-sense-heritability-h²" class="slide level2">
 <h2>Narrow-Sense Heritability (h²)</h2>
 <div class="columns">
@@ -1513,7 +1643,7 @@ Genotype performance can be environment-dependent.</p>
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="introduction_quantitative_genetics_files/figure-revealjs/unnamed-chunk-6-1.png" width="960"></p>
+<p><img data-src="introduction_quantitative_genetics_files/figure-revealjs/unnamed-chunk-7-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -1992,69 +2122,43 @@ h^2 = \frac{V_A}{V_P}
 <h2>From Phenotype to Genotype: The “Missing” Link</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><strong>What we know so far:</strong></p>
+<p><strong>What we know so far</strong></p>
 <ul>
-<li>Traits like height are <strong>heritable</strong> (<span class="math inline">\(h^2 \approx 0.8\)</span>).</li>
-<li>This variation is <strong>multifactorial</strong> (many genes + environment).</li>
-<li>We can <strong>predict</strong> offspring from parents using the selection response.</li>
+<li>Traits such as height are <strong>heritable</strong> (<span class="math inline">\(h^2 \approx 0.8\)</span>).</li>
+<li>Variation is <strong>multifactorial</strong> (many genes + environment).</li>
+<li>We can <strong>predict</strong> response to selection from parents.</li>
 </ul>
 <p><br></p>
-<p><strong>The Big Question:</strong></p>
+<p><strong>The Big Question</strong></p>
 <ul>
-<li><em>Where</em> are these genes located?</li>
-<li><em>Which</em> specific DNA variants drive the <span class="math inline">\(V_G\)</span>?</li>
+<li>What do the underlying genes actually do?</li>
+<li>Where are they located in the genome?</li>
+<li>Which DNA variants contribute to <span class="math inline">\(V_G\)</span>?</li>
+<li>What is the biological basis of allele effects?</li>
+<li>How do genes interact within pathways?</li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><strong>The Solution: Association Mapping</strong></p>
 <ol type="1">
-<li><strong>The Strategy:</strong> Search the entire genome for statistical correlations.</li>
-<li><strong>The Tool:</strong> High-density SNP markers (M).</li>
-<li><strong>The Principle:</strong> Linkage Disequilibrium (LD) with the causal variants (Q).</li>
+<li><strong>Strategy:</strong> Scan the genome for statistical associations.</li>
+<li><strong>Tool:</strong> High-density SNP markers (M).</li>
+<li><strong>Principle:</strong> Linkage disequilibrium (LD) with causal variants (Q).</li>
 </ol>
 <p><br></p>
-<blockquote>
-<p>“We move from describing <strong>how much</strong> is inherited to identifying <strong>what</strong> is inherited.”</p>
-</blockquote>
+<p>We move from describing <strong>how much</strong> is inherited<br>
+to identifying <strong>what</strong> is inherited.</p>
 </div></div>
 <aside class="notes">
-<p>This is a critical transition in the lecture.</p>
-<p>Up until now, we have treated the “Genotype” as a black box (V_G). We know it’s there because children look like parents, but we don’t know the physical address of the genes.</p>
-<p>In the next section, we move into Mapping. The goal here is to open that black box. We use the concept of Linkage Disequilibrium to find the specific “neighborhoods” in the genome that contribute to the variance we measured in the first half of the lecture.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="mapping-genes-for-complex-traits" class="slide level2">
-<h2>Mapping Genes for Complex Traits</h2>
-<p>Quantitative trait loci (QTL):</p>
-<ul>
-<li>Genomic regions affecting trait variation</li>
-</ul>
-<p>Two major approaches:</p>
-<p>QTL mapping<br>
-- Controlled crosses<br>
-- Known pedigrees</p>
-<p>Association mapping / GWAS<br>
-- Random-mating populations<br>
-- Uses linkage disequilibrium<br>
-- Genome-wide SNP scans</p>
-<p>GWAS can directly identify candidate genes.</p>
-<aside class="notes">
-<p>Finally, we examined how to identify genes underlying complex traits.</p>
-<p>QTL mapping: - Uses controlled crosses - Tracks segregation in pedigrees</p>
-<p>Association mapping: - Uses natural populations - Relies on linkage disequilibrium - Scans the entire genome</p>
-<p>Genome-wide association studies test hundreds of thousands of SNPs simultaneously.</p>
-<p>These approaches have identified genes for: - Disease susceptibility in humans - Agronomic traits in crops - Size differences in dogs</p>
-<p>Quantitative genetics now integrates statistics, molecular biology, and genomics.</p>
-<p>It is central to modern biology.</p>
+<p>So far, we have worked at the phenotypic level.</p>
+<p>We know that many traits, such as height, are highly heritable. We know that variation is multifactorial — influenced by many genes and the environment. And we know that we can predict response to selection using quantitative genetic models.</p>
+<p>But classical quantitative genetics does not tell us which specific genes are responsible.</p>
+<p>This leads to the central question: what are the actual DNA variants that generate genetic variance?</p>
+<p>Where are they located in the genome? What biological mechanisms do they affect? And how do genes interact within pathways?</p>
+<p>To answer these questions, we move from variance components to association mapping.</p>
+<p>The idea is simple: we scan the genome and test whether genetic markers are statistically associated with the trait.</p>
+<p>We use dense SNP markers across the genome.</p>
+<p>If a marker is in linkage disequilibrium with a causal variant, it will show statistical association.</p>
+<p>In this way, we move from describing how much is inherited to identifying what is inherited.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -2072,17 +2176,18 @@ h^2 = \frac{V_A}{V_P}
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><strong>Goal</strong></p>
-<p>Identify genomic regions influencing complex traits<br>
-in random-mating populations.</p>
-<p><strong>Core idea</strong></p>
-<p>Test statistical association between:</p>
+<p>Identify genomic regions associated with complex traits<br>
+in natural, random-mating populations.</p>
+<p><br></p>
+<p><strong>Core Idea</strong></p>
+<p>Test statistical associations between:</p>
 <ul>
 <li>Genetic markers (SNPs)<br>
 </li>
 <li>Phenotypic variation</li>
 </ul>
 </div><div class="column" style="width:50%;">
-<p><strong>GWAS characteristics</strong></p>
+<p><strong>Key Characteristics</strong></p>
 <ul>
 <li>Scans the entire genome<br>
 </li>
@@ -2090,24 +2195,25 @@ in random-mating populations.</p>
 </li>
 <li>No need to specify candidate genes in advance</li>
 </ul>
+<p><br></p>
 <p><strong>Compared to classical QTL mapping</strong></p>
 <ul>
 <li>No controlled crosses required<br>
 </li>
-<li>No pedigree information needed<br>
+<li>No pedigree information required<br>
 </li>
-<li>Works directly in natural populations</li>
+<li>Applied directly in natural populations</li>
 </ul>
 </div></div>
 <aside class="notes">
-<p>A Genome-Wide Association Study, or GWAS, aims to identify genomic regions that influence complex traits.</p>
-<p>Unlike classical QTL mapping, GWAS works in natural, random-mating populations.</p>
-<p>The core idea is simple: We test whether genetic variation at a marker SNP is statistically associated with phenotypic variation.</p>
-<p>We do this across the entire genome, testing thousands to millions of SNPs.</p>
+<p>A Genome-Wide Association Study, or GWAS, aims to identify genomic regions associated with complex traits.</p>
+<p>Unlike classical QTL mapping, GWAS operates in natural, random-mating populations.</p>
+<p>The core idea is straightforward: we test whether variation at a genetic marker, typically a SNP, is statistically associated with variation in a phenotype.</p>
+<p>This test is performed across the entire genome, often for hundreds of thousands or even millions of markers.</p>
 <p>One major advantage is that we do not need to specify candidate genes in advance. The genome is scanned in an unbiased way.</p>
 <p>Compared to classical QTL mapping, GWAS does not require controlled crosses, and it does not require pedigree information.</p>
 <p>Instead, it relies on naturally occurring genetic variation and statistical association.</p>
-<p>In the next slide, we will explain why this works from a genetic perspective — specifically, the role of linkage disequilibrium.</p>
+<p>In the next step, we will see why this works — specifically, how linkage disequilibrium connects markers to causal variants.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -2128,7 +2234,7 @@ in random-mating populations.</p>
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="introduction_quantitative_genetics_files/figure-revealjs/unnamed-chunk-7-1.png" width="960"></p>
+<p><img data-src="introduction_quantitative_genetics_files/figure-revealjs/unnamed-chunk-8-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -2136,30 +2242,32 @@ in random-mating populations.</p>
 </div><div class="column" style="width:50%;">
 <p><strong>Concept</strong></p>
 <ul>
-<li>A causal mutation (QTL) affects the trait<br>
+<li>A causal mutation (QTL) influences the trait<br>
 </li>
-<li>A nearby SNP is in <strong>linkage disequilibrium (LD)</strong><br>
+<li>A nearby SNP may be in <strong>linkage disequilibrium (LD)</strong> with the QTL<br>
 </li>
-<li>The SNP is correlated with the QTL</li>
+<li>The SNP is therefore correlated with the causal variant</li>
 </ul>
-<p>Therefore:</p>
-<p>The SNP shows statistical association<br>
-even if it is not the causal mutation.</p>
-<p><strong>Key point</strong></p>
-<p>GWAS detects regions in LD<br>
-with functional variants.</p>
+<p><br></p>
+<p>Therefore, the SNP shows statistical association<br>
+even if it is not itself causal.</p>
+<p><br></p>
+<p><strong>Key Point</strong></p>
+<p>GWAS detects markers that are in LD<br>
+with causal variants.</p>
 </div></div>
 <aside class="notes">
-<p>This figure illustrates why GWAS works.</p>
-<p>The horizontal line represents a chromosome segment.</p>
-<p>The red marker is a causal mutation — a quantitative trait locus, or QTL.</p>
-<p>The black dots are SNP markers.</p>
-<p>Because the QTL and a nearby SNP are physically close, they tend to be inherited together. This non-random association is called linkage disequilibrium, or LD.</p>
+<p>This figure explains why GWAS works.</p>
+<p>Each horizontal line represents a chromosome segment.</p>
+<p>In Scenario 1, the red marker represents a causal mutation — a quantitative trait locus, or QTL — that directly affects the trait.</p>
+<p>The blue marker represents a nearby SNP.</p>
+<p>Because these two loci are physically close, they tend to be inherited together. This non-random association is called linkage disequilibrium, or LD.</p>
 <p>Even if we do not genotype the causal mutation itself, the nearby SNP is correlated with it.</p>
-<p>So when we test that SNP statistically, it appears associated with the trait.</p>
-<p>This is the key principle:</p>
-<p>GWAS detects markers in LD with causal variants.</p>
-<p>Importantly, the associated SNP is not necessarily the functional mutation. Further fine-mapping and functional studies are required.</p>
+<p>As a result, when we test the SNP statistically, it appears associated with the trait.</p>
+<p>In Scenario 2, the marker and the QTL are unlinked. They segregate independently. There is no LD, so the marker carries no information about the causal mutation.</p>
+<p>This illustrates the core logic of GWAS:</p>
+<p>We do not necessarily detect the functional mutation itself. We detect markers that are in linkage disequilibrium with causal variants.</p>
+<p>Identifying the true causal mutation requires further fine-mapping and functional validation.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -2171,29 +2279,6 @@ with functional variants.</p>
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-</section>
-<section id="why-gwas-works-markerqtl-linkage-disequilibrium-1" class="slide level2">
-<h2>Why GWAS Works: Marker–QTL Linkage Disequilibrium</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="introduction_quantitative_genetics_files/figure-revealjs/unnamed-chunk-8-1.png" width="960"></p>
-</figure>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:50%;">
-<p><strong>The Interpretation</strong></p>
-<ul>
-<li><strong>Association Peak:</strong> The highest points cluster over a specific genomic region.</li>
-<li><strong>Candidate Gene (QTL):</strong> The vertical dashed line shows the “lead SNP” falls directly within <strong>Gene B</strong>.</li>
-<li><strong>The “Neighborhood” Effect:</strong> Note how the shading spans the whole gene. Because of LD, many SNPs in the red-shaded region appear significant, but only one gene is likely the true functional driver.</li>
-</ul>
-<p><strong>Key point</strong> This visual demonstrates <strong>Fine-Mapping</strong>: the process of narrowing down a broad GWAS “skyscraper” to the specific gene region most likely to contain the causal variant.</p>
-</div></div>
 </section>
 <section id="from-biological-data-to-statistical-model" class="slide level2">
 <h2>From Biological Data to Statistical Model</h2>
@@ -2321,8 +2406,9 @@ y_3 \\
 <div class="column" style="width:50%;">
 <p><strong>Goal</strong></p>
 <p>Identify loci associated with variation in a trait.</p>
-<p>For each SNP:</p>
-<p>Test whether genotype predicts phenotype.</p>
+<p><br></p>
+<p>For each SNP test whether genotype predicts phenotype.</p>
+<p><br></p>
 <p>Statistical model (single SNP):</p>
 <p><span class="math display">\[
 y_i = \mu + \beta x_{ij} + \varepsilon_i
@@ -2350,8 +2436,8 @@ y_i = \mu + \beta x_{ij} + \varepsilon_i
 <li>Test all <span class="math inline">\(m\)</span> SNPs</li>
 </ol>
 <p>Thousands to millions of tests.</p>
-<p>If <span class="math inline">\(\beta \neq 0\)</span> (statistically significant)<br>
-→ evidence of association.</p>
+<p><br></p>
+<p>If <span class="math inline">\(\beta\)</span> is not equal to zero, the test is statistically significant and there is evidence of association.</p>
 </div></div>
 <aside class="notes">
 <p>This slide builds directly on the previous one.</p>
@@ -2380,8 +2466,8 @@ y_i = \mu + \beta x_{ij} + \varepsilon_i
           display:block!important;
       }</style></aside>
 </section>
-<section id="from-p-values-to-manhattan-plot" class="slide level2">
-<h2>From P-values to Manhattan Plot</h2>
+<section id="how-gwas-works-single-marker-test" class="slide level2">
+<h2>How GWAS Works: Single Marker Test</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="cell">
@@ -2389,6 +2475,71 @@ y_i = \mu + \beta x_{ij} + \varepsilon_i
 <div>
 <figure>
 <p><img data-src="introduction_quantitative_genetics_files/figure-revealjs/unnamed-chunk-9-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<p><strong>The Additive Model</strong></p>
+<p>We fit a linear regression: <span class="math display">\[y = \mu + x\beta + \varepsilon\]</span></p>
+<ul>
+<li><strong><span class="math inline">\(y\)</span></strong>: Phenotype (LDL)</li>
+<li><strong><span class="math inline">\(x\)</span></strong>: Genotype (0, 1, or 2)</li>
+<li><strong><span class="math inline">\(\beta\)</span></strong>: Effect size per allele</li>
+</ul>
+<p><strong>Interpretation</strong></p>
+<ul>
+<li><span class="math inline">\(\beta\)</span> represents the average change in LDL for each additional <strong>T</strong> allele.</li>
+<li>The <strong><span class="math inline">\(p\)</span>-value</strong> from this model tests the null hypothesis: <span class="math inline">\(\beta = 0\)</span>.</li>
+<li>Here, each <strong>T</strong> allele significantly decreases LDL.</li>
+</ul>
+</div></div>
+<aside class="notes">
+<p>This slide demonstrates how we move from biological groups to statistical testing. In the boxplot, we see the distributions of LDL for each genotype group. The green boxes show that as we increase the number of T alleles, the mean LDL drops significantly. To test this formally, we treat the genotype as a numeric variable (0, 1, 2) and fit a linear model. The red line represents our “Additive Model.” The slope of this line is our beta coefficient. In GWAS, we perform this same test millions of times, once for every SNP in the genome, looking for slopes that are significantly different from zero.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="how-gwas-works-many-marker-test" class="slide level2">
+<h2>How GWAS Works: Many Marker Test</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="introduction_quantitative_genetics_files/figure-revealjs/unnamed-chunk-10-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<p><strong>The Interpretation</strong></p>
+<ul>
+<li><strong>Association Peak:</strong> The highest points cluster over a specific genomic region.</li>
+<li><strong>Candidate Gene (QTL):</strong> The vertical dashed line shows the “lead SNP” falls directly within <strong>Gene B</strong>.</li>
+<li><strong>The “Neighborhood” Effect:</strong> Note how the shading spans the whole gene. Because of LD, many SNPs in the red-shaded region appear significant, but only one gene is likely the true functional driver.</li>
+</ul>
+<p><strong>Key point</strong> This visual demonstrates <strong>Fine-Mapping</strong>: the process of narrowing down a broad GWAS “skyscraper” to the specific gene region most likely to contain the causal variant.</p>
+</div></div>
+</section>
+<section id="how-gwas-works-from-p-values-to-manhattan-plot" class="slide level2">
+<h2>How GWAS Works: From P-values to Manhattan Plot</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="introduction_quantitative_genetics_files/figure-revealjs/unnamed-chunk-11-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -2405,7 +2556,7 @@ against the null hypothesis.</p>
 <p><strong>Dashed line</strong></p>
 <ul>
 <li>Genome-wide significance threshold<br>
-(e.g.&nbsp;<span class="math inline">\(p = 5 \times 10^{-8}\)</span>)</li>
+<span class="math inline">\(\bigl(\text{e.g., } p &lt; 5\times10^{-8}\bigr)\)</span></li>
 </ul>
 <p>Peaks indicate genomic regions<br>
 associated with the trait.</p>
@@ -2543,48 +2694,122 @@ for several common human diseases.</p>
           display:block!important;
       }</style></aside>
 </section>
-<section id="review-quantitative-genetics" class="slide level2">
-<h2>Review – Quantitative Genetics</h2>
+<section id="quantitative-genetics" class="slide level2">
+<h2>Quantitative Genetics</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Quantitative genetics studies <strong>complex traits</strong>:</p>
+<p><strong>What is studied?</strong></p>
 <ul>
-<li>Influenced by multiple genes<br>
+<li>Complex traits influenced by many genes and environment<br>
 </li>
-<li>Influenced by environment<br>
-</li>
-<li>Do not follow simple Mendelian ratios</li>
+<li>Traits that do not follow simple Mendelian ratios</li>
 </ul>
-<p><strong>Types of complex traits</strong></p>
+<p>Examples:</p>
 <ul>
 <li>Continuous (e.g., height)<br>
 </li>
 <li>Threshold (e.g., disease status)<br>
 </li>
-<li>Meristic (counting traits)</li>
+<li>Meristic (e.g., litter size)</li>
 </ul>
+<p><br></p>
 </div><div class="column" style="width:50%;">
-<p><strong>Central concept: Genetic architecture</strong></p>
+<p><strong>Core model</strong></p>
+<p><span class="math display">\[
+P = G + E
+\]</span></p>
 <ul>
-<li>Number of genes involved<br>
+<li>Phenotypic variation arises from genetic and environmental effects<br>
 </li>
-<li>Effect sizes of loci<br>
-</li>
-<li>Environmental contribution<br>
-</li>
-<li>Gene–gene interactions<br>
-</li>
-<li>Gene–environment interactions</li>
+<li>Key question: How much variation is genetic?</li>
 </ul>
-<p>Quantitative genetics seeks to explain<br>
-how these components generate phenotypic variation.</p>
+<p><br></p>
+<p><strong>Why it matters</strong></p>
+<ul>
+<li>Estimate heritability<br>
+</li>
+<li>Predict genetic risk or breeding values<br>
+</li>
+<li>Predict response to selection<br>
+</li>
+<li>Understand evolutionary change</li>
+</ul>
 </div></div>
 <aside class="notes">
-<p>Quantitative genetics studies traits that do not follow simple Mendelian inheritance.</p>
-<p>Complex traits are influenced by: multiple genes, environmental factors, and interactions among them.</p>
-<p>They may appear as: continuous traits like height, threshold traits like disease status, or meristic traits such as litter size.</p>
-<p>A central goal is to understand genetic architecture: how many loci are involved, how large their effects are, and how genes and environment interact.</p>
-<p>This framework is essential in medicine, agriculture, and evolutionary biology.</p>
+<p>Quantitative genetics studies complex traits — traits influenced by many genes and environmental factors.</p>
+<p>These traits do not follow simple Mendelian inheritance.</p>
+<p>They may be continuous, such as height, threshold traits such as disease status, or meristic traits such as litter size.</p>
+<p>At the core of quantitative genetics is the simple model: phenotype equals genotype plus environment.</p>
+<p>Phenotypic variation arises from genetic differences, environmental differences, or both.</p>
+<p>The central question is: how much of the observed variation is due to genetic variation?</p>
+<p>This leads to heritability and to the broader concept of genetic architecture.</p>
+<p>These tools allow us to estimate breeding values, predict genetic risk, forecast response to selection, and understand evolutionary change.</p>
+<p>In essence, quantitative genetics provides the mathematical framework for understanding and predicting complex trait variation in populations.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="genetic-model-and-response-to-selection" class="slide level2">
+<h2>Genetic Model and Response to Selection</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Genetic Model</strong></p>
+<p><br></p>
+<p>Genetic deviation:</p>
+<p><span class="math display">\[
+G = A + D
+\]</span></p>
+<ul>
+<li><span class="math inline">\(A\)</span> = additive deviation (breeding value)<br>
+</li>
+<li><span class="math inline">\(D\)</span> = dominance deviation</li>
+</ul>
+<p><br> Only additive effects are predictably transmitted<br>
+from parents to offspring.</p>
+<p><br> Additive variance (<span class="math inline">\(V_A\)</span>) is the key component for long-term genetic change.</p>
+</div><div class="column" style="width:50%;">
+<p><strong>Breeder’s Equation</strong></p>
+<p><br></p>
+<p>Response to selection:</p>
+<p><span class="math display">\[
+R = h^2 S
+\]</span></p>
+<ul>
+<li><span class="math inline">\(S\)</span> = selection differential<br>
+</li>
+<li><span class="math inline">\(R\)</span> = response to selection<br>
+</li>
+<li><span class="math inline">\(h^2 = \dfrac{V_A}{V_P}\)</span></li>
+</ul>
+<p>Response depends on:</p>
+<ul>
+<li>Strength of selection<br>
+</li>
+<li>Amount of additive genetic variation</li>
+</ul>
+<p>High <span class="math inline">\(h^2\)</span> → rapid response<br>
+Low <span class="math inline">\(h^2\)</span> → limited response</p>
+</div></div>
+<aside class="notes">
+<p>We begin with the genetic model.</p>
+<p>The genetic deviation can be decomposed into additive and dominance components.</p>
+<p>The additive component, A, represents the breeding value. It is the part that is predictably transmitted from parent to offspring.</p>
+<p>Dominance effects depend on specific allele combinations. They influence phenotype, but they are not transmitted in a predictable way across generations.</p>
+<p>This is why additive variance is the key driver of evolutionary change.</p>
+<p>Now we connect this to selection.</p>
+<p>The breeder’s equation states that response equals heritability times the selection differential.</p>
+<p>Heritability reflects the proportion of variation that is additive.</p>
+<p>If additive variance is large, selection produces rapid change.</p>
+<p>If additive variance is small, response is limited.</p>
+<p>So the genetic model explains why the breeder’s equation works: only additive effects fuel sustained evolutionary change.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -2615,14 +2840,12 @@ h^2 = \frac{V_A}{V_P}
 \]</span></p>
 </div><div class="column" style="width:50%;">
 <p><strong>Interpretation</strong></p>
-<p>Phenotype = population mean<br>
-+ genetic deviation<br>
-+ environmental deviation</p>
-<p>Total variation can be partitioned into: - Genetic variance<br>
-- Environmental variance</p>
+<p>Total variation can be partitioned into Genetic variance and Environmental variance</p>
+<p><br></p>
 <p><strong>Broad-sense heritability (H²)</strong><br>
 Proportion of total variation due to genetic effects<br>
 (additive, dominance, epistatic).</p>
+<p><br></p>
 <p><strong>Narrow-sense heritability (h²)</strong><br>
 Proportion due to additive (transmissible) variation.</p>
 <p>Only additive variance predicts response to selection.</p>
@@ -2647,68 +2870,8 @@ Proportion due to additive (transmissible) variation.</p>
           display:block!important;
       }</style></aside>
 </section>
-<section id="additive-effects-and-prediction" class="slide level2">
-<h2>Additive Effects and Prediction</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Genetic deviation</strong> <span class="math display">\[
-G = A + D
-\]</span></p>
-<ul>
-<li>(A) = additive deviation (breeding value)<br>
-</li>
-<li>(D) = dominance deviation</li>
-</ul>
-<p>Only additive effects are predictably transmitted.</p>
-<p><strong>Response to selection</strong> <span class="math display">\[
-R = h^2 S
-\]</span></p>
-<ul>
-<li>(S) = selection differential<br>
-</li>
-<li>(R) = response</li>
-</ul>
-<p>Traits respond to selection when additive variation exists.</p>
-</div><div class="column" style="width:50%;">
-<p><strong>Interpretation</strong></p>
-<p>Genetic effects can be decomposed into:</p>
-<ul>
-<li>Additive effects → transmitted<br>
-</li>
-<li>Dominance effects → not predictably transmitted</li>
-</ul>
-<p>Additive variance drives: - Evolutionary change<br>
-- Artificial selection</p>
-<p>Breeder’s equation:</p>
-<p>Response depends on: - Strength of selection ((S))<br>
-- Amount of additive variance ((h^2))</p>
-<p>High (h^2) → rapid response<br>
-Low (h^2) → limited response</p>
-</div></div>
-<aside class="notes">
-<p>We decompose genetic deviation into additive and dominance components.</p>
-<p>Additive effects represent breeding value — the component transmitted predictably from parent to offspring.</p>
-<p>Dominance effects depend on allele combinations and are not predictably inherited across generations.</p>
-<p>Additive variance drives evolutionary change and artificial selection.</p>
-<p>The breeder’s equation states:</p>
-<p>Response equals heritability times selection differential.</p>
-<p>If heritability is high, selection produces rapid change.</p>
-<p>If heritability is low, response is limited.</p>
-<p>Long-term selection experiments demonstrate that many populations contain substantial additive genetic variation.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="summary-mapping-complex-traits" class="slide level2">
-<h2>Summary – Mapping Complex Traits</h2>
+<section id="mapping-complex-traits" class="slide level2">
+<h2>Mapping Complex Traits</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><strong>The Goal of Mapping</strong></p>
@@ -2716,6 +2879,7 @@ Low (h^2) → limited response</p>
 <li>Move from <strong>statistical variance</strong> (<span class="math inline">\(V_G\)</span>) to <strong>physical loci</strong> (QTLs).</li>
 <li>Identify which specific regions of the genome drive the trait.</li>
 </ul>
+<p><br></p>
 <p><strong>The Strategy: GWAS</strong></p>
 <ul>
 <li>Scan the whole genome using <strong>SNPs</strong>.</li>
@@ -2729,6 +2893,7 @@ Low (h^2) → limited response</p>
 <li><strong>Small Effects:</strong> Most individual variants explain <span class="math inline">\(&lt;1\%\)</span> of the variance.</li>
 <li><strong>Non-coding regions:</strong> Many QTLs are in regulatory regions, not just proteins.</li>
 </ul>
+<p><br></p>
 <p><strong>The Result: Manhattan Plot</strong></p>
 <ul>
 <li>Skyscrapers = Genomic regions in LD with a causal variant.</li>
@@ -3056,6 +3221,42 @@ we can begin to ask whether the difference is due to genetics, environment, or b
 Later, we will connect this idea to how variance can be partitioned into genetic and environmental components.
 
 :::
+
+## What Are Complex (Quantitative) Traits?
+
+Quantitative (complex) traits:
+
+- Show a **continuous range of variation**
+- Do **not** follow simple Mendelian ratios
+- Are influenced by:
+  - **Multiple genes** (Polygenic)
+  - **Environmental factors**
+
+Examples:
+
+- Human height, Blood pressure, Crop yield, Milk production
+
+**Multifactorial hypothesis**
+
+- Many Mendelian loci (each with a small effect)
+- Environmental contributions
+
+::: notes
+
+Complex traits differ fundamentally from the Mendelian traits we studied earlier. Instead of clear, discrete categories—like Mendel's purple vs. white flowers—we see a **continuous spectrum**.
+
+Take human height: people aren't just "tall" or "short." They vary across a bell curve. This variation comes from two sources: **multiple genes**, each contributing a small nudge to the phenotype, and **environmental factors** like nutrition and lifestyle.
+
+Historically, this caused a massive rift in biology. When Mendel’s laws were rediscovered in 1900, scientists couldn't see how his "discrete units" could possibly explain "continuous variation." 
+
+On one side, the **Biometricians** argued that continuous traits were too complex for Mendel's laws. On the other, the **Mendelians** focused only on discrete traits and ignored the rest.
+
+The resolution was the **Multifactorial Hypothesis**. It proved that if you have enough Mendelian loci—each following Mendel’s laws but each having only a tiny effect—the result is a smooth, continuous distribution. 
+
+This slide represents the **birth of Quantitative Genetics**: the synthesis that unified Mendelian inheritance with the statistical description of variation.
+
+:::
+
 
 
 -->
