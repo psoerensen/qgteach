@@ -21,6 +21,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -251,6 +286,52 @@ window.Quarto = {
 <li><strong>Pedigrees &amp; History:</strong> Plotting family trees to clarify inbreeding and utilizing coalescent models to examine ancestral history.</li>
 </ul>
 <p><strong>Use of Code:</strong> The R code is provided as a starting point for experimentation. The modification of parameters—such as changing the population size or the strength of selection—allows for the observation of changes in genetic outcomes.</p>
+</section>
+<section id="interactive-laboratory" class="level2">
+<h2 class="anchored" data-anchor-id="interactive-laboratory">Interactive Laboratory</h2>
+<p>This course includes interactive tools that let you explore key ideas in population and quantitative genetics by changing parameters and immediately seeing the consequences.</p>
+<section id="population-genetics-simulators" class="level3">
+<h3 class="anchored" data-anchor-id="population-genetics-simulators">Population Genetics Simulators</h3>
+<ul>
+<li><p><strong>Hardy–Weinberg Explorer</strong><br>
+Explore genotype and allele frequencies under Hardy–Weinberg assumptions.<br>
+🔗 <a href="https://yourapp.shinyapps.io/hwe_app">Launch app</a></p></li>
+<li><p><strong>Genetic Drift Simulator</strong><br>
+Simulate drift under different population sizes and starting allele frequencies.<br>
+🔗 <a href="https://yourapp.shinyapps.io/drift_app">Launch app</a></p></li>
+<li><p><strong>Selection Dynamics</strong><br>
+Explore directional and balancing selection across generations.<br>
+🔗 <a href="https://yourapp.shinyapps.io/selection_app">Launch app</a></p></li>
+</ul>
+</section>
+<section id="quantitative-genetics-tools" class="level3">
+<h3 class="anchored" data-anchor-id="quantitative-genetics-tools">Quantitative Genetics Tools</h3>
+<ul>
+<li><p><strong>Heritability Estimation Using Different Types of Relatives</strong><br>
+Estimate narrow-sense heritability using regression on relatives.<br>
+🔗 <a href="https://peter-soerensen.shinyapps.io/estimation_heritability_regression">Launch app</a></p></li>
+<li><p><strong>Breeding Value Estimation from a Single Information Source</strong><br>
+Investigate estimation of additive genetic effects based on limited data.<br>
+🔗 <a href="https://peter-soerensen.shinyapps.io/estimation_breeding_value_single_source/">Launch app</a></p></li>
+</ul>
+</section>
+<section id="downloadable-r-scripts" class="level3">
+<h3 class="anchored" data-anchor-id="downloadable-r-scripts">Downloadable R Scripts</h3>
+<p>Some tools are provided as standalone R scripts for local execution:</p>
+<ul>
+<li><p><strong>Hardy–Weinberg simulation script</strong><br>
+💾 <a href="apps/hwe_simulation.R">Download</a></p></li>
+<li><p><strong>Drift simulatio script</strong><br>
+💾 <a href="apps/drift_example.R">Download</a></p></li>
+</ul>
+<p>To run a script locally:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"apps/hwe_simulation.R"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: pakke 'ggplot2' blev bygget under R version 4.4.3</code></pre>
+</div>
+</div>
+</section>
 </section>
 <section id="prerequisites" class="level2">
 <h2 class="anchored" data-anchor-id="prerequisites">Prerequisites</h2>

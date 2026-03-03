@@ -79,6 +79,53 @@ Hands-on tutorials are integrated into the course to explore genetic principles 
 **Use of Code:** 
 The R code is provided as a starting point for experimentation. The modification of parameters—such as changing the population size or the strength of selection—allows for the observation of changes in genetic outcomes.
 
+
+## Interactive Laboratory
+
+This course includes interactive tools that let you explore key ideas in population and quantitative genetics by changing parameters and immediately seeing the consequences.
+
+### Population Genetics Simulators
+
+- **Hardy–Weinberg Explorer**  
+  Explore genotype and allele frequencies under Hardy–Weinberg assumptions.  
+  🔗 [Launch app](https://yourapp.shinyapps.io/hwe_app)
+
+- **Genetic Drift Simulator**  
+  Simulate drift under different population sizes and starting allele frequencies.  
+  🔗 [Launch app](https://yourapp.shinyapps.io/drift_app)
+
+- **Selection Dynamics**  
+  Explore directional and balancing selection across generations.  
+  🔗 [Launch app](https://yourapp.shinyapps.io/selection_app)
+
+### Quantitative Genetics Tools
+
+- **Heritability Estimation Using Different Types of Relatives**  
+  Estimate narrow-sense heritability using regression on relatives.  
+  🔗 [Launch app](https://peter-soerensen.shinyapps.io/estimation_heritability_regression)
+
+- **Breeding Value Estimation from a Single Information Source**  
+  Investigate estimation of additive genetic effects based on limited data.  
+  🔗 [Launch app](https://peter-soerensen.shinyapps.io/estimation_breeding_value_single_source/)
+  
+  
+### Downloadable R Scripts
+
+Some tools are provided as standalone R scripts for local execution:
+
+- **Hardy–Weinberg simulation script**  
+  💾 [Download](apps/hwe_simulation.R)
+
+- **Drift simulatio script**  
+  💾 [Download](apps/drift_example.R)
+
+To run a script locally:
+
+```{r}
+source("apps/hwe_simulation.R")
+```
+
+
 ## Prerequisites
 
 Engagement with the material assumes:

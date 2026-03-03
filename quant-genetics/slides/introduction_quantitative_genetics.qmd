@@ -475,8 +475,6 @@ form the foundation for everything we do in quantitative genetics.
 
 ::: {.column width="50%"}
 
-**Definition**
-
 When studying quantitative traits, we usually sample from a population.
 
 <br>
@@ -560,8 +558,6 @@ The sample mean is our best estimate of the unknown population mean.
 ::: {.columns}
 
 ::: {.column width="50%"}
-
-**Definition**
 
 Variance describes the spread of the data.
 
