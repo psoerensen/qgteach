@@ -1,12 +1,10 @@
 ---
-title: "Teaching"
-subtitle: "Quantitative Genetics, Population Genetics, and Genomics"
+title: "Teaching Materials"
+subtitle: "Quantitative Genetics, Genomics, and Statistical Modeling"
 toc: false
 ---
 
-Welcome to the teaching portal of **Peter Sørensen**.
-
-This site hosts structured course material, lecture notes, slides, and computational demonstrations in quantitative genetics and genomics. All material is reproducible and built using R and Quarto.
+This site hosts structured course materials, lecture notes, slides, and computational demonstrations in quantitative genetics, genomics, and statistical modeling. All materials are reproducible and developed using R and Quarto.
 
 ---
 
@@ -18,7 +16,7 @@ This site hosts structured course material, lecture notes, slides, and computati
 
 ### 📘 Quantitative & Population Genetics
 
-This module introduces the principles of population and quantitative genetics, including genetic variation, Hardy–Weinberg equilibrium, inbreeding, mutation, recombination, linkage disequilibrium, genetic drift, and natural selection. It also presents statistical approaches for analyzing complex traits, including heritability estimation, phenotype prediction, and genome-wide association signals.
+This module introduces the principles of population and quantitative genetics, including genetic variation, Hardy–Weinberg equilibrium, inbreeding, mutation, recombination, linkage disequilibrium, genetic drift, and natural selection. It also presents statistical approaches for analyzing complex traits, including heritability estimation, phenotype prediction, and genome-wide association studies (GWAS).
 
 [Go to Course →](quant-genetics/)
 
@@ -28,7 +26,7 @@ This module introduces the principles of population and quantitative genetics, i
 
 ### 🧬 Genomics, Systems Biology & Bioinformatics
 
-This module explores how genomic and multi-omics data can be used to understand complex biological systems. Topics include sequencing technologies, integration of molecular data, genome-wide association studies (GWAS), fine-mapping, network models, and machine learning approaches for analyzing biological data.
+This module explores how genomic and multi-omics data can be used to understand complex biological systems. Topics include sequencing technologies, integration of molecular data, genome-wide association studies (GWAS), network models, and machine learning approaches for analyzing biological data.
 
 [Go to Course →](genomics-systems-bioinfo/)
 
@@ -45,6 +43,7 @@ This module explores how genomic and multi-omics data can be used to understand 
 This module introduces Bayesian linear regression through theoretical notes, slides, and practical R examples. It covers prior specification, posterior inference using Gibbs sampling, and model interpretation, with emphasis on practical implementation and convergence assessment.
 
 [Go to Course →](https://psoerensen.github.io/bayesian-linear-regression/)
+
 :::
 
 ::: {.column width="50%"}
@@ -55,40 +54,6 @@ This module introduces Bayesian linear regression through theoretical notes, sli
 
 :::
 
-<!-- ## 🎓 Courses -->
-
-<!-- ::: {.columns} -->
-
-<!-- ::: {.column width="50%"} -->
-
-<!-- ### 📘 Quantitative & Population Genetics -->
-
-<!-- This course covers the foundations of population and quantitative genetics, including the measurement and interpretation of genetic variation, Hardy–Weinberg equilibrium, inbreeding, mutation, recombination, linkage disequilibrium, genetic drift, and natural selection. It introduces statistical approaches for analyzing complex traits, including partitioning genetic and environmental sources of variation, estimating broad- and narrow-sense heritability, predicting phenotypes from parental values, and mapping quantitative trait loci (QTL) and association signals. -->
-
-
-
-<!-- [Go to Course →](quant-genetics/) -->
-
-<!-- ::: -->
-
-<!-- ::: {.column width="50%"} -->
-
-<!-- ### 🧬 Genomics, Systems Biology & Bioinformatics -->
-
-<!-- Modern molecular data analysis and systems-level modeling: -->
-
-<!-- - Sequencing technologies   -->
-<!-- - Multi-omics integration   -->
-<!-- - GWAS and fine-mapping   -->
-<!-- - Network models   -->
-<!-- - Machine learning in genomics   -->
-<!-- - Computational reproducibility   -->
-
-<!-- [Go to Course →](genomics-systems-bioinfo/) -->
-
-<!-- ::: -->
-
-<!-- ::: -->
 
 ---
 
@@ -100,25 +65,13 @@ The material emphasizes:
 - Statistical modeling  
 - Reproducible research  
 - Computational implementation in R  
-- Conceptual clarity over memorization  
+- Conceptual understanding of methods  
 
-All lecture material integrates theory, simulation, and applied examples.
-
----
-
-## 📂 Repository Structure
-
-Each course is structured as a navigable book with:
-
-- Sequential chapters  
-- Mathematical notation  
-- Executable R code  
-- Figures and simulations  
-- Narrated slide material where relevant  
+Lecture materials integrate theory, simulation, and applied examples.
 
 ---
 
-### Further Reading
+## 📚 Further Reading
 
 For foundational principles of classical and molecular genetics:
 
@@ -148,10 +101,12 @@ For an accessible and application-oriented introduction to statistical learning 
 **[James, G., Witten, D., Hastie, T., & Tibshirani, R. (2021). *An Introduction to Statistical Learning: With Applications in R* (2nd ed.). Springer.](https://link.springer.com/book/10.1007/978-1-0716-1418-1)**  
 
 
- 
-
 ## 📫 Contact
 
+Peter Sørensen  
 Center for Quantitative Genetics and Genomics  
+Department of Molecular Biology and Genetics  
 Aarhus University, Denmark  
 
+Email: pso@qgg.au.dk  
+GitHub: https://github.com/psoerensen

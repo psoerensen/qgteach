@@ -1199,37 +1199,37 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Teaching",
+    "title": "Teaching Materials",
     "section": "",
-    "text": "Welcome to the teaching portal of Peter Sørensen.\nThis site hosts structured course material, lecture notes, slides, and computational demonstrations in quantitative genetics and genomics. All material is reproducible and built using R and Quarto."
+    "text": "This site hosts structured course materials, lecture notes, slides, and computational demonstrations in quantitative genetics, genomics, and statistical modeling. All materials are reproducible and developed using R and Quarto."
   },
   {
     "objectID": "index.html#courses",
     "href": "index.html#courses",
-    "title": "Teaching",
+    "title": "Teaching Materials",
     "section": "🎓 Courses",
-    "text": "🎓 Courses\n\n\n\n📘 Quantitative & Population Genetics\nThis module introduces the principles of population and quantitative genetics, including genetic variation, Hardy–Weinberg equilibrium, inbreeding, mutation, recombination, linkage disequilibrium, genetic drift, and natural selection. It also presents statistical approaches for analyzing complex traits, including heritability estimation, phenotype prediction, and genome-wide association signals.\nGo to Course →\n\n\n\n🧬 Genomics, Systems Biology & Bioinformatics\nThis module explores how genomic and multi-omics data can be used to understand complex biological systems. Topics include sequencing technologies, integration of molecular data, genome-wide association studies (GWAS), fine-mapping, network models, and machine learning approaches for analyzing biological data.\nGo to Course →\n\n\n\n\n\n\n📊 Bayesian Linear Regression\nThis module introduces Bayesian linear regression through theoretical notes, slides, and practical R examples. It covers prior specification, posterior inference using Gibbs sampling, and model interpretation, with emphasis on practical implementation and convergence assessment.\nGo to Course →"
+    "text": "🎓 Courses\n\n\n\n📘 Quantitative & Population Genetics\nThis module introduces the principles of population and quantitative genetics, including genetic variation, Hardy–Weinberg equilibrium, inbreeding, mutation, recombination, linkage disequilibrium, genetic drift, and natural selection. It also presents statistical approaches for analyzing complex traits, including heritability estimation, phenotype prediction, and genome-wide association studies (GWAS).\nGo to Course →\n\n\n\n🧬 Genomics, Systems Biology & Bioinformatics\nThis module explores how genomic and multi-omics data can be used to understand complex biological systems. Topics include sequencing technologies, integration of molecular data, genome-wide association studies (GWAS), network models, and machine learning approaches for analyzing biological data.\nGo to Course →\n\n\n\n\n\n\n📊 Bayesian Linear Regression\nThis module introduces Bayesian linear regression through theoretical notes, slides, and practical R examples. It covers prior specification, posterior inference using Gibbs sampling, and model interpretation, with emphasis on practical implementation and convergence assessment.\nGo to Course →"
   },
   {
     "objectID": "index.html#teaching-philosophy",
     "href": "index.html#teaching-philosophy",
-    "title": "Teaching",
+    "title": "Teaching Materials",
     "section": "💻 Teaching Philosophy",
-    "text": "💻 Teaching Philosophy\nThe material emphasizes:\n\nMathematical foundations\n\nStatistical modeling\n\nReproducible research\n\nComputational implementation in R\n\nConceptual clarity over memorization\n\nAll lecture material integrates theory, simulation, and applied examples."
+    "text": "💻 Teaching Philosophy\nThe material emphasizes:\n\nMathematical foundations\n\nStatistical modeling\n\nReproducible research\n\nComputational implementation in R\n\nConceptual understanding of methods\n\nLecture materials integrate theory, simulation, and applied examples."
   },
   {
-    "objectID": "index.html#repository-structure",
-    "href": "index.html#repository-structure",
-    "title": "Teaching",
-    "section": "📂 Repository Structure",
-    "text": "📂 Repository Structure\nEach course is structured as a navigable book with:\n\nSequential chapters\n\nMathematical notation\n\nExecutable R code\n\nFigures and simulations\n\nNarrated slide material where relevant\n\n\n\nFurther Reading\nFor foundational principles of classical and molecular genetics:\nGriffiths, A. J. F., Doebley, J. F., Peichel, C. L., & Wassarman, D. A. (2023). An Introduction to Genetic Analysis (13th ed.). W. H. Freeman.\nFor a unified and modern treatment of quantitative genetics theory and genomics:\nWalsh, B., Visscher, P. M., & Lynch, M. (2025). Genetics and Analysis of Quantitative Traits: Foundations (2nd ed.). Cambridge University Press.\nFor Bayesian modeling, hierarchical inference, and statistical learning in quantitative genetics and genomics:\nSorensen, D. (2025). Statistical Learning in Genetics: An Introduction Using R. Springer.\nFor likelihood-based and Bayesian inference, including detailed treatment of MCMC methods:\nSorensen, D., & Gianola, D. (2002/2010). Likelihood, Bayesian, and MCMC Methods in Quantitative Genetics. Springer.\nFor a comprehensive and mathematically rigorous treatment of modern statistical learning:\nHastie, T., Tibshirani, R., & Friedman, J. (2009). The Elements of Statistical Learning: Data Mining, Inference, and Prediction (2nd ed.). Springer.\nFor an accessible and application-oriented introduction to statistical learning with R:\nJames, G., Witten, D., Hastie, T., & Tibshirani, R. (2021). An Introduction to Statistical Learning: With Applications in R (2nd ed.). Springer."
+    "objectID": "index.html#further-reading",
+    "href": "index.html#further-reading",
+    "title": "Teaching Materials",
+    "section": "📚 Further Reading",
+    "text": "📚 Further Reading\nFor foundational principles of classical and molecular genetics:\nGriffiths, A. J. F., Doebley, J. F., Peichel, C. L., & Wassarman, D. A. (2023). An Introduction to Genetic Analysis (13th ed.). W. H. Freeman.\nFor a unified and modern treatment of quantitative genetics theory and genomics:\nWalsh, B., Visscher, P. M., & Lynch, M. (2025). Genetics and Analysis of Quantitative Traits: Foundations (2nd ed.). Cambridge University Press.\nFor Bayesian modeling, hierarchical inference, and statistical learning in quantitative genetics and genomics:\nSorensen, D. (2025). Statistical Learning in Genetics: An Introduction Using R. Springer.\nFor likelihood-based and Bayesian inference, including detailed treatment of MCMC methods:\nSorensen, D., & Gianola, D. (2002/2010). Likelihood, Bayesian, and MCMC Methods in Quantitative Genetics. Springer.\nFor a comprehensive and mathematically rigorous treatment of modern statistical learning:\nHastie, T., Tibshirani, R., & Friedman, J. (2009). The Elements of Statistical Learning: Data Mining, Inference, and Prediction (2nd ed.). Springer.\nFor an accessible and application-oriented introduction to statistical learning with R:\nJames, G., Witten, D., Hastie, T., & Tibshirani, R. (2021). An Introduction to Statistical Learning: With Applications in R (2nd ed.). Springer."
   },
   {
     "objectID": "index.html#contact",
     "href": "index.html#contact",
-    "title": "Teaching",
+    "title": "Teaching Materials",
     "section": "📫 Contact",
-    "text": "📫 Contact\nCenter for Quantitative Genetics and Genomics\nAarhus University, Denmark"
+    "text": "📫 Contact\nPeter Sørensen\nCenter for Quantitative Genetics and Genomics\nDepartment of Molecular Biology and Genetics\nAarhus University, Denmark\nEmail: pso@qgg.au.dk\nGitHub: https://github.com/psoerensen"
   },
   {
     "objectID": "quant-genetics/slides/introduction_population_genetics.html#learning-goals-population-genetics",
