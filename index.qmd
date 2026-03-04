@@ -18,9 +18,7 @@ This site hosts structured course material, lecture notes, slides, and computati
 
 ### 📘 Quantitative & Population Genetics
 
-This course covers the foundations of population and quantitative genetics, including the measurement and interpretation of genetic variation, Hardy–Weinberg equilibrium, inbreeding, mutation, recombination, linkage disequilibrium, genetic drift, and natural selection. It introduces statistical approaches for analyzing complex traits, including partitioning genetic and environmental sources of variation, estimating broad- and narrow-sense heritability, predicting phenotypes from parental values, and mapping quantitative trait loci (QTL) and association signals.
-
-
+This module introduces the principles of population and quantitative genetics, including genetic variation, Hardy–Weinberg equilibrium, inbreeding, mutation, recombination, linkage disequilibrium, genetic drift, and natural selection. It also presents statistical approaches for analyzing complex traits, including heritability estimation, phenotype prediction, and genome-wide association signals.
 
 [Go to Course →](quant-genetics/)
 
@@ -30,20 +28,67 @@ This course covers the foundations of population and quantitative genetics, incl
 
 ### 🧬 Genomics, Systems Biology & Bioinformatics
 
-Modern molecular data analysis and systems-level modeling:
-
-- Sequencing technologies  
-- Multi-omics integration  
-- GWAS and fine-mapping  
-- Network models  
-- Machine learning in genomics  
-- Computational reproducibility  
+This module explores how genomic and multi-omics data can be used to understand complex biological systems. Topics include sequencing technologies, integration of molecular data, genome-wide association studies (GWAS), fine-mapping, network models, and machine learning approaches for analyzing biological data.
 
 [Go to Course →](genomics-systems-bioinfo/)
 
 :::
 
 :::
+
+::: {.columns}
+
+::: {.column width="50%"}
+
+### 📊 Bayesian Linear Regression
+
+This module introduces Bayesian linear regression through theoretical notes, slides, and practical R examples. It covers prior specification, posterior inference using Gibbs sampling, and model interpretation, with emphasis on practical implementation and convergence assessment.
+
+[Go to Course →](https://psoerensen.github.io/bayesian-linear-regression/)
+:::
+
+::: {.column width="50%"}
+
+<!-- future module -->
+
+:::
+
+:::
+
+<!-- ## 🎓 Courses -->
+
+<!-- ::: {.columns} -->
+
+<!-- ::: {.column width="50%"} -->
+
+<!-- ### 📘 Quantitative & Population Genetics -->
+
+<!-- This course covers the foundations of population and quantitative genetics, including the measurement and interpretation of genetic variation, Hardy–Weinberg equilibrium, inbreeding, mutation, recombination, linkage disequilibrium, genetic drift, and natural selection. It introduces statistical approaches for analyzing complex traits, including partitioning genetic and environmental sources of variation, estimating broad- and narrow-sense heritability, predicting phenotypes from parental values, and mapping quantitative trait loci (QTL) and association signals. -->
+
+
+
+<!-- [Go to Course →](quant-genetics/) -->
+
+<!-- ::: -->
+
+<!-- ::: {.column width="50%"} -->
+
+<!-- ### 🧬 Genomics, Systems Biology & Bioinformatics -->
+
+<!-- Modern molecular data analysis and systems-level modeling: -->
+
+<!-- - Sequencing technologies   -->
+<!-- - Multi-omics integration   -->
+<!-- - GWAS and fine-mapping   -->
+<!-- - Network models   -->
+<!-- - Machine learning in genomics   -->
+<!-- - Computational reproducibility   -->
+
+<!-- [Go to Course →](genomics-systems-bioinfo/) -->
+
+<!-- ::: -->
+
+<!-- ::: -->
 
 ---
 
