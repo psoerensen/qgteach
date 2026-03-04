@@ -12,7 +12,7 @@ This site hosts structured course materials, lecture notes, slides, and computat
 
 ::: {.columns}
 
-::: {.column width="50%"}
+::: {.column width="48%"}
 
 ### 📘 Quantitative & Population Genetics
 
@@ -22,7 +22,7 @@ This module introduces the principles of population and quantitative genetics, i
 
 :::
 
-::: {.column width="50%"}
+::: {.column width="48%"}
 
 ### 🧬 Genomics, Systems Biology & Bioinformatics
 
