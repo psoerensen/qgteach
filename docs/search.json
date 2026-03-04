@@ -1201,7 +1201,7 @@
     "href": "index.html",
     "title": "Teaching Materials",
     "section": "",
-    "text": "This site hosts structured course materials, lecture notes, slides, and computational demonstrations in quantitative genetics, genomics, and statistical modeling. All materials are reproducible and developed using R and Quarto."
+    "text": "This site provides structured course materials, lecture notes, slides, and computational demonstrations in quantitative genetics, genomics, and statistical modeling. All materials are reproducible and developed using R and Quarto."
   },
   {
     "objectID": "index.html#courses",
@@ -1215,21 +1215,7 @@
     "href": "index.html#software",
     "title": "Teaching Materials",
     "section": "🧰 Software",
-    "text": "🧰 Software"
-  },
-  {
-    "objectID": "index.html#the-qgg-r-package",
-    "href": "index.html#the-qgg-r-package",
-    "title": "Teaching Materials",
-    "section": "The qgg R Package",
-    "text": "The qgg R Package\nqgg provides tools for statistical modeling and analysis of large-scale genomic data, including:\n\nFine-mapping of genomic regions using Bayesian Linear Regression (BLR) models\n\nPolygenic scoring using Bayesian Linear Regression (BLR) models\n\nGene set enrichment analysis using Bayesian Linear Regression (BLR) models\n\nqgg handles large-scale genomic data through efficient algorithms and sparse matrix techniques, combined with multi-core processing using OpenMP, multithreaded matrix operations via BLAS libraries (e.g., OpenBLAS, ATLAS, or MKL), and fast, memory-efficient batch processing of genotype data stored in\nbinary formats such as PLINK .bed files."
-  },
-  {
-    "objectID": "index.html#the-gact-r-package",
-    "href": "index.html#the-gact-r-package",
-    "title": "Teaching Materials",
-    "section": "The gact R Package",
-    "text": "The gact R Package\ngact provides an infrastructure for efficient processing of large-scale genomic association data, with core functions for:\n\nEstablishing and populating a database of genomic associations\n\nDownloading and processing biological databases\n\nHandling and processing GWAS summary statistics\n\nLinking genetic markers to genes, proteins, metabolites, and biological pathways\n\nIntegrates with statistical machine learning tools in the qgg R package\n\ngact is intended to serve as a practical implementation of integrative genomics, bridging statistical modeling and biological interpretation, and supporting reproducible and extensible workflows.\nSlides introducing the qgg and gact R packages\nTutorials using the qgg and gact R packages"
+    "text": "🧰 Software\n\nThe qgg R Package\nqgg provides tools for statistical modeling and analysis of large-scale genomic data, including:\n\nFine-mapping of genomic regions using Bayesian Linear Regression (BLR) models\n\nPolygenic scoring using Bayesian Linear Regression (BLR) models\n\nGene set enrichment analysis using Bayesian Linear Regression (BLR) models\n\nqgg handles large-scale genomic data through efficient algorithms and sparse matrix techniques, combined with multi-core processing using OpenMP, multithreaded matrix operations via BLAS libraries (e.g., OpenBLAS, ATLAS, or MKL), and fast, memory-efficient batch processing of genotype data stored in binary formats such as PLINK .bed files.\n\n\nThe gact R Package\ngact provides an infrastructure for efficient processing of large-scale genomic association data, with core functions for:\n\nEstablishing and populating a database of genomic associations\n\nDownloading and processing biological databases\n\nHandling and processing GWAS summary statistics\n\nLinking genetic markers to genes, proteins, metabolites, and biological pathways\n\nIntegration with statistical modeling tools in the qgg R package\n\ngact is intended to serve as a practical implementation of integrative genomics, bridging statistical modeling and biological interpretation, and supporting reproducible and extensible workflows.\nSlides introducing the qgg and gact R packages\nTutorials using the qgg and gact R packages"
   },
   {
     "objectID": "index.html#teaching-philosophy",

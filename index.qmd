@@ -4,7 +4,7 @@ subtitle: "Quantitative Genetics, Genomics, and Statistical Modeling"
 toc: false
 ---
 
-This site hosts structured course materials, lecture notes, slides, and computational demonstrations in quantitative genetics, genomics, and statistical modeling. All materials are reproducible and developed using R and Quarto.
+This site provides structured course materials, lecture notes, slides, and computational demonstrations in quantitative genetics, genomics, and statistical modeling. All materials are reproducible and developed using R and Quarto.
 
 ---
 
@@ -59,7 +59,8 @@ This module introduces Bayesian linear regression through theoretical notes, sli
 
 ## 🧰 Software
 
-## The *qgg* R Package
+
+### The *qgg* R Package
 
 [**qgg**](https://github.com/psoerensen/qgg) provides tools for statistical modeling and analysis of large-scale genomic data, including:
 
@@ -67,11 +68,10 @@ This module introduces Bayesian linear regression through theoretical notes, sli
 - Polygenic scoring using **Bayesian Linear Regression (BLR) models**  
 - Gene set enrichment analysis using **Bayesian Linear Regression (BLR) models**  
 
-*qgg* handles large-scale genomic data through **efficient algorithms** and **sparse matrix techniques**, combined with **multi-core processing** using **OpenMP**, **multithreaded matrix operations** via **BLAS** libraries (e.g., OpenBLAS, ATLAS, or MKL), and **fast, memory-efficient batch processing** of genotype data stored in  
-binary formats such as **PLINK `.bed` files**.
+*qgg* handles large-scale genomic data through **efficient algorithms** and **sparse matrix techniques**, combined with **multi-core processing** using **OpenMP**, **multithreaded matrix operations** via **BLAS** libraries (e.g., OpenBLAS, ATLAS, or MKL), and **fast, memory-efficient batch processing** of genotype data stored in binary formats such as **PLINK `.bed` files**.
 
 
-## The *gact* R Package
+### The *gact* R Package
 
 [**gact**](https://github.com/psoerensen/gact) provides an infrastructure for efficient processing of large-scale genomic association data, with core functions for:
 
@@ -79,7 +79,7 @@ binary formats such as **PLINK `.bed` files**.
 - Downloading and processing biological databases  
 - Handling and processing GWAS summary statistics  
 - Linking genetic markers to genes, proteins, metabolites, and biological pathways  
-- Integrates with statistical machine learning tools in the [**qgg**](https://github.com/psoerensen/qgg) R package  
+- Integration with statistical modeling tools in the [**qgg**](https://github.com/psoerensen/qgg) R package  
 
 *gact* is intended to serve as **a practical implementation of integrative genomics**, bridging **statistical modeling** and **biological interpretation**, and supporting **reproducible** and **extensible** workflows.
 
