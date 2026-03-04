@@ -83,10 +83,6 @@ This module introduces Bayesian linear regression through theoretical notes, sli
 
 *gact* is intended to serve as **a practical implementation of integrative genomics**, bridging **statistical modeling** and **biological interpretation**, and supporting **reproducible** and **extensible** workflows.
 
-[**Slides introducing the *qgg* and *gact* R packages**](https://psoerensen.github.io/bayesian-linear-regression/introduction_gact_qgg_slides.html)
-
-[**Tutorials using the *qgg* and *gact* R packages**](https://psoerensen.github.io/gact/)
-
 ---
 
 ## 💻 Teaching Philosophy
