@@ -1211,11 +1211,11 @@
     "text": "🎓 Courses\n\n\n\n📘 Quantitative & Population Genetics\nThis module introduces the principles of population and quantitative genetics, including genetic variation, Hardy–Weinberg equilibrium, inbreeding, mutation, recombination, linkage disequilibrium, genetic drift, and natural selection. It also presents statistical approaches for analyzing complex traits, including heritability estimation, phenotype prediction, and genome-wide association studies (GWAS).\nGo to Course →\n\n\n\n🧬 Genomics, Systems Biology & Bioinformatics\nThis module explores how genomic and multi-omics data can be used to understand complex biological systems. Topics include sequencing technologies, integration of molecular data, genome-wide association studies (GWAS), network models, and machine learning approaches for analyzing biological data.\nGo to Course →\n\n\n\n\n\n\n📊 Bayesian Linear Regression\nThis module introduces Bayesian linear regression through theoretical notes, slides, and practical R examples. It covers prior specification, posterior inference using Gibbs sampling, and model interpretation, with emphasis on practical implementation and convergence assessment.\nGo to Course →"
   },
   {
-    "objectID": "index.html#teaching-philosophy",
-    "href": "index.html#teaching-philosophy",
+    "objectID": "index.html#software",
+    "href": "index.html#software",
     "title": "Teaching Materials",
-    "section": "💻 Teaching Philosophy",
-    "text": "💻 Teaching Philosophy\nThe material emphasizes:\n\nMathematical foundations\n\nStatistical modeling\n\nReproducible research\n\nComputational implementation in R\n\nConceptual understanding of methods\n\nLecture materials integrate theory, simulation, and applied examples."
+    "section": "🧰 Software",
+    "text": "🧰 Software"
   },
   {
     "objectID": "index.html#the-qgg-r-package",
@@ -1232,11 +1232,11 @@
     "text": "The gact R Package\ngact provides an infrastructure for efficient processing of large-scale genomic association data, with core functions for:\n\nEstablishing and populating a database of genomic associations\n\nDownloading and processing biological databases\n\nHandling and processing GWAS summary statistics\n\nLinking genetic markers to genes, proteins, metabolites, and biological pathways\n\nIntegrates with statistical machine learning tools in the qgg R package\n\ngact is intended to serve as a practical implementation of integrative genomics, bridging statistical modeling and biological interpretation, and supporting reproducible and extensible workflows.\nSlides introducing the qgg and gact R packages\nTutorials using the qgg and gact R packages"
   },
   {
-    "objectID": "index.html#software",
-    "href": "index.html#software",
+    "objectID": "index.html#teaching-philosophy",
+    "href": "index.html#teaching-philosophy",
     "title": "Teaching Materials",
-    "section": "🧰 Software",
-    "text": "🧰 Software\n\n\n\nThe qgg R Package\nqgg provides tools for statistical modeling and analysis of large-scale genomic data, including:\n\nFine-mapping of genomic regions using Bayesian Linear Regression (BLR) models\n\nPolygenic scoring using Bayesian Linear Regression (BLR) models\n\nGene set enrichment analysis using Bayesian Linear Regression (BLR) models\n\nqgg is designed for large-scale genomic analyses using efficient algorithms, sparse matrix techniques, and parallel computing. It supports multi-core processing via OpenMP, multithreaded matrix operations through BLAS libraries (e.g., OpenBLAS, ATLAS, or MKL), and memory-efficient batch processing of genotype data stored in binary formats such as PLINK .bed files.\n\n\n\nThe gact R Package\ngact provides an infrastructure for efficient processing and integration of large-scale genomic association data. Core functionality includes:\n\nEstablishing and populating a database of genomic associations\n\nDownloading and processing biological databases\n\nHandling and processing GWAS summary statistics\n\nLinking genetic markers to genes, proteins, metabolites, and biological pathways\n\nIntegration with statistical modeling tools in the qgg R package\n\ngact supports integrative genomics workflows, connecting statistical modeling with biological interpretation while enabling reproducible and extensible analyses.\n\n\n\n\nAdditional Resources\n\nSlides introducing the qgg and gact R packages\nTutorials using the qgg and gact R packages"
+    "section": "💻 Teaching Philosophy",
+    "text": "💻 Teaching Philosophy\nThe material emphasizes:\n\nMathematical foundations\n\nStatistical modeling\n\nReproducible research\n\nComputational implementation in R\n\nConceptual understanding of methods\n\nLecture materials integrate theory, simulation, and applied examples."
   },
   {
     "objectID": "index.html#further-reading",

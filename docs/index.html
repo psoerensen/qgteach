@@ -158,13 +158,13 @@ ul.task-list li input[type="checkbox"] {
 <section id="courses" class="level2">
 <h2 class="anchored" data-anchor-id="courses">🎓 Courses</h2>
 <div class="columns">
-<div class="column" style="width:48%;">
+<div class="column" style="width:50%;">
 <section id="quantitative-population-genetics" class="level3">
 <h3 class="anchored" data-anchor-id="quantitative-population-genetics">📘 Quantitative &amp; Population Genetics</h3>
 <p>This module introduces the principles of population and quantitative genetics, including genetic variation, Hardy–Weinberg equilibrium, inbreeding, mutation, recombination, linkage disequilibrium, genetic drift, and natural selection. It also presents statistical approaches for analyzing complex traits, including heritability estimation, phenotype prediction, and genome-wide association studies (GWAS).</p>
 <p><a href="quant-genetics/">Go to Course →</a></p>
 </section>
-</div><div class="column" style="width:48%;">
+</div><div class="column" style="width:50%;">
 <section id="genomics-systems-biology-bioinformatics" class="level3">
 <h3 class="anchored" data-anchor-id="genomics-systems-biology-bioinformatics">🧬 Genomics, Systems Biology &amp; Bioinformatics</h3>
 <p>This module explores how genomic and multi-omics data can be used to understand complex biological systems. Topics include sequencing technologies, integration of molecular data, genome-wide association studies (GWAS), network models, and machine learning approaches for analyzing biological data.</p>
@@ -185,22 +185,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <hr>
 </section>
-<section id="teaching-philosophy" class="level2">
-<h2 class="anchored" data-anchor-id="teaching-philosophy">💻 Teaching Philosophy</h2>
-<p>The material emphasizes:</p>
-<ul>
-<li>Mathematical foundations<br>
-</li>
-<li>Statistical modeling<br>
-</li>
-<li>Reproducible research<br>
-</li>
-<li>Computational implementation in R<br>
-</li>
-<li>Conceptual understanding of methods</li>
-</ul>
-<p>Lecture materials integrate theory, simulation, and applied examples.</p>
-<hr>
+<section id="software" class="level2">
+<h2 class="anchored" data-anchor-id="software">🧰 Software</h2>
 </section>
 <section id="the-qgg-r-package" class="level2">
 <h2 class="anchored" data-anchor-id="the-qgg-r-package">The <em>qgg</em> R Package</h2>
@@ -233,51 +219,23 @@ binary formats such as <strong>PLINK <code>.bed</code> files</strong>.</p>
 <p><a href="https://psoerensen.github.io/bayesian-linear-regression/introduction_gact_qgg_slides.html"><strong>Slides introducing the <em>qgg</em> and <em>gact</em> R packages</strong></a></p>
 <p><a href="https://psoerensen.github.io/gact/"><strong>Tutorials using the <em>qgg</em> and <em>gact</em> R packages</strong></a></p>
 <hr>
+</section>
+<section id="teaching-philosophy" class="level2">
+<h2 class="anchored" data-anchor-id="teaching-philosophy">💻 Teaching Philosophy</h2>
+<p>The material emphasizes:</p>
+<ul>
+<li>Mathematical foundations<br>
+</li>
+<li>Statistical modeling<br>
+</li>
+<li>Reproducible research<br>
+</li>
+<li>Computational implementation in R<br>
+</li>
+<li>Conceptual understanding of methods</li>
+</ul>
+<p>Lecture materials integrate theory, simulation, and applied examples.</p>
 <hr>
-</section>
-<section id="software" class="level2">
-<h2 class="anchored" data-anchor-id="software">🧰 Software</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<section id="the-qgg-r-package-1" class="level3">
-<h3 class="anchored" data-anchor-id="the-qgg-r-package-1">The <em>qgg</em> R Package</h3>
-<p><a href="https://github.com/psoerensen/qgg"><strong>qgg</strong></a> provides tools for statistical modeling and analysis of large-scale genomic data, including:</p>
-<ul>
-<li>Fine-mapping of genomic regions using <strong>Bayesian Linear Regression (BLR) models</strong><br>
-</li>
-<li>Polygenic scoring using <strong>Bayesian Linear Regression (BLR) models</strong><br>
-</li>
-<li>Gene set enrichment analysis using <strong>Bayesian Linear Regression (BLR) models</strong></li>
-</ul>
-<p><em>qgg</em> is designed for large-scale genomic analyses using <strong>efficient algorithms</strong>, <strong>sparse matrix techniques</strong>, and <strong>parallel computing</strong>. It supports <strong>multi-core processing</strong> via <strong>OpenMP</strong>, multithreaded matrix operations through <strong>BLAS libraries</strong> (e.g., OpenBLAS, ATLAS, or MKL), and memory-efficient batch processing of genotype data stored in binary formats such as <strong>PLINK <code>.bed</code> files</strong>.</p>
-</section>
-</div><div class="column" style="width:50%;">
-<section id="the-gact-r-package-1" class="level3">
-<h3 class="anchored" data-anchor-id="the-gact-r-package-1">The <em>gact</em> R Package</h3>
-<p><a href="https://github.com/psoerensen/gact"><strong>gact</strong></a> provides an infrastructure for efficient processing and integration of large-scale genomic association data. Core functionality includes:</p>
-<ul>
-<li>Establishing and populating a database of genomic associations<br>
-</li>
-<li>Downloading and processing biological databases<br>
-</li>
-<li>Handling and processing GWAS summary statistics<br>
-</li>
-<li>Linking genetic markers to genes, proteins, metabolites, and biological pathways<br>
-</li>
-<li>Integration with statistical modeling tools in the <a href="https://github.com/psoerensen/qgg"><strong>qgg</strong></a> R package</li>
-</ul>
-<p><em>gact</em> supports <strong>integrative genomics workflows</strong>, connecting <strong>statistical modeling</strong> with <strong>biological interpretation</strong> while enabling <strong>reproducible</strong> and <strong>extensible</strong> analyses.</p>
-</section>
-</div>
-</div>
-<section id="additional-resources" class="level3">
-<h3 class="anchored" data-anchor-id="additional-resources">Additional Resources</h3>
-<ul>
-<li><p><a href="https://psoerensen.github.io/bayesian-linear-regression/introduction_gact_qgg_slides.html"><strong>Slides introducing the <em>qgg</em> and <em>gact</em> R packages</strong></a></p></li>
-<li><p><a href="https://psoerensen.github.io/gact/"><strong>Tutorials using the <em>qgg</em> and <em>gact</em> R packages</strong></a></p></li>
-</ul>
-<hr>
-</section>
 </section>
 <section id="further-reading" class="level2">
 <h2 class="anchored" data-anchor-id="further-reading">📚 Further Reading</h2>

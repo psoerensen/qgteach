@@ -12,7 +12,7 @@ This site hosts structured course materials, lecture notes, slides, and computat
 
 ::: {.columns}
 
-::: {.column width="48%"}
+::: {.column width="50%"}
 
 ### 📘 Quantitative & Population Genetics
 
@@ -22,7 +22,7 @@ This module introduces the principles of population and quantitative genetics, i
 
 :::
 
-::: {.column width="48%"}
+::: {.column width="50%"}
 
 ### 🧬 Genomics, Systems Biology & Bioinformatics
 
@@ -57,19 +57,7 @@ This module introduces Bayesian linear regression through theoretical notes, sli
 
 ---
 
-## 💻 Teaching Philosophy
-
-The material emphasizes:
-
-- Mathematical foundations  
-- Statistical modeling  
-- Reproducible research  
-- Computational implementation in R  
-- Conceptual understanding of methods  
-
-Lecture materials integrate theory, simulation, and applied examples.
-
----
+## 🧰 Software
 
 ## The *qgg* R Package
 
@@ -101,49 +89,17 @@ binary formats such as **PLINK `.bed` files**.
 
 ---
 
----
+## 💻 Teaching Philosophy
 
-## 🧰 Software
+The material emphasizes:
 
-::: {.columns}
+- Mathematical foundations  
+- Statistical modeling  
+- Reproducible research  
+- Computational implementation in R  
+- Conceptual understanding of methods  
 
-::: {.column width="50%"}
-
-### The *qgg* R Package
-
-[**qgg**](https://github.com/psoerensen/qgg) provides tools for statistical modeling and analysis of large-scale genomic data, including:
-
-- Fine-mapping of genomic regions using **Bayesian Linear Regression (BLR) models**  
-- Polygenic scoring using **Bayesian Linear Regression (BLR) models**  
-- Gene set enrichment analysis using **Bayesian Linear Regression (BLR) models**
-
-*qgg* is designed for large-scale genomic analyses using **efficient algorithms**, **sparse matrix techniques**, and **parallel computing**. It supports **multi-core processing** via **OpenMP**, multithreaded matrix operations through **BLAS libraries** (e.g., OpenBLAS, ATLAS, or MKL), and memory-efficient batch processing of genotype data stored in binary formats such as **PLINK `.bed` files**.
-
-:::
-
-::: {.column width="50%"}
-
-### The *gact* R Package
-
-[**gact**](https://github.com/psoerensen/gact) provides an infrastructure for efficient processing and integration of large-scale genomic association data. Core functionality includes:
-
-- Establishing and populating a database of genomic associations  
-- Downloading and processing biological databases  
-- Handling and processing GWAS summary statistics  
-- Linking genetic markers to genes, proteins, metabolites, and biological pathways  
-- Integration with statistical modeling tools in the [**qgg**](https://github.com/psoerensen/qgg) R package
-
-*gact* supports **integrative genomics workflows**, connecting **statistical modeling** with **biological interpretation** while enabling **reproducible** and **extensible** analyses.
-
-:::
-
-:::
-
-### Additional Resources
-
-- [**Slides introducing the *qgg* and *gact* R packages**](https://psoerensen.github.io/bayesian-linear-regression/introduction_gact_qgg_slides.html)
-
-- [**Tutorials using the *qgg* and *gact* R packages**](https://psoerensen.github.io/gact/)
+Lecture materials integrate theory, simulation, and applied examples.
 
 ---
 
