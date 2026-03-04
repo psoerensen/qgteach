@@ -85,7 +85,7 @@ The R code is provided as a starting point for experimentation. The modification
 Interactive tools are provided to examine selected models and parameters used in population and quantitative genetics.
 
 
-### Population Genetics
+#### Population Genetics
 
 To be added ....
 <!-- - **Hardy–Weinberg Explorer**   -->
@@ -100,7 +100,7 @@ To be added ....
 <!--   Explore directional and balancing selection across generations.   -->
 <!--   🔗 [Launch app](https://yourapp.shinyapps.io/selection_app) -->
 
-### Quantitative Genetics
+#### Quantitative Genetics
 
 - **Heritability Estimation Using Different Types of Relatives**  
   Estimate narrow-sense heritability using regression on relatives.  
@@ -111,7 +111,7 @@ To be added ....
   🔗 [Launch app](https://peter-soerensen.shinyapps.io/estimation_breeding_value_single_source/)
   
   
-### Downloadable R Scripts
+#### Downloadable R Scripts
 
 Some tools are provided as standalone R scripts for local execution:
 
