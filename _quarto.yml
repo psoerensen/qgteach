@@ -6,18 +6,21 @@ website:
   title: "Course Materials"
   navbar:
     left:
+      - text: "Home"
+        href: index.qmd
       - text: "Quantitative & Population Genetics"
         href: quant-genetics/
       - text: "Genomics, Systems Biology & Bioinformatics"
         href: genomics-systems-bioinfo/
-
+      - text: "Bayesian Linear Regression"
+        href: https://psoerensen.github.io/bayesian-linear-regression/
+        
 format:
   html:
     theme: flatly
     toc: false
-    
+
 author:
   - name: "Peter Sørensen"
-    affiliation:
-      - "Center for Quantitative Genetics and Genomics, Aarhus University, Denmark"
-      
+    affiliation: "Center for Quantitative Genetics and Genomics, Aarhus University, Denmark"
+    
