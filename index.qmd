@@ -71,6 +71,82 @@ Lecture materials integrate theory, simulation, and applied examples.
 
 ---
 
+## The *qgg* R Package
+
+[**qgg**](https://github.com/psoerensen/qgg) provides tools for statistical modeling and analysis of large-scale genomic data, including:
+
+- Fine-mapping of genomic regions using **Bayesian Linear Regression (BLR) models**  
+- Polygenic scoring using **Bayesian Linear Regression (BLR) models**  
+- Gene set enrichment analysis using **Bayesian Linear Regression (BLR) models**  
+
+*qgg* handles large-scale genomic data through **efficient algorithms** and **sparse matrix techniques**, combined with **multi-core processing** using **OpenMP**, **multithreaded matrix operations** via **BLAS** libraries (e.g., OpenBLAS, ATLAS, or MKL), and **fast, memory-efficient batch processing** of genotype data stored in  
+binary formats such as **PLINK `.bed` files**.
+
+
+## The *gact* R Package
+
+[**gact**](https://github.com/psoerensen/gact) provides an infrastructure for efficient processing of large-scale genomic association data, with core functions for:
+
+- Establishing and populating a database of genomic associations  
+- Downloading and processing biological databases  
+- Handling and processing GWAS summary statistics  
+- Linking genetic markers to genes, proteins, metabolites, and biological pathways  
+- Integrates with statistical machine learning tools in the [**qgg**](https://github.com/psoerensen/qgg) R package  
+
+*gact* is intended to serve as **a practical implementation of integrative genomics**, bridging **statistical modeling** and **biological interpretation**, and supporting **reproducible** and **extensible** workflows.
+
+[**Slides introducing the *qgg* and *gact* R packages**](https://psoerensen.github.io/bayesian-linear-regression/introduction_gact_qgg_slides.html)
+
+[**Tutorials using the *qgg* and *gact* R packages**](https://psoerensen.github.io/gact/)
+
+---
+
+---
+
+## 🧰 Software
+
+::: {.columns}
+
+::: {.column width="50%"}
+
+### The *qgg* R Package
+
+[**qgg**](https://github.com/psoerensen/qgg) provides tools for statistical modeling and analysis of large-scale genomic data, including:
+
+- Fine-mapping of genomic regions using **Bayesian Linear Regression (BLR) models**  
+- Polygenic scoring using **Bayesian Linear Regression (BLR) models**  
+- Gene set enrichment analysis using **Bayesian Linear Regression (BLR) models**
+
+*qgg* is designed for large-scale genomic analyses using **efficient algorithms**, **sparse matrix techniques**, and **parallel computing**. It supports **multi-core processing** via **OpenMP**, multithreaded matrix operations through **BLAS libraries** (e.g., OpenBLAS, ATLAS, or MKL), and memory-efficient batch processing of genotype data stored in binary formats such as **PLINK `.bed` files**.
+
+:::
+
+::: {.column width="50%"}
+
+### The *gact* R Package
+
+[**gact**](https://github.com/psoerensen/gact) provides an infrastructure for efficient processing and integration of large-scale genomic association data. Core functionality includes:
+
+- Establishing and populating a database of genomic associations  
+- Downloading and processing biological databases  
+- Handling and processing GWAS summary statistics  
+- Linking genetic markers to genes, proteins, metabolites, and biological pathways  
+- Integration with statistical modeling tools in the [**qgg**](https://github.com/psoerensen/qgg) R package
+
+*gact* supports **integrative genomics workflows**, connecting **statistical modeling** with **biological interpretation** while enabling **reproducible** and **extensible** analyses.
+
+:::
+
+:::
+
+### Additional Resources
+
+- [**Slides introducing the *qgg* and *gact* R packages**](https://psoerensen.github.io/bayesian-linear-regression/introduction_gact_qgg_slides.html)
+
+- [**Tutorials using the *qgg* and *gact* R packages**](https://psoerensen.github.io/gact/)
+
+---
+
 ## 📚 Further Reading
 
 For foundational principles of classical and molecular genetics:

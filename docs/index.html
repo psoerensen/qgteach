@@ -202,6 +202,83 @@ ul.task-list li input[type="checkbox"] {
 <p>Lecture materials integrate theory, simulation, and applied examples.</p>
 <hr>
 </section>
+<section id="the-qgg-r-package" class="level2">
+<h2 class="anchored" data-anchor-id="the-qgg-r-package">The <em>qgg</em> R Package</h2>
+<p><a href="https://github.com/psoerensen/qgg"><strong>qgg</strong></a> provides tools for statistical modeling and analysis of large-scale genomic data, including:</p>
+<ul>
+<li>Fine-mapping of genomic regions using <strong>Bayesian Linear Regression (BLR) models</strong><br>
+</li>
+<li>Polygenic scoring using <strong>Bayesian Linear Regression (BLR) models</strong><br>
+</li>
+<li>Gene set enrichment analysis using <strong>Bayesian Linear Regression (BLR) models</strong></li>
+</ul>
+<p><em>qgg</em> handles large-scale genomic data through <strong>efficient algorithms</strong> and <strong>sparse matrix techniques</strong>, combined with <strong>multi-core processing</strong> using <strong>OpenMP</strong>, <strong>multithreaded matrix operations</strong> via <strong>BLAS</strong> libraries (e.g., OpenBLAS, ATLAS, or MKL), and <strong>fast, memory-efficient batch processing</strong> of genotype data stored in<br>
+binary formats such as <strong>PLINK <code>.bed</code> files</strong>.</p>
+</section>
+<section id="the-gact-r-package" class="level2">
+<h2 class="anchored" data-anchor-id="the-gact-r-package">The <em>gact</em> R Package</h2>
+<p><a href="https://github.com/psoerensen/gact"><strong>gact</strong></a> provides an infrastructure for efficient processing of large-scale genomic association data, with core functions for:</p>
+<ul>
+<li>Establishing and populating a database of genomic associations<br>
+</li>
+<li>Downloading and processing biological databases<br>
+</li>
+<li>Handling and processing GWAS summary statistics<br>
+</li>
+<li>Linking genetic markers to genes, proteins, metabolites, and biological pathways<br>
+</li>
+<li>Integrates with statistical machine learning tools in the <a href="https://github.com/psoerensen/qgg"><strong>qgg</strong></a> R package</li>
+</ul>
+<p><em>gact</em> is intended to serve as <strong>a practical implementation of integrative genomics</strong>, bridging <strong>statistical modeling</strong> and <strong>biological interpretation</strong>, and supporting <strong>reproducible</strong> and <strong>extensible</strong> workflows.</p>
+<p><a href="https://psoerensen.github.io/bayesian-linear-regression/introduction_gact_qgg_slides.html"><strong>Slides introducing the <em>qgg</em> and <em>gact</em> R packages</strong></a></p>
+<p><a href="https://psoerensen.github.io/gact/"><strong>Tutorials using the <em>qgg</em> and <em>gact</em> R packages</strong></a></p>
+<hr>
+<hr>
+</section>
+<section id="software" class="level2">
+<h2 class="anchored" data-anchor-id="software">🧰 Software</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<section id="the-qgg-r-package-1" class="level3">
+<h3 class="anchored" data-anchor-id="the-qgg-r-package-1">The <em>qgg</em> R Package</h3>
+<p><a href="https://github.com/psoerensen/qgg"><strong>qgg</strong></a> provides tools for statistical modeling and analysis of large-scale genomic data, including:</p>
+<ul>
+<li>Fine-mapping of genomic regions using <strong>Bayesian Linear Regression (BLR) models</strong><br>
+</li>
+<li>Polygenic scoring using <strong>Bayesian Linear Regression (BLR) models</strong><br>
+</li>
+<li>Gene set enrichment analysis using <strong>Bayesian Linear Regression (BLR) models</strong></li>
+</ul>
+<p><em>qgg</em> is designed for large-scale genomic analyses using <strong>efficient algorithms</strong>, <strong>sparse matrix techniques</strong>, and <strong>parallel computing</strong>. It supports <strong>multi-core processing</strong> via <strong>OpenMP</strong>, multithreaded matrix operations through <strong>BLAS libraries</strong> (e.g., OpenBLAS, ATLAS, or MKL), and memory-efficient batch processing of genotype data stored in binary formats such as <strong>PLINK <code>.bed</code> files</strong>.</p>
+</section>
+</div><div class="column" style="width:50%;">
+<section id="the-gact-r-package-1" class="level3">
+<h3 class="anchored" data-anchor-id="the-gact-r-package-1">The <em>gact</em> R Package</h3>
+<p><a href="https://github.com/psoerensen/gact"><strong>gact</strong></a> provides an infrastructure for efficient processing and integration of large-scale genomic association data. Core functionality includes:</p>
+<ul>
+<li>Establishing and populating a database of genomic associations<br>
+</li>
+<li>Downloading and processing biological databases<br>
+</li>
+<li>Handling and processing GWAS summary statistics<br>
+</li>
+<li>Linking genetic markers to genes, proteins, metabolites, and biological pathways<br>
+</li>
+<li>Integration with statistical modeling tools in the <a href="https://github.com/psoerensen/qgg"><strong>qgg</strong></a> R package</li>
+</ul>
+<p><em>gact</em> supports <strong>integrative genomics workflows</strong>, connecting <strong>statistical modeling</strong> with <strong>biological interpretation</strong> while enabling <strong>reproducible</strong> and <strong>extensible</strong> analyses.</p>
+</section>
+</div>
+</div>
+<section id="additional-resources" class="level3">
+<h3 class="anchored" data-anchor-id="additional-resources">Additional Resources</h3>
+<ul>
+<li><p><a href="https://psoerensen.github.io/bayesian-linear-regression/introduction_gact_qgg_slides.html"><strong>Slides introducing the <em>qgg</em> and <em>gact</em> R packages</strong></a></p></li>
+<li><p><a href="https://psoerensen.github.io/gact/"><strong>Tutorials using the <em>qgg</em> and <em>gact</em> R packages</strong></a></p></li>
+</ul>
+<hr>
+</section>
+</section>
 <section id="further-reading" class="level2">
 <h2 class="anchored" data-anchor-id="further-reading">📚 Further Reading</h2>
 <p>For foundational principles of classical and molecular genetics:</p>
