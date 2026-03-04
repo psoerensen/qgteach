@@ -8,6 +8,129 @@ library(ggplot2)
 library(patchwork)
 
 
+## Pedigree With Inbreeding
+
+library(kinship2)
+
+sample.ped <- data.frame(
+  id     = 1:6,
+  father = c(0, 0, 0, 2, 2, 5),
+  mother = c(0, 0, 0, 1, 3, 4),
+  sex    = c(2, 1, 2, 2, 1, 2)
+)
+
+ped <- pedigree(
+  id    = sample.ped$id,
+  dadid = sample.ped$father,
+  momid = sample.ped$mother,
+  sex   = sample.ped$sex
+)
+
+alleles <- list(
+  "1" = c("A","A"),
+  "2" = c("A","a"),
+  "3" = c("A","A"),
+  "4" = c("A","a"),
+  "5" = c("A","a"),
+  "6" = c("a","a")
+)
+
+# 1) Colored dots
+plot_pedigree_alleles(ped, alleles, mode = "dots")
+
+
+## Inbreeding and Population Size
+
+plot_inbreeding_small_pop(
+  N_values = c(10, 50, 100, 500),
+  generations = 100
+)
+
+
+## Genetic Variation (SNPs, Microsatellites, InDels)
+seqs <- c(
+  "GGCATCGCGCCGTTACGTAGAGAGAGGTGAATC",
+  "GGCATCGCGCCGTTACGTAGAGAGAGGTGAATC",
+  "GGCATCGCGCCGTTACGTAGAGAGAGGTGAATC",
+  "GGTATCGCTCC--TACTTAGAGAG---TTAGTC",
+  "GGTATCGCTCC----CTTAGAGAG---TTAGTC",
+  "GGTATCGCTCC----CTTAGAGAG---TTAGTC",
+  "GGTATCGCTCC--TACTTAGAGAG---CTTAGT"
+)
+
+plot_sequence(seqs,highlight_regions = list(c(12,15), c(25,27)))
+
+
+## Gene Pool Concept
+
+pop <- generate_population(N=16, p=0.7, seed=1)
+pop <- generate_population(geno_counts = c(AA = 5, Aa = 8, aa = 3))
+
+geno <- layout_population_grid(pop$geno)
+
+p_ind  <- plot_population_individuals(geno, pop$geno_labels, base_size)
+p_cnt  <- plot_population_counts(pop$geno_labels, base_size)
+
+p_ind | p_cnt 
+
+
+## Genetic Drift(N small vs large)
+
+p_small <- plot_drift(N = 10, p0=0.05, generations=100)
+p_large <- plot_drift(N = 200, p0=0.05, generations=100)
+
+p_small | p_large
+
+
+## Selection Trajectories
+
+p_dir_traj <- plot_selection_trajectory(
+  p0 = 0.7, T = 30,
+  wAA = 1, wAa = 0.9, waa = 0.6,
+  title = "Directional selection"
+)
+
+p_het_traj <- plot_selection_trajectory(
+  p0 = 0.7, T = 30,
+  wAA = 0.8, wAa = 1.0, waa = 0.8,
+  title = "Heterozygote advantage"
+)
+
+p_dir_traj | p_het_traj
+
+
+## Plot Allele and Genotype Frequencies from Counts
+pG <- plot_genotype_freq(p = 0.7)
+pA <- plot_allele_freq(p = 0.7)
+pA | pG
+
+counts <- c(AA = 10, Aa = 7, aa = 10)
+pG <- plot_genotype_freq(geno_counts = counts)
+pA <- plot_allele_freq(geno_counts = counts)
+pA | pG
+
+
+## Hardy-Weinberg
+plot_hwe_comparison(c(AA = 10, Aa = 7, aa = 50))
+
+
+## Inbreeding
+plot_inbreeding(p = 0.5, F = 0.4)
+
+
+## Admixture (Wahlund Effect)
+plot_admixture_wahlund(p1 = 0.2, p2 = 0.8, m=0.5)
+plot_admixture_wahlund(
+  geno1 = c(AA=40, Aa=20, aa=40),
+  geno2 = c(AA=10, Aa=30, aa=60)
+)
+
+## Allele and Genotype Frequencies
+pA <- plot_allele_freq(p = 0.7)
+pG <- plot_genotype_freq(p = 0.7)
+
+pA | pG
+
 
 plot_mutation_dynamics(
   p0 = 0.9,
@@ -47,6 +170,38 @@ plot_effective_population_size(
   Nf = 95
 )
 
+
+plot_heterozygosity_decay(
+  N = 20,
+  generations = 100,
+  H0 = 0.5
+)
+
+plot_heterozygosity_decay(
+  N = 200,
+  generations = 100,
+  H0 = 0.5
+)
+
+p_small <- plot_heterozygosity_decay(N = 20, generations = 100)
+p_large <- plot_heterozygosity_decay(N = 200, generations = 100)
+
+p_small | p_large
+
+## Haplotype sweep plot
+psweep <- make_sweep_plots(
+  mode = "Realistic Hard Sweep",
+  n_hap = 100,
+  L = 201,
+  sweep_freq = 0.9,
+  width = 30,
+  sort_haps = TRUE,
+  seed = 1
+)
+
+psweep$hapPlot
+psweep$gdPlot
+psweep$ldPlot
 
 
 plot_molecular_clock(
@@ -117,6 +272,163 @@ plot_site_frequency_spectrum(n = 20)
 plot_population_genetics_concept_map()
 plot_population_genetics_concept_map_minimal()
 
+
+
+# install.packages("ggplot2")  # if needed
+library(ggplot2)
+
+set.seed(1)
+
+# ---- parameters you can change ----
+n_each <- 10
+mix_red  <- 7
+mix_blue <- 3
+bucket_w <- 1.0
+bucket_h <- 1.2
+
+# helper to place balls inside a bucket area
+make_bucket_points <- function(n, bucket, color, x0, x1, y0, y1) {
+  data.frame(
+    bucket = bucket,
+    color  = color,
+    x = runif(n, x0 + 0.08, x1 - 0.08),
+    y = runif(n, y0 + 0.10, y1 - 0.10)
+  )
+}
+
+# bucket coordinates in a common plotting space
+buckets <- data.frame(
+  bucket = c("Population A", "Population B", "Admixed"),
+  xmin   = c(0, 1.3, 2.6),
+  xmax   = c(1.0, 2.3, 3.6),
+  ymin   = 0,
+  ymax   = bucket_h
+)
+
+# points (balls)
+pts <- rbind(
+  make_bucket_points(n_each, "Population A", "red",
+                     buckets$xmin[1], buckets$xmax[1], buckets$ymin[1], buckets$ymax[1]),
+  make_bucket_points(n_each, "Population B", "blue",
+                     buckets$xmin[2], buckets$xmax[2], buckets$ymin[2], buckets$ymax[2]),
+  make_bucket_points(mix_red, "Admixed", "red",
+                     buckets$xmin[3], buckets$xmax[3], buckets$ymin[3], buckets$ymax[3]),
+  make_bucket_points(mix_blue, "Admixed", "blue",
+                     buckets$xmin[3], buckets$xmax[3], buckets$ymin[3], buckets$ymax[3])
+)
+
+# color mapping
+cols <- c(red = "#D94848", blue = "#2B6CB0")
+
+ggplot() +
+  # draw bucket outlines
+  geom_rect(
+    data = buckets,
+    aes(xmin = xmin, xmax = xmax, ymin = ymin, ymax = ymax),
+    fill = "white", color = "grey30", linewidth = 0.7
+  ) +
+  # bucket labels
+  geom_text(
+    data = buckets,
+    aes(x = (xmin + xmax)/2, y = ymax + 0.12, label = bucket),
+    fontface = "bold", size = 4
+  ) +
+  # balls
+  geom_point(
+    data = pts,
+    aes(x = x, y = y, color = color),
+    size = 5
+  ) +
+  scale_color_manual(values = cols, guide = "none") +
+  coord_equal(xlim = c(-0.1, 3.7), ylim = c(-0.1, 1.45), expand = FALSE) +
+  theme_void() +
+  ggtitle("Illustration of admixture: two source populations and an admixed population") +
+  theme(plot.title = element_text(hjust = 0.5, face = "bold"))
+
+
+
+
+plot_admixture_teaching <- function(
+    group_sizes,
+    alpha_list,
+    group_names = NULL,
+    colors = NULL,
+    seed = 123,
+    title = NULL
+) {
+  
+  library(ggplot2)
+  library(dplyr)
+  library(tidyr)
+  library(MCMCpack)
+  
+  set.seed(seed)
+  
+  K <- length(alpha_list[[1]])
+  
+  if (is.null(group_names)) {
+    group_names <- paste0("Group ", seq_along(group_sizes))
+  }
+  
+  if (is.null(colors)) {
+    colors <- scales::hue_pal()(K)
+  }
+  
+  # Generate ancestry proportions
+  props_list <- lapply(seq_along(group_sizes), function(i) {
+    rdirichlet(group_sizes[i], alpha_list[[i]])
+  })
+  
+  props <- do.call(rbind, props_list)
+  
+  df <- data.frame(
+    individual = 1:nrow(props),
+    group = rep(group_names, group_sizes),
+    props
+  )
+  
+  colnames(df)[3:(K+2)] <- paste0("Cluster", 1:K)
+  
+  df <- df %>% arrange(group)
+  
+  df_long <- df %>%
+    pivot_longer(cols = starts_with("Cluster"),
+                 names_to = "ancestry",
+                 values_to = "proportion")
+  
+  ggplot(df_long, aes(x = factor(individual),
+                      y = proportion,
+                      fill = ancestry)) +
+    geom_bar(stat = "identity", width = 1) +
+    scale_fill_manual(values = colors) +
+    scale_y_continuous(expand = c(0,0)) +
+    labs(x = "Individuals",
+         y = "Ancestry proportion",
+         title = title) +
+    theme_minimal(base_size = 13) +
+    theme(
+      axis.text.x = element_blank(),
+      axis.ticks.x = element_blank(),
+      panel.grid = element_blank(),
+      plot.title = element_text(face = "bold", hjust = 0.5)
+    )
+}
+
+plot_admixture_teaching(
+  group_sizes = c(10,10,10,10),
+  alpha_list = list(
+    c(20,1,1),
+    c(1,20,1),
+    c(1,1,20),
+    c(4,3,3)
+  ),
+  group_names = c("Population A",
+                  "Population B",
+                  "Population C",
+                  "Admixed"),
+  colors = c("#D94848","#2B6CB0","#2F9E44"),
+  title = "ADMIXTURE-style barplot (K = 3)"
+)
 
 
 
@@ -941,6 +1253,102 @@ p_case2 <- ggplot() +
 # # 6) HARDY–WEINBERG COMPARISON
 # # ============================================================
 # 
+# plot_hwe_comparison <- function(geno_counts,
+#                                 base_size = 18) {
+#   
+#   # ----------------------------
+#   # Input checks
+#   # ----------------------------
+#   
+#   if (is.null(names(geno_counts))) {
+#     stop("geno_counts must be named, e.g. c(AA=10, Aa=7, aa=10)")
+#   }
+#   
+#   required <- c("AA", "Aa", "aa")
+#   geno_counts[setdiff(required, names(geno_counts))] <- 0
+#   geno_counts <- geno_counts[required]
+#   
+#   N <- sum(geno_counts)
+#   
+#   # ----------------------------
+#   # Allele frequency
+#   # ----------------------------
+#   
+#   nA <- 2 * geno_counts["AA"] + geno_counts["Aa"]
+#   p_hat <- as.numeric(nA) / (2 * N)
+#   q_hat <- 1 - p_hat
+#   
+#   # ----------------------------
+#   # Expected counts
+#   # ----------------------------
+#   
+#   expected <- c(
+#     AA = p_hat^2,
+#     Aa = 2*p_hat*q_hat,
+#     aa = q_hat^2
+#   ) * N
+#   
+#   # ----------------------------
+#   # Chi-square test
+#   # ----------------------------
+#   
+#   chisq <- sum((geno_counts - expected)^2 / expected)
+#   pval  <- pchisq(chisq, df = 1, lower.tail = FALSE)
+#   
+#   # ----------------------------
+#   # Prepare plotting data
+#   # ----------------------------
+#   
+#   df <- data.frame(
+#     genotype = rep(required, 2),
+#     type = rep(c("Observed", "Expected (HWE)"), each = 3),
+#     n = c(geno_counts, expected)
+#   )
+#   
+#   # ----------------------------
+#   # Color scheme
+#   # ----------------------------
+#   
+#   hwe_cols <- c(
+#     "Observed" = "#2C3E50",
+#     "Expected (HWE)" = "#D5DBDB"
+#   )
+#   
+#   # ----------------------------
+#   # Plot
+#   # ----------------------------
+#   
+#   ggplot2::ggplot(df,
+#                   ggplot2::aes(genotype, n, fill = type)) +
+#     
+#     ggplot2::geom_col(position = ggplot2::position_dodge(width = 0.7),
+#                       width = 0.6,
+#                       color = "black") +
+#     
+#     ggplot2::scale_fill_manual(values = hwe_cols) +
+#     
+#     ggplot2::labs(
+#       title = "Hardy–Weinberg Equilibrium Test",
+#       subtitle = paste0(
+#         "N = ", N,
+#         "  |  Estimated p = ", round(p_hat, 3),
+#         "  |  χ² = ", round(chisq, 3),
+#         "  |  P-value = ", signif(pval, 3)
+#       ),
+#       x = NULL,
+#       y = "Genotype count",
+#       fill = ""
+#     ) +
+#     
+#     ggplot2::coord_cartesian(ylim = c(0, max(df$n) * 1.15)) +
+#     
+#     ggplot2::theme_minimal(base_size = base_size) +
+#     ggplot2::theme(
+#       panel.grid.minor = ggplot2::element_blank(),
+#       legend.position = "top",
+#       plot.title = ggplot2::element_text(face = "bold")
+#     )
+# }
 # 
 # # ============================================================
 # # END OF FRAMEWORK
@@ -1030,6 +1438,112 @@ p_case2 <- ggplot() +
 #   )
 # }
 # 
+# plot_genotype_freq <- function(p = NULL,
+#                                geno_counts = NULL,
+#                                stage_label = NULL,
+#                                base_size = 18) {
+#   
+#   if (!is.null(geno_counts)) {
+#     
+#     if (is.null(names(geno_counts)))
+#       stop("geno_counts must be named: c(AA=..., Aa=..., aa=...)")
+#     
+#     required <- c("AA","Aa","aa")
+#     geno_counts[setdiff(required, names(geno_counts))] <- 0
+#     geno_counts <- geno_counts[required]
+#     
+#     N <- sum(geno_counts)
+#     
+#     df <- data.frame(
+#       genotype = required,
+#       freq = as.numeric(geno_counts) / N
+#     )
+#     
+#   } else if (!is.null(p)) {
+#     
+#     q <- 1 - p
+#     
+#     df <- data.frame(
+#       genotype = c("AA","Aa","aa"),
+#       freq = c(p^2, 2*p*q, q^2)
+#     )
+#     
+#   } else {
+#     stop("Provide either p OR geno_counts")
+#   }
+#   
+#   # Title logic
+#   title_text <- if (is.null(stage_label)) {
+#     "Genotype frequencies"
+#   } else {
+#     paste0("Genotype frequencies (", stage_label, ")")
+#   }
+#   
+#   ggplot(df, aes(genotype, freq, fill = genotype)) +
+#     geom_col(width = 0.6, color = "black") +
+#     scale_fill_manual(values = bio_cols$genotype) +
+#     coord_cartesian(ylim = c(0,1)) +
+#     labs(
+#       title = title_text,
+#       y = "Frequency",
+#       x = NULL
+#     ) +
+#     theme_bio(base_size)
+# }
+# 
+# plot_allele_freq <- function(p = NULL,
+#                              geno_counts = NULL,
+#                              stage_label = NULL,
+#                              base_size = 18) {
+#   
+#   if (!is.null(geno_counts)) {
+#     
+#     if (is.null(names(geno_counts)))
+#       stop("geno_counts must be named: c(AA=..., Aa=..., aa=...)")
+#     
+#     required <- c("AA","Aa","aa")
+#     geno_counts[setdiff(required, names(geno_counts))] <- 0
+#     geno_counts <- geno_counts[required]
+#     
+#     N <- sum(geno_counts)
+#     
+#     nA <- 2*geno_counts["AA"] + geno_counts["Aa"]
+#     p_hat <- as.numeric(nA) / (2*N)
+#     q_hat <- 1 - p_hat
+#     
+#     df <- data.frame(
+#       allele = c("A","a"),
+#       freq = c(p_hat, q_hat)
+#     )
+#     
+#   } else if (!is.null(p)) {
+#     
+#     df <- data.frame(
+#       allele = c("A","a"),
+#       freq = c(p, 1-p)
+#     )
+#     
+#   } else {
+#     stop("Provide either p OR geno_counts")
+#   }
+#   
+#   title_text <- if (is.null(stage_label)) {
+#     "Allele frequencies"
+#   } else {
+#     paste0("Allele frequencies (", stage_label, ")")
+#   }
+#   
+#   ggplot(df, aes(allele, freq, fill = allele)) +
+#     geom_col(width = 0.6, color = "black") +
+#     scale_fill_manual(values = bio_cols$allele) +
+#     coord_cartesian(ylim = c(0,1)) +
+#     labs(
+#       title = title_text,
+#       y = "Frequency",
+#       x = NULL
+#     ) +
+#     theme_bio(base_size)
+# }
 # 
 # # ============================================================
 # # 4) INBREEDING WRAPPER
@@ -1989,6 +2503,186 @@ p_case2 <- ggplot() +
 # 
 # library(ggplot2)
 # 
+# # =========================================================
+# # TEXTBOOK HARD SWEEP (clean, dramatic)
+# # =========================================================
+# generate_textbook_sweep <- function(
+#     n_hap = 100,
+#     L = 201,
+#     sweep_freq = 1.0,
+#     core_width = 30,
+#     seed = NULL
+# ) {
+#   if (!is.null(seed)) set.seed(seed)
+#   stopifnot(L %% 2 == 1)
+#   
+#   center <- (L + 1) / 2
+#   pos <- seq_len(L)
+#   dist <- abs(pos - center)
+#   
+#   H <- matrix(0, nrow = n_hap, ncol = L)
+#   
+#   core <- dist <= core_width
+#   is_sweep <- rbinom(n_hap, 1, sweep_freq) == 1
+#   
+#   for (i in seq_len(n_hap)) {
+#     H[i, ] <- rbinom(L, 1, 0.5)
+#     if (is_sweep[i]) {
+#       H[i, core] <- 1
+#       H[i, center] <- 1
+#     } else {
+#       H[i, center] <- 0
+#     }
+#   }
+#   
+#   list(H = H, center = center, pos = pos, dist = dist)
+# }
+# 
+# # =========================================================
+# # REALISTIC HARD SWEEP (noisy)
+# # =========================================================
+# generate_realistic_sweep <- function(
+#     n_hap = 100,
+#     L = 201,
+#     sweep_freq = 0.9,
+#     rec_scale = 30,
+#     seed = NULL
+# ) {
+#   if (!is.null(seed)) set.seed(seed)
+#   stopifnot(L %% 2 == 1)
+#   
+#   center <- (L + 1) / 2
+#   pos <- seq_len(L)
+#   dist <- abs(pos - center)
+#   
+#   base_p <- runif(L, 0.2, 0.8)
+#   copy_prob <- exp(-dist / rec_scale)
+#   copy_prob[center] <- 1
+#   
+#   H <- matrix(0, nrow = n_hap, ncol = L)
+#   is_sweep <- rbinom(n_hap, 1, sweep_freq) == 1
+#   
+#   for (i in seq_len(n_hap)) {
+#     H[i, ] <- rbinom(L, 1, base_p)
+#     if (is_sweep[i]) {
+#       match <- rbinom(L, 1, copy_prob) == 1
+#       H[i, match] <- 1
+#       H[i, center] <- 1
+#     } else {
+#       H[i, center] <- 0
+#     }
+#   }
+#   
+#   list(H = H, center = center, pos = pos, dist = dist)
+# }
+# 
+# # =========================================================
+# # STATISTICS (same as Shiny app)
+# # =========================================================
+# gene_diversity <- function(H) {
+#   p <- colMeans(H)
+#   2 * p * (1 - p)
+# }
+# 
+# ld_r2_with_center <- function(H, center) {
+#   x <- H[, center]
+#   px <- mean(x)
+#   vx <- px * (1 - px)
+#   r2 <- numeric(ncol(H))
+#   
+#   for (j in seq_len(ncol(H))) {
+#     y <- H[, j]
+#     py <- mean(y)
+#     vy <- py * (1 - py)
+#     if (vx == 0 || vy == 0) {
+#       r2[j] <- NA_real_
+#     } else {
+#       cov_xy <- mean((x - px) * (y - py))
+#       r <- cov_xy / sqrt(vx * vy)
+#       r2[j] <- r^2
+#     }
+#   }
+#   r2
+# }
+# 
+# # =========================================================
+# # EXACT SAME PLOTS AS SHINY (extracted)
+# # =========================================================
+# make_sweep_plots <- function(
+#     mode = c("Textbook Hard Sweep", "Realistic Hard Sweep"),
+#     n_hap = 100,
+#     L = 201,
+#     sweep_freq = 1.0,
+#     width = 30,          # core_width OR rec_scale
+#     sort_haps = TRUE,
+#     seed = NULL
+# ) {
+#   mode <- match.arg(mode)
+#   
+#   L <- as.integer(L)
+#   if (L %% 2 == 0) L <- L + 1
+#   
+#   sweep_data <- if (mode == "Textbook Hard Sweep") {
+#     generate_textbook_sweep(
+#       n_hap = n_hap, L = L, sweep_freq = sweep_freq,
+#       core_width = width, seed = seed
+#     )
+#   } else {
+#     generate_realistic_sweep(
+#       n_hap = n_hap, L = L, sweep_freq = sweep_freq,
+#       rec_scale = width, seed = seed
+#     )
+#   }
+#   
+#   H <- sweep_data$H
+#   center <- sweep_data$center
+#   
+#   # Optional sorting to make sweep block visually clean (same as Shiny)
+#   if (sort_haps) {
+#     H <- H[order(H[, center], decreasing = TRUE), , drop = FALSE]
+#   }
+#   
+#   # ---- Haplotypes plot (same as Shiny) ----
+#   df_hap <- data.frame(
+#     Hap = rep(seq_len(nrow(H)), each = ncol(H)),
+#     Pos = rep(seq_len(ncol(H)), times = nrow(H)),
+#     Allele = as.vector(H)
+#   )
+#   df_hap$Allele <- as.vector(t(H))  # same final assignment as in Shiny app
+#   
+#   hapPlot <- ggplot(df_hap, aes(x = Pos, y = Hap, fill = factor(Allele))) +
+#     geom_tile() +
+#     geom_vline(xintercept = center, linetype = "dashed") +
+#     theme_minimal() +
+#     labs(fill = "Allele",
+#          title = "Haplotype structure around selected site")
+#   
+#   # ---- Gene diversity plot (same as Shiny) ----
+#   dist <- abs(seq_len(ncol(H)) - center)
+#   gd <- gene_diversity(H)
+#   df_gd <- data.frame(Distance = dist, GD = gd)
+#   
+#   gdPlot <- ggplot(df_gd, aes(x = Distance, y = GD)) +
+#     geom_line(linewidth = 1.2) +
+#     theme_minimal() +
+#     ylim(0, 0.5) +
+#     labs(title = "Diversity trough around selected site",
+#          y = "2p(1-p)")
+#   
+#   # ---- LD plot (same as Shiny) ----
+#   r2 <- ld_r2_with_center(H, center)
+#   df_ld <- data.frame(Distance = dist, r2 = r2)
+#   
+#   ldPlot <- ggplot(df_ld, aes(x = Distance, y = r2)) +
+#     geom_line(linewidth = 1.2) +
+#     theme_minimal() +
+#     ylim(0, 1) +
+#     labs(title = "LD peak near selected site",
+#          y = expression(r^2))
+#   
+#   list(hapPlot = hapPlot, gdPlot = gdPlot, ldPlot = ldPlot)
+# }
+# 
 # 
 # plot_mutation_dynamics <- function(p0 = 0.9,
 #                                    mu = 0.001,
@@ -2086,6 +2780,33 @@ p_case2 <- ggplot() +
 # }
 # 
 # 
+# plot_heterozygosity_decay <- function(N = 50,
+#                                       generations = 100,
+#                                       H0 = 0.5,
+#                                       base_size = 18) {
+#   
+#   H <- numeric(generations + 1)
+#   H[1] <- H0
+#   
+#   for(t in 1:generations){
+#     H[t+1] <- H[t] * (1 - 1/(2*N))
+#   }
+#   
+#   df <- tibble(
+#     gen = 0:generations,
+#     H = H
+#   )
+#   
+#   ggplot(df, aes(gen, H)) +
+#     geom_line(linewidth = 1.5, color = "#D55E00") +
+#     labs(
+#       title = "Heterozygosity declines under genetic drift",
+#       subtitle = paste0("Population size N = ", N),
+#       x = "Generation",
+#       y = "Expected heterozygosity (H)"
+#     ) +
+#     theme_bio(base_size)
+# }
 # 
 # 
 # plot_molecular_clock <- function(mu = 1e-8,

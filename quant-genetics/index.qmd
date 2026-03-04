@@ -85,21 +85,22 @@ The R code is provided as a starting point for experimentation. The modification
 Interactive tools are provided to examine selected models and parameters used in population and quantitative genetics.
 
 
-### Population Genetics Simulators
+### Population Genetics
 
-- **Hardy–Weinberg Explorer**  
-  Explore genotype and allele frequencies under Hardy–Weinberg assumptions.  
-  🔗 [Launch app](https://yourapp.shinyapps.io/hwe_app)
+To be added ....
+<!-- - **Hardy–Weinberg Explorer**   -->
+<!--   Explore genotype and allele frequencies under Hardy–Weinberg assumptions.   -->
+<!--   🔗 [Launch app](https://yourapp.shinyapps.io/hwe_app) -->
 
-- **Genetic Drift Simulator**  
-  Simulate drift under different population sizes and starting allele frequencies.  
-  🔗 [Launch app](https://yourapp.shinyapps.io/drift_app)
+<!-- - **Genetic Drift Simulator**   -->
+<!--   Simulate drift under different population sizes and starting allele frequencies.   -->
+<!--   🔗 [Launch app](https://yourapp.shinyapps.io/drift_app) -->
 
-- **Selection Dynamics**  
-  Explore directional and balancing selection across generations.  
-  🔗 [Launch app](https://yourapp.shinyapps.io/selection_app)
+<!-- - **Selection Dynamics**   -->
+<!--   Explore directional and balancing selection across generations.   -->
+<!--   🔗 [Launch app](https://yourapp.shinyapps.io/selection_app) -->
 
-### Quantitative Genetics Tools
+### Quantitative Genetics
 
 - **Heritability Estimation Using Different Types of Relatives**  
   Estimate narrow-sense heritability using regression on relatives.  
@@ -117,7 +118,7 @@ Some tools are provided as standalone R scripts for local execution:
 - **Hardy–Weinberg simulation script**  
   💾 [Download](apps/hwe_simulation.R)
 
-- **Drift simulatio script**  
+- **Drift simulation script**  
   💾 [Download](apps/drift_example.R)
 
 To run a script locally:
