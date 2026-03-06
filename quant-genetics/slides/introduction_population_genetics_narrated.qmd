@@ -21,7 +21,7 @@ format:
     theme: default
     freeze: false
     self-contained: false
-    show-notes: false
+    show-notes: true
 execute:
   echo: false
   warning: false
@@ -1536,21 +1536,30 @@ Hardy–Weinberg equilibrium.
 
 |                      | A/A | A/G | G/G | Sum |
 |----------------------|-----|-----|-----|-----|
-| **Observed number**  | $N_{AA}$ | $N_{AG}$ | $N_{GG}$ | $N$ |
+| **Observed number ($O$)**  | $N_{AA}$ | $N_{AG}$ | $N_{GG}$ | $N$ |
 | **Observed frequency** | $\dfrac{N_{AA}}{N}$ | $\dfrac{N_{AG}}{N}$ | $\dfrac{N_{GG}}{N}$ | $1$ |
 | **Expected frequency** | $p^2$ | $2pq$ | $q^2$ | $1$ |
 | **Expected number ($E$)** | $Np^2$ | $N(2pq)$ | $Nq^2$ | $N$ |
 | **$\chi^2$ contribution** | $\dfrac{(N_{AA}-E_{AA})^2}{E_{AA}}$ | $\dfrac{(N_{AG}-E_{AG})^2}{E_{AG}}$ | $\dfrac{(N_{GG}-E_{GG})^2}{E_{GG}}$ | $\chi^2$ |
 
-</div>
 
 <br>
 
-p = estimated frequency of allele A  
-q = estimated frequency of allele G  
+**Estimated frequency of allele A**
 
-q = 1 − p  
-p + q = 1
+$$
+p = \frac{2n_{AA} + n_{AG}}{2N}
+$$
+
+The frequency of allele G:
+
+$$
+q = 1 - p
+$$
+
+since $p + q = 1$.
+
+</div>
 
 
 :::
@@ -1571,15 +1580,29 @@ p + q = 1
 | **Expected number**  | 23.574 | 41.851 | 18.574 | 84  |
 | **$\chi^2$ contribution** | 1.833 | 4.131 | 2.327 | 8.29 |
 
+
+<br>
+
+**Allele frequency:**
+
+$$
+p = \frac{2n_{AA}+n_{AG}}{2N}
+= \frac{2\cdot17 + 55}{2\cdot84}
+= 0.53,
+\quad
+q = 0.47
+$$
+**HWE Test:** 
+
+$$
+\chi^2 = 8.29,
+\quad
+df = 1,
+\quad
+p = 0.004
+$$
+Since $p < 0.05$, the SNP deviates from Hardy–Weinberg equilibrium.
 </div>
-
-<br>
-
-Total $\chi^2 = 8.29$
-
-<br>
-
-Compare to $\chi^2_{(1 \text{ df})}$ to test equilibrium.
 
 
 :::
@@ -3054,6 +3077,63 @@ to estimate $\mu$ accurately.
 :::
 
 
+<audio controls preload="auto" src="../narration/introduction_population_genetics_block35.mp3"></audio>
+
+::: notes
+
+Mutation is the ultimate source of new genetic variation.
+Without mutation, evolution would eventually run out of raw material.
+
+A mutation is simply a change in DNA sequence.
+At the molecular level, it can be a single base substitution,
+a small insertion or deletion,
+or a larger structural change.
+
+We quantify mutation using the mutation rate, denoted by the symbol mu.
+This is the probability that a given site changes per generation.
+
+In humans, the mutation rate for single nucleotide polymorphisms — SNPs —
+is approximately one times ten to the minus eight per site per generation.
+That may sound extremely small,
+but remember that the human genome contains about three billion base pairs.
+
+When you multiply a very small probability
+by a very large number of sites,
+you obtain roughly fifty to one hundred new point mutations
+in every individual per generation.
+
+Other types of genetic markers mutate much faster.
+Microsatellites, also called short tandem repeats,
+have mutation rates around ten to the minus four
+to ten to the minus three per locus per generation.
+This is several orders of magnitude higher than SNPs.
+
+These differences in mutation rate explain why
+microsatellites were historically useful
+for studying recent evolutionary events and pedigree relationships.
+
+How do we estimate mutation rates?
+
+The most direct method is pedigree-based sequencing.
+We sequence the genomes of parents and their offspring,
+and then identify mutations that are present in the child
+but absent in both parents.
+These are called de novo mutations.
+
+Because mutation is rare,
+we must sequence very large numbers of nucleotides
+to obtain accurate estimates of mu.
+Statistically, rare events require large sample sizes.
+
+So mutation is both rare and powerful:
+rare at each site,
+but powerful at the genome level
+because it continuously injects new variation
+into the gene pool.
+
+:::
+
+
 ## Migration (Gene Flow) and Admixture
 
 ::: {.columns}
@@ -3092,7 +3172,7 @@ Admixture is the genomic signature of migration.
 :::
 
 
-<audio controls preload="auto" src="../narration/introduction_population_genetics_block35.mp3"></audio>
+<audio controls preload="auto" src="../narration/introduction_population_genetics_block36.mp3"></audio>
 
 ::: notes
 
@@ -3164,7 +3244,7 @@ and interbreeding between populations.
 
 
 
-<audio controls preload="auto" src="../narration/introduction_population_genetics_block36.mp3"></audio>
+<audio controls preload="auto" src="../narration/introduction_population_genetics_block37.mp3"></audio>
 
 ::: notes
 
@@ -3258,7 +3338,7 @@ associations between loci.
 :::
 
 
-<audio controls preload="auto" src="../narration/introduction_population_genetics_block37.mp3"></audio>
+<audio controls preload="auto" src="../narration/introduction_population_genetics_block38.mp3"></audio>
 
 ::: notes
 
@@ -3368,7 +3448,7 @@ of statistical association between loci.
 :::
 
 
-<audio controls preload="auto" src="../narration/introduction_population_genetics_block38.mp3"></audio>
+<audio controls preload="auto" src="../narration/introduction_population_genetics_block39.mp3"></audio>
 
 ::: notes
 
@@ -3492,7 +3572,7 @@ $$
 
 
 
-<audio controls preload="auto" src="../narration/introduction_population_genetics_block39.mp3"></audio>
+<audio controls preload="auto" src="../narration/introduction_population_genetics_block40.mp3"></audio>
 
 ::: notes
 
@@ -3590,7 +3670,7 @@ Two loci (A and B), each with two alleles.
 :::
 
 
-<audio controls preload="auto" src="../narration/introduction_population_genetics_block40.mp3"></audio>
+<audio controls preload="auto" src="../narration/introduction_population_genetics_block41.mp3"></audio>
 
 ::: notes
 
@@ -3684,7 +3764,7 @@ In finite populations, allele frequencies change by chance:
 :::
 
 
-<audio controls preload="auto" src="../narration/introduction_population_genetics_block41.mp3"></audio>
+<audio controls preload="auto" src="../narration/introduction_population_genetics_block42.mp3"></audio>
 
 ::: notes
 
@@ -3811,7 +3891,7 @@ Selection acts through differences in fitness.
 :::
 
 
-<audio controls preload="auto" src="../narration/introduction_population_genetics_block42.mp3"></audio>
+<audio controls preload="auto" src="../narration/introduction_population_genetics_block43.mp3"></audio>
 
 ::: notes
 
@@ -3902,7 +3982,7 @@ of the low-fitness genotype.
 :::
 
 
-<audio controls preload="auto" src="../narration/introduction_population_genetics_block43.mp3"></audio>
+<audio controls preload="auto" src="../narration/introduction_population_genetics_block44.mp3"></audio>
 
 ::: notes
 
@@ -3974,7 +4054,7 @@ but at different rates.
 :::
 
 
-<audio controls preload="auto" src="../narration/introduction_population_genetics_block44.mp3"></audio>
+<audio controls preload="auto" src="../narration/introduction_population_genetics_block45.mp3"></audio>
 
 ::: notes
 
@@ -4086,7 +4166,7 @@ through differences in reproductive success.
 :::
 
 
-<audio controls preload="auto" src="../narration/introduction_population_genetics_block45.mp3"></audio>
+<audio controls preload="auto" src="../narration/introduction_population_genetics_block46.mp3"></audio>
 
 ::: notes
 
@@ -4217,7 +4297,7 @@ through differential reproductive success.
 :::
 
 
-<audio controls preload="auto" src="../narration/introduction_population_genetics_block46.mp3"></audio>
+<audio controls preload="auto" src="../narration/introduction_population_genetics_block47.mp3"></audio>
 
 ::: notes
 
@@ -4342,7 +4422,7 @@ directed by humans.
 
 
 
-<audio controls preload="auto" src="../narration/introduction_population_genetics_block47.mp3"></audio>
+<audio controls preload="auto" src="../narration/introduction_population_genetics_block48.mp3"></audio>
 
 ::: notes
 
@@ -4432,7 +4512,7 @@ After selection:
 :::
 
 
-<audio controls preload="auto" src="../narration/introduction_population_genetics_block48.mp3"></audio>
+<audio controls preload="auto" src="../narration/introduction_population_genetics_block49.mp3"></audio>
 
 ::: notes
 
@@ -4519,7 +4599,7 @@ a **recent selective sweep**.
 
 
 
-<audio controls preload="auto" src="../narration/introduction_population_genetics_block49.mp3"></audio>
+<audio controls preload="auto" src="../narration/introduction_population_genetics_block50.mp3"></audio>
 
 ::: notes
 
@@ -4595,7 +4675,7 @@ These genes show evidence of recent natural selection.
 
 
 
-<audio controls preload="auto" src="../narration/introduction_population_genetics_block50.mp3"></audio>
+<audio controls preload="auto" src="../narration/introduction_population_genetics_block51.mp3"></audio>
 
 ::: notes
 
@@ -4689,7 +4769,7 @@ Balancing selection can maintain multiple alleles at a locus.
 :::
 
 
-<audio controls preload="auto" src="../narration/introduction_population_genetics_block51.mp3"></audio>
+<audio controls preload="auto" src="../narration/introduction_population_genetics_block52.mp3"></audio>
 
 ::: notes
 
@@ -4800,7 +4880,7 @@ $$
 :::
 
 
-<audio controls preload="auto" src="../narration/introduction_population_genetics_block52.mp3"></audio>
+<audio controls preload="auto" src="../narration/introduction_population_genetics_block53.mp3"></audio>
 
 ::: notes
 
@@ -4929,7 +5009,7 @@ Mutation prevents genetic variation from disappearing completely.
 :::
 
 
-<audio controls preload="auto" src="../narration/introduction_population_genetics_block53.mp3"></audio>
+<audio controls preload="auto" src="../narration/introduction_population_genetics_block54.mp3"></audio>
 
 ::: notes
 
@@ -5032,7 +5112,7 @@ DNA variation → population patterns → real-world decisions.
 :::
 
 
-<audio controls preload="auto" src="../narration/introduction_population_genetics_block54.mp3"></audio>
+<audio controls preload="auto" src="../narration/introduction_population_genetics_block55.mp3"></audio>
 
 ::: notes
 
@@ -5120,7 +5200,7 @@ Empirical evidence:
 :::
 
 
-<audio controls preload="auto" src="../narration/introduction_population_genetics_block55.mp3"></audio>
+<audio controls preload="auto" src="../narration/introduction_population_genetics_block56.mp3"></audio>
 
 ::: notes
 
@@ -5222,7 +5302,7 @@ $$
 :::
 
 
-<audio controls preload="auto" src="../narration/introduction_population_genetics_block56.mp3"></audio>
+<audio controls preload="auto" src="../narration/introduction_population_genetics_block57.mp3"></audio>
 
 ::: notes
 
@@ -5328,7 +5408,7 @@ Very small probability → strong statistical evidence
 :::
 
 
-<audio controls preload="auto" src="../narration/introduction_population_genetics_block57.mp3"></audio>
+<audio controls preload="auto" src="../narration/introduction_population_genetics_block58.mp3"></audio>
 
 ::: notes
 
@@ -5451,7 +5531,7 @@ Population genetics connects
 :::
 
 
-<audio controls preload="auto" src="../narration/introduction_population_genetics_block58.mp3"></audio>
+<audio controls preload="auto" src="../narration/introduction_population_genetics_block59.mp3"></audio>
 
 ::: notes
 
@@ -5585,7 +5665,7 @@ Assumptions:
 
 
 
-<audio controls preload="auto" src="../narration/introduction_population_genetics_block59.mp3"></audio>
+<audio controls preload="auto" src="../narration/introduction_population_genetics_block60.mp3"></audio>
 
 ::: notes
 
@@ -5665,7 +5745,7 @@ Colored dots = different alleles.
 
 
 
-<audio controls preload="auto" src="../narration/introduction_population_genetics_block60.mp3"></audio>
+<audio controls preload="auto" src="../narration/introduction_population_genetics_block61.mp3"></audio>
 
 ::: notes
 
@@ -5757,7 +5837,7 @@ Probability that I’s two alleles are identical by descent.
 :::
 
 
-<audio controls preload="auto" src="../narration/introduction_population_genetics_block61.mp3"></audio>
+<audio controls preload="auto" src="../narration/introduction_population_genetics_block62.mp3"></audio>
 
 ::: notes
 
@@ -5850,7 +5930,7 @@ $$
 :::
 
 
-<audio controls preload="auto" src="../narration/introduction_population_genetics_block62.mp3"></audio>
+<audio controls preload="auto" src="../narration/introduction_population_genetics_block63.mp3"></audio>
 
 ::: notes
 
@@ -5955,7 +6035,7 @@ $$
 :::
 
 
-<audio controls preload="auto" src="../narration/introduction_population_genetics_block63.mp3"></audio>
+<audio controls preload="auto" src="../narration/introduction_population_genetics_block64.mp3"></audio>
 
 ::: notes
 
@@ -6060,7 +6140,7 @@ Each common ancestor contributes one independent loop.
 :::
 
 
-<audio controls preload="auto" src="../narration/introduction_population_genetics_block64.mp3"></audio>
+<audio controls preload="auto" src="../narration/introduction_population_genetics_block65.mp3"></audio>
 
 ::: notes
 

@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="Peter Sørensen">
-  <meta name="dcterms.date" content="2026-03-04">
+  <meta name="dcterms.date" content="2026-03-06">
   <title>Course Materials – Introduction to Population Genetics</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -146,7 +146,7 @@ Peter Sørensen
     </div>
 </div>
 
-  <p class="date">2026-03-04</p>
+  <p class="date">2026-03-06</p>
 </section>
 <section id="learning-goals-population-genetics" class="slide level2">
 <h2>Learning Goals — Population Genetics</h2>
@@ -1234,7 +1234,7 @@ of genotype frequencies.</p>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Observed number</strong></td>
+<td><strong>Observed number (<span class="math inline">\(O\)</span>)</strong></td>
 <td><span class="math inline">\(N_{AA}\)</span></td>
 <td><span class="math inline">\(N_{AG}\)</span></td>
 <td><span class="math inline">\(N_{GG}\)</span></td>
@@ -1270,12 +1270,17 @@ of genotype frequencies.</p>
 </tr>
 </tbody>
 </table>
-</div>
 <p><br></p>
-<p>p = estimated frequency of allele A<br>
-q = estimated frequency of allele G</p>
-<p>q = 1 − p<br>
-p + q = 1</p>
+<p><strong>Estimated frequency of allele A</strong></p>
+<p><span class="math display">\[
+p = \frac{2n_{AA} + n_{AG}}{2N}
+\]</span></p>
+<p>The frequency of allele G:</p>
+<p><span class="math display">\[
+q = 1 - p
+\]</span></p>
+<p>since <span class="math inline">\(p + q = 1\)</span>.</p>
+</div>
 </div><div class="column" style="width:45%;">
 <p><strong>Example: SNP rs9272426 (HLA-DQA1)</strong></p>
 <p><br></p>
@@ -1328,11 +1333,23 @@ p + q = 1</p>
 </tr>
 </tbody>
 </table>
+<p><br></p>
+<p><strong>Allele frequency:</strong></p>
+<p><span class="math display">\[
+p = \frac{2n_{AA}+n_{AG}}{2N}
+= \frac{2\cdot17 + 55}{2\cdot84}
+= 0.53,
+\quad
+q = 0.47
+\]</span> <strong>HWE Test:</strong></p>
+<p><span class="math display">\[
+\chi^2 = 8.29,
+\quad
+df = 1,
+\quad
+p = 0.004
+\]</span> Since <span class="math inline">\(p &lt; 0.05\)</span>, the SNP deviates from Hardy–Weinberg equilibrium.</p>
 </div>
-<p><br></p>
-<p>Total <span class="math inline">\(\chi^2 = 8.29\)</span></p>
-<p><br></p>
-<p>Compare to <span class="math inline">\(\chi^2_{(1 \text{ df})}\)</span> to test equilibrium.</p>
 </div></div>
 <audio controls="" preload="auto" src="../narration/introduction_population_genetics_block19.mp3">
 </audio>
@@ -2332,6 +2349,31 @@ the evolutionary trajectory of populations.</p>
 </ul>
 <p>Because mutations are rare, large numbers of nucleotides must be sequenced to estimate <span class="math inline">\(\mu\)</span> accurately.</p>
 </div></div>
+<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block35.mp3">
+</audio>
+<aside class="notes">
+<p>Mutation is the ultimate source of new genetic variation. Without mutation, evolution would eventually run out of raw material.</p>
+<p>A mutation is simply a change in DNA sequence. At the molecular level, it can be a single base substitution, a small insertion or deletion, or a larger structural change.</p>
+<p>We quantify mutation using the mutation rate, denoted by the symbol mu. This is the probability that a given site changes per generation.</p>
+<p>In humans, the mutation rate for single nucleotide polymorphisms — SNPs — is approximately one times ten to the minus eight per site per generation. That may sound extremely small, but remember that the human genome contains about three billion base pairs.</p>
+<p>When you multiply a very small probability by a very large number of sites, you obtain roughly fifty to one hundred new point mutations in every individual per generation.</p>
+<p>Other types of genetic markers mutate much faster. Microsatellites, also called short tandem repeats, have mutation rates around ten to the minus four to ten to the minus three per locus per generation. This is several orders of magnitude higher than SNPs.</p>
+<p>These differences in mutation rate explain why microsatellites were historically useful for studying recent evolutionary events and pedigree relationships.</p>
+<p>How do we estimate mutation rates?</p>
+<p>The most direct method is pedigree-based sequencing. We sequence the genomes of parents and their offspring, and then identify mutations that are present in the child but absent in both parents. These are called de novo mutations.</p>
+<p>Because mutation is rare, we must sequence very large numbers of nucleotides to obtain accurate estimates of mu. Statistically, rare events require large sample sizes.</p>
+<p>So mutation is both rare and powerful: rare at each site, but powerful at the genome level because it continuously injects new variation into the gene pool.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="migration-gene-flow-and-admixture" class="slide level2">
 <h2>Migration (Gene Flow) and Admixture</h2>
@@ -2364,7 +2406,7 @@ between populations that reproduce successfully.</p>
 </ul>
 <p>Admixture is the genomic signature of migration.</p>
 </div></div>
-<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block35.mp3">
+<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block36.mp3">
 </audio>
 <aside class="notes">
 <p>In addition to mutation, migration is a fundamental evolutionary force.</p>
@@ -2403,7 +2445,7 @@ from different ancestral populations.</p>
 <p>Admixture reflects historical migration<br>
 and interbreeding between populations.</p>
 </div></div>
-<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block36.mp3">
+<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block37.mp3">
 </audio>
 <aside class="notes">
 <p>This figure illustrates genetic admixture, which is the genomic signature of migration.</p>
@@ -2468,7 +2510,7 @@ and interbreeding between populations.</p>
 </ul>
 <p>Over time, recombination reshapes associations between loci.</p>
 </div></div>
-<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block37.mp3">
+<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block38.mp3">
 </audio>
 <aside class="notes">
 <p>Recombination reshuffles alleles between loci during meiosis.</p>
@@ -2536,7 +2578,7 @@ D = P_{AB} - p_A p_B
 <p><span class="math inline">\(D\)</span> measures the magnitude and direction<br>
 of statistical association between loci.</p>
 </div></div>
-<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block38.mp3">
+<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block39.mp3">
 </audio>
 <aside class="notes">
 <p>Linkage equilibrium means that alleles at two loci combine independently into haplotypes.</p>
@@ -2604,7 +2646,7 @@ D_{t+1} = (1-r)D_t
 D_t = (1-r)^t D_0
 \]</span></p>
 </div></div>
-<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block39.mp3">
+<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block40.mp3">
 </audio>
 <aside class="notes">
 <p>Linkage disequilibrium is dynamic. It is constantly being created and broken down.</p>
@@ -2652,7 +2694,7 @@ D_t = (1-r)^t D_0
 → Non-random association of alleles</p></li>
 </ol>
 </div></div>
-<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block40.mp3">
+<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block41.mp3">
 </audio>
 <aside class="notes">
 <p>This figure illustrates the difference between linkage equilibrium and linkage disequilibrium.</p>
@@ -2704,7 +2746,7 @@ tracked for 30 generations.</p>
 <p>In finite populations, allele frequencies change by chance:</p>
 <p><strong>Random genetic drift</strong></p>
 </div></div>
-<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block41.mp3">
+<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block42.mp3">
 </audio>
 <aside class="notes">
 <p>This figure shows computer simulations of random genetic drift.</p>
@@ -2777,7 +2819,7 @@ Fitness relative to the most successful genotype.</p>
 </ul>
 <p>Selection acts through differences in fitness.</p>
 </div></div>
-<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block42.mp3">
+<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block43.mp3">
 </audio>
 <aside class="notes">
 <p>Natural selection explains adaptation.</p>
@@ -2851,7 +2893,7 @@ Fitness relative to the most successful genotype.</p>
 <p>Selection reduces the frequency<br>
 of the low-fitness genotype.</p>
 </div></div>
-<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block43.mp3">
+<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block44.mp3">
 </audio>
 <aside class="notes">
 <p>In this example, allele uppercase A is beneficial and dominant.</p>
@@ -2891,7 +2933,7 @@ of the low-fitness genotype.</p>
 </ul>
 <p>Both alleles increase due to natural selection, but at different rates.</p>
 </div></div>
-<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block44.mp3">
+<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block45.mp3">
 </audio>
 <aside class="notes">
 <p>This figure shows how natural selection changes allele frequencies over time.</p>
@@ -2955,7 +2997,7 @@ p' = \frac{p^2 w_{AA} + pq\, w_{Aa}}{\bar{w}}
 <p>Selection changes allele frequencies<br>
 through differences in reproductive success.</p>
 </div></div>
-<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block45.mp3">
+<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block46.mp3">
 </audio>
 <aside class="notes">
 <p>This equation summarizes the general model for allele frequency change under selection.</p>
@@ -3064,7 +3106,7 @@ p' = 0.017 + 0.152 = 0.169
 <p>Selection changes allele frequencies<br>
 through differential reproductive success.</p>
 </div></div>
-<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block46.mp3">
+<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block47.mp3">
 </audio>
 <aside class="notes">
 <p>This table shows the full logic of selection step by step.</p>
@@ -3140,7 +3182,7 @@ through differential reproductive success.</p>
 <p>Artificial selection = natural selection<br>
 directed by humans.</p>
 </div></div>
-<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block47.mp3">
+<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block48.mp3">
 </audio>
 <aside class="notes">
 <p>Natural selection can operate in different ways.</p>
@@ -3190,7 +3232,7 @@ sweeps to fixation.</p>
 <li>One dominant haplotype</li>
 </ul>
 </div></div>
-<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block48.mp3">
+<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block49.mp3">
 </audio>
 <aside class="notes">
 <p>This figure illustrates a selective sweep.</p>
@@ -3235,7 +3277,7 @@ around the SLC24A5 locus.</p>
 <p>This pattern is consistent with<br>
 a <strong>recent selective sweep</strong>.</p>
 </div></div>
-<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block49.mp3">
+<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block50.mp3">
 </audio>
 <aside class="notes">
 <p>This figure shows a real genomic example of a selective sweep.</p>
@@ -3314,7 +3356,7 @@ a <strong>recent selective sweep</strong>.</p>
 </table>
 <p><br></p>
 <p>These genes show evidence of recent natural selection.</p>
-<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block50.mp3">
+<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block51.mp3">
 </audio>
 <aside class="notes">
 <p>This table presents well-studied examples of natural selection in human populations.</p>
@@ -3358,7 +3400,7 @@ of unusually high genetic diversity.</p>
 <p>Key idea:<br>
 Balancing selection can maintain multiple alleles at a locus.</p>
 </div></div>
-<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block51.mp3">
+<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block52.mp3">
 </audio>
 <aside class="notes">
 <p>Directional selection often reduces genetic diversity.</p>
@@ -3429,7 +3471,7 @@ q_{eq} = \sqrt{\frac{\mu}{s}}
 </ul>
 <p>(Assumes complete recessivity)</p>
 </div></div>
-<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block52.mp3">
+<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block53.mp3">
 </audio>
 <aside class="notes">
 <p>Mutation constantly introduces new alleles into populations.</p>
@@ -3506,7 +3548,7 @@ Higher mutation rate → higher frequency</p>
 <p>Key idea:<br>
 Mutation prevents genetic variation from disappearing completely.</p>
 </div></div>
-<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block53.mp3">
+<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block54.mp3">
 </audio>
 <aside class="notes">
 <p>Mutation is the ultimate source of new genetic variation.</p>
@@ -3590,7 +3632,7 @@ Mutation prevents genetic variation from disappearing completely.</p>
 <p>Population genetics connects</p>
 <p>DNA variation → population patterns → real-world decisions.</p>
 </div></div>
-<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block54.mp3">
+<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block55.mp3">
 </audio>
 <aside class="notes">
 <p>Population genetics is not only theoretical. Its principles are applied widely in biology and society.</p>
@@ -3653,7 +3695,7 @@ or allow inbreeding to purge deleterious alleles?</p>
 <li>Maintaining genetic diversity is generally safer</li>
 </ul>
 </div></div>
-<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block55.mp3">
+<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block56.mp3">
 </audio>
 <aside class="notes">
 <p>Conservation genetics examines the genetic consequences of small population size.</p>
@@ -3721,7 +3763,7 @@ without pedigrees</li>
 <li>Recessive disease risk increases</li>
 </ul>
 </div></div>
-<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block56.mp3">
+<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block57.mp3">
 </audio>
 <aside class="notes">
 <p>Population genetics allows us to estimate disease risk at the population level, even without detailed family pedigrees.</p>
@@ -3784,7 +3826,7 @@ would share the same DNA profile.</p>
 </ul>
 <p>Very small probability → strong statistical evidence</p>
 </div></div>
-<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block57.mp3">
+<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block58.mp3">
 </audio>
 <aside class="notes">
 <p>DNA evidence does not prove guilt directly. It provides statistical evidence.</p>
@@ -3871,7 +3913,7 @@ would share the same DNA profile.</p>
 <p>Population genetics connects</p>
 <p><strong>patterns → processes → consequences</strong></p>
 </div></div>
-<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block58.mp3">
+<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block59.mp3">
 </audio>
 <aside class="notes">
 <p>This slide summarizes the entire chapter within a single conceptual framework.</p>
@@ -3950,7 +3992,7 @@ at neutral sites.</p>
 <li>Mutation rate is approximately constant</li>
 </ul>
 </div></div>
-<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block59.mp3">
+<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block60.mp3">
 </audio>
 <aside class="notes">
 <p>The molecular clock is based on a simple but powerful idea:</p>
@@ -3993,7 +4035,7 @@ at neutral sites.</p>
 and reduces diversity.</p>
 <p>Colored dots = different alleles.</p>
 </div></div>
-<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block60.mp3">
+<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block61.mp3">
 </audio>
 <aside class="notes">
 <p>This figure illustrates two sequential genetic bottlenecks during crop domestication.</p>
@@ -4045,7 +4087,7 @@ F_I = P(w \text{ is IBD with } x)
 \]</span></p>
 <p>Probability that I’s two alleles are identical by descent.</p>
 </div></div>
-<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block61.mp3">
+<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block62.mp3">
 </audio>
 <aside class="notes">
 <p>To calculate the inbreeding coefficient, the pedigree is simplified to the closed loop only.</p>
@@ -4108,7 +4150,7 @@ F_I = \frac{1}{8}
 \]</span></p>
 </div>
 </div></div>
-<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block62.mp3">
+<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block63.mp3">
 </audio>
 <aside class="notes">
 <p>We now assume that ancestor A is not inbred. This means her two gene copies are independent.</p>
@@ -4174,7 +4216,7 @@ F_I = \frac{1}{8}
 \]</span></p>
 </div>
 </div></div>
-<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block63.mp3">
+<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block64.mp3">
 </audio>
 <aside class="notes">
 <p>Now consider the more general case: what if ancestor A is inbred?</p>
@@ -4236,7 +4278,7 @@ F_X = \left(\frac{1}{2}\right)^{n_1+n_2+1}
 \]</span></p>
 <p>Each common ancestor contributes one independent loop.</p>
 </div></div>
-<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block64.mp3">
+<audio controls="" preload="auto" src="../narration/introduction_population_genetics_block65.mp3">
 </audio>
 <aside class="notes">
 <p>This is the compact path-counting formula for the inbreeding coefficient at an autosomal locus.</p>
@@ -4440,7 +4482,7 @@ document.addEventListener("DOMContentLoaded", function() {
         pause: true,
 
         // Flags if speaker notes should be visible to all viewers
-        showNotes: false,
+        showNotes: true,
 
         // Global override for autoplaying embedded media (null/true/false)
         autoPlayMedia: null,

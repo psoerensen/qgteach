@@ -20,8 +20,8 @@ format:
     height: 720
     theme: default
     freeze: false
-    self-contained: true
-    show-notes: false
+    self-contained: false
+    show-notes: true
 execute:
   echo: false
   warning: false

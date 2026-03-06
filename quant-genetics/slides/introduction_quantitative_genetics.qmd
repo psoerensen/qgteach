@@ -6,6 +6,7 @@ author:
       - "Center for Quantitative Genetics and Genomics"
       - "Aarhus University"
 date: today
+
 format:
   revealjs:
     slide-number: true
@@ -26,6 +27,7 @@ execute:
   warning: false
   message: false
 ---
+
 
 ## Learning Goals - Quantitative Genetics
 
