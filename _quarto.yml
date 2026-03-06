@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - quant-genetics/narration/**
 
 website:
   title: "Course Materials"
