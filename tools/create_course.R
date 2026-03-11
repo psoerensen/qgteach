@@ -11,6 +11,7 @@ create_course <- function(name, path = ".", tools_dir = "tools") {
     "slides",
     "notes",
     "tutorials",
+    "exercises",
     "apps",
     "data",
     "images",
@@ -51,7 +52,11 @@ create_course <- function(name, path = ".", tools_dir = "tools") {
       "",
       "## Tutorials",
       "",
-      "Hands-on tutorials are located in the `tutorials/` folder.",
+      "Guided tutorials are located in the `tutorials/` folder.",
+      "",
+      "## Exercises",
+      "",
+      "Student problem sets are located in the `exercises/` folder.",
       "",
       "## Interactive Tools",
       "",
@@ -131,7 +136,7 @@ create_course <- function(name, path = ".", tools_dir = "tools") {
   }
   
   # ----------------------------
-  # template slide with narration notes
+  # template slide
   # ----------------------------
   
   slide_file <- file.path(course_dir, "slides", "01_introduction.qmd")
@@ -190,6 +195,41 @@ create_course <- function(name, path = ".", tools_dir = "tools") {
     writeLines(tutorial, tutorial_file)
     
     message("Created template tutorial")
+    
+  }
+  
+  # ----------------------------
+  # template exercise
+  # ----------------------------
+  
+  exercise_file <- file.path(course_dir, "exercises", "01_exercise_template.qmd")
+  
+  if (!file.exists(exercise_file)) {
+    
+    exercise <- c(
+      "---",
+      'title: "Exercise"',
+      "format: html",
+      "---",
+      "",
+      "## Exercise",
+      "",
+      "Describe the problem students should solve.",
+      "",
+      "### Tasks",
+      "",
+      "1. Implement the model in R.",
+      "2. Visualize the results.",
+      "3. Interpret the output.",
+      "",
+      "```r",
+      "# write your code here",
+      "```"
+    )
+    
+    writeLines(exercise, exercise_file)
+    
+    message("Created template exercise")
     
   }
   
