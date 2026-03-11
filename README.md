@@ -18,7 +18,7 @@ https://psoerensen.github.io/qgteach/
 
 ## Repository Structure
 
-The repository is organized as a teaching website containing multiple courses.
+The repository is organized as a teaching website containing multiple courses and shared tools.
 
 ```
 qgteach/
@@ -29,10 +29,13 @@ qgteach/
 
   docs/                      # rendered website (GitHub Pages)
 
+  tools/                     # utilities for course creation and narration
+    create_course.R
+    narrate_slides_qmd.R
+    styles.css
+
   quant-genetics/            # course materials
   genomics-systems-bioinfo/  # course materials
-
-  narration/                 # shared narration tools
 ```
 
 Each course has its own folder and Quarto configuration.
@@ -57,8 +60,10 @@ course-name/
   data/          # datasets used in tutorials
   images/        # figures used in slides and notes
 
-  narration/     # narration files for lectures
+  narration/     # narration audio files
 ```
+
+Slides can optionally include speaker notes that are used for generating narrated lectures.
 
 
 ## Teaching Philosophy
@@ -106,7 +111,7 @@ Provides tools for:
 
 The teaching site is built using **Quarto**.
 
-To render locally:
+To render the full website locally:
 
 ```
 quarto render
@@ -121,12 +126,86 @@ docs/
 This folder is used for **GitHub Pages hosting** and should normally not be edited manually.
 
 
+## Creating a New Course
+
+New courses can be created using the helper function located in `tools/create_course.R`.
+
+From the repository root in R:
+
+```r
+source("tools/create_course.R")
+create_course("my-new-course")
+```
+
+This automatically creates the course structure:
+
+```
+my-new-course/
+
+  _quarto.yml
+  index.qmd
+  styles.css
+
+  slides/
+  notes/
+  tutorials/
+  apps/
+  data/
+  images/
+  narration/
+```
+
+It also creates example files:
+
+```
+slides/01_introduction.qmd
+tutorials/01_getting_started.qmd
+```
+
+The slide template includes a **notes block** that can be used for narration.
+
+
+## Generating Narrated Slides
+
+Slides can include narration using Reveal.js notes blocks:
+
+```
+:::
+Explain the motivation for this topic.
+Provide intuition and background.
+Mention key points students should remember.
+:::
+```
+
+Narrated audio can be generated automatically using the script in:
+
+```
+tools/narrate_slides_qmd.R
+```
+
+Example usage:
+
+```r
+source("tools/narrate_slides_qmd.R")
+
+narrate_slides("quant-genetics")
+```
+
+The script will:
+
+- extract text from slide notes
+- generate audio using the OpenAI TTS API
+- save audio files in the `narration/` folder
+- create narrated slide versions
+
+
 ## Contributing
 
 Contributions are welcome.
 
 Possible contributions include:
 
+- new courses
 - new lectures
 - new tutorials
 - improved explanations
@@ -141,34 +220,6 @@ When adding new material:
 - small datasets → `data/`
 
 Please keep tutorials **reproducible** and avoid committing large datasets.
-
-
-## Adding a New Course
-
-To add a new course to the repository:
-
-1. Create a new folder in the repository root.
-2. Add a course-specific `_quarto.yml`.
-3. Add an `index.qmd` file for the course homepage.
-4. Follow the standard course structure.
-
-Example:
-
-```
-new-course/
-
-  _quarto.yml
-  index.qmd
-
-  slides/
-  notes/
-  tutorials/
-  apps/
-  data/
-  images/
-```
-
-After adding the course, update the main `index.qmd` page to link to it.
 
 
 ## Maintainer
