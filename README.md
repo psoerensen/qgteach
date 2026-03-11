@@ -26,7 +26,7 @@ qgteach/
 
   docs/                      # rendered website (GitHub Pages)
 
-  tools/                     # utilities for course creation and narration
+  tools/                     # course scaffolding and narration utilities
     create_course.R
     narrate_slides.R
     styles.css
