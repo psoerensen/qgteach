@@ -3,9 +3,9 @@
 ![Quarto](https://img.shields.io/badge/built%20with-Quarto-blue)
 ![R](https://img.shields.io/badge/language-R-blue)
 
-Teaching materials for **quantitative genetics, genomics, and statistical modeling using R**.
+Teaching materials for quantitative genetics, genomics, and statistical modeling using R.
 
-This repository contains modular course materials developed using **R** and **Quarto**, including lecture slides, theoretical notes, computational tutorials, and interactive demonstrations.
+This repository contains modular course materials developed using **R** and **Quarto**, including lecture slides, theoretical notes, computational tutorials, exercises, and interactive demonstrations.
 
 The repository also provides tools for creating new courses and generating narrated lecture slides.
 
@@ -51,16 +51,19 @@ course-name/
 
   slides/        # lecture slides
   notes/         # theoretical notes
-  tutorials/     # hands-on exercises
+
+  tutorials/     # guided practical walkthroughs
+  exercises/     # student problem sets
+
   apps/          # interactive teaching apps
 
-  data/          # datasets used in tutorials
+  data/          # datasets used in tutorials and exercises
   images/        # figures used in slides and notes
 
   narration/     # narration audio files
 ```
 
-Slides may optionally contain **speaker notes** used to generate narrated lectures.
+Slides may optionally contain **speaker notes** that can be used to generate narrated lectures.
 
 
 ## Creating a New Course
@@ -86,6 +89,7 @@ my-new-course/
   slides/
   notes/
   tutorials/
+  exercises/
   apps/
   data/
   images/
@@ -97,9 +101,10 @@ Template files are also created:
 ```
 slides/01_introduction.qmd
 tutorials/01_getting_started.qmd
+exercises/01_exercise_template.qmd
 ```
 
-The slide template includes a **notes block** for narration.
+The slide template includes a **notes block** that can be used for narration.
 
 
 ## Generating Narrated Slides
@@ -169,6 +174,7 @@ Examples of contributions include:
 - new courses
 - additional lectures
 - new tutorials
+- new exercises
 - improved explanations
 - bug fixes
 
@@ -176,10 +182,11 @@ When adding new material:
 
 - slides → `slides/`
 - theory notes → `notes/`
-- exercises → `tutorials/`
+- guided walkthroughs → `tutorials/`
+- problem sets → `exercises/`
 - small datasets → `data/`
 
-Please keep tutorials **reproducible** and avoid committing large datasets.
+Please keep tutorials and exercises **reproducible** and avoid committing large datasets.
 
 
 ## Maintainer
