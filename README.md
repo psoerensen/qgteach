@@ -1,16 +1,13 @@
 # qgteach
 
-Teaching materials for quantitative genetics, genomics, and statistical modeling using R.
+![Quarto](https://img.shields.io/badge/built%20with-Quarto-blue)
+![R](https://img.shields.io/badge/language-R-blue)
 
-This repository contains course materials developed using **R** and **Quarto**, including:
+Teaching materials for **quantitative genetics, genomics, and statistical modeling using R**.
 
-- lecture slides
-- theoretical notes
-- computational tutorials
-- interactive demonstrations
-- datasets and figures
+This repository contains modular course materials developed using **R** and **Quarto**, including lecture slides, theoretical notes, computational tutorials, and interactive demonstrations.
 
-The materials emphasize **reproducible research**, **statistical modeling**, and **computational implementation** in quantitative genetics and genomics.
+The repository also provides tools for creating new courses and generating narrated lecture slides.
 
 Website  
 https://psoerensen.github.io/qgteach/
@@ -18,7 +15,7 @@ https://psoerensen.github.io/qgteach/
 
 ## Repository Structure
 
-The repository is organized as a teaching website containing multiple courses and shared tools.
+The repository is organized as a Quarto website containing multiple courses and shared tools.
 
 ```
 qgteach/
@@ -31,7 +28,7 @@ qgteach/
 
   tools/                     # utilities for course creation and narration
     create_course.R
-    narrate_slides_qmd.R
+    narrate_slides.R
     styles.css
 
   quant-genetics/            # course materials
@@ -43,7 +40,7 @@ Each course has its own folder and Quarto configuration.
 
 ## Course Structure
 
-Each course typically follows this structure:
+Each course follows a standard structure.
 
 ```
 course-name/
@@ -63,81 +60,21 @@ course-name/
   narration/     # narration audio files
 ```
 
-Slides can optionally include speaker notes that are used for generating narrated lectures.
-
-
-## Teaching Philosophy
-
-The teaching material emphasizes:
-
-- mathematical foundations of quantitative genetics
-- statistical modeling
-- computational implementation in R
-- reproducible research workflows
-- conceptual understanding of genomic analyses
-
-Lecture materials integrate **theory**, **simulation**, and **applied data analysis**.
-
-
-## Software Used
-
-The courses make use of several R packages developed for genomic analysis.
-
-### qgg
-
-https://github.com/psoerensen/qgg
-
-Provides tools for:
-
-- Bayesian linear regression models
-- genomic fine mapping
-- polygenic scoring
-- gene set enrichment analysis
-
-
-### gact
-
-https://github.com/psoerensen/gact
-
-Provides tools for:
-
-- genomic association databases
-- GWAS summary statistics processing
-- linking genetic variants to biological pathways
-- integrative genomics workflows
-
-
-## Rendering the Website
-
-The teaching site is built using **Quarto**.
-
-To render the full website locally:
-
-```
-quarto render
-```
-
-The rendered site is written to:
-
-```
-docs/
-```
-
-This folder is used for **GitHub Pages hosting** and should normally not be edited manually.
+Slides may optionally contain **speaker notes** used to generate narrated lectures.
 
 
 ## Creating a New Course
 
-New courses can be created using the helper function located in `tools/create_course.R`.
+New courses can be created using the helper function in `tools/create_course.R`.
 
-From the repository root in R:
+Example:
 
 ```r
 source("tools/create_course.R")
 create_course("my-new-course")
 ```
 
-This automatically creates the course structure:
+This automatically generates the course structure:
 
 ```
 my-new-course/
@@ -155,14 +92,14 @@ my-new-course/
   narration/
 ```
 
-It also creates example files:
+Template files are also created:
 
 ```
 slides/01_introduction.qmd
 tutorials/01_getting_started.qmd
 ```
 
-The slide template includes a **notes block** that can be used for narration.
+The slide template includes a **notes block** for narration.
 
 
 ## Generating Narrated Slides
@@ -173,21 +110,14 @@ Slides can include narration using Reveal.js notes blocks:
 :::
 Explain the motivation for this topic.
 Provide intuition and background.
-Mention key points students should remember.
+Mention key ideas students should remember.
 :::
 ```
 
-Narrated audio can be generated automatically using the script in:
-
-```
-tools/narrate_slides_qmd.R
-```
-
-Example usage:
+Narrated audio can then be generated using:
 
 ```r
-source("tools/narrate_slides_qmd.R")
-
+source("tools/narrate_slides.R")
 narrate_slides("quant-genetics")
 ```
 
@@ -199,17 +129,47 @@ The script will:
 - create narrated slide versions
 
 
+## Rendering the Website
+
+The teaching site is built using **Quarto**.
+
+To render the entire site locally:
+
+```
+quarto render
+```
+
+The rendered website is written to:
+
+```
+docs/
+```
+
+This directory is used for **GitHub Pages hosting**.
+
+
+## Teaching Approach
+
+The material emphasizes:
+
+- mathematical foundations of quantitative genetics
+- statistical modeling
+- reproducible computational workflows in R
+- integration of theory, simulation, and real data
+
+Courses combine conceptual explanations with interactive examples and computational exercises.
+
+
 ## Contributing
 
 Contributions are welcome.
 
-Possible contributions include:
+Examples of contributions include:
 
 - new courses
-- new lectures
+- additional lectures
 - new tutorials
 - improved explanations
-- additional datasets
 - bug fixes
 
 When adding new material:
