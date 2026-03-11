@@ -148,7 +148,6 @@ https://github.com/psoerensen/qgteach
 
 Peter Sørensen  
 Center for Quantitative Genetics and Genomics  
-Department of Molecular Biology and Genetics  
 Aarhus University, Denmark  
 
 Email: pso@qgg.au.dk  
