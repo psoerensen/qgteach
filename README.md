@@ -100,6 +100,7 @@ Template files are also created:
 
 ```
 slides/01_introduction.qmd
+notes/01_concepts.qmd
 tutorials/01_getting_started.qmd
 exercises/01_exercise_template.qmd
 ```
@@ -151,6 +152,39 @@ docs/
 ```
 
 This directory is used for **GitHub Pages hosting**.
+
+
+## Typical Workflow
+
+A typical workflow for creating and publishing a course is:
+
+1. Create a new course
+
+```r
+create_course("my-course")
+```
+
+2. Write lecture slides and notes
+
+3. Add narration notes to slides
+
+```
+:::
+Narration text for the slide.
+:::
+```
+
+4. Generate narrated slides
+
+```r
+narrate_slides("my-course")
+```
+
+5. Render the teaching website
+
+```
+quarto render
+```
 
 
 ## Teaching Approach

@@ -167,7 +167,53 @@ create_course <- function(name, path = ".", tools_dir = "tools") {
     message("Created template slide")
     
   }
+
+  # ----------------------------
+  # template notes
+  # ----------------------------
   
+  notes_file <- file.path(course_dir, "notes", "01_concepts.qmd")
+  
+  if (!file.exists(notes_file)) {
+    
+    notes <- c(
+      "---",
+      'title: "Concepts"',
+      "format: html",
+      "---",
+      "",
+      "## Overview",
+      "",
+      "Introduce the main concepts for this topic.",
+      "",
+      "Explain the biological motivation and the statistical model.",
+      "",
+      "## Key Ideas",
+      "",
+      "- Define the important variables.",
+      "- Explain the underlying assumptions.",
+      "- Connect theory with empirical examples.",
+      "",
+      "## Mathematical Formulation",
+      "",
+      "Provide the formal model.",
+      "",
+      "$$",
+      "P = \\mu + G + E",
+      "$$",
+      "",
+      "## Interpretation",
+      "",
+      "Explain how the model relates to observable biological data."
+    )
+    
+    writeLines(notes, notes_file)
+    
+    message("Created template notes")
+    
+  }
+  
+    
   # ----------------------------
   # template tutorial
   # ----------------------------
