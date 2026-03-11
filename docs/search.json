@@ -826,6 +826,13 @@
     "text": "📚 Further Reading\nFor foundational principles of classical and molecular genetics:\nGriffiths, A. J. F., Doebley, J. F., Peichel, C. L., & Wassarman, D. A. (2023). An Introduction to Genetic Analysis (13th ed.). W. H. Freeman.\nFor a unified and modern treatment of quantitative genetics theory and genomics:\nWalsh, B., Visscher, P. M., & Lynch, M. (2025). Genetics and Analysis of Quantitative Traits: Foundations (2nd ed.). Cambridge University Press.\nFor Bayesian modeling, hierarchical inference, and statistical learning in quantitative genetics and genomics:\nSorensen, D. (2025). Statistical Learning in Genetics: An Introduction Using R. Springer.\nFor likelihood-based and Bayesian inference, including detailed treatment of MCMC methods:\nSorensen, D., & Gianola, D. (2002/2010). Likelihood, Bayesian, and MCMC Methods in Quantitative Genetics. Springer.\nFor a comprehensive and mathematically rigorous treatment of modern statistical learning:\nHastie, T., Tibshirani, R., & Friedman, J. (2009). The Elements of Statistical Learning: Data Mining, Inference, and Prediction (2nd ed.). Springer.\nFor an accessible and application-oriented introduction to statistical learning with R:\nJames, G., Witten, D., Hastie, T., & Tibshirani, R. (2021). An Introduction to Statistical Learning: With Applications in R (2nd ed.). Springer."
   },
   {
+    "objectID": "index.html#reusing-the-teaching-materials",
+    "href": "index.html#reusing-the-teaching-materials",
+    "title": "Teaching Materials",
+    "section": "Reusing the Teaching Materials",
+    "text": "Reusing the Teaching Materials\nAll teaching materials are developed using Quarto and R, and are available on GitHub.\nInstructors are welcome to:\n\nreuse slides or tutorials\nadapt course materials\ncontribute improvements\n\nRepository:\nhttps://github.com/psoerensen/qgteach"
+  },
+  {
     "objectID": "index.html#contact",
     "href": "index.html#contact",
     "title": "Teaching Materials",

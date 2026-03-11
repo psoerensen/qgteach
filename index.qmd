@@ -129,6 +129,21 @@ For an accessible and application-oriented introduction to statistical learning 
 **[James, G., Witten, D., Hastie, T., & Tibshirani, R. (2021). *An Introduction to Statistical Learning: With Applications in R* (2nd ed.). Springer.](https://link.springer.com/book/10.1007/978-1-0716-1418-1)**  
 
 
+## Reusing the Teaching Materials
+
+All teaching materials are developed using **Quarto** and **R**, and are available on GitHub.
+
+Instructors are welcome to:
+
+- reuse slides or tutorials
+- adapt course materials
+- contribute improvements
+
+Repository:
+
+https://github.com/psoerensen/qgteach
+
+
 ## 📫 Contact
 
 Peter Sørensen  
@@ -138,3 +153,5 @@ Aarhus University, Denmark
 
 Email: pso@qgg.au.dk  
 GitHub: https://github.com/psoerensen
+
+
