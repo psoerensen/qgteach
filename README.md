@@ -15,7 +15,6 @@ The materials emphasize reproducible research, statistical modeling, and computa
 Website:
 https://psoerensen.github.io/qgteach/
 
----
 
 # Repository Structure
 
@@ -32,11 +31,8 @@ docs/                      rendered website (GitHub Pages)
 quant-genetics/            course materials
 genomics-systems-bioinfo/  course materials
 
-narration/                 shared narration tools
-
 Each course has its own folder and Quarto configuration.
 
----
 
 # Course Structure
 
@@ -58,45 +54,6 @@ images/        figures used in slides and notes
 
 narration/     narration files for lectures
 
----
-
-# Teaching Philosophy
-
-The teaching material emphasizes:
-
-- mathematical foundations of quantitative genetics
-- statistical modeling
-- computational implementation in R
-- reproducible research workflows
-- conceptual understanding of genomic analyses
-
-Lectures combine theory, simulation, and applied data analysis.
-
----
-
-# Software Used
-
-The courses make use of several R packages developed for genomic analysis.
-
-qgg
-https://github.com/psoerensen/qgg
-
-Provides tools for:
-- Bayesian linear regression models
-- genomic fine mapping
-- polygenic scoring
-- gene set enrichment analysis
-
-gact
-https://github.com/psoerensen/gact
-
-Provides tools for:
-- genomic association databases
-- GWAS summary statistics processing
-- linking genetic variants to biological pathways
-- integrative genomics workflows
-
----
 
 # Rendering the Website
 
@@ -112,7 +69,6 @@ docs/
 
 This folder is used for GitHub Pages hosting and should normally not be edited manually.
 
----
 
 # Contributing
 
@@ -135,13 +91,11 @@ small datasets → data/
 
 Please keep tutorials reproducible and avoid committing large datasets.
 
----
 
 # Maintainer
 
 Peter Sørensen
 Center for Quantitative Genetics and Genomics
-Department of Molecular Biology and Genetics
 Aarhus University
 
 Email: pso@qgg.au.dk
