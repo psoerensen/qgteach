@@ -37,6 +37,36 @@ qgteach/
 
 Each course has its own folder and Quarto configuration.
 
+## Tools
+
+The repository includes utilities that help instructors create and maintain courses.
+
+### create_course.R
+
+Creates a new course with the standard folder structure and template files.
+
+Example:
+
+```r
+source("tools/create_course.R")
+create_course("my-new-course")
+```
+
+This generates a ready-to-use course including templates for slides, notes, tutorials, and exercises.
+
+### narrate_slides_qmd.R
+
+Generates narrated lecture slides using text from Reveal.js notes blocks.
+
+Example:
+
+```r
+source("tools/narrate_slides.R")
+narrate_slides("quant-genetics")
+```
+
+The script extracts text from slide notes, generates audio using the OpenAI TTS API, and inserts audio playback into the slides.
+
 
 ## Course Structure
 
