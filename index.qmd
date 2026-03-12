@@ -51,7 +51,7 @@ This module introduces Bayesian linear regression through theoretical notes, sli
 
 ### 🧬 Genome-Wide Association Studies (GWAS)
 
-This module introduces the statistical and genetic foundations of genome-wide association studies (GWAS), which aim to identify genetic variants associated with complex traits and diseases. Topics include statistical inference for genetic effects, population structure and relatedness, linkage disequilibrium, heritability estimation, and methods for identifying causal variants within associated genomic regions. The course also covers meta-analysis of genetic studies, inference from GWAS summary statistics, and polygenic risk prediction.
+This module introduces the statistical and genetic foundations of genome-wide association studies (GWAS), which aim to identify genetic variants associated with complex traits and diseases. Topics include statistical inference for genetic effects, population structure and relatedness, linkage disequilibrium, heritability estimation, and methods for identifying causal variants within associated genomic regions. 
 
 The material is based on lecture notes and exercises developed by [Matti Pirinen](https://www.mv.helsinki.fi/home/mjxpirin/) and distributed under a **CC-BY-SA license**.
 
