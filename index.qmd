@@ -4,13 +4,13 @@ subtitle: "Quantitative Genetics, Genomics, and Statistical Modeling"
 toc: false
 ---
 
-This site provides structured course materials, lecture notes, slides, and computational demonstrations in quantitative genetics, genomics, and statistical modeling. All materials are reproducible and developed using R and Quarto.
+This site provides teaching materials, lecture notes, slides, and computational demonstrations in quantitative genetics, genomics, and statistical modeling. All materials are reproducible and developed using R and Quarto.
 
 ---
 
-## 🎓 Courses
+## 🎓 Modules
 
-The modules cover complementary aspects of quantitative genetics, genomics, and statistical modeling. Some topics—such as genome-wide association studies (GWAS)—appear across multiple courses but from different perspectives, ranging from theoretical foundations to statistical methods and biological interpretation.
+The modules cover complementary aspects of quantitative genetics, genomics, and statistical modeling. Some topics—such as genome-wide association studies (GWAS)—appear across multiple modules but from different perspectives, ranging from theoretical foundations to statistical methods and biological interpretation.
 
 ::: {.columns}
 
