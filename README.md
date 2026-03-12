@@ -3,21 +3,23 @@
 ![Quarto](https://img.shields.io/badge/built%20with-Quarto-blue)
 ![R](https://img.shields.io/badge/language-R-blue)
 
-Teaching materials for quantitative genetics, genomics, and statistical modeling using R.
+Teaching materials for **quantitative genetics, genomics, and statistical modeling using R**.
 
-This repository contains modular course materials developed using **R** and **Quarto**, including lecture slides, theoretical notes, computational tutorials, exercises, and interactive demonstrations.
+This repository contains modular course materials developed using **R** and **Quarto**, including:
+
+- lecture slides
+- theoretical notes
+- tutorials and exercises
+- interactive demonstrations
 
 The repository also provides tools for creating new courses and generating narrated lecture slides.
 
 Website  
 https://psoerensen.github.io/qgteach/
 
-
 ## Repository Structure
 
-The repository is organized as a Quarto website containing multiple courses and shared tools.
-
-```
+```text
 qgteach/
 
   _quarto.yml
@@ -28,89 +30,19 @@ qgteach/
 
   tools/                     # course scaffolding and narration utilities
     create_course.R
-    narrate_slides.R
+    narrate_slides_qmd.R
     styles.css
 
-  quant-genetics/            # course materials
-  genomics-systems-bioinfo/  # course materials
+  quant-genetics/
+  genomics-systems-bioinfo/
 ```
-
-Each course has its own folder and Quarto configuration.
-
-## Tools
-
-The repository includes utilities that help instructors create and maintain courses.
-
-### create_course.R
-
-Creates a new course with the standard folder structure and template files.
-
-Example:
-
-```r
-source("tools/create_course.R")
-create_course("my-new-course")
-```
-
-This generates a ready-to-use course including templates for slides, notes, tutorials, and exercises.
-
-### narrate_slides_qmd.R
-
-Generates narrated lecture slides using text from Reveal.js notes blocks.
-
-Example:
-
-```r
-source("tools/narrate_slides.R")
-narrate_slides("quant-genetics")
-```
-
-The script extracts text from slide notes, generates audio using the OpenAI TTS API, and inserts audio playback into the slides.
-
 
 ## Course Structure
 
-Each course follows a standard structure.
+Each course follows a standard layout.
 
-```
+```text
 course-name/
-
-  _quarto.yml
-  index.qmd
-  styles.css
-
-  slides/        # lecture slides
-  notes/         # theoretical notes
-
-  tutorials/     # guided practical walkthroughs
-  exercises/     # student problem sets
-
-  apps/          # interactive teaching apps
-
-  data/          # datasets used in tutorials and exercises
-  images/        # figures used in slides and notes
-
-  narration/     # narration audio files
-```
-
-Slides may optionally contain **speaker notes** that can be used to generate narrated lectures.
-
-
-## Creating a New Course
-
-New courses can be created using the helper function in `tools/create_course.R`.
-
-Example:
-
-```r
-source("tools/create_course.R")
-create_course("my-new-course")
-```
-
-This automatically generates the course structure:
-
-```
-my-new-course/
 
   _quarto.yml
   index.qmd
@@ -118,75 +50,78 @@ my-new-course/
 
   slides/
   notes/
+
   tutorials/
   exercises/
+
   apps/
+
   data/
   images/
+
   narration/
 ```
 
-Template files are also created:
+Slides may include **speaker notes** used to generate narrated lectures.
 
+## Tools
+
+### create_course.R
+
+Creates a new course with the standard structure and template files.
+
+```r
+source("tools/create_course.R")
+create_course("my-course")
 ```
+
+Templates include:
+
+```text
 slides/01_introduction.qmd
 notes/01_concepts.qmd
 tutorials/01_getting_started.qmd
 exercises/01_exercise_template.qmd
 ```
 
-The slide template includes a **notes block** that can be used for narration.
+### narrate_slides_qmd.R
 
+Generates narrated slides from Reveal.js notes blocks.
 
-## Generating Narrated Slides
+Example notes block:
 
-Slides can include narration using Reveal.js notes blocks:
-
-```
+```text
 :::
-Explain the motivation for this topic.
-Provide intuition and background.
-Mention key ideas students should remember.
+Explain the key idea for this slide.
 :::
 ```
 
-Narrated audio can then be generated using:
+Generate narration:
 
 ```r
-source("tools/narrate_slides.R")
+source("tools/narrate_slides_qmd.R")
 narrate_slides("quant-genetics")
 ```
 
-The script will:
-
-- extract text from slide notes
-- generate audio using the OpenAI TTS API
-- save audio files in the `narration/` folder
-- create narrated slide versions
-
+Audio files are saved to the course `narration/` folder.
 
 ## Rendering the Website
 
-The teaching site is built using **Quarto**.
+Render the full teaching site with:
 
-To render the entire site locally:
-
-```
+```bash
 quarto render
 ```
 
-The rendered website is written to:
+The output is written to:
 
-```
+```text
 docs/
 ```
 
-This directory is used for **GitHub Pages hosting**.
-
+which is used for **GitHub Pages hosting**.
 
 ## Typical Workflow
-
-A typical workflow for creating and publishing a course is:
 
 1. Create a new course
 
@@ -194,15 +129,9 @@ A typical workflow for creating and publishing a course is:
 create_course("my-course")
 ```
 
-2. Write lecture slides and notes
+2. Write slides, notes, tutorials, and exercises
 
 3. Add narration notes to slides
-
-```
-:::
-Narration text for the slide.
-:::
-```
 
 4. Generate narrated slides
 
@@ -210,12 +139,11 @@ Narration text for the slide.
 narrate_slides("my-course")
 ```
 
-5. Render the teaching website
+5. Render the site
 
-```
+```bash
 quarto render
 ```
-
 
 ## Teaching Approach
 
@@ -223,35 +151,22 @@ The material emphasizes:
 
 - mathematical foundations of quantitative genetics
 - statistical modeling
-- reproducible computational workflows in R
+- reproducible workflows in R
 - integration of theory, simulation, and real data
-
-Courses combine conceptual explanations with interactive examples and computational exercises.
-
 
 ## Contributing
 
 Contributions are welcome.
 
-Examples of contributions include:
+Examples include:
 
 - new courses
-- additional lectures
-- new tutorials
-- new exercises
+- lectures or tutorials
+- exercises
 - improved explanations
 - bug fixes
 
-When adding new material:
-
-- slides → `slides/`
-- theory notes → `notes/`
-- guided walkthroughs → `tutorials/`
-- problem sets → `exercises/`
-- small datasets → `data/`
-
 Please keep tutorials and exercises **reproducible** and avoid committing large datasets.
-
 
 ## Maintainer
 
