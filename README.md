@@ -30,7 +30,7 @@ qgteach/
 
   tools/                     # course scaffolding and narration utilities
     create_course.R
-    narrate_slides_qmd.R
+    narrate_slides.R
     styles.css
 
   quant-genetics/
@@ -84,7 +84,7 @@ tutorials/01_getting_started.qmd
 exercises/01_exercise_template.qmd
 ```
 
-### narrate_slides_qmd.R
+### narrate_slides.R
 
 Generates narrated slides from Reveal.js notes blocks.
 
@@ -99,7 +99,7 @@ Explain the key idea for this slide.
 Generate narration:
 
 ```r
-source("tools/narrate_slides_qmd.R")
+source("tools/narrate_slides.R")
 narrate_slides("quant-genetics")
 ```
 
@@ -107,7 +107,7 @@ Audio files are saved to the course `narration/` folder.
 
 ## Rendering the Website
 
-Render the full teaching site with:
+Render the full teaching site from the project root with:
 
 ```bash
 quarto render
@@ -156,17 +156,7 @@ The material emphasizes:
 
 ## Contributing
 
-Contributions are welcome.
-
-Examples include:
-
-- new courses
-- lectures or tutorials
-- exercises
-- improved explanations
-- bug fixes
-
-Please keep tutorials and exercises **reproducible** and avoid committing large datasets.
+Contributions are welcome. This may include adding new courses, lectures, tutorials, or exercises, improving explanations, or fixing bugs. Please ensure that tutorials and exercises remain reproducible, and avoid committing large datasets to the repository.
 
 ## Maintainer
 
