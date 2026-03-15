@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="Peter Sørensen">
-  <meta name="dcterms.date" content="2026-03-12">
+  <meta name="dcterms.date" content="2026-03-15">
   <title>Course Materials – Introduction to Population Genetics</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -146,7 +146,7 @@ Peter Sørensen
     </div>
 </div>
 
-  <p class="date">2026-03-12</p>
+  <p class="date">2026-03-15</p>
 </section>
 <section id="learning-goals-population-genetics" class="slide level2">
 <h2>Learning Goals — Population Genetics</h2>
@@ -175,7 +175,11 @@ Peter Sørensen
 <li>Define inbreeding and describe its genetic consequences</li>
 </ul>
 </div><div class="column" style="width:40%;">
-<p><strong>4. Evolutionary Forces</strong></p>
+<p><strong>4. Measurement of Genetic Variation</strong></p>
+<ul>
+<li>Understand and interpret common statistics used to quantify genetic variation in populations</li>
+</ul>
+<p><strong>5. Evolutionary Forces</strong></p>
 <ul>
 <li>Describe how mutation, migration, recombination, drift, and selection change allele frequencies<br>
 </li>
@@ -185,7 +189,6 @@ Peter Sørensen
 </li>
 <li>Explain linkage disequilibrium and its decay<br>
 </li>
-<li>Recognize genomic signatures of selection, drift, and population structure</li>
 </ul>
 </div></div>
 <aside class="notes">
@@ -194,7 +197,11 @@ Peter Sørensen
 <p>First, detecting genetic variation. This includes identifying major types of DNA variation and understanding key concepts such as locus, allele, haplotype, and phase. It also includes interpreting measures such as heterozygosity and nucleotide diversity.</p>
 <p>Second, the gene pool and Hardy–Weinberg equilibrium. This involves calculating allele and genotype frequencies, stating the Hardy–Weinberg law and its assumptions, and testing for deviations from equilibrium.</p>
 <p>Third, mating systems and inbreeding. This includes understanding how nonrandom mating alters genotype structure and recognizing the genetic consequences of inbreeding.</p>
-<p>Fourth, evolutionary forces. Mutation, migration, recombination, genetic drift, and natural selection change allele frequencies over time. This section also includes linkage disequilibrium, its decay, and genomic signatures of selection, drift, and population structure.</p>
+<p>Fourth, measurement of genetic variation. Here we introduce statistics used to quantify genetic diversity in populations, such as segregating sites, haplotype counts, gene diversity, and nucleotide diversity.<br>
+These measures allow us to compare levels of genetic variation across populations and species.</p>
+<p>Fifth, evolutionary forces. Mutation, migration, recombination, genetic drift, and natural selection change allele frequencies over time.<br>
+This section also includes linkage disequilibrium and its decay.</p>
+<p>The overall objective is not only to perform calculations, but to interpret what patterns of genetic variation reveal about evolutionary processes.</p>
 <p>The overall objective is not only to perform calculations, but to interpret what patterns of genetic variation reveal about evolutionary processes.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -2042,8 +2049,8 @@ p + q = 1
       }</style></aside>
 </section></section>
 <section>
-<section id="mesurement-of-genetic-variation" class="title-slide slide level1 center">
-<h1>4.Mesurement of Genetic Variation</h1>
+<section id="measurement-of-genetic-variation" class="title-slide slide level1 center">
+<h1>4.Measurement of Genetic Variation</h1>
 
 </section>
 <section id="measuring-genetic-variation" class="slide level2">
@@ -3324,81 +3331,139 @@ Balancing selection can maintain multiple alleles at a locus.</p>
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-</section>
-<section id="mutation-as-a-force-maintaining-variation" class="slide level2">
-<h2>Mutation as a Force Maintaining Variation</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<h3 id="mutationdrift-balance-neutral-variation">Mutation–Drift Balance (Neutral Variation)</h3>
-<p>Mutation introduces new alleles.<br>
-Genetic drift removes variation.</p>
-<p>At equilibrium:</p>
-<p>Loss of heterozygosity (drift)<br>
-= Gain of heterozygosity (mutation)</p>
-<p>Equilibrium heterozygosity:</p>
-<p><span class="math display">\[
+<!-- Leave this out -->
+<!-- Leave this out 
+
+
+## Mutation as a Force Maintaining Variation
+
+::: {.columns}
+
+::: {.column width="50%"}
+
+### Mutation–Drift Balance (Neutral Variation)
+
+Mutation introduces new alleles.  
+Genetic drift removes variation.
+
+At equilibrium:
+
+Loss of heterozygosity (drift)  
+= Gain of heterozygosity (mutation)
+
+Equilibrium heterozygosity:
+
+$$
 \hat{H} = \frac{4N_e\mu}{1 + 4N_e\mu}
-\]</span></p>
-<ul>
-<li><span class="math inline">\(N_e\)</span> = effective population size<br>
-</li>
-<li><span class="math inline">\(\mu\)</span> = mutation rate per site<br>
-</li>
-<li><span class="math inline">\(\hat{H}\)</span> = equilibrium heterozygosity</li>
-</ul>
-<p>(Neutral loci, no selection)</p>
-</div><div class="column" style="width:50%;">
-<h3 id="mutationselection-balance-deleterious-alleles">Mutation–Selection Balance (Deleterious Alleles)</h3>
-<p>Mutation creates deleterious alleles.<br>
-Selection removes them.</p>
-<p>At equilibrium:</p>
-<p>Rate of new mutations<br>
-= Rate of removal by selection</p>
-<p>For a recessive deleterious allele:</p>
-<p><span class="math display">\[
+$$
+
+- $N_e$ = effective population size  
+- $\mu$ = mutation rate per site  
+- $\hat{H}$ = equilibrium heterozygosity  
+
+(Neutral loci, no selection)
+
+:::
+
+::: {.column width="50%"}
+
+### Mutation–Selection Balance (Deleterious Alleles)
+
+Mutation creates deleterious alleles.  
+Selection removes them.
+
+At equilibrium:
+
+Rate of new mutations  
+= Rate of removal by selection
+
+For a recessive deleterious allele:
+
+$$
 q_{eq} = \sqrt{\frac{\mu}{s}}
-\]</span></p>
-<ul>
-<li><span class="math inline">\(\mu\)</span> = mutation rate<br>
-</li>
-<li><span class="math inline">\(s\)</span> = selection coefficient<br>
-</li>
-<li><span class="math inline">\(q_{eq}\)</span> = equilibrium allele frequency</li>
-</ul>
-<p>(Assumes complete recessivity)</p>
-</div></div>
-<aside class="notes">
-<p>Mutation constantly introduces new alleles into populations.</p>
-<p>But why does genetic variation not increase without limit? And why is it not completely eliminated by drift or selection?</p>
-<p>First, consider neutral variation.</p>
-<p>At neutral loci, genetic diversity reflects a balance between mutation and genetic drift.</p>
-<p>Mutation introduces new alleles. Genetic drift removes variation through random sampling in finite populations.</p>
-<p>At equilibrium, the loss of heterozygosity due to drift equals the gain of heterozygosity from mutation.</p>
-<p>The equilibrium heterozygosity is approximately</p>
-<p>H-hat equals four N sub e mu divided by one plus four N sub e mu.</p>
-<p>This expression shows that genetic diversity depends primarily on effective population size and mutation rate.</p>
-<p>Large populations with high mutation rates maintain more variation.</p>
-<p>Now consider deleterious alleles.</p>
-<p>Mutation continuously creates harmful alleles, while natural selection removes them.</p>
-<p>At equilibrium, the number of new deleterious mutations introduced each generation equals the number removed by selection.</p>
-<p>For a completely recessive deleterious allele, the equilibrium frequency equals</p>
-<p>the square root of mu divided by s.</p>
-<p>Stronger selection reduces the equilibrium frequency.</p>
-<p>Higher mutation rates increase it.</p>
-<p>Thus, mutation maintains variation in two distinct ways:</p>
-<p>Through mutation–drift balance at neutral loci, and through mutation–selection balance at deleterious loci.</p>
-<p>These equilibria are foundational results in theoretical population genetics.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+$$
+
+- $\mu$ = mutation rate  
+- $s$ = selection coefficient  
+- $q_{eq}$ = equilibrium allele frequency  
+
+(Assumes complete recessivity)
+
+:::
+
+:::
+
+::: notes
+
+Mutation constantly introduces new alleles into populations.
+
+But why does genetic variation not increase without limit?
+And why is it not completely eliminated by drift or selection?
+
+First, consider neutral variation.
+
+At neutral loci,
+genetic diversity reflects a balance
+between mutation and genetic drift.
+
+Mutation introduces new alleles.
+Genetic drift removes variation
+through random sampling in finite populations.
+
+At equilibrium,
+the loss of heterozygosity due to drift
+equals the gain of heterozygosity from mutation.
+
+The equilibrium heterozygosity
+is approximately
+
+H-hat equals
+four N sub e mu
+divided by
+one plus four N sub e mu.
+
+This expression shows that
+genetic diversity depends primarily
+on effective population size
+and mutation rate.
+
+Large populations with high mutation rates
+maintain more variation.
+
+Now consider deleterious alleles.
+
+Mutation continuously creates harmful alleles,
+while natural selection removes them.
+
+At equilibrium,
+the number of new deleterious mutations introduced each generation
+equals the number removed by selection.
+
+For a completely recessive deleterious allele,
+the equilibrium frequency equals
+
+the square root of
+mu divided by s.
+
+Stronger selection
+reduces the equilibrium frequency.
+
+Higher mutation rates
+increase it.
+
+Thus, mutation maintains variation
+in two distinct ways:
+
+Through mutation–drift balance at neutral loci,
+and through mutation–selection balance
+at deleterious loci.
+
+These equilibria are foundational results
+in theoretical population genetics.
+
+:::
+
+-->
 </section>
 <section id="mutation-maintains-genetic-variation" class="slide level2">
 <h2>Mutation Maintains Genetic Variation</h2>
@@ -3474,7 +3539,7 @@ Mutation prevents genetic variation from disappearing completely.</p>
 </section></section>
 <section>
 <section id="applications-of-population-genetics" class="title-slide slide level1 center">
-<h1>18.6 Applications of Population Genetics</h1>
+<h1>6. Applications of Population Genetics</h1>
 
 </section>
 <section id="biological-and-social-applications" class="slide level2">
@@ -3738,8 +3803,8 @@ would share the same DNA profile.</p>
           display:block!important;
       }</style></aside>
 </section>
-<section id="chapter-18-the-population-genetics-framework" class="slide level2">
-<h2>Chapter 18 — The Population Genetics Framework</h2>
+<section id="summary-population-genetics" class="slide level2">
+<h2>Summary Population Genetics</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><strong>What We Observe</strong></p>
@@ -3752,7 +3817,7 @@ would share the same DNA profile.</p>
 </li>
 <li>Population differences</li>
 </ul>
-<p>These are measurable genetic patterns.</p>
+<p>Represent <strong>measurable genetic patterns</strong>.</p>
 </div><div class="column" style="width:50%;">
 <p><strong>The Null Model</strong></p>
 <p><strong>Hardy–Weinberg equilibrium</strong></p>
@@ -3763,12 +3828,14 @@ would share the same DNA profile.</p>
 </li>
 <li>No mutation, migration, or selection</li>
 </ul>
-<p>Defines the expectation of <strong>no evolutionary change</strong> =&gt; Deviations indicate evolutionary forces.</p>
+<p><strong>Deviations indicate evolutionary forces.</strong></p>
 </div></div>
 <div class="columns">
 <div class="column" style="width:50%;">
+<div style="margin-top: 1em;">
+
+</div>
 <p><strong>Evolutionary Forces</strong></p>
-<p>Allele frequencies change due to:</p>
 <ul>
 <li>Mutation<br>
 </li>
@@ -3780,8 +3847,11 @@ would share the same DNA profile.</p>
 </li>
 <li>Natural selection</li>
 </ul>
-<p><strong>Evolution = change in allele frequencies over time</strong></p>
+<p><strong>Change in allele frequencies over time</strong></p>
 </div><div class="column" style="width:50%;">
+<div style="margin-top: 1em;">
+
+</div>
 <p><strong>What These Forces Shape</strong></p>
 <ul>
 <li>Genetic diversity<br>
@@ -3792,10 +3862,9 @@ would share the same DNA profile.</p>
 </li>
 <li>Genomic signatures of history<br>
 </li>
-<li>Applications in medicine, conservation, and forensics</li>
+<li>Medicine, conservation, and forensics</li>
 </ul>
-<p>Population genetics connects</p>
-<p><strong>patterns → processes → consequences</strong></p>
+<p>Population genetics connects <strong>patterns → processes → consequences</strong></p>
 </div></div>
 <aside class="notes">
 <p>This slide summarizes the entire chapter within a single conceptual framework.</p>
@@ -3828,354 +3897,595 @@ would share the same DNA profile.</p>
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-</section>
-<section id="the-molecular-clock-simple-version" class="slide level2">
-<h2>The Molecular Clock (Simple Version)</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<h3 id="theory">Theory</h3>
-<p>Neutral mutations accumulate over time.</p>
-<p>If the mutation rate is constant, DNA differences increase approximately linearly.</p>
-<p>For two diverging species:</p>
-<p><span class="math display">\[
+<!-- This is for speaker notes toogle - need more work 
+
+## The Molecular Clock (Simple Version)
+
+::: {.columns}
+
+::: {.column width="50%"}
+
+### Theory
+
+Neutral mutations accumulate over time.
+
+If the mutation rate is constant,
+DNA differences increase approximately linearly.
+
+For two diverging species:
+
+$$
 d = 2 \mu t
-\]</span></p>
-<p>Rearranged:</p>
-<p><span class="math display">\[
+$$
+
+Rearranged:
+
+$$
 t = \frac{d}{2\mu}
-\]</span></p>
-<p>Where:</p>
-<ul>
-<li><span class="math inline">\(d\)</span> = sequence divergence<br>
-</li>
-<li><span class="math inline">\(\mu\)</span> = mutation rate per lineage per generation<br>
-</li>
-<li><span class="math inline">\(t\)</span> = time since divergence (in generations)</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<h3 id="interpretation-and-example">Interpretation and Example</h3>
-<p>Both lineages accumulate mutations after divergence.</p>
-<p>The factor 2 reflects:</p>
-<ul>
-<li>Mutation in lineage 1<br>
-</li>
-<li>Mutation in lineage 2</li>
-</ul>
-<p><br></p>
-<p>Example:</p>
-<p>Humans and chimpanzees differ by ~1.8%<br>
-at neutral sites.</p>
-<p>Using typical mutation rate estimates:</p>
-<p>Estimated divergence ≈ 5–7 million years ago.</p>
-<p>Assumptions:</p>
-<ul>
-<li>Mutations are neutral<br>
-</li>
-<li>Mutation rate is approximately constant</li>
-</ul>
-</div></div>
-<aside class="notes">
-<p>The molecular clock is based on a simple but powerful idea:</p>
-<p>Neutral mutations accumulate at an approximately constant rate.</p>
-<p>If two species split from a common ancestor, each lineage accumulates mutations independently.</p>
-<p>That is why the equation includes a factor of two.</p>
-<p>Total sequence divergence equals two times the mutation rate times the time since divergence.</p>
-<p>The mutation rate here is per lineage, per generation.</p>
-<p>The time calculated from the equation is measured in generations. To convert to years, we multiply by generation time.</p>
-<p>If we can measure sequence divergence and estimate the mutation rate, we can estimate divergence time.</p>
-<p>For example, humans and chimpanzees differ by roughly 1.8 percent at neutral sites.</p>
-<p>Using commonly estimated mutation rates and human generation times, this gives a divergence time on the order of five to seven million years.</p>
-<p>The molecular clock relies on key assumptions.</p>
-<p>First, the mutations considered must be approximately neutral.</p>
-<p>Second, the mutation rate must be roughly constant over time.</p>
-<p>When those assumptions are reasonable, DNA sequence divergence can be used as a biological clock.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="the-domestication-bottleneck" class="slide level2">
-<h2>The Domestication Bottleneck</h2>
-<div class="columns">
-<div class="column" style="width:65%;">
-<p><img data-src="../images/fig18_un08_33779.png" style="width:60.0%"></p>
-</div><div class="column" style="width:35%;">
-<p><strong>Crop domestication and breeding bottlenecks</strong></p>
-<p>Wild population<br>
-<span class="math inline">\(\Rightarrow\)</span> Traditional varieties<br>
-<span class="math inline">\(\Rightarrow\)</span> Elite modern varieties</p>
-<p>Each step involves genetic sampling<br>
-and reduces diversity.</p>
-<p>Colored dots = different alleles.</p>
-</div></div>
-<aside class="notes">
-<p>This figure illustrates two sequential genetic bottlenecks during crop domestication.</p>
-<p>First, consider domestication itself.</p>
-<p>Humans selected only a subset of individuals from a large wild population.</p>
-<p>The wild population contains many alleles, represented here by different colored dots.</p>
-<p>When only some individuals are chosen, many alleles are lost simply by chance.</p>
-<p>This sampling event creates a domestication bottleneck.</p>
-<p>The resulting traditional crop population contains fewer alleles than the original wild population.</p>
-<p>Second, modern breeding creates another bottleneck.</p>
-<p>Breeders select a small number of elite lines with desirable traits, such as high yield or uniform growth.</p>
-<p>This further reduces genetic diversity.</p>
-<p>From a population genetics perspective, a bottleneck is a sharp reduction in population size that reduces genetic variation through random sampling.</p>
-<p>Reduced diversity can limit adaptive potential and increase vulnerability to disease or environmental change.</p>
-<p>For this reason, plant breeders sometimes cross modern crop varieties with wild relatives to reintroduce lost genetic variation.</p>
-<p>This example illustrates how human-driven selection can reshape genetic diversity over relatively short evolutionary timescales.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="step-1-simplify-to-the-closed-inbreeding-loop" class="slide level2">
-<h2>Step 1: Simplify to the Closed Inbreeding Loop</h2>
-<div class="columns">
-<div class="column" style="width:45%;">
-<p><img data-src="../images/fig18_12_33779.webp" style="width:80.0%"></p>
-</div><div class="column" style="width:55%;">
-<p>Using Figure 18-12b (simplified format):</p>
-<ul>
-<li>Keep only individuals in the closed loop<br>
-</li>
-<li>Label transmitted alleles:</li>
-</ul>
-<p>A → B transmits allele <span class="math inline">\(z\)</span><br>
-A → C transmits allele <span class="math inline">\(y\)</span><br>
-B → I transmits allele <span class="math inline">\(w\)</span><br>
-C → I transmits allele <span class="math inline">\(x\)</span></p>
-<p><br></p>
-<p>We want:</p>
-<p><span class="math display">\[
+$$
+
+Where:
+
+- $d$ = sequence divergence  
+- $\mu$ = mutation rate per lineage per generation  
+- $t$ = time since divergence (in generations)
+
+:::
+
+::: {.column width="50%"}
+
+### Interpretation and Example
+
+Both lineages accumulate mutations after divergence.
+
+The factor 2 reflects:
+
+- Mutation in lineage 1  
+- Mutation in lineage 2  
+
+<br>
+
+Example:
+
+Humans and chimpanzees differ by ~1.8%  
+at neutral sites.
+
+Using typical mutation rate estimates:
+
+Estimated divergence ≈ 5–7 million years ago.
+
+Assumptions:
+
+- Mutations are neutral  
+- Mutation rate is approximately constant  
+
+:::
+
+:::
+
+
+::: notes
+
+The molecular clock is based on a simple but powerful idea:
+
+Neutral mutations accumulate at an approximately constant rate.
+
+If two species split from a common ancestor,
+each lineage accumulates mutations independently.
+
+That is why the equation includes a factor of two.
+
+Total sequence divergence equals
+two times the mutation rate
+times the time since divergence.
+
+The mutation rate here is per lineage,
+per generation.
+
+The time calculated from the equation
+is measured in generations.
+To convert to years,
+we multiply by generation time.
+
+If we can measure sequence divergence
+and estimate the mutation rate,
+we can estimate divergence time.
+
+For example,
+humans and chimpanzees differ
+by roughly 1.8 percent at neutral sites.
+
+Using commonly estimated mutation rates
+and human generation times,
+this gives a divergence time
+on the order of five to seven million years.
+
+The molecular clock relies on key assumptions.
+
+First,
+the mutations considered must be approximately neutral.
+
+Second,
+the mutation rate must be roughly constant over time.
+
+When those assumptions are reasonable,
+DNA sequence divergence can be used
+as a biological clock.
+
+:::
+
+## The Domestication Bottleneck
+
+::: {.columns}
+
+::: {.column width="65%"}
+
+![](../images/fig18_un08_33779.png){width=60%}
+
+:::
+
+::: {.column width="35%"}
+
+**Crop domestication and breeding bottlenecks**
+
+Wild population  
+$\Rightarrow$ Traditional varieties  
+$\Rightarrow$ Elite modern varieties  
+
+Each step involves genetic sampling  
+and reduces diversity.
+
+Colored dots = different alleles.
+
+:::
+:::
+
+
+::: notes
+
+This figure illustrates two sequential genetic bottlenecks
+during crop domestication.
+
+First, consider domestication itself.
+
+Humans selected only a subset of individuals
+from a large wild population.
+
+The wild population contains many alleles,
+represented here by different colored dots.
+
+When only some individuals are chosen,
+many alleles are lost simply by chance.
+
+This sampling event creates a domestication bottleneck.
+
+The resulting traditional crop population
+contains fewer alleles
+than the original wild population.
+
+Second, modern breeding creates another bottleneck.
+
+Breeders select a small number of elite lines
+with desirable traits,
+such as high yield or uniform growth.
+
+This further reduces genetic diversity.
+
+From a population genetics perspective,
+a bottleneck is a sharp reduction in population size
+that reduces genetic variation
+through random sampling.
+
+Reduced diversity can limit adaptive potential
+and increase vulnerability
+to disease or environmental change.
+
+For this reason,
+plant breeders sometimes cross
+modern crop varieties with wild relatives
+to reintroduce lost genetic variation.
+
+This example illustrates how
+human-driven selection
+can reshape genetic diversity
+over relatively short evolutionary timescales.
+
+:::
+
+
+
+## Step 1: Simplify to the Closed Inbreeding Loop
+
+::: {.columns}
+
+::: {.column width="45%"}
+
+![](../images/fig18_12_33779.webp){width=80%}
+
+:::
+
+::: {.column width="55%"}
+
+Using Figure 18-12b (simplified format):
+
+- Keep only individuals in the closed loop  
+- Label transmitted alleles:
+
+A → B transmits allele $z$  
+A → C transmits allele $y$  
+B → I transmits allele $w$  
+C → I transmits allele $x$  
+
+<br>
+
+We want:
+
+$$
 F_I = P(w \text{ is IBD with } x)
-\]</span></p>
-<p>Probability that I’s two alleles are identical by descent.</p>
-</div></div>
-<aside class="notes">
-<p>To calculate the inbreeding coefficient, the pedigree is simplified to the closed loop only.</p>
-<p>This example assumes an autosomal locus.</p>
-<p>For autosomal inheritance, transmission probabilities depend only on parent–offspring links, not on whether an individual is male or female.</p>
-<p>Label the transmitted alleles as follows:</p>
-<p>Individual A transmits allele z to B, and allele y to C.</p>
-<p>Then B transmits allele w to I, and C transmits allele x to I.</p>
-<p>The question can now be stated precisely:</p>
-<p>What is the probability that allele w and allele x are identical by descent?</p>
-<p>In other words, what is the probability that both of I’s alleles trace back to the same physical gene copy in A?</p>
-<p>The next step is to compute this probability by following possible transmission paths through the loop.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="step-2-assume-ancestor-a-is-not-inbred" class="slide level2">
-<h2>Step 2: Assume Ancestor A Is Not Inbred</h2>
-<div class="columns">
-<div class="column" style="width:45%;">
-<p><img data-src="../images/fig18_12_33779.webp" style="width:80.0%"></p>
-</div><div class="column" style="width:55%;">
-<p>If A is not inbred, then <span class="math inline">\(F_A = 0\)</span>.</p>
-<p>We compute <span class="math inline">\(F_I\)</span> step by step:</p>
+$$
+
+Probability that I’s two alleles are identical by descent.
+
+:::
+
+:::
+
+::: notes
+
+To calculate the inbreeding coefficient,
+the pedigree is simplified to the closed loop only.
+
+This example assumes an autosomal locus.
+
+For autosomal inheritance,
+transmission probabilities depend only on parent–offspring links,
+not on whether an individual is male or female.
+
+Label the transmitted alleles as follows:
+
+Individual A transmits allele z to B,
+and allele y to C.
+
+Then B transmits allele w to I,
+and C transmits allele x to I.
+
+The question can now be stated precisely:
+
+What is the probability that allele w and allele x
+are identical by descent?
+
+In other words,
+what is the probability that both of I’s alleles
+trace back to the same physical gene copy in A?
+
+The next step is to compute this probability
+by following possible transmission paths through the loop.
+
+:::
+
+
+
+## Step 2: Assume Ancestor A Is Not Inbred
+
+::: {.columns}
+
+::: {.column width="45%"}
+
+![](../images/fig18_12_33779.webp){width=80%}
+
+:::
+
+::: {.column width="55%"}
+
+If A is not inbred, then $F_A = 0$.
+
+We compute $F_I$ step by step:
+
 <div style="font-size:0.8em; line-height:1.1;">
-<ol type="1">
-<li>B transmits to I the allele inherited from A:</li>
-</ol>
-<p><span class="math display">\[
+
+1. B transmits to I the allele inherited from A:
+
+$$
 P(w \text{ is IBD with } z) = \frac{1}{2}
-\]</span></p>
-<ol start="2" type="1">
-<li>C transmits to I the allele inherited from A:</li>
-</ol>
-<p><span class="math display">\[
+$$
+
+2. C transmits to I the allele inherited from A:
+
+$$
 P(x \text{ is IBD with } y) = \frac{1}{2}
-\]</span></p>
-<ol start="3" type="1">
-<li>The alleles <span class="math inline">\(y\)</span> and <span class="math inline">\(z\)</span> come from the same physical copy in A:</li>
-</ol>
-<p><span class="math display">\[
+$$
+
+3. The alleles $y$ and $z$ come from the same physical copy in A:
+
+$$
 P(y \text{ is IBD with } z) = \frac{1}{2}
-\]</span></p>
-<p>Multiply independent probabilities:</p>
-<p><span class="math display">\[
+$$
+
+Multiply independent probabilities:
+
+$$
 F_I = \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2}
       = \frac{1}{8}
-\]</span></p>
-<p>Therefore, for half-sib mating:</p>
-<p><span class="math display">\[
+$$
+
+Therefore, for half-sib mating:
+
+$$
 F_I = \frac{1}{8}
-\]</span></p>
+$$
+
 </div>
-</div></div>
-<aside class="notes">
-<p>We now assume that ancestor A is not inbred. This means her two gene copies are independent.</p>
-<p>For I to be identical by descent at this locus, three independent transmission events must occur.</p>
-<p>First: B must transmit to I the allele B originally received from A. The probability is one half.</p>
-<p>Second: C must transmit to I the allele C originally received from A. The probability is also one half.</p>
-<p>Third: The allele A passed to B and the allele A passed to C must be the same physical gene copy in A.</p>
-<p>Because A is not inbred, her two copies are independent, and the probability that both transmissions trace back to the same copy is one half.</p>
-<p>Since these three events are independent, we multiply their probabilities:</p>
-<p>one half times one half times one half equals one eighth.</p>
-<p>Therefore, for offspring of half-sibling matings,</p>
-<p>F sub I equals one eighth.</p>
-<p>This means there is a 12.5 percent probability that the two alleles at a locus are identical by descent.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="step-3-what-if-ancestor-a-is-inbred" class="slide level2">
-<h2>Step 3: What If Ancestor A Is Inbred?</h2>
-<div class="columns">
-<div class="column" style="width:45%;">
-<p><img data-src="../images/fig18_12_33779.webp" style="width:80.0%"></p>
-</div><div class="column" style="width:55%;">
-<p>If A is inbred:</p>
-<ul>
-<li>Her two gene copies may themselves be IBD<br>
-</li>
-<li>This increases the probability that <span class="math inline">\(y\)</span> and <span class="math inline">\(z\)</span> are IBD</li>
-</ul>
-<p>Probability that <span class="math inline">\(y\)</span> and <span class="math inline">\(z\)</span> are IBD:</p>
-<ul>
-<li>Same physical copy in A → <span class="math inline">\(\frac{1}{2}\)</span><br>
-</li>
-<li>Different physical copies in A,<br>
-but those copies are IBD → <span class="math inline">\(\frac{1}{2}F_A\)</span></li>
-</ul>
+
+:::
+
+:::
+
+::: notes
+
+We now assume that ancestor A is not inbred.
+This means her two gene copies are independent.
+
+For I to be identical by descent at this locus,
+three independent transmission events must occur.
+
+First:
+B must transmit to I
+the allele B originally received from A.
+The probability is one half.
+
+Second:
+C must transmit to I
+the allele C originally received from A.
+The probability is also one half.
+
+Third:
+The allele A passed to B
+and the allele A passed to C
+must be the same physical gene copy in A.
+
+Because A is not inbred,
+her two copies are independent,
+and the probability that both transmissions
+trace back to the same copy
+is one half.
+
+Since these three events are independent,
+we multiply their probabilities:
+
+one half times one half times one half
+equals one eighth.
+
+Therefore,
+for offspring of half-sibling matings,
+
+F sub I equals one eighth.
+
+This means there is a 12.5 percent probability
+that the two alleles at a locus
+are identical by descent.
+
+:::
+
+## Step 3: What If Ancestor A Is Inbred?
+
+::: {.columns}
+
+::: {.column width="45%"}
+
+![](../images/fig18_12_33779.webp){width=80%}
+
+:::
+
+::: {.column width="55%"}
+
+If A is inbred:
+
+- Her two gene copies may themselves be IBD  
+- This increases the probability that $y$ and $z$ are IBD  
+
+Probability that $y$ and $z$ are IBD:
+
+- Same physical copy in A → $\frac{1}{2}$  
+- Different physical copies in A,  
+  but those copies are IBD → $\frac{1}{2}F_A$
+
 <div style="font-size:0.8em; line-height:1.1;">
-<p>Therefore:</p>
-<p><span class="math display">\[
+
+Therefore:
+
+$$
 P(y \text{ is IBD with } z)
 = \frac{1}{2} + \frac{1}{2}F_A
 = \frac{1}{2}(1 + F_A)
-\]</span></p>
-<p>Now:</p>
-<p><span class="math display">\[
-F_I = \frac{1}{2} \times \frac{1}{2} \times
+$$
+
+Now:
+
+$$
+F_I = \frac{1}{2} \times \frac{1}{2} \times 
       \frac{1}{2}(1+F_A)
-\]</span></p>
-<p><span class="math display">\[
+$$
+
+$$
 F_I = \left(\frac{1}{2}\right)^3 (1+F_A)
-\]</span></p>
-<p>If <span class="math inline">\(F_A = 0\)</span>:</p>
-<p><span class="math display">\[
+$$
+
+If $F_A = 0$:
+
+$$
 F_I = \frac{1}{8}
-\]</span></p>
+$$
+
 </div>
-</div></div>
-<aside class="notes">
-<p>Now consider the more general case: what if ancestor A is inbred?</p>
-<p>If A is inbred, her two physical gene copies may already be identical by descent.</p>
-<p>There are two mutually exclusive ways that y and z can be identical by descent.</p>
-<p>First: A passes the same physical copy to both B and C. That probability is one half.</p>
-<p>Second: A passes two different physical copies, but those two copies are themselves identical by descent because A is inbred.</p>
-<p>The probability of passing different copies is one half. The probability that those copies are IBD is F sub A.</p>
-<p>So this case contributes one half times F sub A.</p>
-<p>Adding the two cases gives:</p>
-<p>one half plus one half times F sub A, which equals one half times one plus F sub A.</p>
-<p>This explains the appearance of the term one plus F sub A in the general formula.</p>
-<p>Multiplying again by the two independent transmissions down to I, we obtain:</p>
-<p>F sub I equals one half cubed times one plus F sub A.</p>
-<p>If A is not inbred, F sub A equals zero, and we recover one eighth.</p>
-<p>This is the recursive structure underlying the general path-counting formula.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="general-path-formula-for-inbreeding" class="slide level2">
-<h2>General Path Formula for Inbreeding</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<h3 id="general-formula-autosomal-locus">General Formula (Autosomal Locus)</h3>
-<p>For any individual <span class="math inline">\(X\)</span>:</p>
-<p><span class="math display">\[
+
+:::
+
+:::
+
+::: notes
+
+Now consider the more general case:
+what if ancestor A is inbred?
+
+If A is inbred,
+her two physical gene copies may already be
+identical by descent.
+
+There are two mutually exclusive ways
+that y and z can be identical by descent.
+
+First:
+A passes the same physical copy
+to both B and C.
+That probability is one half.
+
+Second:
+A passes two different physical copies,
+but those two copies are themselves
+identical by descent because A is inbred.
+
+The probability of passing different copies
+is one half.
+The probability that those copies are IBD
+is F sub A.
+
+So this case contributes one half times F sub A.
+
+Adding the two cases gives:
+
+one half plus one half times F sub A,
+which equals one half times
+one plus F sub A.
+
+This explains the appearance
+of the term one plus F sub A
+in the general formula.
+
+Multiplying again
+by the two independent transmissions
+down to I,
+we obtain:
+
+F sub I equals
+one half cubed
+times one plus F sub A.
+
+If A is not inbred,
+F sub A equals zero,
+and we recover one eighth.
+
+This is the recursive structure
+underlying the general path-counting formula.
+
+:::
+
+
+## General Path Formula for Inbreeding
+
+::: {.columns}
+
+::: {.column width="50%"}
+
+### General Formula (Autosomal Locus)
+
+For any individual $X$:
+
+$$
 F_X = \sum_A \left(\frac{1}{2}\right)^{n_1+n_2+1} (1 + F_A)
-\]</span></p>
-<p>Where:</p>
-<ul>
-<li><span class="math inline">\(n_1\)</span> = generations from ancestor <span class="math inline">\(A\)</span> to parent 1<br>
-</li>
-<li><span class="math inline">\(n_2\)</span> = generations from ancestor <span class="math inline">\(A\)</span> to parent 2<br>
-</li>
-<li><span class="math inline">\(F_A\)</span> = inbreeding coefficient of ancestor <span class="math inline">\(A\)</span></li>
-</ul>
-<p>Sum over all common ancestors <span class="math inline">\(A\)</span>.</p>
-</div><div class="column" style="width:50%;">
-<h3 id="interpretation-1">Interpretation</h3>
-<ul>
-<li><span class="math inline">\(n_1 + n_2 + 1\)</span> = number of <strong>meioses</strong> in the loop<br>
-</li>
-<li>Each meiosis contributes a factor of <span class="math inline">\(\tfrac{1}{2}\)</span><br>
-</li>
-<li><span class="math inline">\((1 + F_A)\)</span> adjusts for ancestor inbreeding</li>
-</ul>
-<p>If <span class="math inline">\(F_A = 0\)</span>:</p>
-<p><span class="math display">\[
+$$
+
+Where:
+
+- $n_1$ = generations from ancestor $A$ to parent 1  
+- $n_2$ = generations from ancestor $A$ to parent 2  
+- $F_A$ = inbreeding coefficient of ancestor $A$  
+
+Sum over all common ancestors $A$.
+
+:::
+
+::: {.column width="50%"}
+
+### Interpretation
+
+- $n_1 + n_2 + 1$ = number of **meioses** in the loop  
+- Each meiosis contributes a factor of $\tfrac{1}{2}$  
+- $(1 + F_A)$ adjusts for ancestor inbreeding  
+
+If $F_A = 0$:
+
+$$
 F_X = \left(\frac{1}{2}\right)^{n_1+n_2+1}
-\]</span></p>
-<p>Each common ancestor contributes one independent loop.</p>
-</div></div>
-<aside class="notes">
-<p>This is the compact path-counting formula for the inbreeding coefficient at an autosomal locus.</p>
-<p>The first step is always to identify the common ancestors shared by the two parents.</p>
-<p>If there are multiple common ancestors, each one contributes separately, and we sum their contributions.</p>
-<p>For each common ancestor A, count the number of generations from A down to parent 1. That is n sub 1.</p>
-<p>Then count the number of generations from A down to parent 2. That is n sub 2.</p>
-<p>The term n sub 1 plus n sub 2 plus 1 counts the total number of meioses in the closed loop connecting the two parental alleles through ancestor A.</p>
-<p>Each meiosis transmits an allele with probability one half.</p>
-<p>Therefore, we raise one half to the power n sub 1 plus n sub 2 plus 1.</p>
-<p>The term one plus F sub A adjusts for the possibility that ancestor A is already inbred.</p>
-<p>If A is not inbred, F sub A equals zero, and the formula reduces to one half raised to that exponent.</p>
-<p>In the half-sib example, n sub 1 equals 1, n sub 2 equals 1, so the exponent equals 3.</p>
-<p>That gives one half cubed, which equals one eighth.</p>
-<p>So this general formula is simply the same loop logic written in compact mathematical form.</p>
-<p>It is not a new idea — just a systematic way to count transmission paths.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+$$
+
+Each common ancestor contributes one independent loop.
+
+:::
+
+:::
+
+::: notes
+
+This is the compact path-counting formula
+for the inbreeding coefficient
+at an autosomal locus.
+
+The first step is always to identify
+the common ancestors shared by the two parents.
+
+If there are multiple common ancestors,
+each one contributes separately,
+and we sum their contributions.
+
+For each common ancestor A,
+count the number of generations
+from A down to parent 1.
+That is n sub 1.
+
+Then count the number of generations
+from A down to parent 2.
+That is n sub 2.
+
+The term n sub 1 plus n sub 2 plus 1
+counts the total number of meioses
+in the closed loop connecting
+the two parental alleles through ancestor A.
+
+Each meiosis transmits an allele
+with probability one half.
+
+Therefore,
+we raise one half
+to the power n sub 1 plus n sub 2 plus 1.
+
+The term one plus F sub A
+adjusts for the possibility
+that ancestor A is already inbred.
+
+If A is not inbred,
+F sub A equals zero,
+and the formula reduces to
+one half raised to that exponent.
+
+In the half-sib example,
+n sub 1 equals 1,
+n sub 2 equals 1,
+so the exponent equals 3.
+
+That gives one half cubed,
+which equals one eighth.
+
+So this general formula
+is simply the same loop logic
+written in compact mathematical form.
+
+It is not a new idea —
+just a systematic way
+to count transmission paths.
+
+:::
+
+-->
 <!-- This is for narration button -->
 <script>
 document.addEventListener("DOMContentLoaded", function() {

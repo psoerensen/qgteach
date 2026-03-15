@@ -56,14 +56,16 @@ execute:
 
 ::: {.column width="40%"}
 
-**4. Evolutionary Forces**
+**4. Measurement of Genetic Variation**
+
+- Understand and interpret common statistics used to quantify genetic variation in populations
+
+**5. Evolutionary Forces**
 
 - Describe how mutation, migration, recombination, drift, and selection change allele frequencies  
 - Explain population size effects and genetic drift  
 - Distinguish major forms of selection  
 - Explain linkage disequilibrium and its decay  
-- Recognize genomic signatures of selection, drift, and population structure  
-
 :::
 
 :::
@@ -87,9 +89,15 @@ This involves calculating allele and genotype frequencies, stating the Hardy–W
 Third, mating systems and inbreeding.
 This includes understanding how nonrandom mating alters genotype structure and recognizing the genetic consequences of inbreeding.
 
-Fourth, evolutionary forces.
-Mutation, migration, recombination, genetic drift, and natural selection change allele frequencies over time.
-This section also includes linkage disequilibrium, its decay, and genomic signatures of selection, drift, and population structure.
+Fourth, measurement of genetic variation.
+Here we introduce statistics used to quantify genetic diversity in populations, such as segregating sites, haplotype counts, gene diversity, and nucleotide diversity.  
+These measures allow us to compare levels of genetic variation across populations and species.
+
+Fifth, evolutionary forces.
+Mutation, migration, recombination, genetic drift, and natural selection change allele frequencies over time.  
+This section also includes linkage disequilibrium and its decay.
+
+The overall objective is not only to perform calculations, but to interpret what patterns of genetic variation reveal about evolutionary processes.
 
 The overall objective is not only to perform calculations, but to interpret what patterns of genetic variation reveal about evolutionary processes.
 
@@ -2743,7 +2751,7 @@ to population-level genotype structure.
 
 
 
-# 4.Mesurement of Genetic Variation
+# 4.Measurement of Genetic Variation
 
 
 
@@ -4819,6 +4827,8 @@ is the opposite of a selective sweep.
 
 :::
 
+<!-- Leave this out -->
+<!-- Leave this out 
 
 
 ## Mutation as a Force Maintaining Variation
@@ -4952,7 +4962,7 @@ in theoretical population genetics.
 
 :::
 
-
+-->
 
 ## Mutation Maintains Genetic Variation
 
@@ -5063,7 +5073,8 @@ all variation would eventually disappear.
 :::
 
 
-# 18.6 Applications of Population Genetics
+# 6. Applications of Population Genetics
+
 
 ## Biological and Social Applications
 
@@ -5461,7 +5472,7 @@ and correct assumptions about independence.
 :::
 
 
-## Chapter 18 — The Population Genetics Framework
+## Summary Population Genetics
 
 ::: {.columns}
 
@@ -5474,7 +5485,7 @@ and correct assumptions about independence.
 - Linkage disequilibrium  
 - Population differences  
 
-These are measurable genetic patterns.
+Represent **measurable genetic patterns**.
 
 :::
 
@@ -5488,7 +5499,7 @@ These are measurable genetic patterns.
 - Infinite population (no drift)  
 - No mutation, migration, or selection  
 
-Defines the expectation of **no evolutionary change** => Deviations indicate evolutionary forces.
+**Deviations indicate evolutionary forces.**
 
 :::
 
@@ -5498,9 +5509,9 @@ Defines the expectation of **no evolutionary change** => Deviations indicate evo
 
 ::: {.column width="50%"}
 
-**Evolutionary Forces**
+<div style="margin-top: 1em;"></div>
 
-Allele frequencies change due to:
+**Evolutionary Forces**
 
 - Mutation  
 - Migration (gene flow)  
@@ -5508,11 +5519,13 @@ Allele frequencies change due to:
 - Genetic drift  
 - Natural selection  
 
-**Evolution = change in allele frequencies over time**
+**Change in allele frequencies over time**
 
 :::
 
 ::: {.column width="50%"}
+
+<div style="margin-top: 1em;"></div>
 
 **What These Forces Shape**
 
@@ -5520,15 +5533,14 @@ Allele frequencies change due to:
 - Population structure  
 - Linkage disequilibrium  
 - Genomic signatures of history  
-- Applications in medicine, conservation, and forensics  
+- Medicine, conservation, and forensics  
 
-Population genetics connects  
-
-**patterns → processes → consequences**
+Population genetics connects **patterns → processes → consequences**
 
 :::
 
 :::
+
 
 
 <audio controls preload="auto" src="../narration/introduction_population_genetics_block59.mp3"></audio>
@@ -5598,6 +5610,8 @@ That is the framework of the field.
 
 :::
 
+
+<!-- This is for speaker notes toogle - need more work 
 
 ## The Molecular Clock (Simple Version)
 
@@ -6203,6 +6217,7 @@ to count transmission paths.
 
 :::
 
+-->
 
 
 <!-- This is for narration button -->
