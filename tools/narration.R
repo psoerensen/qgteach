@@ -22,7 +22,7 @@ qmd_files <- dir_ls(slides_dir, regexp = "\\.qmd$")
 qmd_files <- qmd_files[!str_detect(qmd_files, "_narrated\\.qmd$")]
 
 # Only first file (testing mode)
-qmd_files <- qmd_files[1]
+qmd_files <- qmd_files[2]
 
 # =========================
 # HELPERS

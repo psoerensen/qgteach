@@ -61,7 +61,7 @@ The materials include:
 Lecture slides are provided as interactive **Reveal.js** presentations. These provide a structured overview of the key concepts, mathematical models, and genomic visualizations:
 
 - [Population Genetics](slides/introduction_population_genetics_narrated.html)
-- [Quantitative Genetics](slides/introduction_quantitative_genetics.html)
+- [Quantitative Genetics](slides/introduction_quantitative_genetics_narrated.html)
 
 *Note: The slides provide lecture guidance; the online notes serve as the primary reference for study and examination preparation.*
 

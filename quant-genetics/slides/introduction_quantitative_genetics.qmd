@@ -15,13 +15,13 @@ format:
     center: false
     auto-scale: false
     css: ../styles.css
-    font-size: 100%
+    font-size: 95%
     width: 1280
     height: 720
     theme: default
     freeze: false
     self-contained: false
-    show-notes: false
+    show-notes: true
 execute:
   echo: false
   warning: false
@@ -52,20 +52,53 @@ execute:
 
 ::: notes
 
-In quantitative genetics, our focus shifts from single-gene traits to quantitative traits — traits that vary continuously, such as height, milk yield, blood pressure, or crop yield.
+In quantitative genetics,
+the focus shifts from single-gene traits
+to quantitative traits.
 
-First, we look at how to measure quantitative variation. We use mathematical models and statistical methods to describe and analyze complex traits. This is really where genetics meets statistics.
+These are traits that vary continuously,
+such as height,
+milk yield,
+blood pressure,
+or crop yield.
 
-Next, we introduce a simple genetic model. This model allows us to separate phenotypic variation into genetic and environmental components, and to assess how much each contributes to the trait.
+The first step is measuring variation.
 
-We then study heritability. Broad-sense heritability measures the total genetic contribution to phenotypic variation. Narrow-sense heritability focuses specifically on additive genetic effects, which are especially important because they allow us to predict offspring phenotypes from parental phenotypes.
+Mathematical models
+and statistical methods
+are used to describe and analyze complex traits.
 
-Finally, we discuss the principle behind association mapping studies. These approaches test for statistical associations between genetic variants and traits, helping us identify loci that contribute to quantitative variation.
+This is where genetics meets statistics.
 
-By the end of this chapter, you should understand how quantitative traits are analyzed, how heritability is interpreted, and how genetic loci contributing to complex traits can be identified.
+Next, a simple genetic model is introduced.
+
+This model separates phenotypic variation
+into genetic and environmental components,
+and quantifies their contributions.
+
+Then, heritability is considered.
+
+Broad-sense heritability measures
+the total genetic contribution to variation.
+
+Narrow-sense heritability focuses on additive effects,
+which enable prediction of offspring phenotypes
+from parental phenotypes.
+
+Finally,
+association mapping is introduced.
+
+These methods test for statistical links
+between genetic variants and traits,
+helping identify the loci involved.
+
+By the end of this chapter,
+key concepts include:
+how quantitative traits are analyzed,
+how heritability is interpreted,
+and how genetic loci can be identified.
 
 :::
-
 
 
 
@@ -122,36 +155,38 @@ A biological discipline with great applied significance for agriculture, human h
 <br>
 
 Quantitative genetics is the study of complex traits —
-traits influenced by many genes and by environmental factors.
+traits influenced by many genes
+and environmental factors.
 
 It builds on Mendelian genetics,
 but instead of focusing on single genes with large effects,
-it studies the combined effects of many genes acting together.
+it considers the combined effects
+of many genes acting together.
 
 Because these effects are small and distributed,
 statistical models are essential.
 
 Quantitative genetics has major applications:
-in agriculture, in human healthcare,
+in agriculture,
+in human healthcare,
 and in understanding evolutionary change.
 
-In this course, we will focus on four core elements:
-how we define quantitative traits,
-how we model them genetically,
-how we estimate key parameters such as heritability and genetic correlation,
-and how we use statistical models to analyze data.
+The course focuses on four core elements:
+definition of quantitative traits,
+genetic modeling,
+estimation of key parameters such as heritability and genetic correlation,
+and statistical analysis of data.
 
-These tools allow us to estimate heritability,
+These tools make it possible to estimate heritability,
 predict breeding values,
 assess genetic risk,
 and predict response to selection.
 
-In short,
-quantitative genetics provides the mathematical framework
+In summary,
+quantitative genetics provides a mathematical framework
 for understanding and predicting complex trait variation.
 
 :::
-
 
 ## Natural and Artificial Selection
 
@@ -252,35 +287,42 @@ on phenotypes ($P$).
 ::: notes
 
 Quantitative genetics starts from a simple model:
-phenotype equals genotype plus environment.
+
+Phenotype equals genotype plus environment.
 
 Because parents transmit a random sample of their genes,
 offspring differ genetically.
-Those genetic differences contribute to phenotypic differences.
+
+These genetic differences
+contribute to phenotypic differences.
 
 The central question is:
-how much of the variation we observe
+
+How much of the observed variation
 is due to genetic variation?
 
-That leads to heritability.
+This leads to the concept of heritability.
 
-But quantitative genetics is not only theoretical.
+Quantitative genetics is not only theoretical.
 
 In animal and plant breeding,
-we use it to improve traits over generations.
+it is used to improve traits over generations.
 
 In human genetics,
-we use it to estimate genetic risk from genomic information.
+it is used to estimate genetic risk
+from genomic information.
 
-And in evolutionary biology,
-it helps us understand how natural selection
+In evolutionary biology,
+it helps explain how natural selection
 changes populations over time.
 
-In all these cases,
+In all cases,
 the key task is to estimate
 the effect of genotypes on phenotypes.
 
 :::
+
+
 ## What Are Complex (Quantitative) Traits?
 
 ::: {.columns}
@@ -312,6 +354,40 @@ the effect of genotypes on phenotypes.
 
 :::
 
+
+
+::: notes
+
+This slide distinguishes Mendelian and quantitative traits.
+
+Mendelian traits are simple.
+
+They fall into clear categories,
+such as red versus white,
+or healthy versus sick.
+
+Usually, a single gene has a large effect,
+so the genotype–phenotype relationship is straightforward.
+
+Quantitative traits are different.
+
+They show a continuous range of values,
+such as height or milk yield.
+
+They are influenced by many genes,
+each with a small effect.
+
+They are also affected by the environment.
+
+So instead of clear categories,
+there is a smooth distribution.
+
+The key point is:
+
+Most traits of interest
+are controlled by many genes acting together.
+
+:::
 
 
 ## Types of Traits and Inheritance
@@ -361,39 +437,46 @@ Individuals are described by their phenotype
 ::: notes
 
 Quantitative traits come in several forms,
-and it is important not to confuse the type of trait
+and it is important not to confuse
+the type of trait
 with the type of inheritance.
 
 Continuous traits can take an infinite range of values.
 Height is a classic example.
-If measured precisely enough,
-there are infinitely many possible values.
 
 Categorical traits fall into distinct groups.
 Some follow simple Mendelian inheritance,
 such as flower color in peas.
-But many categorical traits,
+
+Many,
 especially diseases,
 involve complex inheritance.
 
 Threshold traits are a special case.
-The observed outcome is categorical —
-for example, affected or unaffected —
+
+The observed outcome is categorical,
 but the underlying liability is quantitative.
-Disease occurs once an individual’s underlying risk
+
+Disease occurs
+when the underlying risk
 exceeds a threshold.
 
 Meristic traits are countable traits.
+
 A bird can lay one, two, or three eggs —
 but not two and a half.
+
 These traits are discrete,
 yet still quantitative.
 
 The key message is this:
-complex traits are defined by complex inheritance,
-not by whether the phenotype is continuous or categorical.
+
+Complex traits are defined by complex inheritance,
+not by whether the phenotype
+is continuous or categorical.
 
 :::
+
 
 
 ## Measuring Quantitative Variation
@@ -446,27 +529,36 @@ $$
 ::: notes
 
 To study quantitative traits,
-we need basic statistical tools.
+basic statistical tools are required.
 
 First, the mean.
-The mean describes the average level of a trait in a population.
+
+The mean describes the average level
+of a trait in a population.
 
 Second, variance.
-Variance tells us how much individuals differ around that average.
+
+Variance describes how much individuals differ
+around that average.
+
 Two populations may have the same mean,
 but very different levels of variability.
 
-Many quantitative traits follow an approximately normal,
+Many quantitative traits follow
+an approximately normal,
 bell-shaped distribution.
-This distribution plays a central role in quantitative genetics,
-because it emerges naturally when many small effects combine.
 
-These simple statistical concepts —
+This distribution plays a central role
+in quantitative genetics,
+because it emerges naturally
+when many small effects combine.
+
+These simple concepts —
 mean, variance, and the normal distribution —
-form the foundation for everything we do in quantitative genetics.
+form the foundation
+of quantitative genetics.
 
 :::
-
 
 
 
@@ -526,32 +618,42 @@ We use $\bar{X}$ to estimate the true population mean $\mu$.
 
 ::: notes
 
-When studying quantitative traits, we usually cannot measure the entire population.  
-Instead, we take a random sample.
+When studying quantitative traits,
+the entire population is usually not observed.
 
-If the sample is truly random, it provides an unbiased estimate of population parameters.
+Instead, a random sample is used.
 
-The sample mean is calculated by adding up all observed values and dividing by the number of observations.  
+If the sample is random,
+it provides an unbiased estimate
+of population parameters.
 
-Formally, we write this as one over n times the sum of all observations, but conceptually it simply means: add everything up and divide by n.
+The sample mean is calculated
+by adding all observed values
+and dividing by the number of observations.
 
-We use X-bar to denote the sample mean.  
-The true population mean is denoted by the Greek letter mu.
+The sample mean is denoted by X-bar,
+and the population mean by mu.
 
-Because traits such as height vary among individuals, the phenotype is a random variable.  
-Sampling therefore introduces natural variation due to chance.
+Because traits such as height vary among individuals,
+the phenotype is a random variable.
 
-On the left, you see the formal definition of the sample mean and how it differs from the population mean.
+Sampling therefore introduces variation due to chance.
 
-On the right, we compute the mean for a small example.  
-Even though the sample size here is only five individuals, the exact same computation applies whether n equals 5, 100, or 10,000.
+On the left,
+the formal definition of the sample mean is shown.
+
+On the right,
+a simple example is computed.
+
+The same calculation applies
+regardless of sample size.
 
 The key idea is this:
 
-The sample mean is our best estimate of the unknown population mean.
+The sample mean is the best estimate
+of the unknown population mean.
 
 :::
-
 
 
 
@@ -613,42 +715,34 @@ $$
 
 ::: notes
 
-The mean tells us the center of the distribution, but it does not tell us how spread out the values are.
+The mean describes the center of the data,
+but not how spread out the values are.
 
-Variance measures the average squared deviation from the mean.
+Variance measures the spread.
 
-On the left, we define deviations as each observation minus the mean.
+It is the average squared deviation from the mean.
 
-Because positive and negative deviations cancel each other out, we square them before averaging.
+Deviations are defined
+as each observation minus the mean.
 
-The population variance is simply the mean of these squared deviations.
+Because positive and negative deviations cancel,
+they are squared before averaging.
 
-The standard deviation is the square root of the variance, which brings the units back to centimeters.
+The standard deviation
+is the square root of the variance,
+which returns the units to the original scale.
 
-On the right, we use the same five heights:
+On the right,
+the calculation is shown for a simple example.
 
-168, 172, 170, 174, 166.
+The key idea is this:
 
-We already calculated the mean as 170.
+Variance and standard deviation
+describe how much individuals differ from the mean.
 
-The deviations are:
-minus 2, plus 2, zero, plus 4, and minus 4.
-
-Squaring removes the signs:
-4, 4, 0, 16, and 16.
-
-The sum of squared deviations is 40.
-
-Dividing by 5 gives a variance of 8.
-
-Taking the square root gives a standard deviation of about 2.83 centimeters.
-
-In real statistical analyses, when working with a sample, we usually divide by n minus 1 instead of n.  
-But the principle remains the same.
-
-Variance and standard deviation quantify how much individuals differ from the mean.
-
-Later, this idea becomes central when we partition phenotypic variance into genetic and environmental components.
+This becomes central in quantitative genetics,
+when phenotypic variance is partitioned
+into genetic and environmental components.
 
 :::
 
@@ -701,42 +795,40 @@ $$
 
 ::: notes
 
-Many biological traits follow an approximately normal,
+Many biological traits follow
+an approximately normal,
 or bell-shaped, distribution.
 
-A normal distribution is completely determined by two parameters:
+A normal distribution is determined
+by two parameters:
 
-The mean, which determines the center of the distribution.
+The mean,
+which sets the center,
 
-And the variance — or equivalently the standard deviation —
-which determines how spread out the values are.
-
-The probability density function shown here
-gives the exact mathematical form of the curve.
-
-The exponent contains the squared distance from the mean,
-divided by twice the variance.
-This means values close to the mean
-have higher probability density,
-while extreme values become increasingly rare.
+and the variance,
+which determines the spread.
 
 The curve is symmetric around the mean.
 
-Changing the mean shifts the distribution left or right.
+Values close to the mean
+are more common,
+while extreme values are rare.
 
-Changing the standard deviation changes the spread.
-A larger standard deviation produces a wider, flatter curve.
-A smaller one produces a narrower, taller curve.
+Changing the mean
+shifts the distribution left or right.
+
+Changing the variance
+changes how spread out the values are.
 
 The total area under the curve equals one,
 because it represents total probability.
 
-This structure is central to quantitative genetics.
+This distribution plays a central role
+in quantitative genetics.
 
-When we partition phenotypic variance into genetic
-and environmental components,
-we are effectively partitioning the variance
-of a normally distributed trait.
+It is used to describe trait variation
+and to partition phenotypic variance
+into genetic and environmental components.
 
 :::
 
@@ -787,37 +879,44 @@ ggplot(df, aes(x, fx, color = label)) +
 
 ::: notes
 
-Here we see three normal distributions.
+Here are three normal distributions.
 
 The dashed vertical lines mark the mean of each distribution.
 
-First, focus on the two curves with the same mean, μ equals zero.
+First, focus on the two curves
+with the same mean, μ equals zero.
 
-The only difference between them is the standard deviation.
+The only difference is the standard deviation.
 
-When σ increases, the distribution becomes wider and flatter.
-When σ decreases, the curve becomes narrower and taller.
+When σ increases,
+the distribution becomes wider and flatter.
 
-Notice that changing σ affects the spread of the distribution, but it does not move the mean.
+When σ decreases,
+it becomes narrower and taller.
 
-Now look at the curve where μ equals one.
+Changing σ affects the spread,
+but not the location of the mean.
 
-Here, the standard deviation is the same as the first curve,
+Now consider the curve
+where μ equals one.
+
+Here, the spread is the same,
 but the entire distribution is shifted to the right.
 
-Changing μ shifts the center of the distribution,
-while changing σ changes how dispersed the values are around that center.
+Changing μ shifts the center,
+while changing σ changes the spread.
 
-In all three cases, the total area under the curve equals one,
-because the curve represents a probability distribution.
+In all cases,
+the total area under the curve equals one.
 
-In quantitative genetics, many complex traits are approximately normally distributed.
+In quantitative genetics,
+many traits follow this type of distribution.
 
-Later, when we partition phenotypic variance into genetic and environmental components,
-we are effectively partitioning σ² — the variance of such a distribution.
+Partitioning phenotypic variance
+means partitioning σ²,
+the variance of this distribution.
 
 :::
-
 
 
 ## A Simple Genetic Model for Quantitative Traits
@@ -872,44 +971,38 @@ Differences between individuals arise from:
 
 ::: notes
 
-This is the fundamental model of quantitative genetics.
+This is the fundamental model
+of quantitative genetics.
 
-The phenotype equals the population mean
+The phenotype equals
+the population mean
 plus a genetic deviation
 plus an environmental deviation.
 
-Individuals differ from the average
+Individuals differ from the mean
 because of genetic effects,
 environmental effects,
 or both.
 
-We often subtract the mean
+It is often useful to subtract the mean
 and work with deviations,
-so that little p equals G plus E.
+so that p equals G plus E.
 
-This focuses attention on
-what causes individuals to differ,
-rather than on the overall average.
+This focuses on
+what causes individuals to differ.
 
-The genetic deviation captures
-how an individual’s genotype shifts the phenotype
-above or below the mean.
+The genetic component reflects
+how genotype shifts the phenotype.
 
-The environmental deviation captures
+The environmental component reflects
 all non-genetic influences.
 
-If two individuals differ in phenotype,
-that difference must arise from differences in G,
-differences in E,
-or both.
+This simple equation
+is the foundation of quantitative genetics.
 
-This simple equation is the backbone
-of quantitative genetics.
-
-From it, we derive variance partitioning,
+It underlies variance partitioning,
 heritability,
-the breeder’s equation,
-and modern genomic prediction models.
+and prediction of response to selection.
 
 :::
 
@@ -970,37 +1063,42 @@ We observe only the total deviation — not its separate components.
 
 :::
 
-
 ::: notes
 
-This slide applies the quantitative genetic model to a concrete example.
+This slide applies the genetic model
+to a concrete example.
 
 Yao Ming is 229 cm tall.
-If the population mean for adult men from Shanghai is about 170 cm,
-then his phenotypic deviation is:
+
+If the population mean is 170 cm,
+the deviation is:
 
 p = 229 − 170 = 59 cm.
 
-According to our model:
+According to the model:
 
-p = G + E
+p equals G plus E.
 
-So his 59 cm deviation must be due to a combination of:
+So this deviation must arise
+from genetic effects,
+environmental effects,
+or both.
 
-- genetic effects (G)
-- environmental effects (E)
+The individual components G and E
+cannot be observed directly.
 
-We cannot directly observe G and E separately for an individual.
-We only observe the phenotype P.
+Only the total phenotype is observed.
 
-The purpose of the model is not to measure G and E for one person,
-but to provide a framework for analyzing variation in populations.
+The purpose of the model
+is not to separate G and E for individuals,
+but to analyze variation in populations.
 
-This simple decomposition will allow us,
-in the next steps,
-to partition variance and define heritability.
+This decomposition leads directly
+to variance partitioning
+and heritability.
 
 :::
+
 
 ## Modes of Gene Action at One Locus
 
@@ -1068,46 +1166,54 @@ Only additive effects contribute to
 :::
 
 :::
+
 ::: notes
 
-This figure illustrates three different modes of gene action at a single locus.
+This figure illustrates three modes of gene action
+at a single locus.
 
-On the x-axis we have the three genotypes:
+On the x-axis are the genotypes:
 bb, Bb, and BB.
 
-On the y-axis we have the trait value.
+On the y-axis is the trait value.
 
-Let’s go panel by panel.
+In the top panel,
+there is additive gene action.
 
-In the top panel, we see additive gene action.
-The heterozygote lies exactly halfway between the two homozygotes.
-Each allele contributes a fixed amount to the phenotype.
-The effects add linearly.
+The heterozygote lies exactly between the two homozygotes.
 
-In the middle panel, we see dominance.
-The heterozygote has the same phenotype as one of the homozygotes.
-This means the allele B is dominant over b.
-The effect depends on allele combinations, not simple addition.
+Each allele contributes a fixed amount,
+and the effects add linearly.
 
-In the bottom panel, we see partial dominance.
+In the middle panel,
+there is dominance.
+
+The heterozygote has the same phenotype
+as one of the homozygotes.
+
+The effect depends on allele combinations,
+not simple addition.
+
+In the bottom panel,
+there is partial dominance.
+
 The heterozygote is intermediate,
-but not exactly midway between the homozygotes.
-There is some dominance, but not complete.
+but not exactly halfway.
 
 The key idea is this:
 
-Only additive gene action produces predictable transmission from parents to offspring.
+Only additive effects
+are transmitted predictably from parents to offspring.
 
-Dominance effects depend on how alleles combine within individuals.
-Because meiosis reshuffles alleles each generation,
-dominance effects are not transmitted in a consistent way.
+Dominance effects depend on allele combinations
+and are reshuffled each generation.
 
-That is why additive variance, V_A,
-is the component that determines narrow-sense heritability
+Therefore,
+additive variance
+determines narrow-sense heritability
 and response to selection.
 
 :::
-
 
 ## Genotype by Genotype Interaction (Epistasis)
 ::: {.columns}
@@ -1166,13 +1272,46 @@ The phenotypic expression of one gene is modified by the presence of another gen
 
 :::
 :::
+
 ::: notes
-This figure illustrates Gene-by-Gene interaction, commonly called Epistasis.
-In the top panel, we see an additive relationship. Moving from locus 2 "bb" to "BB" increases the trait, and moving from locus 1 "aa" to "AA" also increases the trait. Because the lines are parallel, the effect of Locus 1 is independent of Locus 2.
-In the bottom panel, we see Epistasis. Here, the "AA" genotype has no effect if the background is "bb". It only shows a phenotypic increase when combined with "BB" at the second locus.
-In quantitative genetics, epistasis complicates our models because the "value" of an allele changes depending on the rest of the genome. While 
- (additive variance) is the main driver of selection, epistasis contributes to the "hidden" part of the total genetic variance (
-).
+
+This figure illustrates gene-by-gene interaction,
+also called epistasis.
+
+In the top panel,
+there is no interaction.
+
+The lines are parallel.
+
+The effect of locus 1
+is the same regardless of locus 2.
+
+Genetic effects simply add up.
+
+In the bottom panel,
+there is epistasis.
+
+The lines are not parallel.
+
+The effect of one gene
+depends on the genotype at another gene.
+
+For example,
+the AA genotype only increases the trait
+when combined with BB at the second locus.
+
+The key idea is this:
+
+The effect of a gene
+can depend on the genetic background.
+
+In quantitative genetics,
+this complicates modeling,
+because allele effects are not fixed.
+
+Additive variance remains the main driver of selection,
+but epistasis contributes to total genetic variation.
+
 :::
 
 
@@ -1237,27 +1376,38 @@ Genotype performance can be environment-dependent.
 
 ::: notes
 
-This figure shows reaction norms: how the same genotypes perform across environments.
+This figure shows reaction norms,
+how genotypes perform across environments.
 
-On the left, there is no genotype-by-environment interaction.
-The two lines are parallel.
-IL1 is always higher than IL2 by the same amount.
-So the genetic difference is stable across environments.
+In the top panel,
+there is no genotype-by-environment interaction.
 
-On the right, we have genotype-by-environment interaction.
+The lines are parallel.
+
+The difference between genotypes
+is constant across environments.
+
+In the bottom panel,
+there is genotype-by-environment interaction.
+
 The lines cross.
-IL1 performs better in environment E1, but worse in environment E2.
-So the ranking of genotypes depends on the environment.
 
-This is what we mean by G×E:
-the difference between genotypes changes across environments.
+The performance of the genotypes
+depends on the environment.
 
-Why does it matter?
+A genotype that performs best in one environment
+may perform worse in another.
 
-If there is strong G×E, selection in one environment may not give the best genotype in another environment.
+This is the key idea:
 
-In that case, we often extend the model by adding an interaction term:
-phenotype equals mean plus genotype plus environment plus genotype-by-environment interaction.
+Genetic effects can depend on the environment.
+
+This matters because selection in one environment
+may not give the best genotype in another.
+
+In such cases,
+the model is extended
+to include a genotype-by-environment interaction term.
 
 :::
 
@@ -1326,26 +1476,39 @@ This is the foundation of heritability.
 
 ::: notes
 
-We begin with the phenotype model:
+Start with the phenotype model:
 
 P equals μ plus G plus E.
 
-Phenotypic variance measures how much individuals differ from the mean.
+Phenotypic variance measures
+how much individuals differ from the mean.
 
-Because μ is a constant, it does not contribute to variance.
+Because μ is constant,
+it does not contribute to variance.
 
-So the variance of P becomes the variance of G plus E.
+So the variance of P
+becomes the variance of G plus E.
 
-A basic statistical rule tells us that the variance of a sum equals the sum of the variances plus twice the covariance.
+A basic rule states:
 
-If genetic and environmental effects are independent, their covariance is zero.
+The variance of a sum
+equals the sum of the variances
+plus twice the covariance.
 
-In that case, total phenotypic variation equals genetic variation plus environmental variation.
+If genetic and environmental effects
+are independent,
+the covariance is zero.
 
-This simple relationship is the foundation of heritability.
+In that case:
+
+Total phenotypic variation
+equals genetic variation
+plus environmental variation.
+
+This relationship
+is the foundation of heritability.
 
 :::
-
 
 
 ## Visualizing Variance Partitioning
@@ -1416,21 +1579,29 @@ ggplot(data, aes(x = 1, y = value, fill = color_group)) +
 
 ::: notes
 
-Here we see total phenotypic variance represented as a single bar.
+This figure shows total phenotypic variance
+as a single bar.
 
-That total variance can be partitioned into two components:
-a genetic component and an environmental component.
+That total variance
+can be partitioned into two components:
 
-In this example, genetic variance accounts for 40 percent of the total,
-while environmental variance accounts for 60 percent.
+a genetic component
+and an environmental component.
 
-The exact numbers are not important.
+In this example,
+genetic variance accounts for 40 percent,
+and environmental variance for 60 percent.
 
-What matters is the principle:
-phenotypic variation can be decomposed into genetic and environmental variation.
+The exact values are not important.
 
-This visual framework prepares us to define heritability
-as the proportion of total variance that is genetic.
+The key idea is:
+
+Phenotypic variation can be decomposed
+into genetic and environmental components.
+
+This provides the basis for heritability,
+which is the proportion of total variance
+that is genetic.
 
 :::
 
@@ -1497,43 +1668,48 @@ This illustrates that variance components add when genotype and environment are 
 
 :::
 
+
 ::: notes
 
-This slide applies the variance decomposition to real data.
+This slide applies variance decomposition
+to real data.
 
-In Experiment I,
-10 inbred maize lines were grown in three environments.
+In this experiment,
+inbred maize lines were grown
+across different environments.
 
-Using all 30 observations,
-the total phenotypic variance is 14.67.
+The total phenotypic variance is 14.67.
 
-We estimate:
+This is partitioned into:
 
-V_G as the variance among line means — 12.00.
+genetic variance,
+12.00,
 
-V_E as the environmental contribution — 2.67.
+and environmental variance,
+2.67.
 
-When we add them:
+These components add exactly
+to the total variance.
 
-12.00 plus 2.67 equals 14.67.
+This works because
+genetic and environmental effects
+are independent.
 
-So the equation works exactly.
+Genotypes were randomized across environments,
+so the covariance is zero.
 
-Why?
+The key idea is:
 
-Because the experiment was designed properly.
-Genotypes were randomly assigned across environments.
+Phenotypic variance can be decomposed
+into genetic and environmental components.
 
-That means genetic and environmental effects are independent,
-so Cov(G,E) equals zero.
-
-This example makes the abstract variance equation tangible.
-
-And it leads naturally to the next concept:
-
-Heritability is simply a ratio constructed from these variance components.
+This leads directly
+to heritability,
+which is defined as a ratio
+of these components.
 
 :::
+
 
 ## Covariance and Correlation in Quantitative Genetics
 
@@ -1593,27 +1769,33 @@ If Cov(G,E) = 0, variance components add cleanly.
 
 ::: notes
 
-Covariance measures whether two variables vary together.
+Covariance measures
+whether two variables vary together.
 
-In quantitative genetics, this idea is fundamental.
-Even variance is just a special case of covariance —
-it is the covariance of a variable with itself.
+In quantitative genetics,
+this concept is fundamental.
 
-When we decompose phenotypic variance,
-we say that phenotypic variance equals genetic variance
+Even variance
+is a special case of covariance,
+the covariance of a variable with itself.
+
+When phenotypic variance is decomposed,
+it equals genetic variance
 plus environmental variance
-plus twice the covariance between genetic and environmental effects.
+plus twice the covariance
+between genetic and environmental effects.
 
 If genotype and environment are independent,
-that covariance is zero,
+the covariance is zero,
 and the variance partitions cleanly.
 
 If they are correlated,
 the covariance term remains,
-and we cannot cleanly separate genetic and environmental effects.
+and the components cannot be separated cleanly.
 
-In many ways,
-quantitative genetics is the study of variances and covariances.
+In this sense,
+quantitative genetics is largely the study
+of variances and covariances.
 
 :::
 
@@ -1682,6 +1864,47 @@ ggplot(df, aes(twin1, twin2)) +
   theme_minimal(base_size = 16)
 ```
 
+::: notes
+
+This figure visualizes correlation
+between two variables.
+
+Each point represents a pair of observations,
+here shown as twin heights.
+
+In the top panel,
+there is perfect correlation.
+
+All points lie exactly on a straight line.
+
+Knowing one value
+completely determines the other.
+
+In the middle panel,
+there is strong positive correlation.
+
+The points follow a clear upward trend,
+but with some scatter.
+
+As one variable increases,
+the other tends to increase.
+
+In the bottom panel,
+there is no correlation.
+
+The points are scattered randomly.
+
+Knowing one value
+gives no information about the other.
+
+The key idea is this:
+
+Correlation measures
+the strength of a linear relationship
+between two variables.
+
+:::
+
 
 ## Broad-Sense Heritability ($H^2$)
 
@@ -1737,44 +1960,45 @@ Important:
 
 ::: notes
 
-Broad-sense heritability answers a specific question:
+Broad-sense heritability answers a key question:
 
-Of all the variation we observe in a population,
-what fraction is associated with genetic differences?
+How much of the variation in a population
+is associated with genetic differences?
 
-It is defined as the ratio of genetic variance to total phenotypic variance.
+It is defined as
+genetic variance divided by total phenotypic variance.
 
 Its value ranges from zero to one.
 
-If H² equals zero,
-all observed differences are environmental.
+If broad sense heritability equals zero,
+all variation is environmental.
 
-If H² equals one,
-all observed differences are genetic.
+If broad sense heritability equals one,
+all variation is genetic.
 
-But this does NOT mean a trait is genetically determined in an individual.
+But this does not apply to individuals.
 
-Heritability always refers to variation within a population.
+Heritability always describes
+variation within a population.
 
-If everyone had identical genotypes,
+If all individuals had identical genotypes,
 genetic variance would be zero,
-even if genes are biologically essential for the trait.
+even though genes still affect the trait.
 
-The term “broad-sense” is used because V_G includes
-additive variance, dominance variance,
-and interaction, or epistatic, variance.
+Broad-sense heritability includes
+all genetic effects:
 
-Later, we will distinguish this from narrow-sense heritability,
-which focuses only on additive variance.
+additive,
+dominance,
+and interaction effects.
 
-Heritability is not a universal constant.
+Heritability is not a fixed property.
 
 It depends on the population,
 the environment,
 and the amount of genetic variation present.
 
 :::
-
 
 
 
@@ -1822,33 +2046,35 @@ Interpretation:
 
 :::
 
-
 ::: notes
 
-This slide compares two experiments using the same 10 maize inbred lines.
+This slide compares two experiments
+using the same maize lines.
 
-Importantly, the genetic variance is identical in both experiments:
-V_G equals 12.0.
+Importantly,
+genetic variance is identical in both cases.
 
-In Experiment I, environmental variance is small.
-So most of the total variance is genetic.
-Heritability is high: 0.82.
+In Experiment I,
+environmental variance is small.
 
-In Experiment II, the environments are much more variable.
-Environmental variance increases to 24.0.
-Total variance increases to 36.0.
+Most of the total variation is genetic,
+and heritability is high.
+
+In Experiment II,
+environmental variance is much larger.
+
+Total variation increases,
+and heritability drops substantially.
 
 Even though the genetics did not change,
-heritability drops dramatically to 0.33.
+heritability changes.
 
-This illustrates a crucial concept in quantitative genetics:
+This illustrates a key concept:
 
 Heritability is not a fixed property of a trait.
 
-It depends on:
-- The amount of genetic variation
-- The amount of environmental variation
-- The specific population being studied
+It depends on the balance
+between genetic and environmental variation.
 
 If environmental variance increases,
 heritability decreases.
@@ -1856,8 +2082,10 @@ heritability decreases.
 If environmental variance decreases,
 heritability increases.
 
-This does NOT mean genes became less biologically important.
-It means their contribution to variation changed.
+This does not mean genes are less important.
+
+It means their contribution
+to observed variation has changed.
 
 :::
 
@@ -1923,50 +2151,46 @@ $$
 
 :::
 
-::: notes
 
-Left panel:
+::: notes
 
 Identical twins share the same genotype.
 
 If they are reared apart,
-their environmental effects can be treated as independent.
+their environments can be treated as independent.
 
-Under that assumption,
-the covariance between twin phenotypes reflects genetic variance.
+Under this assumption,
+the covariance between twin phenotypes
+reflects genetic variance.
 
-In other words:
+So covariance between twins
+equals V_G.
 
-Covariance between Twin 1 and Twin 2 equals V_G.
+Broad-sense heritability
+can therefore be estimated as:
 
-Therefore, broad-sense heritability can be estimated as:
+covariance between twins
+divided by total phenotypic variance.
 
-H² equals covariance between twins divided by total phenotypic variance.
+In this example,
+the covariance is 119.2,
+and total variance is 154.3.
 
-Right panel:
+This gives broad sense heritability equal to 0.77.
 
-In this example, the covariance between twin IQ scores is 119.2.
-Total phenotypic variance is 154.3.
+Interpretation is important:
 
-Dividing gives H² equal to 0.77.
-
-Interpretation is critical:
-
-This does NOT mean IQ is 77 percent genetic for an individual.
+This does not apply to individuals.
 
 It means that 77 percent of the variation in IQ
-within this population,
-under these environmental conditions,
+in this population
 is associated with genetic differences.
 
-Twin studies rely on important assumptions:
+Twin studies rely on key assumptions:
 
-- Environments are truly independent  
-- There is no strong gene–environment correlation  
-- Measurements are accurate  
-
-These assumptions must always be evaluated
-when interpreting heritability estimates.
+independent environments,
+no strong gene–environment correlation,
+and accurate measurement.
 
 :::
 
@@ -2031,50 +2255,43 @@ $$
 :::
 
 ::: notes
+
 This table shows broad-sense heritability estimates from twin studies.
 
-Remember:
+Recall:
+broad sense heritability equals genetic variance divided by total phenotypic variance.
 
-H² = V_G / V_P
+These values describe how much variation in a population
+is associated with genetic differences.
 
-These values represent the proportion of variation in a population
-that is associated with genetic differences.
+Several patterns emerge.
 
-Several important patterns emerge:
+Physical traits often show high heritability,
+such as height and fingerprint patterns.
 
-1. Physical traits often show high heritability.
-   - Height is very high (0.88).
-   - Fingerprint ridge count is extremely high (0.97).
+Cognitive and personality traits
+tend to show moderate heritability.
 
-2. Cognitive and personality traits show moderate heritability.
-   - IQ around 0.69.
-   - Personality traits around 0.4–0.5.
+Psychiatric disorders vary,
+with some showing high values
+and others more moderate.
 
-3. Psychiatric disorders vary.
-   - Autism and schizophrenia show high heritability.
-   - Depression and anxiety are lower.
+Even beliefs and attitudes
+can show measurable heritability.
 
-4. Even beliefs and political attitudes show measurable heritability.
+The key interpretation is critical:
 
-Critical interpretation:
+High heritability does not mean
+a trait is genetically determined,
+or that it cannot change.
 
-High heritability does NOT mean:
-- The trait is genetically determined.
-- The trait cannot change.
-- Environment is unimportant.
+Heritability is always
+population-specific
+and environment-specific.
 
-Heritability is:
-- Population-specific
-- Environment-specific
-- A measure of variation, not destiny.
+It measures variation —
+not destiny.
 
-If environmental variation increases,
-heritability can decrease — even if genes matter biologically.
-
-Twin-based estimates also rely on assumptions:
-- Equal environments assumption
-- No gene–environment correlation
-- Accurate trait measurement
 :::
 
 
@@ -2136,41 +2353,36 @@ Additive genetic variation drives response to selection.
 
 ::: notes
 
-Left panel:
+Broad-sense heritability includes all genetic variance.
 
-Broad-sense heritability measures total genetic variance.
+But genetic variance has different components.
 
-But genetic variance is composed of several components.
+Additive variance reflects the average effect of alleles.
 
-Additive variance, V_A, reflects the average effect of alleles.
+Dominance and interaction variance depend on specific allele combinations.
 
-Dominance variance, V_D, depends on interactions between alleles at the same locus.
+Because allele combinations are reshuffled each generation,
+these components are not transmitted predictably.
 
-There may also be interaction, or epistatic, variance,
-arising from interactions between loci.
+Only additive effects are passed on in a consistent way.
 
-Only additive variance is transmitted predictably from parents to offspring.
+Narrow-sense heritability focuses on this component:
 
-Dominance and interaction effects depend on specific allele combinations,
-which are reshuffled each generation during meiosis.
+narrow sense heritability equals additive variance divided by total phenotypic variance.
 
-Right panel:
+This is the key quantity for prediction.
 
-Narrow-sense heritability isolates the additive component:
+It determines resemblance between relatives
+and response to selection.
 
-h² equals V_A divided by V_P.
+If narrow sense heritability is high, selection is effective.
 
-This is the most important measure for:
+If narrow sense heritability is low, response is limited.
 
-- Predicting offspring phenotypes  
-- Measuring resemblance between relatives  
-- Predicting response to selection  
+The key distinction is simple:
 
-If h² is high, selection produces a strong response.
-
-If h² is low, response to selection is limited.
-
-The distinction between H² and h² is fundamental in quantitative genetics.
+Broad-sense heritability describes total genetic influence,
+while narrow-sense heritability captures what can be inherited predictably.
 
 :::
 
@@ -2237,45 +2449,55 @@ Human height: $h^2 \approx 0.8$
 
 :::
 
-
 ::: notes
 
 Left panel:
 
-Narrow-sense heritability isolates additive genetic variance.
+Narrow-sense heritability focuses on additive genetic variance.
 
 Broad-sense heritability includes all genetic effects,
 including dominance and interactions.
 
-But only additive effects are transmitted predictably from parents to offspring.
+But only additive effects are transmitted predictably
+from parents to offspring.
 
-That is why h² focuses on V_A.
+That is why narrow-sense heritability
+focuses on V_A.
 
 Right panel:
 
-An offspring inherits half its alleles from a parent.
+An offspring inherits half its alleles from each parent.
 
 Because additive effects sum across alleles,
-the covariance between parent and offspring equals one-half of V_A.
+the covariance between parent and offspring
+equals one-half of the additive variance.
 
 Rearranging gives:
 
-h² equals two times the covariance between parent and offspring,
+Narrow-sense heritability equals
+two times the covariance between parent and offspring,
 divided by total phenotypic variance.
 
-Similarly, half-siblings share one-quarter of their additive effects,
-so V_A equals four times the covariance between half-sibs.
+Similarly, half-siblings share one-quarter
+of their additive effects.
 
-For example, human height has h² around 0.8.
+So additive variance can be estimated as
+four times the covariance between half-sibs.
 
-This means most of the variation in height within a population
-is due to additive genetic differences.
+For example, human height has high narrow-sense heritability,
+around 0.8.
 
-But this does NOT mean height is genetically fixed.
+This means most of the variation in height
+within a population
+is associated with additive genetic differences.
 
-Environmental variation still contributes to phenotypic differences.
+But this does not mean height is genetically fixed.
+
+Environmental effects still contribute
+to differences between individuals.
 
 :::
+
 
 
 
@@ -2329,41 +2551,38 @@ the greater the additive genetic contribution to variation.
 
 This figure shows parent–offspring regressions for height.
 
-In the top panel, we see mother–daughter pairs.
-In the bottom panel, father–son pairs.
+In the top panel are mother–daughter pairs.
+In the bottom panel are father–son pairs.
 
 Each point represents one parent–offspring pair.
 
 There is a clear positive relationship:
-taller parents tend to have taller children.
+taller parents tend to have taller offspring.
 
-The red line is the best-fit regression line.
+The red line is the regression line.
 
-The slope of this line estimates narrow-sense heritability, h².
+Its slope estimates narrow-sense heritability.
 
-Why does this work?
+Why?
 
 Because additive genetic effects are transmitted predictably
 from parents to offspring.
 
-If additive variance is large,
+If additive genetic variance is large,
 offspring closely resemble their parents,
-and the regression slope is steep.
+and the slope is steep.
 
-If additive variance is small,
-offspring resemble their parents less,
+If additive genetic variance is small,
+the resemblance is weaker,
 and the slope is flatter.
 
 In this example, the slope is close to 0.8,
-meaning most of the variation in height
-is due to additive genetic differences.
+indicating a strong additive genetic contribution to variation in height.
 
-But remember:
+But this describes variation in a population,
+not how genetic height is for an individual.
 
-This describes variation in a population,
-not how “genetic” height is for any one individual.
-
-Environment still contributes to variation.
+Environmental effects still contribute to differences between individuals.
 
 :::
 
@@ -2420,52 +2639,46 @@ it means additive variance is limited relative to total variance.
 
 ::: notes
 
-This table shows narrow-sense heritability estimates for traits in both agricultural and natural species.
+This table shows estimates of narrow-sense heritability
+across different traits and species.
 
-Recall:
+Narrow-sense heritability measures
+the proportion of variation due to additive genetic effects —
+the component that is transmitted from parents to offspring.
 
-h² = V_A / V_P
+This makes it directly relevant
+for selection and evolutionary change.
 
-It measures the proportion of phenotypic variance due to additive genetic variance — the part that is predictably transmitted to offspring.
+Several patterns emerge.
 
-This is the form of heritability most relevant to breeding and evolutionary response.
+In agricultural species,
+production traits such as body weight and milk yield
+often show moderate to high heritability.
 
-Agronomic species:
+These traits respond well to selection.
 
-Many production traits show moderate to high heritability:
+In contrast, reproductive traits,
+such as litter size,
+typically show low heritability.
 
-- Body weight in cattle: 65%
-- Back-fat thickness in pigs: 70%
-- Egg weight in chickens: 50%
+In natural populations,
+heritability varies widely across traits.
 
-These traits respond well to artificial selection.
+Some traits, like bill size in finches,
+show high values,
+while others, such as lifespan or plant height,
+are much lower.
 
-In contrast, reproductive traits such as litter size in pigs have very low heritability (5%).
+The key point is:
 
-Why?
+Heritability depends on the trait,
+the population,
+and the environment.
 
-Reproductive traits are often closely tied to fitness and may have already been under strong natural selection, reducing additive variation.
+Low heritability does not mean genes are unimportant.
 
-Natural species:
-
-We also see variation:
-
-- Bill length in Darwin’s finches: 65% — strong potential for evolutionary response.
-- Flight duration in milkweed bug: 20%.
-- Plant height in jewelweed: 8% — mostly environmental or non-additive variation.
-- Fecundity in red deer: 46%.
-- Life span in collared flycatchers: 15%.
-
-Key interpretation:
-
-Heritability varies dramatically by trait and population.
-
-Low h² does not mean genes are irrelevant.
-It means that additive variance is small relative to total phenotypic variance.
-
-Environmental variance, dominance, epistasis, and past selection history all influence these values.
-
-This table highlights that evolutionary and breeding potential differ among traits.
+It means that additive genetic variation
+is small relative to total variation.
 
 :::
 
@@ -2549,7 +2762,7 @@ $$
 
 Left panel:
 
-Each individual’s phenotypic deviation from the mean
+An individual’s deviation from the mean
 can be decomposed into three components:
 
 Additive genetic effects,
@@ -2559,45 +2772,44 @@ and environmental effects.
 When parents reproduce,
 only additive effects are transmitted predictably.
 
-Dominance effects are not transmitted predictably,
-because allele combinations are reshuffled each generation.
+Dominance effects depend on allele combinations,
+which are reshuffled each generation.
 
 Environmental effects are not inherited,
 because offspring experience their own environments.
 
 Therefore, the expected offspring deviation
-equals the average of the parents’ additive deviations.
+equals the average of the parents’ additive effects.
 
 Right panel:
 
-Because we cannot directly observe additive deviations,
-we use narrow-sense heritability to estimate them.
+Because additive effects are not directly observed,
+they are estimated using narrow-sense heritability.
 
 The expected offspring deviation equals:
 
-h² times the mean parental phenotypic deviation.
+narrow-sense heritability
+times the mean parental deviation.
 
 In the sheep example:
 
-Population mean is 6.0 pounds.
-Parents are 0.75 pounds above the mean.
-Heritability is 0.4.
+The population mean is 6.0 pounds.
+The parents are 0.75 pounds above the mean.
+Narrow-sense heritability is 0.4.
 
-So the predicted offspring deviation is:
+The predicted offspring deviation is 0.3.
 
-0.4 times 0.75 equals 0.3.
-
-The predicted offspring phenotype is therefore 6.3 pounds.
+So the predicted offspring phenotype is 6.3 pounds.
 
 Notice that offspring are predicted to be less extreme than their parents.
 
 This is regression toward the mean.
 
-If h² equals 1,
-offspring would lie exactly halfway between the parents.
+If narrow-sense heritability is high,
+offspring closely resemble their parents.
 
-If h² equals 0,
-offspring would equal the population mean.
+If it is low,
+offspring are closer to the population mean.
 
 This principle underlies selective breeding
 and evolutionary response to selection.
@@ -2674,53 +2886,54 @@ is additive and transmitted to the next generation.
 Left panel:
 
 Artificial selection occurs when humans choose individuals
-with desirable phenotypes to reproduce.
+with desirable phenotypes for reproduction.
 
 The selection differential, S,
-measures how much better the selected parents are
-compared to the base population.
+is the difference between the selected parents
+and the original population mean.
 
 The response, R,
-measures how much the offspring generation changes
-relative to the original population mean.
+is the change in the offspring generation
+relative to that original mean.
 
 The breeder’s equation links these quantities:
 
-R equals h² times S.
+The response to selection equals
+narrow-sense heritability
+times the selection differential.
 
 Only additive genetic variance contributes
-to a predictable response to selection.
+to a predictable response.
 
 Right panel:
 
 In the maize example:
 
-The base population mean is 1.25 µg per gram.
+The base population mean is 1.25 micrograms per gram.
 
-Selected plants have a mean of 1.63,
-so S equals 0.38.
+The selected plants have a mean of 1.63,
+giving a selection differential of 0.38.
 
 The offspring mean is 1.44,
-so R equals 0.19.
+so the response is 0.19.
 
-Because R is half of S,
-heritability equals 0.50.
+The response is about half of the selection differential,
+so narrow-sense heritability is approximately 0.5.
 
 This means that about half of the variation
-responsible for selection response
-is additive and transmissible.
+driving the response to selection
+is additive and transmitted to the next generation.
 
-The remaining variation is due to environmental effects
+The remaining variation reflects environmental effects
 and non-additive genetic effects,
-which do not produce a predictable response.
+which do not produce a consistent response.
 
-Key insight:
+Key idea:
 
-The larger h² is,
+The larger narrow-sense heritability is,
 the stronger and faster the response to selection.
 
 :::
-
 
 
 
@@ -2765,27 +2978,37 @@ Only the additive (heritable) component causes the shift in the next generation.
 
 ::: notes
 
-This figure illustrates how artificial selection changes the population mean.
+This figure shows how artificial selection shifts the population mean.
 
-In panel (a), we see the foundation population.
-The distribution is centered at 1.25 μg per gram.
-Only individuals in the right tail of the distribution are selected.
-Their mean is 1.63 μg per gram.
-The difference between 1.63 and 1.25 is the selection differential, S = 0.38.
+In panel (a), the base population is centered at 1.25 micrograms per gram.
+
+Individuals in the right tail are selected for reproduction,
+with a mean of 1.63.
+
+The difference between these values
+is the selection differential, equal to 0.38.
 
 In panel (b), we see the offspring of the selected individuals.
-The entire distribution has shifted to the right.
-The new population mean is 1.44 μg per gram.
 
-The shift from 1.25 to 1.44 is the response to selection:
-R = 0.19.
+The entire distribution has shifted to the right,
+with a new mean of 1.44.
+
+The change from 1.25 to 1.44
+is the response to selection, equal to 0.19.
 
 Notice that the response is smaller than the selection differential.
-This is because only the additive genetic component is transmitted to offspring.
-Dominance and environmental effects are not predictably inherited.
 
-This figure visually demonstrates the fundamental breeder’s equation:
-R = h²S.
+This is because only additive genetic effects
+are transmitted predictably to the next generation.
+
+Dominance and environmental effects
+do not contribute to a consistent response.
+
+This illustrates the breeder’s equation:
+
+The response to selection equals
+narrow-sense heritability
+times the selection differential.
 
 :::
 
@@ -2829,31 +3052,36 @@ and can respond to selection for many generations.
 
 ::: notes
 
-This figure illustrates the power of artificial selection over time.
+This figure shows the long-term effects of artificial selection.
 
-In panel (a), fruit flies were selected for faster flight speed.
-Each generation, the fastest individuals were chosen to breed.
-Over 100 generations, mean flight speed increased dramatically —
-from very low values to roughly 150–170 cm per second.
-Importantly, the response did not plateau quickly.
-The population continued responding across many generations.
+In panel (a), fruit flies were selected for increased flight speed.
+
+In each generation, the fastest individuals were chosen to reproduce.
+
+Over many generations, the mean flight speed increased substantially.
+
+Importantly, the response continued over time,
+rather than stopping after a few generations.
 
 In panel (b), mice were selected for voluntary wheel running.
-Selected lines show a steep increase in revolutions per day,
-while unselected control lines remain relatively stable.
-Within just 10 generations, selected lines increased activity by about 75 percent.
 
-These experiments demonstrate two important principles:
+The selected lines show a rapid increase in activity,
+while the control lines remain relatively unchanged.
 
-First, complex traits often contain deep reservoirs of additive genetic variation.
+This demonstrates a clear response to selection.
 
-Second, as long as additive variance remains,
-populations can continue to respond to selection.
+Two key principles emerge.
 
-This is the foundation of modern plant and animal breeding —
-and also a powerful demonstration of evolutionary change in action.
+First, complex traits often contain substantial additive genetic variation.
+
+Second, as long as additive variation is present,
+populations can continue to respond to selection over many generations.
+
+This principle underlies modern breeding
+and provides a clear example of evolution in action.
 
 :::
+
 
 
 ## What Heritability Does **NOT** Mean
@@ -2897,45 +3125,43 @@ $$
 
 ::: notes
 
-This is one of the most misunderstood concepts in genetics.
+Heritability is one of the most misunderstood concepts in genetics.
 
-Heritability does NOT tell us how genetic a trait is in a particular person.
+It does not describe how genetic a trait is in an individual.
 
-If height has h² = 0.8,
-that does not mean a person is “80% genetic and 20% environmental.”
+For example, if height has high narrow-sense heritability,
+this does not mean a person is “mostly genetic.”
 
-It means that 80% of the variation in height
-within a specific population,
-under specific environmental conditions,
-is associated with additive genetic differences.
+It means that most of the variation in height
+within a specific population
+is associated with genetic differences.
 
-Heritability does not imply immutability.
+Heritability always refers to variation in a population,
+under specific environmental conditions.
 
-A trait can have very high heritability
-and still change dramatically if the environment changes.
+It does not imply that a trait is fixed.
 
-For example,
-average human height increased substantially during the 20th century
-due to improved nutrition,
-even though height has high heritability.
+Even highly heritable traits can change
+if the environment changes.
 
-Heritability is not universal.
+For example, average human height increased substantially
+over the past century due to improved nutrition,
+despite high heritability.
 
-It depends on:
-- The population being studied
-- The amount of genetic variation present
-- The amount of environmental variation present
+Heritability is also not universal.
 
-If environmental variance increases,
-heritability decreases —
-even if genes remain biologically essential.
+It depends on the population,
+the genetic variation present,
+and the environment.
 
-The key takeaway:
+If environmental variation increases,
+heritability decreases.
 
-Heritability measures variation among individuals in a population.
+The key idea is simple:
 
-It does not measure destiny,
-and it does not apply to individuals.
+Heritability measures variation —
+not destiny,
+and not individuals.
 
 :::
 
@@ -2983,45 +3209,44 @@ to identifying **what** is inherited.
 
 ::: notes
 
-So far, we have worked at the phenotypic level.
+So far, the focus has been on phenotypes.
 
-We know that many traits, such as height, are highly heritable.
-We know that variation is multifactorial —
-influenced by many genes and the environment.
-And we know that we can predict response to selection
-using quantitative genetic models.
+Many traits, such as height, are highly heritable.
+Variation is multifactorial,
+with contributions from many genes and the environment.
 
-But classical quantitative genetics does not tell us
-which specific genes are responsible.
+Quantitative genetics allows prediction
+of response to selection.
 
-This leads to the central question:
-what are the actual DNA variants
-that generate genetic variance?
+But it does not identify the specific genes involved.
 
-Where are they located in the genome?
-What biological mechanisms do they affect?
-And how do genes interact within pathways?
+This leads to the key question:
 
-To answer these questions,
-we move from variance components
+Which DNA variants generate genetic variation?
+
+Where are they located in the genome,
+and what biological mechanisms do they affect?
+
+To address this,
+the focus shifts from variance components
 to association mapping.
 
-The idea is simple:
-we scan the genome
+The idea is to scan the genome
 and test whether genetic markers
-are statistically associated with the trait.
+are associated with the trait.
 
-We use dense SNP markers across the genome.
+This is done using dense SNP markers.
 
 If a marker is in linkage disequilibrium
 with a causal variant,
-it will show statistical association.
+it will show a statistical association.
 
 In this way,
-we move from describing how much is inherited
-to identifying what is inherited.
+the focus shifts from how much is inherited
+to what is inherited.
 
 :::
+
 
 
 ## Genome-Wide Association Study (GWAS)
@@ -3068,36 +3293,39 @@ Test statistical associations between:
 
 ::: notes
 
-A Genome-Wide Association Study, or GWAS,
+A genome-wide association study, or GWAS,
 aims to identify genomic regions associated with complex traits.
 
-Unlike classical QTL mapping,
-GWAS operates in natural, random-mating populations.
+It is applied in natural, random-mating populations,
+rather than controlled experimental crosses.
 
-The core idea is straightforward:
-we test whether variation at a genetic marker,
+The core idea is simple:
+
+Test whether genetic variation at a marker,
 typically a SNP,
-is statistically associated with variation in a phenotype.
+is associated with phenotypic variation.
 
-This test is performed across the entire genome,
-often for hundreds of thousands or even millions of markers.
+This is done across the entire genome,
+often using hundreds of thousands
+or even millions of markers.
 
-One major advantage is that
-we do not need to specify candidate genes in advance.
-The genome is scanned in an unbiased way.
+One key advantage is that
+no candidate genes need to be specified in advance.
+
+The approach is unbiased,
+allowing discovery of novel loci.
 
 Compared to classical QTL mapping,
-GWAS does not require controlled crosses,
-and it does not require pedigree information.
+GWAS does not require controlled crosses
+or pedigree information.
 
 Instead,
 it relies on naturally occurring genetic variation
 and statistical association.
 
-In the next step,
-we will see why this works —
-specifically, how linkage disequilibrium
-connects markers to causal variants.
+The next step is to understand why this works,
+through linkage disequilibrium,
+which connects markers to causal variants.
 
 :::
 
@@ -3217,49 +3445,49 @@ with causal variants.
 :::
 :::
 
-
-
 ::: notes
 
-This figure explains why GWAS works.
+This figure explains why genome-wide association studies work.
 
 Each horizontal line represents a chromosome segment.
 
-In Scenario 1, the red marker represents a causal mutation —
-a quantitative trait locus, or QTL —
-that directly affects the trait.
+In Scenario 1, the red marker represents a causal mutation,
+a quantitative trait locus that directly affects the trait.
 
-The blue marker represents a nearby SNP.
+The blue marker is a nearby SNP.
 
-Because these two loci are physically close,
+Because these loci are physically close,
 they tend to be inherited together.
-This non-random association is called linkage disequilibrium,
-or LD.
 
-Even if we do not genotype the causal mutation itself,
+This non-random association is called linkage disequilibrium.
+
+Even if the causal mutation is not observed directly,
 the nearby SNP is correlated with it.
 
 As a result,
-when we test the SNP statistically,
-it appears associated with the trait.
+the SNP shows a statistical association with the trait.
 
-In Scenario 2,
-the marker and the QTL are unlinked.
-They segregate independently.
-There is no LD,
-so the marker carries no information about the causal mutation.
+In Scenario 2, the marker and the causal variant are unlinked.
 
-This illustrates the core logic of GWAS:
+They segregate independently,
+so there is no linkage disequilibrium.
 
-We do not necessarily detect the functional mutation itself.
-We detect markers that are in linkage disequilibrium
+The marker then carries no information about the trait,
+and no association is detected.
+
+This illustrates the core idea of GWAS:
+
+Markers do not need to be causal.
+
+They only need to be in linkage disequilibrium
 with causal variants.
 
 Identifying the true causal mutation
-requires further fine-mapping
-and functional validation.
+requires further analysis,
+such as fine-mapping and functional studies.
 
 :::
+
 
 
 ## From Biological Data to Statistical Model
@@ -3322,34 +3550,38 @@ $$
 
 :::
 
-
 ::: notes
 
-Genome-wide association studies require two types of data.
+Genome-wide association studies rely on two types of data.
 
 First, phenotypes.
-These are measured trait values —
-for example, height or milk yield.
-We represent them as a vector, y,
+
+These are measured trait values,
+such as height or milk yield.
+
+They are represented as a vector, y,
 with one value per individual.
 
 Second, genotypes.
+
 These are organized into a matrix, X,
-where rows are individuals
-and columns are SNP markers.
+where rows correspond to individuals
+and columns correspond to SNP markers.
 
 Each entry is coded as 0, 1, or 2,
 representing the number of alternative alleles.
 
 Together, the phenotype vector and genotype matrix
-form the basis for statistical modeling.
+form the foundation of the statistical model.
 
-GWAS essentially asks:
+The key question is:
 
-Does variation in a column of X
-predict variation in y?
+Does variation in a SNP,
+that is, a column of X,
+predict variation in the phenotype y?
 
-That connection is what we model next.
+This is the core idea behind GWAS,
+and it leads directly to the models used for association testing.
 
 :::
 
@@ -3407,13 +3639,15 @@ If $\beta$ is not equal to zero, the test is statistically significant and there
 
 This slide builds directly on the previous one.
 
-We now connect the genotype matrix X
-and the phenotype vector y.
+The genotype matrix X
+and phenotype vector y
+are now connected through a statistical model.
 
-For each SNP — meaning for each column of X —
-we fit a simple regression model.
+For each SNP —
+that is, each column of X —
+a simple regression model is fitted.
 
-The phenotype equals:
+The phenotype is modeled as:
 
 an overall mean,
 plus the SNP effect,
@@ -3421,26 +3655,29 @@ plus residual variation.
 
 The key question is:
 
-Is the SNP effect, beta, significantly different from zero?
+Is the SNP effect, beta,
+different from zero?
 
-If beta is statistically different from zero,
-we conclude that this SNP is associated with the trait.
+If beta is significantly different from zero,
+there is evidence that the SNP is associated with the trait.
 
-We repeat this test for every SNP in the genome.
+This test is repeated for every SNP in the genome.
 
 In other words,
-GWAS scans the genome one column of the genotype matrix at a time.
+GWAS scans the genome
+one column of the genotype matrix at a time.
 
 Each SNP is tested independently.
 
-Later, we correct for multiple testing
-and visualize results in a Manhattan plot.
+Later, multiple testing must be accounted for,
+and results are summarized in plots such as Manhattan plots.
 
-The important idea is simple:
+The central idea is:
 
 GWAS is repeated regression across the genome.
 
 :::
+
 
 
 ## How GWAS Works: Single Marker Test
@@ -3508,9 +3745,46 @@ $$y = \mu + x\beta + \varepsilon$$
 :::
 
 ::: notes
-This slide demonstrates how we move from biological groups to statistical testing.
-In the boxplot, we see the distributions of LDL for each genotype group. The green boxes show that as we increase the number of T alleles, the mean LDL drops significantly.
-To test this formally, we treat the genotype as a numeric variable (0, 1, 2) and fit a linear model. The red line represents our "Additive Model." The slope of this line is our beta coefficient. In GWAS, we perform this same test millions of times, once for every SNP in the genome, looking for slopes that are significantly different from zero.
+
+This slide shows how a single SNP is tested in GWAS.
+
+Each point represents one individual.
+
+The x-axis shows genotype:
+0, 1, or 2 copies of the T allele.
+
+The y-axis shows the phenotype,
+here LDL cholesterol.
+
+The boxplots summarize the distribution within each genotype group.
+
+As the number of T alleles increases,
+the average LDL level decreases.
+
+To test this formally,
+the genotype is treated as a numeric variable,
+taking values 0, 1, and 2.
+
+A linear regression model is then fitted.
+
+The red line represents this additive model.
+
+Its slope is the SNP effect, beta.
+
+Beta measures the average change in LDL
+for each additional T allele.
+
+The key question is:
+
+Is beta different from zero?
+
+If it is,
+the SNP is statistically associated with the trait.
+
+In GWAS,
+this exact test is repeated
+for every SNP across the genome.
+
 :::
 
 
@@ -3602,6 +3876,42 @@ print(final_plot)
 This visual demonstrates **Fine-Mapping**: the process of narrowing down a broad GWAS "skyscraper" to the specific gene region most likely to contain the causal variant.
 
 :::
+:::
+
+::: notes
+
+This figure shows what happens
+after many SNPs have been tested
+in the same genomic region.
+
+Each point represents one marker.
+
+The highest points cluster
+over a specific region of the genome.
+
+This creates an association peak.
+
+The dashed vertical line marks the lead SNP,
+the marker with the strongest statistical signal.
+
+In this example,
+that signal falls within Gene B,
+which becomes a candidate region.
+
+But the key point is this:
+
+Because of linkage disequilibrium,
+many nearby SNPs can appear significant at the same time.
+
+So GWAS usually identifies a neighborhood,
+not a single causal mutation.
+
+Fine-mapping is the next step.
+
+Its goal is to narrow this broader signal
+to the most likely gene
+or causal variant.
+
 :::
 
 
@@ -3713,39 +4023,37 @@ associated with the trait.
 
 ::: notes
 
-After testing every SNP,
-we obtain a p-value for each one.
+After testing all SNPs,
+a p-value is obtained for each marker.
 
-To visualize results,
-we plot genomic position on the x-axis
-and minus log base 10 of the p-value on the y-axis.
+To visualize the results,
+genomic position is plotted on the x-axis
+and minus log base 10 of the p-value
+on the y-axis.
 
-Why minus log 10?
+This transformation makes very small p-values
+easier to see.
 
-Because very small p-values become large positive numbers,
-making strong signals easier to see.
+Each point represents one SNP.
 
-Each dot represents one SNP.
+Most SNPs show little or no association,
+so they remain near the bottom.
 
-Most SNPs show no association,
-so they cluster near the bottom.
+A few SNPs show strong association
+and form visible peaks.
 
-Occasionally,
-a SNP shows a very small p-value,
-creating a visible peak.
+The dashed horizontal line
+marks the genome-wide significance threshold.
 
-The dashed horizontal line represents
-the genome-wide significance threshold.
+Points above this line
+provide strong evidence of association.
 
-Peaks above this line indicate
-regions associated with the trait.
-
-This type of plot is called a Manhattan plot,
+This type of figure
+is called a Manhattan plot,
 because the peaks resemble skyscrapers.
 
-Importantly,
-a peak identifies a genomic region —
-not necessarily the causal mutation.
+A peak identifies an associated genomic region,
+but not necessarily the causal mutation itself.
 
 :::
 
@@ -3785,38 +4093,47 @@ IGF1 is a major contributor to size differences.
 
 ::: notes
 
-This figure shows a real example of association mapping.
+This figure shows a real example of a genome-wide association study.
 
-Panel (a) is a GWAS result.
+Panel (a) displays a Manhattan plot.
 
-The horizontal axis shows genomic position across several chromosomes.
-The vertical axis shows statistical significance, plotted as −log10(P value).
+The x-axis shows genomic position across chromosomes.
+The y-axis shows statistical significance,
+plotted as minus log base 10 of the p-value.
 
-Because the scale is inverted:
-- Higher points mean smaller P values.
-- Smaller P values mean stronger evidence of association.
+Higher points correspond to smaller p-values,
+and therefore stronger evidence of association.
 
-The horizontal line represents the genome-wide significance threshold.
-Points above this line are considered statistically significant.
+The horizontal line marks the genome-wide significance threshold.
 
-Notice that almost all chromosomes show no strong signal.
-But on chromosome 15, there is a clear cluster of highly significant SNPs.
+Most regions show no strong signal.
 
-That region contains the IGF1 gene — insulin-like growth factor 1.
+However, on chromosome 15,
+there is a clear peak of highly significant SNPs.
 
-IGF1 plays a major role in juvenile growth in mammals.
-Variation in this gene explains much of the size difference between small and large dog breeds.
+This indicates a genomic region associated with body size.
 
-Panel (b) visually illustrates the dramatic size difference among breeds.
+That region contains the IGF1 gene,
+insulin-like growth factor 1.
 
-Key takeaway:
+IGF1 is known to play a key role in growth and development.
 
-GWAS does not require a prior candidate gene.
-By scanning the entire genome,
-we can statistically localize regions controlling quantitative traits.
+Panel (b) shows the phenotypic effect:
+small and large dog breeds differ dramatically in size.
 
-However, association does not prove causation —
-functional validation is required to confirm the gene’s role.
+Variation in IGF1 explains a large part of this difference.
+
+The key takeaway is:
+
+GWAS can identify genomic regions
+associated with complex traits
+without prior knowledge of candidate genes.
+
+However,
+association alone does not prove causation.
+
+Further analysis is required
+to confirm the functional role of the gene.
 
 :::
 
@@ -3855,41 +4172,51 @@ Examples:
 
 :::
 
+
 ::: notes
 
-This figure shows results from genome-wide association studies 
+This figure shows genome-wide association results
 for several common human diseases.
 
-The horizontal axis lists chromosomes 1 through 22.
+The x-axis shows chromosomes 1 through 22.
 
-The vertical axis shows −log10(P value).
-Higher points indicate stronger statistical evidence of association.
+The y-axis shows statistical significance,
+plotted as minus log base 10 of the p-value.
 
-Green dots represent SNPs that pass the genome-wide significance threshold.
-Clusters of significant SNPs identify genomic regions linked to disease risk.
+Higher points indicate stronger evidence of association.
 
-Several important genes are labeled in red.
+Green dots represent SNPs
+that pass the genome-wide significance threshold.
+
+Clusters of these points form peaks,
+highlighting genomic regions associated with disease risk.
+
+Several candidate genes are labeled in red.
 
 For example:
 
-- Coronary artery disease shows association near the APOE gene,
-  which is involved in lipid metabolism.
+Coronary artery disease shows association near APOE,
+a gene involved in lipid metabolism.
 
-- Crohn’s disease shows multiple associated genes,
-  including IL23R, ATG16L1, IRGM, IBD5, NKX2-3, CARD15, and PTPN2.
-  This illustrates that complex diseases often involve many loci.
+Crohn’s disease shows multiple associated loci,
+including IL23R, ATG16L1, and IRGM.
 
-- Rheumatoid arthritis and type 1 diabetes both show strong associations
-  with PTPN22 and HLA-DRB1,
-  genes involved in immune function.
+Rheumatoid arthritis and type 1 diabetes
+both show strong associations with PTPN22 and HLA-DRB1,
+which are involved in immune function.
 
-Key points:
+This illustrates an important principle:
 
-1. Complex diseases are typically polygenic.
-2. Many associated genes are involved in biological pathways
-   relevant to disease mechanisms.
-3. GWAS identifies statistical associations —
-   further functional studies are needed to confirm causation.
+Common diseases are typically polygenic.
+
+They are influenced by many genetic variants,
+often within biologically relevant pathways.
+
+The key takeaway is:
+
+GWAS identifies genomic regions associated with disease,
+but further studies are required
+to identify the causal variants and mechanisms.
 
 :::
 
@@ -3942,39 +4269,46 @@ $$
 ::: notes
 
 Quantitative genetics studies complex traits —
-traits influenced by many genes and environmental factors.
+traits influenced by many genes
+and environmental factors.
 
 These traits do not follow simple Mendelian inheritance.
 
-They may be continuous, such as height,
-threshold traits such as disease status,
-or meristic traits such as litter size.
+They can be continuous,
+such as height,
+threshold traits,
+such as disease status,
+or meristic traits,
+such as litter size.
 
-At the core of quantitative genetics
-is the simple model:
-phenotype equals genotype plus environment.
+At the core is a simple model:
 
-Phenotypic variation arises from
-genetic differences,
-environmental differences,
+Phenotype equals genotype plus environment.
+
+Differences between individuals arise from
+genetic effects,
+environmental effects,
 or both.
 
 The central question is:
-how much of the observed variation
-is due to genetic variation?
+
+How much of the observed variation
+is due to genetic differences?
 
 This leads to heritability
-and to the broader concept of genetic architecture.
+and the concept of genetic architecture.
 
-These tools allow us to estimate breeding values,
-predict genetic risk,
+These ideas allow us to:
+
+predict breeding values,
+estimate genetic risk,
 forecast response to selection,
 and understand evolutionary change.
 
 In essence,
 quantitative genetics provides
-the mathematical framework
-for understanding and predicting
+a mathematical framework
+for analyzing and predicting
 complex trait variation in populations.
 
 :::
@@ -4042,39 +4376,46 @@ Low $h^2$ → limited response
 
 We begin with the genetic model.
 
-The genetic deviation can be decomposed
+Genetic deviation can be decomposed
 into additive and dominance components.
 
 The additive component, A,
 represents the breeding value.
-It is the part that is predictably transmitted
+
+It is the part that is transmitted predictably
 from parent to offspring.
 
-Dominance effects depend on specific allele combinations.
-They influence phenotype,
-but they are not transmitted in a predictable way across generations.
+Dominance effects depend on allele combinations.
 
-This is why additive variance
-is the key driver of evolutionary change.
+They influence the phenotype,
+but are not transmitted consistently across generations.
 
-Now we connect this to selection.
+For this reason,
+additive variance is the key driver
+of long-term genetic change.
 
-The breeder’s equation states
-that response equals heritability times
+Now consider selection.
+
+The breeder’s equation states that
+response equals heritability times
 the selection differential.
 
 Heritability reflects the proportion of variation
 that is additive.
 
 If additive variance is large,
-selection produces rapid change.
+selection produces a strong response.
 
 If additive variance is small,
-response is limited.
+the response is limited.
 
-So the genetic model explains
-why the breeder’s equation works:
-only additive effects fuel sustained evolutionary change.
+The key connection is:
+
+The genetic model explains
+why the breeder’s equation works.
+
+Only additive effects contribute
+to sustained evolutionary change.
 
 :::
 
@@ -4134,20 +4475,31 @@ Only additive variance predicts response to selection.
 
 The phenotype can be modeled as:
 
-population mean plus genetic deviation plus environmental deviation.
+the population mean,
+plus genetic effects,
+plus environmental effects.
 
-Phenotypic variance can be partitioned into genetic and environmental components.
+Phenotypic variance can therefore be partitioned
+into genetic variance
+and environmental variance.
 
-Broad-sense heritability measures the proportion of total variance
+Broad-sense heritability measures
+the proportion of total variation
 due to all genetic effects.
 
-But not all genetic effects are transmitted predictably.
+This includes additive,
+dominance,
+and interaction effects.
 
-Narrow-sense heritability focuses only on additive genetic variance —
-the component passed from parent to offspring.
+However,
+not all genetic effects are transmitted predictably.
 
-This is the key quantity for predicting evolutionary change
-and response to selection.
+Narrow-sense heritability focuses only on additive variance —
+the component passed from parents to offspring.
+
+This is the key quantity
+for predicting response to selection
+and evolutionary change.
 
 :::
 
@@ -4197,15 +4549,48 @@ and response to selection.
 
 ::: notes
 
-To wrap up, we move from the abstract "variance" components to the physical reality of the genome. 
+This slide connects quantitative genetics
+to the physical genome.
 
-Mapping allows us to identify the specific Quantitative Trait Loci, or QTLs, that make up the genetic architecture we discussed. 
+The goal of mapping
+is to move from abstract variance components
+to specific genomic loci,
+called quantitative trait loci, or QTLs.
 
-In modern Association Mapping (GWAS), we don't need to track families; instead, we use population-level Linkage Disequilibrium. We use SNPs as "markers" or flags. If a marker is consistently associated with a trait, it means that marker is physically close to—or in LD with—the true causal mutation.
+Genome-wide association studies,
+or GWAS,
+provide the main strategy.
 
-What has GWAS taught us? First, that most traits are incredibly polygenic—thousands of genes are involved. Second, the effect of any single gene is usually tiny. And third, many of these "hits" are in non-coding, regulatory regions of the DNA.
+They scan the genome using SNP markers
+and test for statistical association
+between markers and the trait.
 
-The Manhattan Plot is our final map. Each peak is a "neighborhood" in the genome that we can now investigate to understand the biology of the trait.
+This approach relies on linkage disequilibrium.
+
+If a marker is associated with a trait,
+it is likely located near
+a causal variant.
+
+GWAS has revealed several key insights.
+
+First,
+most complex traits are highly polygenic,
+influenced by many loci.
+
+Second,
+individual variants typically have small effects.
+
+Third,
+many associated variants lie in non-coding regions,
+highlighting the importance of gene regulation.
+
+The results are visualized in a Manhattan plot.
+
+Each peak represents a genomic region
+in linkage disequilibrium with a causal variant.
+
+These regions provide starting points
+for understanding the biological basis of complex traits.
 
 :::
 
